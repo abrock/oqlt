@@ -1,0 +1,20 @@
+oqlt benutzt Git[1] für Datenaustausch, interne Kommunikation und als 
+Wissensdatenbank. Daher sollte jedes Mitglied ausreichend gut mit diesem 
+mächtigen Werkzeug umgehen können.
+
+[1] http://git.or.cz/
+
+Hier einige Links mit guter Dokumentation. Die ganze Liste kann man natürlich 
+noch aufhübschen, aber das hat erst mal geringe Priorität.
+
+- Git Manual (die offizielle Anleitung)
+  http://www.kernel.org/pub/software/scm/git/docs/user-manual.html
+
+- Everyday Git With 20 Commands Or So (Beispiele aus dem echten Leben)
+  http://www.kernel.org/pub/software/scm/git/docs/everyday.html
+
+- Git Magic (einige interessante Tricks und Kniffe)
+  http://www-cs-students.stanford.edu/~blynn/gitmagic/index.html
+
+- GitCasts (Screencasts für diverse Arbeitsschritte)
+  http://gitcasts.com/
