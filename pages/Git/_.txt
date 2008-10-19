@@ -4,6 +4,22 @@ mächtigen Werkzeug umgehen können.
 
 [1] http://git.or.cz/
 
+
+
+== Grundlegende Befehle ==
+
+-- Repository auf den neuesten Stand bringen --
+
+Hier sollte _nicht_ "git pull" verwendet werden, sondern folgendes:
+git fetch
+git rebase origin
+
+Damit werden lokale Änderungen auf den aktuellen Stand des zentralen 
+Repositories angewendet. Unschöne "merged branch ..."-Commits entfallen 
+dadurch.
+
+
+
 Hier einige Links mit guter Dokumentation. Die ganze Liste kann man natürlich 
 noch aufhübschen, aber das hat erst mal geringe Priorität.
 
