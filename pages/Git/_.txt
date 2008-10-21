@@ -19,6 +19,15 @@ Repositories angewendet. Unschöne "merged branch ..."-Commits entfallen
 dadurch.
 
 
+-- Was hat sich geändert? --
+
+Nach einem "git fetch" (vor dem Rebase) lassen sich folgendermaßen die 
+Änderungen entweder als Log-Einträge oder als Diff anzeigen:
+
+  git log ..origin
+  git diff ..origin
+
+
 
 Hier einige Links mit guter Dokumentation. Die ganze Liste kann man natürlich 
 noch aufhübschen, aber das hat erst mal geringe Priorität.
