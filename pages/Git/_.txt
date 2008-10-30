@@ -38,6 +38,9 @@ noch aufhübschen, aber das hat erst mal geringe Priorität.
 - Everyday Git With 20 Commands Or So (Beispiele aus dem echten Leben)
   http://www.kernel.org/pub/software/scm/git/docs/everyday.html
 
+- Git für Subversion-Benutzer
+  http://git.or.cz/course/svn.html
+
 - Zusammenstellung von Daniel Robbins (Gentoo-Gründer)
   http://github.com/funtoo/portage/wikis/git-links
 
