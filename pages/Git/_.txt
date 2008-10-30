@@ -8,6 +8,13 @@ mächtigen Werkzeug umgehen können.
 
 == Grundlegende Befehle ==
 
+-- Basiskonfiguration --
+
+git config --global user.name "Vorname Nachname"
+git config --global user.email "deine.email@example.com"
+git config --global core.autocrlf false
+
+
 -- Repository auf den neuesten Stand bringen --
 
 Hier sollte _nicht_ "git pull" verwendet werden, sondern folgendes:
