@@ -66,3 +66,14 @@ noch aufhübschen, aber das hat erst mal geringe Priorität.
 
 - GitCasts (Screencasts für diverse Arbeitsschritte)
   http://gitcasts.com/
+
+-- SSH richtig einstellen --
+
+Wenn Git etwas sagt wie "Permission denied (publickey). fatal: The remote end
+hung up unexpectedly" obwohl man den Public Key mitgeteilt hat, kann
+folgendes helfen:
+
+cd ~/.ssh
+ssh-add deinkey
+
+Sollte sich ssh-add beschweren, vorher noch "exec ssh-agent bash" eingeben.
