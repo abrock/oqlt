@@ -35,6 +35,12 @@ Nach einem "git fetch" (vor dem Rebase) lassen sich folgendermaßen die
   git diff ..origin
 
 
+-- Schnell eine Änderung durchführen --
+
+Wenn man in GitHub eine Datei betrachtet, kann man einfach auf "edit" 
+klicken, die Datei im Browser bearbeiten und direkt committen. Praktisch!
+
+
 
 Hier einige Links mit guter Dokumentation. Die ganze Liste kann man natürlich 
 noch aufhübschen, aber das hat erst mal geringe Priorität.
