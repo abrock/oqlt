@@ -28,4 +28,3 @@ tymm:                                       ====== -----
 
 
 
-// vim: set fo+=nat tw=78 et ai: //
