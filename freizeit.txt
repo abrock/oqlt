@@ -1,0 +1,29 @@
+Hier möge bitte mal jeder eintragen, wann er für eventuelle regelmäßige 
+Treffen zu haben wäre. Einfach an den Zeiten, an denen man _Freizeit_ hat, 
+einen Balken mit "="-Zeichen machen.
+
+Die einzelnen Blöcke entsprechen den Tagen, darunter steht die jeweilige 
+Uhrzeit (von oben nach unten zu lesen, also 14, 16, 18 usw. Uhr). Ein = an 
+einer Position gilt jeweils von der angegebenen Uhrzeit bis zur nächsten.
+
+Ein Beispiel:  111222   Die Person hat von 16-24 Uhr Zeit (Beginn bei 16, Ende
+               468024   vor der 24).
+                ====
+
+Noch eins:     111222   Die Person hat von 18-2 Uhr Zeit (länger als 2 Uhr
+               468024   planen wir nun wirklich nicht).
+                 ====
+
+
+         MO     DI     MI     DO     FR     SA     SO
+         111222 111222 111222 111222 111222 111222 111222
+         468024 468024 468024 468024 468024 468024 468024
+Abrock:
+Inte:
+Scytale: ====== ==      ====  ====== ====== ====== ======
+silent:
+tymm:
+
+
+
+// vim: set fo+=nat tw=78 et ai: //
