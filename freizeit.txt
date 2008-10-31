@@ -1,6 +1,8 @@
 Hier möge bitte mal jeder eintragen, wann er für eventuelle regelmäßige 
 Treffen zu haben wäre. Einfach an den Zeiten, an denen man _Freizeit_ hat, 
 einen Balken mit "="-Zeichen machen.
+Zeiträume in denen man eventuell Freizeit hat, können mit einem "-"-Zeichen
+gekennzeichnet werden.
 
 Die einzelnen Blöcke entsprechen den Tagen, darunter steht die jeweilige 
 Uhrzeit (von oben nach unten zu lesen, also 14, 16, 18 usw. Uhr). Ein = an 
@@ -22,7 +24,7 @@ Abrock:
 Inte:
 Scytale: ====== ==      ====  ====== ====== ====== ======
 silent:   ==     ==     ==     ==     ===== ====== ===
-tymm:
+tymm:                                       ====== -----
 
 
 
