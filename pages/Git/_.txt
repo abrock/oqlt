@@ -40,6 +40,10 @@ Nach einem "git fetch" (vor dem Rebase) lassen sich folgendermaßen die
 Wenn man in GitHub eine Datei betrachtet, kann man einfach auf "edit" 
 klicken, die Datei im Browser bearbeiten und direkt committen. Praktisch!
 
+Dabei sollte man sich allerdings bewusst sein, dass der entstehende Commit die 
+Mailadresse tragen wird, die man bei GitHub eingetragen hat. Falls man dort 
+mehrere eingetragen hat, ist es offenbar die erste.
+
 
 
 Hier einige Links mit guter Dokumentation. Die ganze Liste kann man natürlich 
