@@ -15,6 +15,27 @@ git config --global user.email "deine.email@example.com"
 git config --global core.autocrlf false
 
 
+-- SSH richtig einstellen --
+
+Wenn Git etwas sagt wie "Permission denied (publickey). fatal: The remote end 
+hung up unexpectedly" obwohl man den Public Key mitgeteilt hat, kann folgendes 
+helfen:
+
+cd ~/.ssh
+ssh-add deinkey
+
+Sollte sich ssh-add beschweren, vorher noch "exec ssh-agent bash" eingeben.
+
+Der Grund für das Problem liegt dann womöglich darin, dass man nicht den 
+Standard-Dateinamen für den SSH-Key benutzt hat (id_rsa), sondern beim 
+Generieren mit ssh-keygen einen eigenen angegeben. Diesen findet ssh beim 
+Verbindungsaufbau nicht (außer man verrät mit "-i dateiname", wo er liegt) und 
+authentifiziert sich deshalb nicht.
+
+Daher mein Tipp: Den SSH-Key mit "ssh-keygen -t rsa -b 4096" generieren, keine 
+Passphrase, und den Standard-Keynamen beibehalten.
+
+
 -- Repository auf den neuesten Stand bringen --
 
 Hier sollte _nicht_ "git pull" verwendet werden, sondern folgendes:
@@ -66,14 +87,3 @@ noch aufhübschen, aber das hat erst mal geringe Priorität.
 
 - GitCasts (Screencasts für diverse Arbeitsschritte)
   http://gitcasts.com/
-
--- SSH richtig einstellen --
-
-Wenn Git etwas sagt wie "Permission denied (publickey). fatal: The remote end
-hung up unexpectedly" obwohl man den Public Key mitgeteilt hat, kann
-folgendes helfen:
-
-cd ~/.ssh
-ssh-add deinkey
-
-Sollte sich ssh-add beschweren, vorher noch "exec ssh-agent bash" eingeben.
