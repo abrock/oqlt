@@ -8,6 +8,17 @@ mächtigen Werkzeug umgehen können.
 
 == Grundlegende Befehle ==
 
+-- GitHub einrichten --
+
+Mach dir einen Account auf github.com und teile Scy deinen Benutzernamen mit, 
+um Schreibzugriff auf unser Repository unter http://github.com/scy/oqlt zu 
+bekommen.
+
+Du musst einen SSH-Key zu GitHub hochladen, mit dem du dann dein 
+Git-Repository über SSH syncen kannst. Lies dazu am besten "Providing your SSH 
+Key" unter http://github.com/guides/home.
+
+
 -- Basiskonfiguration --
 
 git config --global user.name "Vorname Nachname"
