@@ -1,0 +1,9 @@
+- Text in Vektor umwandeln (mir fehlt hier die Schriftart, ich kriege Times New Roman(!))
+  - muss Inte machen
+
+- Logo putzen:
+  - Hintergrundfarbe und/oder Transparenz definieren
+  - Transparente Bereiche durch Zuschneiden der Formen statt durch Verwenden der Hintergrundfarbe
+  - schauen ob SVG als Farbe "invertiert" kann, sonst zwei Versionen (für schwarzen und für weißen Hintergrund)
+  - Quellcode vielleicht noch aufhübschen, Werte runden und so
+  - kann alles Scy machen
