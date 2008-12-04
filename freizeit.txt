@@ -24,7 +24,7 @@ Abrock:  =   =    ====    ===   ==== ==  == ====== ======
 Inte:    ====-  ====-  -----  ====-  ====== ====== ====-
 s0rk:
 Scytale: ====== ====== ====== ====== ==---= ====== ======
-silent:   ==     ==     ==     ==     ===== ====== ===
+silent:   ==     ==     -=     -=     ===== ====== ===
 tymm:     ===== ==            =====   =     ====== -----
 
 Deckung: [wird neu berechnet sobald sich jeder eingetragen hat]
