@@ -22,18 +22,10 @@ Noch eins:     111222   Die Person hat von 18-2 Uhr Zeit (länger als 2 Uhr
          468024 468024 468024 468024 468024 468024 468024
 Abrock:  =   =    ====    ===   ==== ==  == ====== ======
 Inte:    ====-  ====-  -----  ====-  ====== ====== ====-
-Scytale: ====== ==----  ====  ====== ==---= ====== ======
+s0rk:
+Scytale: ====== ====== ====== ====== ==---= ====== ======
 silent:   ==     ==     ==     ==     ===== ====== ===
 tymm:                                       ====== -----
 
-Deckung:                                    ====== ---
+Deckung: [wird neu berechnet sobald sich jeder eingetragen hat]
 ("=": jeder hat Zeit, "-": jeder hat zumindest unter Vorbehalt Zeit)
-
-Daher möchte ich (Scy) vorschlagen, regelmäßige Treffen jede Woche Samstags ab 
-16:00 Uhr stattfinden zu lassen. Das ist spät genug, dass jeder ausschlafen 
-und noch was essen kann, aber früh genug, um entweder nur den Nachmittag 
-miteinander zu verbringen und danach noch seinem Privatleben zu fröhnen, oder 
-aber um nen langen oqlt-Abend zu verbringen.
-
-Wer dafür ist, setzt bitte hier seinen Namen drunter (alle in eine Zeile):
-   Abrock, Inte, Scytale, silent, tymm
