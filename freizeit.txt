@@ -25,7 +25,7 @@ Inte:    ====-  ====-  -----  ====-  ====== ====== ====-
 s0rk:
 Scytale: ====== ====== ====== ====== ==---= ====== ======
 silent:   ==     ==     ==     ==     ===== ====== ===
-tymm:                                       ====== -----
+tymm:     ===== ==            =====   =     ====== -----
 
 Deckung: [wird neu berechnet sobald sich jeder eingetragen hat]
 ("=": jeder hat Zeit, "-": jeder hat zumindest unter Vorbehalt Zeit)
