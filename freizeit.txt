@@ -27,5 +27,31 @@ Scytale: ====== ====== ====== ====== ==---= ====== ======
 silent:   ==     ==     -=     -=     ===== ====== ===
 tymm:     ===== ==            =====   =     ====== -----
 
-Deckung: [wird neu berechnet sobald Scy sich den Kopf zerbrochen hat]
+Deckung: 344342 344332 122222 334332 353344 455554 334322
+                                               --
+
+(Zahlen: Anzahl verfügbarer Personen; "-" zählt 0.5; abgerundet)
 ("=": jeder hat Zeit, "-": jeder hat zumindest unter Vorbehalt Zeit)
+
+Ehrlich gesagt ist das Ergebnis relativ kompliziert zu befriedigen. Der 
+einzige Termin, an dem jeder zumindest unter Vorbehalt Zeit hat, wäre Samstag 
+von 20-24 Uhr (was mal wieder beweist, dass Geeks und "Saturday Night Fever" 
+nicht wirklich zusammenpassen).
+
+Ich (Scy) sehe jetzt zwei Möglichkeiten. Entweder wir machen wirklich Sa 20-24 
+Uhr und nehmen Probleme mit anderen gesellschaftlichen Verpflichtungen in 
+Kauf, die zu dieser Zeit nunmal gehäuft auftreten können, oder aber wir machen 
+zwei verschiedene Termine, also z.B. Mo 16-20 (da könnten Abrock und s0rk 
+nicht) und Sa 16-20 (da könnte Inte evtl. nicht), und wechseln durch: Z.B. in 
+ungeraden Wochen samstags, in geraden Wochen montags. Dann sind die Abstände 
+aber blöd: Zwischen Sa und Mo nur ein Tag, zwischen Mo und Sa die Woche drauf 
+aber 11 Tage.
+
+Oder aber die Mitglieder halten sich prinzipiell, wenn möglich, beide Termine 
+frei und es wird relativ kurzfristig entschieden, ob man sich trifft oder 
+nicht. Das wäre eine flexible Lösung, die uns erlaubt, bei Bedarf zwei Treffen 
+wöchentlich einzuberufen, aber "wenn nichts anliegt" auch ne Art "Hitzefrei" 
+für Mitglieder zulässt: Zeit, die man eigentlich verplant hätte, aber jetzt 
+doch zur Verfügung steht, z.B. für private Projekte oder Aufräumen oder so.
+
+Ich bitte um Meinungen entweder hier in der Datei oder im IRC. --Scy.
