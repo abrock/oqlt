@@ -21,7 +21,7 @@ Noch eins:     111222   Die Person hat von 18-2 Uhr Zeit (länger als 2 Uhr
          111222 111222 111222 111222 111222 011111222 011111222
          468024 468024 468024 468024 468024 802468024 802468024
 Abrock:  =   =    ====    ===   ==== ======    ======    ======
-Inte:    =====- =====- ------ ==---- ====== ==-   --- ==-   ---
+Inte:    =====- =====- ------ ==---- ==---= ==------- ==-------
 s0rk:                                  ===      ====
 Scytale: ====== ====== ====== ====== ==---= ========= =========
 silent:   ==     ==     -=     -=     =====  -=======  -====
@@ -54,4 +54,22 @@ wöchentlich einzuberufen, aber "wenn nichts anliegt" auch ne Art "Hitzefrei"
 für Mitglieder zulässt: Zeit, die man eigentlich verplant hätte, aber jetzt 
 doch zur Verfügung steht, z.B. für private Projekte oder Aufräumen oder so.
 
-Ich bitte um Meinungen entweder hier in der Datei oder im IRC. --Scy.
+Ich bitte um Meinungen entweder hier in der Datei oder im IRC. --Scy
+
+Ich (Inte) habe am Wochenende die Vormittage hinzugefügt. Hier ein paar
+Stichpunkte dazu:
+1. Bei Bedarf könnte (optional) der Nachmittag für ...
+  a. längere Seminare und
+  b. öffentliche Veranstaltungen
+  genutzt werden.
+2. Vormittags sind Räume ...
+  a. in der Regel frei und
+  b. die Miete ist günstiger.
+3. Samstags ist der Anzeigenteil am größten. Wir könnten gemeinsam frühstücken
+und nach günstigen Angeboten suchen, bzw. uns erstmal einen Überblick
+verschaffen, bevor wir selbst inserieren.
+
+*EIN regelmäßiger* Termin ist das Wichtigste. Wir müssen uns so lange den
+Kopf zerbrechen bis die Lösung gefunden wurde, die von den meisten mitgetragen
+wird. --Inte
+
