@@ -17,18 +17,19 @@ Noch eins:     111222   Die Person hat von 18-2 Uhr Zeit (länger als 2 Uhr
                  ====
 
 
-         MO     DI     MI     DO     FR     SA        SO
-         111222 111222 111222 111222 111222 011111222 011111222
-         468024 468024 468024 468024 468024 802468024 802468024
-Abrock:  =   =    ====    ===   ==== ====== ========= ---======
-Inte:    =====- =====- ------ ==---- ==---= ==------- ==-------
-s0rk:                                  ===       ===   =====
-Scytale: ====== ====== ====== ====== ==---= ========= =========
-silent:   ==     ==     -=     -=     =====  -=======  -====
-tymm:     ===== ==            =====   =      --======  ==-----
+              MO     DI     MI     DO     FR     SA        SO
+              111222 111222 111222 111222 111222 011111222 011111222
+              468024 468024 468024 468024 468024 802468024 802468024
+Abrock:       =   =    ====    ===   ==== ====== ========= ---======
+DreamFlasher:     --    ---    ===    ---    --- -=======- -=======-
+Inte:         =====- =====- ------ ==---- ==---= ==------- ==-------
+s0rk:                                       ===       ===   =====
+Scytale:      ====== ====== ====== ====== ==---= ========= =========
+silent:        ==     ==     -=     -=     =====  -=======  -====
+tymm:          ===== ==            =====   =      --======  ==-----
 
-Deckung: 344342 344332 122222 334332 354444 344455554 255334322
-                                                  --   --
+Deckung:      344343 344333 122333 334443 354444 355556665 366445433
+                                                      ---   --
 
 (Zahlen: Anzahl verfügbarer Personen; "-" zählt 0.5; abgerundet)
 ("=": jeder hat Zeit, "-": jeder hat zumindest unter Vorbehalt Zeit)
@@ -73,3 +74,4 @@ verschaffen, bevor wir selbst inserieren.
 Kopf zerbrechen bis die Lösung gefunden wurde, die von den meisten mitgetragen
 wird. --Inte
 
+DreamFlasher: Einen regelmäßigen Termin finde ich nicht so wichtig. Bei mir ist eigtl nicht besonders viel regelmäßig, dafür (zum Glück) mittlerweile ne Menge spontan/kurzfristig. Samstag Abend und Sonntag morgen sind ja bisher am Besten, ich fänd Sonntag noch besser weil a) Scy's Argument b) Sonntag hab ich meißtens nix vor
