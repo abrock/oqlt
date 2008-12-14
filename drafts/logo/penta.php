@@ -2,6 +2,10 @@
 
 // oqlt logo construction thingie.
 
+/* TODO:
+ * Will break if oqltbb min values are != 0.
+ * */
+
 // echo with newline.
 function echol($text) {
 	echo("$text\n");
@@ -29,6 +33,41 @@ function translate1($x, $y, $a, $b) {
 	return (($a+$x).','.($b+$y));
 }
 
+// calculate the bounding box of a path, not including bezier control points
+function bounding($path) {
+	$bound = array(array(null, null), array(null, null));
+	preg_match_all('/([a-zA-Z])((?: *[0-9]+\.?[0-9]*,[0-9]+\.?[0-9]*)+)/', $path, $cmds, PREG_SET_ORDER);
+	foreach ($cmds as $cmd) {
+		$coords = array_map('trim', explode(' ', trim($cmd[2])));
+		switch ($cmd[1]) {
+		case 'M':
+		case 'L':
+			$bound = rebound($bound, $coords[0]);
+			break;
+		case 'C':
+			$bound = rebound($bound, $coords[2]);
+			break;
+		}
+	}
+	return ($bound);
+}
+
+function rebound($bound, $coord) {
+	$coord = explode(',', $coord);
+	$x = (float)$coord[0]; $y = (float)$coord[1];
+	// bound: ((xmin, ymin), (xmax, ymax))
+	// echol("rebound: (".$bound[0][0].','.$bound[0][1].')-('.$bound[1][0].','.$bound[1][1].") with ($x,$y)");
+	if ($bound[0][0] === null || $x < $bound[0][0])
+		$bound[0][0] = $x;
+	if ($bound[0][1] === null || $y < $bound[0][1])
+		$bound[0][1] = $y;
+	if ($bound[1][0] === null || $x > $bound[1][0])
+		$bound[1][0] = $x;
+	if ($bound[1][1] === null || $y > $bound[1][1])
+		$bound[1][1] = $y;
+	return ($bound);
+}
+
 // drawing mode.
 define('MODE','onblack');
 
@@ -40,6 +79,12 @@ define('SW', 9.5);
 
 // circle stroke width.
 define('CSW', SW);
+
+// symbol circle width.
+define('SCW', 11);
+
+// switch distance.
+define('SD', 60);
 
 // pentagram distance from circle.
 define('PD', 1);
@@ -68,6 +113,14 @@ switch (MODE) {
 }
 
 $oqlt = array_map('trim', explode("\n", trim(OQLT)));
+$letters = array('o', 'q', 'l', 't');
+
+// calculate oqlt bounding box.
+$oqltbb = bounding(OQLT);
+
+// calculate top-line y.
+$tly = explode(',', pcorn(342));
+$tly = (float)$tly[1];
 
 echol('<'.'?xml version="1.0" ?'.'>');
 
@@ -86,7 +139,10 @@ echol('<style type="text/css">
 * { fill:none; }
 #bgrect { fill:#000000; visibility:'.BGVIS.'; }
 .penta { stroke:'.A.'; stroke-width:'.SW.'; stroke-linejoin:round; }
+.symbol * { fill:'.B.'; }
 .circ { stroke:'.B.'; stroke-width:'.CSW.'; }
+.letter { fill:'.B.'; }
+.q { fill:'.A.'; }
 ]]>
 </style>');
 
@@ -107,6 +163,22 @@ for ($i = 1; $i <= 5; $i++) {
 }
 $path .= 'z';
 echol('<path d="'.$path.'" class="penta" />');
+
+// switch.
+echol('<g class="symbol switch" transform="translate('.((W-SD)/2).','.$tly.')">');
+echol('    <circle cx="0" cy="0" r="'.SCW.'" />');
+echol('    <circle cx="'.SD.'" cy="0" r="'.SCW.'" />');
+echol('    <rect x="0" y="'.(0-(SW/2)).'" width="'.SD.'" height="'.SW.'" transform="rotate(38,'.SD.',0)" />');
+echol('</g>');
+
+// the text (54° being the bottom-right pentagram corner)
+$y = explode(',',pcorn(54));
+$y = (float)$y[1]-($oqltbb[1][1]/2);
+echol('<g transform="translate('.((W-$oqltbb[1][0])/2).",$y)\">");
+for ($i = 0; $i < 4; $i++) {
+	echol('    <path d="'.$oqlt[$i].'" class="letter '.$letters[$i].'" />');
+}
+echol('</g>');
 
 echol('</svg>');
 
