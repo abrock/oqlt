@@ -27,3 +27,7 @@ wir euch auch genaue Preise bieten und alle Sonderwünsche berücksichtigen.
 
 Wer was haben will, meldet sich BIS MONTAG (morgen!) 12:30 per SMS, Anruf oder 
 IRC bei Scy unter Angabe der gewünschten Größe.
+
+Außerdem gibt es momentan noch eine Diskussion, ob das Logo geändert werden 
+sollte (Diode raus, Memristor rein). Bitte lies dazu dieses:
+   http://github.com/scy/oqlt/tree/master/pages/Memristor/_.txt
