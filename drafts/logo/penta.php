@@ -100,7 +100,7 @@ function bp($d) {
 }
 
 // drawing mode.
-define('MODE','onblack');
+define('MODE','transparent');
 
 // width.
 define('W', 666);
@@ -126,12 +126,6 @@ define('CUT', 1);
 // pentagram distance from circle.
 define('PD', CUT);
 
-// color A (green)
-define('A', '#ccff00');
-
-// color B (white)
-define('B', '#ffffff');
-
 // the letters.
 define('OQLT', '
 	M 39.38644,0.06592 C 18.52829,0.06592 0,18.15042 0,38.45383 C 0,53.20986 11.64953,64.4156 26.84935,64.4156 C 47.7075,64.4156 66.45769,46.553 66.45769,26.69337 C 66.45769,11.27166 55.141,0.06592 39.38644,0.06592 M 36.83464,13.60154 C 45.15571,13.60154 51.25785,20.03652 51.25785,28.69043 C 51.25785,40.11804 40.9397,50.87998 29.84494,50.87998 C 21.41292,50.87998 15.19984,44.55595 15.19984,35.90203 C 15.19984,24.25254 25.51799,13.60154 36.83464,13.60154
@@ -140,12 +134,25 @@ define('OQLT', '
 	M 162.31906,83.35811 L 177.07511,83.35811 L 185.95092,35.31774 L 194.82674,35.31774 L 197.37854,21.89307 L 188.50272,21.89307 L 192.27494,1.36774 L 177.5189,1.36774 L 173.74667,21.89307 L 166.53507,21.89307 L 163.98327,35.31774 L 171.19488,35.31774 L 162.31906,83.35811
 	');
 
+define('A', '#ccff00');
 switch (MODE) {
 	case 'onblack':
+		define('SHADOW', false);
 		define('BGVIS', 'visible');
+		define('BG', '#000000');
+		define('B', '#ffffff');
+		break;
+	case 'onwhite':
+		define('BGVIS', 'visible');
+		define('SHADOW', true);
+		define('BG', '#ffffff');
+		define('B', '#000000');
 		break;
 	default:
 		define('BGVIS', 'hidden');
+		define('SHADOW', false);
+		define('BG', '#BADA55');
+		define('B', '#ffffff');
 		break;
 }
 
@@ -162,6 +169,7 @@ echol('<svg
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    width="'.W.'"
    height="'.W.'"
@@ -170,8 +178,9 @@ echol('<svg
 echol('<style type="text/css">
 <![CDATA[
 * { fill:none; }
-#bgrect { fill:#000000; visibility:'.BGVIS.'; }
-.penta * { fill:'.A.'; }
+#bgrect { fill:'.BG.'; visibility:'.BGVIS.'; }
+#penta * { fill:'.A.'; }
+#shadow * { fill:#cccccc; }
 .symbol * { fill:'.B.'; }
 .circ { stroke:'.B.'; stroke-width:'.CSW.'; }
 .letter { fill:'.B.'; }
@@ -187,6 +196,13 @@ echol('</clipPath>');
 
 // the background
 echol('<rect x="0" y="0" width="'.W.'" height="'.W.'" id="bgrect" />');
+
+// the shadow?
+if (SHADOW) {
+	echol('<use xlink:href="#penta" transform="translate(3,4)" id="shadow" />');
+}
+
+echol('<g id="logo">');
 
 // the circle
 echol('<circle cx="'.(W/2).'" cy="'.(W/2).'" r="'.((W-CSW)/2).'" class="circ" />');
@@ -205,14 +221,14 @@ $path .= 'z';
 
 $corn = explode(',', pcorn(198));
 $len = (W/2)-(float)$corn[0];
-echol('<g class="penta">');
+echol('<g id="penta">');
 for ($i = 0; $i < 5; $i++) {
 	$corn = explode(',', pcorn((270+($i*72)%360)));
 	echol('<circle cx="'.(float)$corn[0].'" cy="'.(float)$corn[1].'" r="'.(SW/2).'" />');
 }
 $away = (SD/2)+sqrt(pow(SCW+CUT,2)-pow(0.5*SW,2));
-echol(bp(198).'l '.($len-$away).',0 a '.SW.','.SW.' 0 0,0 0,'.SW.' l -'.($len-$away).',0 z" />');
-echol(bp(198).'l '.($len-$away).',0 a '.SW.','.SW.' 0 0,0 0,'.SW.' l -'.($len-$away).',0 z" transform="rotate(180,'.(W/2).','.tly().')" />');
+echol(bp(198).'l '.($len-$away).',0 a '.SCW.','.SCW.' 0 0,0 0,'.SW.' l -'.($len-$away).',0 z" />');
+echol(bp(198).'l '.($len-$away).',0 a '.SCW.','.SCW.' 0 0,0 0,'.SW.' l -'.($len-$away).',0 z" transform="rotate(180,'.(W/2).','.tly().')" />');
 echol(bp(342).'l '.($len-(RL/2)-CUT).',0 0,'.SW.' -'.($len-(RL/2)-CUT).',0 z" transform="rotate(144,'.pcorn(342).')" />');
 echol(bp(126).'l '.($len-(RL/2)-CUT).',0 0,'.SW.' -'.($len-(RL/2)-CUT).',0 z" transform="rotate(324,'.pcorn(126).')" />');
 echol(bp(126).'l '.($len-(2*SW)-CUT).',0 0,'.SW.' -'.($len-(2*SW)-CUT).',0 z" transform="rotate(288,'.pcorn(126).')" />');
@@ -246,9 +262,9 @@ echol('</g>');
 
 // coil.
 echol('<g class="symbol coil" transform="'.symboltrans(3,11*SW).'">');
-echol('    <path d="M 0,'.(-0.5*SW).' l '.SW.',0 l 0,'.(1*SW).' '.
+echol('    <path d="M 0,'.(-0.5*SW).' l '.(0.65*SW).',0 a '.(0.35*SW).','.(0.35*SW).' 0 0,1 '.(0.35*SW).','.(0.35*SW).' l 0,'.(0.65*SW).' '.
 	str_repeat('a '.(SW*0.75).','.(SW*0.75).' 0 0,0 '.(1.5*SW).',0 a '.(SW/2).','.(SW/2).' 0 0,1 '.SW.',0 ', 3).
-	'a '.(SW*0.75).','.(SW*0.75).' 0 0,0 '.(1.5*SW).',0 l 0,'.(-1*SW).' l '.SW.',0 l 0,'.(1*SW).
+	'a '.(SW*0.75).','.(SW*0.75).' 0 0,0 '.(1.5*SW).',0 l 0,'.(-0.65*SW).' a '.(0.35*SW).','.(0.35*SW).' 0 0,1 '.(0.35*SW).','.(-0.35*SW).' l '.(0.65*SW).',0 l 0,'.(1*SW).
 	str_repeat('a '.(SW*1.75).','.(SW*1.75).' 0 0,1 '.(-3.5*SW).',0 l '.SW.',0 ', 3).
 	'a '.(SW*1.75).','.(SW*1.75).' 0 0,1 '.(-3.5*SW).',0 z'.
 	'" />');
@@ -267,6 +283,8 @@ echol('<g transform="translate('.((W-$oqltbb[1][0])/2).",$y)\">");
 for ($i = 0; $i < 4; $i++) {
 	echol('    <path d="'.$oqlt[$i].'" class="letter '.$letters[$i].'" />');
 }
+echol('</g>');
+
 echol('</g>');
 
 echol('</svg>');
