@@ -108,8 +108,6 @@ for ($i = 1; $i <= 5; $i++) {
 $path .= 'z';
 echol('<path d="'.$path.'" class="penta" />');
 
-echol('<path d="'.$oqlt[3].'" class="penta" />');
-
 echol('</svg>');
 
 ?>
