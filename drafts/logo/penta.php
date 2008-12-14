@@ -14,7 +14,7 @@ function echol($text) {
 // pentagram corner.
 function pcorn($deg) {
 	$deg = deg2rad($deg);
-	$len = (W/2) - CSW - SW - PD;
+	$len = (W/2) - CSW - (SW/2) - PD;
 	$x = (W/2) + ($len * cos($deg));
 	$y = (W/2) + ($len * sin($deg));
 	return ("$x,$y");
@@ -68,6 +68,19 @@ function rebound($bound, $coord) {
 	return ($bound);
 }
 
+function symboltrans($num, $width) {
+	$num = (int)$num;
+	if (($num < 0) || ($num > 4))
+		return;
+	// calculate top-line y.
+	$tly = explode(',', pcorn(342));
+	$tly = (float)$tly[1];
+	$trans = 'translate('.((W-$width)/2).','.$tly.')';
+	if ($num > 0)
+		$trans = 'rotate('.($num*72).','.(W/2).','.(W/2).") $trans";
+	return ($trans);
+}
+
 // drawing mode.
 define('MODE','onblack');
 
@@ -85,6 +98,9 @@ define('SCW', 11);
 
 // switch distance.
 define('SD', 60);
+
+// resistor length.
+define('RL', 7*SW);
 
 // pentagram distance from circle.
 define('PD', 1);
@@ -117,10 +133,6 @@ $letters = array('o', 'q', 'l', 't');
 
 // calculate oqlt bounding box.
 $oqltbb = bounding(OQLT);
-
-// calculate top-line y.
-$tly = explode(',', pcorn(342));
-$tly = (float)$tly[1];
 
 echol('<'.'?xml version="1.0" ?'.'>');
 
@@ -165,10 +177,40 @@ $path .= 'z';
 echol('<path d="'.$path.'" class="penta" />');
 
 // switch.
-echol('<g class="symbol switch" transform="translate('.((W-SD)/2).','.$tly.')">');
+echol('<g class="symbol switch" transform="'.symboltrans(0, SD).'">');
 echol('    <circle cx="0" cy="0" r="'.SCW.'" />');
 echol('    <circle cx="'.SD.'" cy="0" r="'.SCW.'" />');
 echol('    <rect x="0" y="'.(0-(SW/2)).'" width="'.SD.'" height="'.SW.'" transform="rotate(38,'.SD.',0)" />');
+echol('</g>');
+
+// condensator.
+echol('<g class="symbol condensator" transform="'.symboltrans(1,3*SW).'">');
+echol('    <rect x="0" y="'.(0-(SW*2.5)).'" width="'.SW.'" height="'.(SW*5).'" />');
+echol('    <rect x="'.(SW*2).'" y="'.(0-(SW*2.5)).'" width="'.SW.'" height="'.(SW*5).'" />');
+echol('</g>');
+
+// resistor.
+echol('<g class="symbol resistor" transform="'.symboltrans(2,RL).'">');
+echol('    <rect x="0" y="'.(-1.5*SW).'" width="'.RL.'" height="'.SW.'" />');
+echol('    <rect x="0" y="'.(0.5*SW).'" width="'.RL.'" height="'.SW.'" />');
+echol('    <rect x="0" y="'.(-1.5*SW).'" width="'.SW.'" height="'.(3*SW).'" />');
+echol('    <rect x="'.(RL-SW).'" y="'.(-1.5*SW).'" width="'.SW.'" height="'.(3*SW).'" />');
+echol('</g>');
+
+// coil.
+echol('<g class="symbol coil" transform="'.symboltrans(3,11*SW).'">');
+echol('    <path d="M 0,'.(-0.5*SW).' l '.SW.',0 l 0,'.(1*SW).' '.
+	str_repeat('a '.(SW*0.75).','.(SW*0.75).' 0 0,0 '.(1.5*SW).',0 a '.(SW/2).','.(SW/2).' 0 0,1 '.SW.',0 ', 3).
+	'a '.(SW*0.75).','.(SW*0.75).' 0 0,0 '.(1.5*SW).',0 l 0,'.(-1*SW).' l '.SW.',0 l 0,'.(1*SW).
+	str_repeat('a '.(SW*1.75).','.(SW*1.75).' 0 0,1 '.(-3.5*SW).',0 l '.SW.',0 ', 3).
+	'a '.(SW*1.75).','.(SW*1.75).' 0 0,1 '.(-3.5*SW).',0 z'.
+	'" />');
+echol('</g>');
+
+// diode.
+echol('<g class="symbol diode" transform="'.symboltrans(4,4*SW).'">');
+echol('    <rect x="'.(3*SW).'" y="'.(-2.5*SW).'" width="'.SW.'" height="'.(SW*5).'" />');
+echol('    <path d="M 0,'.(-2.5*SW).' L '.(3.5*SW).',0 0,'.(2.5*SW).' z" />');
 echol('</g>');
 
 // the text (54° being the bottom-right pentagram corner)
