@@ -1,1 +1,18 @@
-Angelegt, damit DreamFlasher das in GitHub direkt bearbeiten kann.
+Welche Schaltsymbole sollen unser Logo zieren?
+
+Inte ist auf die schöne Idee gekommen in unser Pentagramm 5 elektrische Bauteile einzubauen was unsere Technik-Nähe symbolisieren soll. In der ersten Fassung des Logos sind ein Schalter, Kondensator, Diode und zwei Widerstände (einmal ANSI einmal DIN). Wir haben uns heute darauf geeinigt DIN-normierte Schaltsymbole zu verwenden und den ANSI Widerstand durch eine Spule zu ersetzen.
+Nun gibt es aber noch ein weiteres sehr interessantes Bauelelment, den Memristor.
+Bereits seit Jahrzehnten haben Theoretiker den Memristor als 4. Grundbauelement (neben Kondensator, Widerstand, Spule) postuliert. Dieses letzte Bauelement was alle Gleichungen schönt macht und die Physik vervollkomnet wurde vor einigen Monaten real entwickelt. Mehr Infos gibts hier:
+http://de.wikipedia.org/wiki/Memristor
+http://www.elektroniknet.de/home/bauelemente/news/n/d/hoffnungstraeger-memristor/
+
+Die folgenden Argumente sprechen für die Aufnahme des Memristors in unser Logo:
+- so wie er die Physik vollständig macht/vervollkommnet so rundet der Memristor unser Logo ab
+- wir zeigen damit wie up-to-date wir sind (vom Memristor hat noch kaum einer gehört)
+- Gesprächsstoff: Das ist etwas worüber man mit anderen Geeks reden kann, kommt doch cool wenn uns einer drauf anspricht was das für ein komisches Zeichen bei uns im Logo ist?
+- Verwirrung: Ganz im Sinne von oqlt: "Hä was isn das fürn Zeichen?"
+- Bildung unserer Mitmenschen (haben wir uns ja auch auf die Fahne geschrieben): Jemand sieht das Logo, fragt sich was das ist, fragt uns/schaut nach -> und schon hat er wieder etwas gelernt
+- Sein wir mal ehrlich: Der Memristor ist doch einfach geekiger als ein Schalter/Diode?
+
+Dagegen spricht:
+- nicht DIN standardisiert (Logo müsste ggf. geändert werden, wenn das dann anders standardisiert wird als die Vorabversion)
