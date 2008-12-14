@@ -26,3 +26,23 @@ Dagegen spricht:
 Vorabversion)
 
 -- Marcel (14.12.08)
+
+Weitere Kontra-Punkte (Scy):
+
+- Welches Zeichen im beschlossenen Logo sollen wir denn dafür rausnehmen? Den 
+  Schalter nicht, der ist ganz praktisch als "Augen". Die Diode (Dreieck), 
+  weil sie sowieso keins der "fundamentalen" passiven Bauelemente ist (s. 
+  Wikipedia "Memristor")? Darüber müsste man sich evtl. erst mal einigen.
+- Gesprächststoff okay, aber wer von uns kann den Memristor überhaupt 
+  erklären?
+- Hauptargument: Das vorläufige Memristor-Symbol ist wesentlich komplizierter 
+  als die bisher im Logo vorhandenen Elemente, weil es sehr feine Umrisse 
+  enthält. Erstens passt es damit nicht so gut zum Rest (müsste z.B. eine 
+  feinere Strichbreite verwenden), zweitens ist es beim Druck auf Klamotten 
+  schwieriger, drittens sind die so gedruckten feinen Striche weniger 
+  waschbeständig, und viertens muss das Logo bis Montag Mittag fertig sein und 
+  Scy müsste den Memristor nochmal aus vielen einzelnen dünnen Rechtecken (Linien 
+  kann ich leider nicht benutzen) nochmal zusammensetzen.
+- Fazit: Meinetwegen ändern wir das Logo später, nach ausreichender 
+  Besprechung und mit ausreichender Zeit in den Memristor, aber jetzt für 
+  Montag nicht.
