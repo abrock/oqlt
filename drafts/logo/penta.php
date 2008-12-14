@@ -68,17 +68,35 @@ function rebound($bound, $coord) {
 	return ($bound);
 }
 
+function tly() {
+	$tly = explode(',', pcorn(342));
+	return ((float)$tly[1]);
+}
+
 function symboltrans($num, $width) {
 	$num = (int)$num;
 	if (($num < 0) || ($num > 4))
 		return;
-	// calculate top-line y.
-	$tly = explode(',', pcorn(342));
-	$tly = (float)$tly[1];
-	$trans = 'translate('.((W-$width)/2).','.$tly.')';
+	$trans = 'translate('.((W-$width)/2).','.tly().')';
 	if ($num > 0)
 		$trans = 'rotate('.($num*72).','.(W/2).','.(W/2).") $trans";
 	return ($trans);
+}
+
+// coordinates of center of corner #$nr
+function cofc($nr) {
+	$next = ($nr + 1) % 5;
+	$corn[0] = explode(',', pcorn((270 + ($nr * 72)) % 360));
+	$corn[1] = explode(',', pcorn((270 + ($next * 72)) % 360));
+	for ($i = 0; $i < 2; $i++)
+		for ($j = 0; $j < 2; $j++)
+			$corn[$i][$j] = (float)$corn[$i][$j];
+	return (($corn[0][0]+abs($corn[1][0]-$corn[0][0])).','.($corn[0][1]+abs($corn[1][1]-$corn[0][1])));
+}
+
+// base pentagram path for the corner at $d degrees
+function bp($d) {
+	return ('<path d="M '.pcorn($d).' m 0,-'.(SW/2).' ');
 }
 
 // drawing mode.
@@ -102,8 +120,11 @@ define('SD', 60);
 // resistor length.
 define('RL', 7*SW);
 
+// cut for printing.
+define('CUT', 1);
+
 // pentagram distance from circle.
-define('PD', 1);
+define('PD', CUT);
 
 // color A (green)
 define('A', '#ccff00');
@@ -150,13 +171,19 @@ echol('<style type="text/css">
 <![CDATA[
 * { fill:none; }
 #bgrect { fill:#000000; visibility:'.BGVIS.'; }
-.penta { stroke:'.A.'; stroke-width:'.SW.'; stroke-linejoin:round; }
+.penta * { fill:'.A.'; }
 .symbol * { fill:'.B.'; }
 .circ { stroke:'.B.'; stroke-width:'.CSW.'; }
 .letter { fill:'.B.'; }
 .q { fill:'.A.'; }
 ]]>
 </style>');
+
+echol('<clipPath id="pentaclip" clip-rule="evenodd">');
+echol('<path d="M 0,0 l '.W.',0 0,'.W.' -'.W.',0 0,-'.W.' '.
+	// cofc(1).rmov(1,-1.5*(SW+CUT),0).
+	'" />');
+echol('</clipPath>');
 
 // the background
 echol('<rect x="0" y="0" width="'.W.'" height="'.W.'" id="bgrect" />');
@@ -174,10 +201,30 @@ for ($i = 1; $i <= 5; $i++) {
 	$phi = ($phi + (2*360) / 5) % 360;
 }
 $path .= 'z';
-echol('<path d="'.$path.'" class="penta" />');
+// echol('<path d="'.$path.'" class="penta" clip-path="url(#pentaclip)" />');
+
+$corn = explode(',', pcorn(198));
+$len = (W/2)-(float)$corn[0];
+echol('<g class="penta">');
+for ($i = 0; $i < 5; $i++) {
+	$corn = explode(',', pcorn((270+($i*72)%360)));
+	echol('<circle cx="'.(float)$corn[0].'" cy="'.(float)$corn[1].'" r="'.(SW/2).'" />');
+}
+$away = (SD/2)+sqrt(pow(SCW+CUT,2)-pow(0.5*SW,2));
+echol(bp(198).'l '.($len-$away).',0 a '.SW.','.SW.' 0 0,0 0,'.SW.' l -'.($len-$away).',0 z" />');
+echol(bp(198).'l '.($len-$away).',0 a '.SW.','.SW.' 0 0,0 0,'.SW.' l -'.($len-$away).',0 z" transform="rotate(180,'.(W/2).','.tly().')" />');
+echol(bp(342).'l '.($len-(RL/2)-CUT).',0 0,'.SW.' -'.($len-(RL/2)-CUT).',0 z" transform="rotate(144,'.pcorn(342).')" />');
+echol(bp(126).'l '.($len-(RL/2)-CUT).',0 0,'.SW.' -'.($len-(RL/2)-CUT).',0 z" transform="rotate(324,'.pcorn(126).')" />');
+echol(bp(126).'l '.($len-(2*SW)-CUT).',0 0,'.SW.' -'.($len-(2*SW)-CUT).',0 z" transform="rotate(288,'.pcorn(126).')" />');
+echol(bp(270).'l '.($len-(2*SW)-CUT).',0 0,'.SW.' -'.($len-(2*SW)-CUT).',0 z" transform="rotate(108,'.pcorn(270).')" />');
+echol(bp(270).'l '.($len-(1.5*SW)-CUT).',0 0,'.SW.' -'.($len-(1.5*SW)-CUT).',0 z" transform="rotate(72,'.pcorn(270).')" />');
+echol(bp(54).'l '.($len-(1.5*SW)-CUT).',0 0,'.SW.' -'.($len-(1.5*SW)-CUT).',0 z" transform="rotate(252,'.pcorn(54).')" />');
+echol(bp(54).'l '.($len-(5.5*SW)-CUT).',0 0,'.SW.' -'.($len-(5.5*SW)-CUT).',0 z" transform="rotate(216,'.pcorn(54).')" />');
+echol(bp(198).'l '.($len-(5.5*SW)-CUT).',0 0,'.SW.' -'.($len-(5.5*SW)-CUT).',0 z" transform="rotate(36,'.pcorn(198).')" />');
+echol('</g>');
 
 // switch.
-echol('<g class="symbol switch" transform="'.symboltrans(0, SD).'">');
+echol('<g class="symbol" id="switch" transform="'.symboltrans(0, SD).'">');
 echol('    <circle cx="0" cy="0" r="'.SCW.'" />');
 echol('    <circle cx="'.SD.'" cy="0" r="'.SCW.'" />');
 echol('    <rect x="0" y="'.(0-(SW/2)).'" width="'.SD.'" height="'.SW.'" transform="rotate(38,'.SD.',0)" />');
