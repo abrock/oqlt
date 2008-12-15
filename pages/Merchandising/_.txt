@@ -31,3 +31,26 @@ IRC bei Scy unter Angabe der gewünschten Größe.
 Außerdem gibt es momentan noch eine Diskussion, ob das Logo geändert werden 
 sollte (Diode raus, Memristor rein). Bitte lies dazu dieses:
    http://github.com/scy/oqlt/tree/master/pages/Memristor/_.txt
+
+Hier die erfragten Preise:
+                   mdh Computerstickerei FredDruck Spreadshirt
+T-Shirt                           37,50€    17,50€
+Kapuzenjacke                      55,50€    37,50€
+Sweatshirt                        47,50€    27,50€
+Kapuzensweatshirt                 50,60€    30,50€
+==============================================================
+SUMME¹             303,60€              165,50€
+
+¹1xT-Shirt(M); 3xT-Shirt(L); 1xKapuzenjacke(L); 1xSweatshirt(L);
+1xKapuzensweatshirt(L)
+
+Alles in Flexdruck in weiss/neongrün.
+
+mdh ist etwas unverschämt, was die Druckkosten angeht, daher auch die hohen
+Preise:
+oqlt Logo (zweifarbig, auf Rücken) 12€ je Farbe -> 24€
+oqlt Font (zweifarbig, auf Brust)                   5€
+
+Spreadshirt braucht noch etwas Zeit um unsere Vektorgrafiken freizuschalten.
+Sobald das passiert ist, stellt Inte ein paar Artikel in den Shop und rechnet
+alles mal zusammen. http://oqlt.spreadshirt.net/
