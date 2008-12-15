@@ -136,7 +136,7 @@ define('OQLT', '
 	');
 
 // whether the logo should be in "oqltesse" aka "girlfriend" mode.
-define('ESSE', false);
+define('ESSE', true);
 
 // rounding factor of coil connectors (0 to 1).
 define('CRF', ((ESSE)?(0.25):(0.35)));
@@ -160,7 +160,7 @@ switch (MODE) {
 	default:
 		define('BGVIS', 'hidden');
 		define('SHADOW', false);
-		define('BG', '#BADA55');
+		define('BG', '#000000');
 		define('B', '#ffffff');
 		break;
 }
