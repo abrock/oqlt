@@ -1,0 +1,11 @@
+ACHTUNG BITTE: Der Kram hier wird ohne nachzudenken alle fünf Minuten ins Web 
+gesynct. This mechanism has no brain, use your own.
+
+Vor größeren Änderungen also bitte Rücksprache mit dem Rest der Truppe halten. 
+Dieser Mechanismus ist _nicht_ dafür gedacht, Downloads zur Verfügung zu 
+stellen; momentan ist das alles sowieso nur temporär.
+
+Technische Details: Auf chani.scytale.name läuft alle 5 Minuten ein Cronjob, 
+der "git pull" durchführt. Fertig.
+
+// vim: set fo+=nat tw=78 et ai: //
