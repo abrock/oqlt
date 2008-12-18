@@ -1,0 +1,24 @@
+Radio oqlt
+  - verstehen statt verteufeln
+
+WANN
+- Sonntags beim Frühstück
+- erster Termin: 2008-01-04 (Vorschlag)
+
+WER
+- Inte
+
+WIE
+- ca. 20min
+- ca. 10 Themen
+  gesammelt im Git
+  sortiert nach absteigender Relevanz
+  zuviel wird weggelassen
+
+EQUIPEMENT
+- Headset (1xInte)
+- Mischpult
+- Software (Welche?)
+
+TODO
+- Intro/Jingle/Outro
