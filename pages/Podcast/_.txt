@@ -4,9 +4,12 @@ Radio oqlt
 WANN
 - Sonntags beim Frühstück
 - erster Termin: 2009-01-04 (Vorschlag)
+  - Gegenvorschlag: 2009-01-11 (da ist Scy wieder da und kann vorher Sounds 
+    machen)
 
 WER
 - Inte
+- Scytale
 
 WIE
 - ca. 20min
@@ -15,10 +18,10 @@ WIE
   sortiert nach absteigender Relevanz
   zuviel wird weggelassen
 
-EQUIPEMENT
-- Headset (1xInte)
-- Mischpult
-- Software (Welche?)
+EQUIPMENT
+- Headset (1xInte, 1xScytale)
+- Mischpult (Software-Mixer!)
+- Software (Ardour)
 
 TODO
-- Intro/Jingle/Outro
+- Intro/Jingle/Outro (Scy)
