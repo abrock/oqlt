@@ -1,0 +1,5 @@
+OpenStreetMap
+- Überwachungskameras in Mannheim taggen
+  http://wiki.openstreetmap.org/wiki/User:Hanno/DE:CCTV
+  http://wiki.openstreetmap.org/wiki/Proposed_features/Surveillance
+  http://wiki.openstreetmap.org/wiki/Proposed_features/Key:Surveillance
