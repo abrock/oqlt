@@ -26,6 +26,8 @@ Anfahrt:
  - Fahrplanauskunft [2]
  - Straßenbahn Linie 4, Haltestelle "Schafweide"
  - Straßenbahn Linie 1, 2 und 3, Haltestelle "Alte Feuerwache" + 0,4km Fußweg [3]
+ - Straßenbahn Linie 2, 5 und 7, Haltestelle "Universitätsklinikum" + 0,4km
+   Fußweg [4]
 
 Parkplätze:
  - 
@@ -33,3 +35,5 @@ Parkplätze:
 [1] Neckarpromenade 46, 68167 Mannheim, 0621-2937761, http://www.forum-mannheim.de/
 [2] http://efa9.vrn.de/vrn/XSLT_TRIP_REQUEST2?language=de
 [3] http://data.giub.uni-bonn.de/openrouteservice/index.php?start=8.473872,49.4957499&end=8.4787643,49.4946907&pref=Pedestrian&lang=de
+[4]
+http://data.giub.uni-bonn.de/openrouteservice/index.php?start=8.4840385,49.4939631&end=8.4787599,49.4948551&pref=Pedestrian&lang=de
