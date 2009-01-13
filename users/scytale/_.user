@@ -3,3 +3,4 @@ alias=Scy
 website=http://scytale.name/
 mail=scy@scytale.name
 jid=scy@scytale.name
+public=website,jid
