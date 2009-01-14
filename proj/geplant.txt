@@ -3,7 +3,8 @@ INFORMATIONEN
 - Workshop / vim
 - Treffen mit anderen Gruppen
 - Ticketsystem
-- Sonntaglicher Podcast "Radio oqlt"
+- Sonntäglicher Podcast "Radio oqlt"
+- Videoprojekt "okkulte Wegbeschreibung - Hbf Mannheim -> FORUM"
 
 INFRASTRUKTUR
 - giTalk (git based communication - Mail, Wiki, Blog, Comments, etc.)
