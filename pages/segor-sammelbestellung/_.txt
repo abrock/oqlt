@@ -8,6 +8,10 @@ ATmega 168-20PU Arduino-kompatibler µC
   Scytale: 3 Stück
   Abrock: 10 Stück
   Inte:    2 Stück
+  tymm:    2 Stück
+
+ATmega 8L-8PU (2,90)
+  tymm:    3 Stück
 
 AVR-ISP mkII (USB-Programmer): 32,00
   Scytale: 1 Stück
@@ -17,6 +21,7 @@ AVR-ISP mkII (USB-Programmer): 32,00
 Arduino Duemilanove (26,20)
   Scytale: 1 Stück
   Inte:    1 Stück
+  tymm:    1 Stück
 
 Arduino Mini (24,99)
   (Programmierung via gesondert erhältlichem USB-Adapter oder ICSP)
@@ -26,14 +31,19 @@ Steckbrett 165x110 mm 1660 Kontakte (17,40)
   Scytale: 1 Stück
   Abrock:  1 Stück
   Inte:    1 Stück
+  tymm:    1 Stück
+
+Drahtbrückenset klein (6,30)
+  tymm:    1 Stück
 
 
 Summe:
   111,39 (Scytale)
    85,40 (Abrock)
    82,80 (Inte)
+   65,80 (tymm)
 =========================
-  279,59
+  345,39
 
 
 Versandkosten: Bei dieser Bestellsumme keine.
