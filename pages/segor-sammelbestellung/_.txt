@@ -1,0 +1,35 @@
+Scytale bestellt am 16. Januar 2008 um 14:30 bei www.segor.de diversen 
+Mikrocontroller-Kram. Wer auch was haben will, trägt sich hier ein und 
+aktualisiert die Summe unten.
+
+
+ATmega 168-20PU Arduino-kompatibler µC
+  (4,50; ab 5 4,05; ab 10 3,60)
+  Scytale: 3 Stück
+
+AVR-ISP mkII (USB-Programmer): 32,00
+  Scytale: 1 Stück
+
+Arduino Duemilanove (26,20)
+  Scytale: 1 Stück
+
+Arduino Mini (24,99)
+  (Programmierung via gesondert erhältlichem USB-Adapter oder ICSP)
+  Scytale: 1 Stück
+
+Steckbrett 165x110 mm 1660 Kontakte (17,40)
+  Scytale: 1 Stück
+
+
+Summe:
+  114,09 (Scytale)
+=========================
+  114,09
+
+
+Versandkosten: Wenn wir 150 Euro zusammenkriegen, können wir kostenlos per 
+Nachnahme bestellen. Ansonsten wird per Vorkasse bestellt, für 6 Euro, die auf 
+alle Besteller gleich aufgeteilt werden.
+
+Zahlung erfolgt per Überweisung direkt am Freitag auf mein Konto 
+(Bankverbindung gibt's nach Absenden der Bestellung).
