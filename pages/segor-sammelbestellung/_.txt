@@ -6,9 +6,11 @@ aktualisiert die Summe unten.
 ATmega 168-20PU Arduino-kompatibler µC
   (4,50; ab 5 4,05; ab 10 3,60)
   Scytale: 3 Stück
+  Abrock: 10 Stück
 
 AVR-ISP mkII (USB-Programmer): 32,00
   Scytale: 1 Stück
+  Abrock:  1 Stück
 
 Arduino Duemilanove (26,20)
   Scytale: 1 Stück
@@ -22,14 +24,13 @@ Steckbrett 165x110 mm 1660 Kontakte (17,40)
 
 
 Summe:
-  114,09 (Scytale)
+  111,39 (Scytale)
+   68,00 (Abrock)
 =========================
-  114,09
+  179,39
 
 
-Versandkosten: Wenn wir 150 Euro zusammenkriegen, können wir kostenlos per 
-Nachnahme bestellen. Ansonsten wird per Vorkasse bestellt, für 6 Euro, die auf 
-alle Besteller gleich aufgeteilt werden.
+Versandkosten: Bei dieser Bestellsumme keine.
 
 Zahlung erfolgt per Überweisung direkt am Freitag auf mein Konto 
 (Bankverbindung gibt's nach Absenden der Bestellung).
