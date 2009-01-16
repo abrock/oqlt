@@ -8,7 +8,7 @@ ATmega 168-20PU Arduino-kompatibler µC
   Scytale: 3 Stück
   Abrock: 10 Stück
   Inte:    2 Stück
-  tymm:    2 Stück
+  tymm:    4 Stück
 
 ATmega 8L-8PU (2,90)
   tymm:    3 Stück
@@ -41,9 +41,9 @@ Summe:
   111,39 (Scytale)
    85,40 (Abrock)
    82,80 (Inte)
-   65,80 (tymm)
+   73,00 (tymm)
 =========================
-  345,39
+  352,59
 
 
 Versandkosten: Bei dieser Bestellsumme keine.
