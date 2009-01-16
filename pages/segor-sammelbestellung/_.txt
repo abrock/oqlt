@@ -27,9 +27,9 @@ Arduino Mini (24,99)
   (Programmierung via gesondert erhältlichem USB-Adapter oder ICSP)
   Scytale: 1 Stück
 
-Steckbrett 165x110 mm 1660 Kontakte (17,40)
+Steckbrett 165x110 mm 1660 Kontakte (15,66)
   Scytale: 1 Stück
-  Abrock:  1 Stück
+  Abrock:  2 Stück
   Inte:    1 Stück
   tymm:    1 Stück
 
@@ -38,12 +38,12 @@ Drahtbrückenset klein (6,30)
 
 
 Summe:
-  111,39 (Scytale)
-   85,40 (Abrock)
-   82,80 (Inte)
-   73,00 (tymm)
+  109,65 (Scytale)
+   99,32 (Abrock)
+   81,06 (Inte)
+   71,26 (tymm)
 =========================
-  352,59
+  361,29
 
 
 Versandkosten: Bei dieser Bestellsumme keine.
