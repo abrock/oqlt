@@ -10,6 +10,7 @@ INFRASTRUKTUR
 - giTalk (git based communication - Mail, Wiki, Blog, Comments, etc.)
 
 KULTUR
+- Bookcrossing (OBC im FORUM - Sesselecke im OG - einrichten)
 - Filmabende
 - Filmfestivals
 - Musikfestivals
