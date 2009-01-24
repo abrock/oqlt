@@ -1,13 +1,13 @@
 majug: Java User Group Mannheim
 http://majug.de/
 
-Die majug≤ organisiert in unregelm‰ﬂigen Abst‰nden kostenlose Fachvortr‰ge rund um Thema Java. 
+Die majug¬≤ organisiert in unregelm√§√üigen Abst√§nden kostenlose Fachvortr√§ge rund um Thema Java. 
 
-Geplante Vortr‰ge:
+Geplante Vortr√§ge:
 Februar 2009
 
 
-Vergangene Vortr‰ge:
+Vergangene Vortr√§ge:
 
 Vortrag am 25. November 2008: Eclipse Memory Analyzer
-Vortrag am 28. Oktober 2008: Werkzeuge und Verfahren in der Softwareentwicklung bei der VR Kreditwerk Hamburg-Schw‰bisch Hall AG
+Vortrag am 28. Oktober 2008: Werkzeuge und Verfahren in der Softwareentwicklung bei der VR Kreditwerk Hamburg-Schw√§bisch Hall AG
