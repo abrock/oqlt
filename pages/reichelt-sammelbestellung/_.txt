@@ -10,3 +10,15 @@ haben wir wohl eher nicht) werden brüderlich geteilt.
 
 MAX 233 CPP (RS232-Driver, DIL-20): 6,46 €
  2x Scytale
+
+ATMEGA 8-16 DIP 1,25€
+ 6x Abrock
+
+ATMEGA 8515L-8D 2,15€
+ 4x Abrock
+
+ATTINY 13-20 DIP 0,80€
+ 6x Abrock
+
+H25SR075 0,70€
+ 3x Abrock
