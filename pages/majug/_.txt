@@ -1,0 +1,13 @@
+majug: Java User Group Mannheim
+http://majug.de/
+
+Die majug² organisiert in unregelmäßigen Abständen kostenlose Fachvorträge rund um Thema Java. 
+
+Geplante Vorträge:
+Februar 2009
+
+
+Vergangene Vorträge:
+
+Vortrag am 25. November 2008: Eclipse Memory Analyzer
+Vortrag am 28. Oktober 2008: Werkzeuge und Verfahren in der Softwareentwicklung bei der VR Kreditwerk Hamburg-Schwäbisch Hall AG
