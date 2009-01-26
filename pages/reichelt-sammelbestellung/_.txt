@@ -12,26 +12,31 @@ MAX 233 CPP (RS232-Driver, DIL-20): 6,46 €
  2x Scytale
 
 ATMEGA 8-16 DIP 1,25€
- 6x Abrock
+ 7x Abrock
 
 ATMEGA 8515L-8D 2,15€
- 4x Abrock
+ 5x Abrock
 
 ATTINY 13-20 DIP 0,80€
- 6x Abrock
+ 0x Abrock
 
 H25SR075 0,70€
- 3x Abrock
+ 5x Abrock
 
 ATMEGA 168-20DIP :: 2,85€ :: ATMega AVR-RISC-Controller, DIL-28
  2x Inte
+ 
 H25SR160 :: 1,35€ :: Streifenrasterplatine 160x100mm
  4x Inte
+ 
 KAB-U 200-2,5 :: 1,00€ :: 100er Pack Kabelbinder, UV schwarz 200x2,5mm
  1x Inte
+ 
 KAB-U 200-3,5 :: 1,15€ :: 100er Pack Kabelbinder, UV schwarz 200x3,5mm
  1x Inte
+ 
 KAB-U 280-4,8 :: 2,20€ :: 100er Pack Kabelbinder, UV schwarz 280x4,8mm
  1x Inte
+ 
 SDB 1,2 SW :: 4,00€ :: Schrumpfschlauch-Box, 20m, schwarz, Ø1,2mm
  1x Inte
