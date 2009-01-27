@@ -8,50 +8,76 @@ Berechnungsfehler mit mir auszudiskutieren. Die Bestellung gebe ich dann am
 Dienstagmorgen auf. Versandkosten (ca. 10 Euro, bei über 10kg mehr, aber die 
 haben wir wohl eher nicht) werden brüderlich geteilt.
 
-MAX 233 CPP (RS232-Driver, DIL-20): 6,46 €
- 2x Scytale
+MAX 233 CPP (RS232-Driver, DIL-20): 6,50 €
+ 2x Scytale (13,00)
 
 ATMEGA 8-16 DIP 1,25€
- 7x Abrock
+ 7x Abrock (8,75)
 
 ATMEGA 8515L-8D 2,15€
- 5x Abrock
-
-ATTINY 13-20 DIP 0,80€
- 0x Abrock
+ 5x Abrock (10,75)
 
 H25SR075 0,70€
- 5x Abrock
+ 5x Abrock (3,50)
 
 ATMEGA 168-20DIP :: 2,85€ :: ATMega AVR-RISC-Controller, DIL-28
- 2x Inte
+ 2x Inte (5,70)
  
-H25SR160 :: 1,35€ :: Streifenrasterplatine 160x100mm
- 6x Inte
+H25SR160 :: 1,40€ :: Streifenrasterplatine 160x100mm
+ 6x Inte (8,40)
+ 2x Scytale (2,80)
 
 H25PR160 :: 1,85€ :: Lochrasterplatine, Hartpapier, 160x100mm
- 6x Inte
+ 6x Inte (11,10)
+ 2x Scytale (3,70)
  
-KAB-U 200-2,5 :: 1,00€ :: 100er Pack Kabelbinder, UV schwarz 200x2,5mm
- 1x Inte
+KAB-U 200-2,5 :: 0,74€ :: 100er Pack Kabelbinder, UV schwarz 200x2,5mm
+ 1x Inte (0,74)
+ 1x Scytale (0,74)
  
-KAB-U 200-3,5 :: 1,15€ :: 100er Pack Kabelbinder, UV schwarz 200x3,5mm
- 1x Inte
+KAB-U 200-3,5 :: 0,99€ :: 100er Pack Kabelbinder, UV schwarz 200x3,5mm
+ 1x Inte (0,99)
  
-KAB-U 280-4,8 :: 2,20€ :: 100er Pack Kabelbinder, UV schwarz 280x4,8mm
- 1x Inte
+KAB-U 280-4,8 :: 1,80€ :: 100er Pack Kabelbinder, UV schwarz 280x4,8mm
+ 1x Inte (1,80)
  
 SDB 1,2 SW :: 4,00€ :: Schrumpfschlauch-Box, 20m, schwarz, Ø1,2mm
- 1x Inte
+ 1x Inte (4,00)
 
 HALTER A19 :: 12,40€ :: Ablageständer für Multitip und ERSA 30
- 1x Inte
+ 1x Inte (12,40)
 
 SILBER 0,6MM :: 1,60€ :: Silberdraht, Ø 0,6mm, Länge: 10M
- 1x Inte
+ 1x Inte (1,60)
 
-GS 28P-S :: IC-Sockel, 28-polig, superflach, gedreht, schmal
- 2x Inte
+GS 28P-S :: 0,36 € :: IC-Sockel, 28-polig, superflach, gedreht, schmal
+ 2x Inte (0,72)
 
 SL 1X40G 2,54 :: 0,11€ :: 40pol. Stiftleiste, gerade, RM 2,54
- 4x Inte
+ 4x Inte (0,44)
+ 5x Scytale (0,55)
+
+BL 1X10G 2,54 0,70
+ 2x Scytale (1,40)
+
+LÖTZINN SC 8250, 13,95
+ 1x Scytale (13,95)
+
+ENTLÖTLITZE AA 1,00
+ 1x Scytale (1,00)
+
+ENTLÖTLITZE BB 1,00
+ 1x Scytale (1,00)
+
+
+SUMME
+  Abrock     23,00 (+1,87 = 24,87)
+  Inte       47,89 (+1,87 = 49,76)
+  Scytale    38,14 (+1,86 = 40,00)
+ ==================
+            109,03
+  Versand     5,60
+ ==================
+  GESAMT    114,63
+
+Bestellung abgeschickt am 27. Januar 2009 um 11:08 Uhr.
