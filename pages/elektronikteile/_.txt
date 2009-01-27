@@ -1,0 +1,56 @@
+Einkauf bei Conrad (2009-01-27)
+
+189515 - 62 :: 0,35 :: IC FASSUNG 28 POLIG
+  5x ->  1,75€
+ Scy 1,05€
+ Inte 0,70€
+
+709840 - 62 :: 6,10€ :: TASTATUR MATRIX 3X4
+  1x ->  6,10€
+ Scy 6,10€
+
+405248 - 62 :: 0,08€ :: WIDERSTAND KOHLE 0,5 W 5% 820R BF 0411
+ 10x ->  0,80€
+ Scy 0,40€
+ Inte 0,40€
+
+405256 - 62 :: 0,08€ :: WIDERSTAND KOHLE 0,5 W 5% 1K BF 0411
+ 10x ->  0,80€
+ Scy 0,40€
+ Inte 0,40€
+
+405264 - 62 :: 0,08€ :: WIDERSTAND KOHLE 0,5 W 5% 1K2 BF 0411
+ 10x ->  0,80€
+ Scy 0,40€
+ Inte 0,40€
+
+405272 - 62 :: 0,08€ :: WIDERSTAND KOHLE 0,5 W 5% 1K5 BF 0411
+ 10x ->  0,80€
+ Scy 0,40€
+ Inte 0,40€
+
+184594 - 62 :: 18,10€ :: LCD-MODUL 16X2 ZEICHEN/LED
+  1x -> 18,10€
+ Scy 18,10€
+
+425869 - 62 :: 1,02€ :: ABBIEGEVORRICHTUNG 5 FACH
+  1x ->  1,02€
+ Inte 1,02€
+
+419168 - 62 :: 5,12€ :: SORTIMENT 24 FÄCHER
+  2x -> 10,48€
+ Scy 5,12€
+ Inte 5,12€
+
+419036 - 62 :: 13,94€ :: KOHLESCHICHT-WIDERSTANDS-SET 1
+  1x -> 13,94€
+ Scy 6,97€
+ Inte 6,97€
+
+772810 - 62 :: 7,99€ :: BROTHER SCHRIFTBAND M-K221S
+  1x ->  7,99€
+ Scy 7,99€
+
+SUMME 62,34€
+Scy   46,93€
+Inte  15,41€
