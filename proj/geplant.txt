@@ -5,9 +5,11 @@ INFORMATIONEN
 - Ticketsystem
 - Sonntäglicher Podcast "Radio oqlt"
 - Videoprojekt "okkulte Wegbeschreibung - Hbf Mannheim -> FORUM"
+- Workshop / Corewars http://sal.math.ualberta.ca/ http://en.wikipedia.org/wiki/Core_War
+- Workshop / Badges
 
 INFRASTRUKTUR
-- giTalk (git based communication - Mail, Wiki, Blog, Comments, etc.)
+- granit (git based communication - Mail, Wiki, Blog, Comments, etc.)
 
 KULTUR
 - Bookcrossing (OBC im FORUM - Sesselecke im OG - einrichten)
