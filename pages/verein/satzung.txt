@@ -17,7 +17,7 @@ wollen wir mit Sachverstand aufklärend entgegenwirken. Zudem wirkt dieser Theme
 2. Der Verein verfolgt ausschließlich und unmittelbar gemeinnützige Zwecke im Sinne des Abschnittes "Steuerbegünstigte Zwecke" der Abgabenordnung.
 3. Der Satzungszweck wird insbesondere verwirklicht durch Förderung:
 a) der Allgemeinbildung und Aufklärung der Bevölkerung
-b) der Forschung und Entwicklung
+b) der interdisziplinären Forschung in den Bereichen Transfer, Anwendung und Interoperabilität moderner Technologien, sowie der Entwicklung von Leitvisionen, Strategien, Programmen und Kommunikationsnetzwerken zur Aus- und Weiterbildung deren wirtschaftliche Ausrichtung ausgeschlossen ist
 c) der Diskussion über aktuelle politische und gesellschaftliche Themen
 d) des künstlerischen Umgangs
 in Hinblick auf moderne Technologien sowie Durchführung von Veranstaltungen mit Bezug auf die o.g. Zwecke.
@@ -93,4 +93,4 @@ Die Mitgliederversammlung
 
 § 13 Auflösung des Vereins
 1. Zur Auflösung des Vereins bedarf es der Zustimmung von mindestens drei Vierteln der anwesenden bzw. vertretenen Mitglieder auf der Mitgliederversammlung. Der Antrag auf Auflösung muss der Mitgliederversammlung spätestens vier Wochen vor ihrer Tagung vorgelegt worden sein.
-2. Bei Auflösung des Vereins oder Wegfall des gemeinnützigen Zwecks fällt sein Vermögen an eine von der Mitgliederversammlung zu bestimmende, als gemeinnützig anerkannte Körperschaft, die es im Sinne des Vereinszwecks zu verwenden hat.
+2. Bei Auflösung des Vereins oder Wegfall des gemeinnützigen Zwecks fällt sein Vermögen an eine von der Mitgliederversammlung zu bestimmende, als gemeinnützig anerkannte Körperschaft, die es zum Zweck der Volksbildung im Bereich Aufklärung über Auswirkungen moderner Technologien auf den Einzelnen und die Gesellschaft zu verwenden hat.
