@@ -2,7 +2,7 @@ Eine Liste von Dingen und Undingen die jemand loswerden möchte:
 
 Von Inte:
 NTBA
-Teledat USB 2 a/b
+Teledat USB 2 a/b :: frubi versprochen
 Palm Vx in mit Aluhülle, Ladestation und Falttastatur
 SCSI-Controller Adaptec AHA-1510 (16 Bit ISA-Bus)
 Creative Labs MPEG2-Dekoder Dxr2 CT7120
