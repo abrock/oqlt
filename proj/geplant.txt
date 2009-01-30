@@ -6,7 +6,11 @@ INFORMATIONEN
 - Sonntäglicher Podcast "Radio oqlt"
 - Videoprojekt "okkulte Wegbeschreibung - Hbf Mannheim -> FORUM"
 - Workshop / Corewars http://sal.math.ualberta.ca/ http://en.wikipedia.org/wiki/Core_War
+
+HARDWARE
 - Workshop / Badges
+- Workshop / MintyBoost! - Small battery-powered USB charger
+  http://www.ladyada.net/make/mintyboost/
 
 INFRASTRUKTUR
 - granit (git based communication - Mail, Wiki, Blog, Comments, etc.)
