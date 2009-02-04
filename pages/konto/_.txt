@@ -1,10 +1,31 @@
-Bedingungen:
+BEDINGUNGEN
 - kein monatlicher Mindesteingang
 - keine Überweisungsgebühren
 
-Institute (Vor- und Nachteile, URL)
-- .comdirect
--- Kompaktinfos: http://www.dealblog.de/kostenloses-comdirect-girokonto-mit-75e-startguthaben/1210/
--- 75€ Startguthaben, kostenlos für Studenten, 1€ monatl. von comdirect
--- http://www.comdirect.de/pbl/cms/cms/direct/cori4148_ps_girokonto_start.html;jsessionid=5EFD29DE96506C27D14E7672B70BA2AE?affmt=1&affmn=5&ci=200910980001101BA000000000220&
--- gültig bis 31.1.2009
+INSTITUTE (Vor- und Nachteile, URL)
+.comdirect
+	75€ Startguthaben
+	1€ monatl. von comdirect
+	Cash Group-Mitglied
+	3,5% Zinsen auf Tagesgeldkonto
+	http://is.gd/ik6D
+	
+.comdirect
+	kostenlos für Studenten
+	25€ Gutschrift (oder Bahncard 25)
+	Cash Group-Mitglied
+	3,5% Zinsen auf Tagesgeldkonto
+	http://is.gd/ik6A
+
+ING-DiBa
+	keine monatlichen Gebühren
+	keine Überweisungsgebühren
+	http://is.gd/ik8o
+
+	evtl.zusätzlich Tagesgeldkonto mit 3% Zinsen
+	http://is.gd/ik9s
+
+Volksbank Raiffeisenbank
+	Die Dresdner VR-Bank bietet gemeinnützigen Vereinen ein kostenloses
+	Gesamtpaket an. Die VR-Bank Rhein-Neckar macht dies NICHT!
+	http://is.gd/ikh7
