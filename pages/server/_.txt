@@ -1,1 +1,83 @@
+ANFORDERUNGEN
+oqlt: website, mail forwarding, >=python-2.5
+Abrock:
+Dreamflasher:
+Inte: ssh, irc, mumble, vpn
+s0rk:
+Scytale:
+silent_shadow:
+tymm:
+
 ÜBERSICHT (Anbieter, Konditionen, URL)
+Langhofer
+	small
+	Gentoo
+	1GB Speicherplatz
+	25GB Traffic
+	fixe IP
+	6,99€ zzgl. MwSt. (8,32€) monatlich
+
+	medium
+	Gentoo
+	2GB Speicherplatz
+	50GB Traffic
+	fixe IP
+	11,99€ zzgl. MwSt. (14,27€) monatlich
+
+	Keine Mindestlaufzeit
+	Keine Vertragsbindung
+	Keine Einrichtungsgebühr
+	http://langhofer.at/hosting/gentoo-vserver.html
+
+Ingate
+	VServer Basic
+	verschiedene Distributionen
+	5GB Speicherplatz
+	unbegrenzter Traffic
+	192MB RAM garantiert
+	fixe IP
+	6,00€ monatlich
+	Keine Mindestlaufzeit
+	Keine Einrichtungsgebühr
+	http://www.ingate.de/vserver.html
+
+vege.net
+	Debian (mehr auf Anfrage)
+	50GB Speicherplatz
+	100GB Traffic
+	512MB RAM zugesichert
+	inkl. 1 IP-Adresse
+	19,99€ zzgl. MwSt. (23,79€) monatlich
+	Mindestlaufzeit 3 Monate
+	Einrichtungsgebühr 19,99€ zzgl. MwSt. (23,79€)
+	http://vege.net/vserver
+
+smart weblications
+	vlinux Standard
+	Debian (Redhat & Madrake in Vorbereitung)
+	40GB Speicherplatz
+	100GB Traffic
+	8GB RAM, 512MB garantiert
+	11,90€ monatlich
+	Mindestlaufzeit 3 Monate
+	Einrichtungsgebühr 22,90€
+	http://www.smart-weblications.de/vserver/produkte/
+
+
+roottbash
+	Virtueller Server XS
+	1GB Speicherplatz
+	10GB Traffic
+	3,99€ monatlich (Jahresbetrag im Voraus zu zahlen)
+	Vertragslaufzeit 12 Monate
+
+winprofi
+	vServer (root-Server)
+	5GB Speicherplatz
+	20GB Traffic
+	1 fixe IP
+	Domains zu 0,99€ monatlich
+	6€ monatlich (Quartalsweise im Voraus zu zahlen)
+	Mindestlaufzeit 3 Monate
+	Einrichtungsgebühr 9,99€
+	http://www.winprofi.de/index_de_41.html
