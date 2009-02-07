@@ -1,0 +1,8 @@
+Auflistung der Hostingmöglichkeiten
+
+Hoster:
+- zwei Freunde haben Hosting für 40€/Monat, da können wir uns mit denen reinteilen, sähe dann ungefähr so aus:
+	15€/Monat
+	nahezu unbegrenzt Speicher
+	keine Gebühren für Traffic
+	u.U. root Rechte, aber auf jeden Fall können wir installieren was wir wollen
