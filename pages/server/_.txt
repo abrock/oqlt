@@ -1,3 +1,13 @@
+<<<<<<< HEAD:pages/server/_.txt
+Auflistung der Hostingmöglichkeiten
+
+Hoster:
+- zwei Freunde haben Hosting für 40€/Monat, da können wir uns mit denen reinteilen, sähe dann ungefähr so aus:
+	15€/Monat
+	nahezu unbegrenzt Speicher
+	keine Gebühren für Traffic
+	u.U. root Rechte, aber auf jeden Fall können wir installieren was wir wollen
+=======
 ANFORDERUNGEN
 oqlt: website, mail forwarding, >=python-2.5
 Abrock:
@@ -81,3 +91,4 @@ winprofi
 	Mindestlaufzeit 3 Monate
 	EinrichtungsgebÃ¼hr 9,99â‚¬
 	http://www.winprofi.de/index_de_41.html
+>>>>>>> 32ace0bed9c71132ace3ef9e9a6b02ebbb8e5c8e:pages/server/_.txt
