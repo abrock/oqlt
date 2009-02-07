@@ -1,13 +1,3 @@
-<<<<<<< HEAD:pages/server/_.txt
-Auflistung der Hostingmöglichkeiten
-
-Hoster:
-- zwei Freunde haben Hosting für 40€/Monat, da können wir uns mit denen reinteilen, sähe dann ungefähr so aus:
-	15€/Monat
-	nahezu unbegrenzt Speicher
-	keine Gebühren für Traffic
-	u.U. root Rechte, aber auf jeden Fall können wir installieren was wir wollen
-=======
 ANFORDERUNGEN
 oqlt: website, mail forwarding, >=python-2.5
 Abrock:
@@ -18,25 +8,25 @@ Scytale:
 silent_shadow:
 tymm:
 
-ÃœBERSICHT (Anbieter, Konditionen, URL)
+ÜERSICHT (Anbieter, Konditionen, URL)
 Langhofer
 	small
 	Gentoo
 	1GB Speicherplatz
 	25GB Traffic
 	fixe IP
-	6,99â‚¬ zzgl. MwSt. (8,32â‚¬) monatlich
+	6,99¿ zzgl. MwSt. (8,32¿) monatlich
 
 	medium
 	Gentoo
 	2GB Speicherplatz
 	50GB Traffic
 	fixe IP
-	11,99â‚¬ zzgl. MwSt. (14,27â‚¬) monatlich
+	11,99¿ zzgl. MwSt. (14,27¿) monatlich
 
 	Keine Mindestlaufzeit
 	Keine Vertragsbindung
-	Keine EinrichtungsgebÃ¼hr
+	Keine Einrichtungsgebühr
 	http://langhofer.at/hosting/gentoo-vserver.html
 
 Ingate
@@ -46,9 +36,9 @@ Ingate
 	unbegrenzter Traffic
 	192MB RAM garantiert
 	fixe IP
-	6,00â‚¬ monatlich
+	6,00¿ monatlich
 	Keine Mindestlaufzeit
-	Keine EinrichtungsgebÃ¼hr
+	Keine Einrichtungsgebühr
 	http://www.ingate.de/vserver.html
 
 vege.net
@@ -57,9 +47,9 @@ vege.net
 	100GB Traffic
 	512MB RAM zugesichert
 	inkl. 1 IP-Adresse
-	19,99â‚¬ zzgl. MwSt. (23,79â‚¬) monatlich
+	19,99¿ zzgl. MwSt. (23,79¿) monatlich
 	Mindestlaufzeit 3 Monate
-	EinrichtungsgebÃ¼hr 19,99â‚¬ zzgl. MwSt. (23,79â‚¬)
+	EinrichtungsgebÃ¼hr 19,99¿ zzgl. MwSt. (23,79¿)
 	http://vege.net/vserver
 
 smart weblications
@@ -68,9 +58,9 @@ smart weblications
 	40GB Speicherplatz
 	100GB Traffic
 	8GB RAM, 512MB garantiert
-	11,90â‚¬ monatlich
+	11,90¿ monatlich
 	Mindestlaufzeit 3 Monate
-	EinrichtungsgebÃ¼hr 22,90â‚¬
+	Einrichtungsgebühr 22,90¿
 	http://www.smart-weblications.de/vserver/produkte/
 
 
@@ -78,7 +68,7 @@ roottbash
 	Virtueller Server XS
 	1GB Speicherplatz
 	10GB Traffic
-	3,99â‚¬ monatlich (Jahresbetrag im Voraus zu zahlen)
+	3,99¿ monatlich (Jahresbetrag im Voraus zu zahlen)
 	Vertragslaufzeit 12 Monate
 
 winprofi
@@ -86,9 +76,15 @@ winprofi
 	5GB Speicherplatz
 	20GB Traffic
 	1 fixe IP
-	Domains zu 0,99â‚¬ monatlich
-	6â‚¬ monatlich (Quartalsweise im Voraus zu zahlen)
+	Domains zu 0,99¿ monatlich
+	6¿ monatlich (Quartalsweise im Voraus zu zahlen)
 	Mindestlaufzeit 3 Monate
-	EinrichtungsgebÃ¼hr 9,99â‚¬
+	Einrichtungsgebühr 9,99¿
 	http://www.winprofi.de/index_de_41.html
->>>>>>> 32ace0bed9c71132ace3ef9e9a6b02ebbb8e5c8e:pages/server/_.txt
+
+PRIVAT
+	zwei Freunde (von Dreamflasher) haben Hosting für 40¿ Monat, da können wir uns mit denen reinteilen, sähe dann ungefähr so aus:
+	15¿ pro Monat
+	nahezu unbegrenzt Speicher
+	keine Gebühren für Traffic
+	u.U. root Rechte, aber auf jeden Fall können wir installieren was wir wollen
