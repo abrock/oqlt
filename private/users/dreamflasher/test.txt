@@ -1,0 +1,5 @@
+utf8 check:
+ae ä
+oe ö
+euro €
+sz ß
