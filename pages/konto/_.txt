@@ -2,7 +2,9 @@ BEDINGUNGEN
 - kein monatlicher Mindesteingang
 - keine Überweisungsgebühren
 
+
 INSTITUTE (Vor- und Nachteile, URL)
+
 .comdirect
   angemailt wg. Konditionen
   (Überblick unter http://is.gd/ik6D)
@@ -11,3 +13,25 @@ Deutsche Skatbank (VR-Bank Altenburger Land)
   keine monatlichen Gebühren
   keine Überweisungsgebühren
   http://is.gd/ikqk
+
+HypoVereinsbank
+  Fachberater will sich bei mir nochmal melden
+
+Sparkasse
+  offenbar kostenlos, Gespräch mit Fachberater muss noch stattfinden
+
+Postbank
+  Business Giro für gemeinnützige Vereine offenbar kostenlos, möglicherweise 
+  einige Transaktionen (Ein-/Auszahlungen, ab 11. Überweisung im Monat) kostenpflichtig
+
+
+NICHT IN FRAGE KOMMEN:
+
+BBBank
+  offenbar kostenlos, allerdings muss (scheinbar der gesamte) Vorstand BBBank-Kunde sein
+
+Dresdner Bank
+  keine Kontogebühren, aber 20 Cent für Transaktionen (auch online)
+
+VR-Bank Rhein-Neckar
+  3,99 monatlich, Karte 9,90
