@@ -5,17 +5,10 @@ BEDINGUNGEN
 
 INSTITUTE (Vor- und Nachteile, URL)
 
-.comdirect
-  angemailt wg. Konditionen
-  (Überblick unter http://is.gd/ik6D)
-
 Deutsche Skatbank (VR-Bank Altenburger Land)
   keine monatlichen Gebühren
   keine Überweisungsgebühren
   http://is.gd/ikqk
-
-HypoVereinsbank
-  Fachberater will sich bei mir nochmal melden
 
 Sparkasse
   offenbar kostenlos, Gespräch mit Fachberater muss noch stattfinden
@@ -35,3 +28,13 @@ Dresdner Bank
 
 VR-Bank Rhein-Neckar
   3,99 monatlich, Karte 9,90
+
+HypoVereinsbank
+  Rechnet sich für die HVB nicht ausreichend, um uns brauchbare Konditionen 
+  anzubieten.
+
+.comdirect
+  nur für Privatkunden
+
+ING DiBa
+  nur für Privatkunden
