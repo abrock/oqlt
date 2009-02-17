@@ -1,0 +1,7 @@
+Treffen
+Datum: 2009-02-10 18:00 bis 21:45
+Ort: Jugendkulturzentrum FORUM
+Teilnehmer: Abrock, DreamFlasher, Scytale, silent_shadow, Toaster
+Talk: Vim-Grundlagen und -Konzepte, BitlBee, Mutt (Scytale)
+Workshop: ATmega-Basteleien
+Verein: Gründungs-Statusupdate von Scytale
