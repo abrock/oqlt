@@ -2,7 +2,7 @@
 Alex: ja
 Dreamflasher: ?
 Inte: ja
-s0rk: ?
-Scytale: ?
+s0rk: ja
+Scytale: ja
 silent_shadow: ja
 tymm: ja
