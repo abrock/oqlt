@@ -5,4 +5,4 @@ Inte: ja
 s0rk: ?
 Scytale: ?
 silent_shadow: ja
-tymm: ?
+tymm: ja
