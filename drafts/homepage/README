@@ -6,6 +6,8 @@ Dieser Mechanismus ist _nicht_ dafür gedacht, Downloads zur Verfügung zu
 stellen; momentan ist das alles sowieso nur temporär.
 
 Technische Details: Auf chani.scytale.name läuft alle 5 Minuten ein Cronjob, 
-der "git pull" durchführt. Fertig.
+der "git pull" durchführt. oqlt.de hat als DNS-A-Record die IP von chani 
+gesetzt. Der Apache auf chani hat einen vhost oqlt.de, der das gepullte 
+Verzeichnis ausliefert. Fertig.
 
 // vim: set fo+=nat tw=78 et ai: //
