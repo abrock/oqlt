@@ -1,6 +1,6 @@
 ANFORDERUNGEN
 oqlt: website, mail forwarding, >=python-2.5
-Abrock:
+Abrock: PHP and (MySQL or PostgreSQL)
 Dreamflasher:
 Inte: ssh, irc, mumble, vpn
 s0rk:
