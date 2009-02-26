@@ -1,32 +1,32 @@
 ANFORDERUNGEN
 oqlt: website, mail forwarding, >=python-2.5
 Abrock: PHP and (MySQL or PostgreSQL)
-Dreamflasher:
+Dreamflasher: Java
 Inte: ssh, irc, mumble, vpn
 s0rk:
 Scytale:
 silent_shadow:
 tymm:
 
-ÜERSICHT (Anbieter, Konditionen, URL)
+ÃœERSICHT (Anbieter, Konditionen, URL)
 Langhofer
 	small
 	Gentoo
 	1GB Speicherplatz
 	25GB Traffic
 	fixe IP
-	6,99¿ zzgl. MwSt. (8,32¿) monatlich
+	6,99â‚¬ zzgl. MwSt. (8,32â‚¬) monatlich
 
 	medium
 	Gentoo
 	2GB Speicherplatz
 	50GB Traffic
 	fixe IP
-	11,99¿ zzgl. MwSt. (14,27¿) monatlich
+	11,99â‚¬ zzgl. MwSt. (14,27â‚¬) monatlich
 
 	Keine Mindestlaufzeit
 	Keine Vertragsbindung
-	Keine Einrichtungsgebühr
+	Keine EinrichtungsgebÃ¼hr
 	http://langhofer.at/hosting/gentoo-vserver.html
 
 Ingate
@@ -36,9 +36,9 @@ Ingate
 	unbegrenzter Traffic
 	192MB RAM garantiert
 	fixe IP
-	6,00¿ monatlich
+	6,00â‚¬ monatlich
 	Keine Mindestlaufzeit
-	Keine Einrichtungsgebühr
+	Keine EinrichtungsgebÃ¼hr
 	http://www.ingate.de/vserver.html
 
 vege.net
@@ -47,9 +47,9 @@ vege.net
 	100GB Traffic
 	512MB RAM zugesichert
 	inkl. 1 IP-Adresse
-	19,99¿ zzgl. MwSt. (23,79¿) monatlich
+	19,99â‚¬ zzgl. MwSt. (23,79â‚¬) monatlich
 	Mindestlaufzeit 3 Monate
-	EinrichtungsgebÃ¼hr 19,99¿ zzgl. MwSt. (23,79¿)
+	EinrichtungsgebÃ¼hr 19,99â‚¬ zzgl. MwSt. (23,79â‚¬)
 	http://vege.net/vserver
 
 smart weblications
@@ -58,9 +58,9 @@ smart weblications
 	40GB Speicherplatz
 	100GB Traffic
 	8GB RAM, 512MB garantiert
-	11,90¿ monatlich
+	11,90â‚¬ monatlich
 	Mindestlaufzeit 3 Monate
-	Einrichtungsgebühr 22,90¿
+	EinrichtungsgebÃ¼hr 22,90â‚¬
 	http://www.smart-weblications.de/vserver/produkte/
 
 
@@ -68,7 +68,7 @@ roottbash
 	Virtueller Server XS
 	1GB Speicherplatz
 	10GB Traffic
-	3,99¿ monatlich (Jahresbetrag im Voraus zu zahlen)
+	3,99â‚¬ monatlich (Jahresbetrag im Voraus zu zahlen)
 	Vertragslaufzeit 12 Monate
 
 winprofi
@@ -76,15 +76,15 @@ winprofi
 	5GB Speicherplatz
 	20GB Traffic
 	1 fixe IP
-	Domains zu 0,99¿ monatlich
-	6¿ monatlich (Quartalsweise im Voraus zu zahlen)
+	Domains zu 0,99â‚¬ monatlich
+	6â‚¬ monatlich (Quartalsweise im Voraus zu zahlen)
 	Mindestlaufzeit 3 Monate
-	Einrichtungsgebühr 9,99¿
+	EinrichtungsgebÃ¼hr 9,99â‚¬
 	http://www.winprofi.de/index_de_41.html
 
 PRIVAT
-	zwei Freunde (von Dreamflasher) haben Hosting für 40¿ Monat, da können wir uns mit denen reinteilen, sähe dann ungefähr so aus:
-	15¿ pro Monat
+	zwei Freunde (von Dreamflasher) haben Hosting fÃ¼r 40â‚¬ Monat, da kÃ¶nnen wir uns mit denen reinteilen, sÃ¤he dann ungefÃ¤hr so aus:
+	15â‚¬ pro Monat
 	nahezu unbegrenzt Speicher
-	keine Gebühren für Traffic
-	u.U. root Rechte, aber auf jeden Fall können wir installieren was wir wollen
+	keine GebÃ¼hren fÃ¼r Traffic
+	u.U. root Rechte, aber auf jeden Fall kÃ¶nnen wir installieren was wir wollen
