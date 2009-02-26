@@ -8,7 +8,7 @@ Scytale:
 silent_shadow:
 tymm:
 
-ÜERSICHT (Anbieter, Konditionen, URL)
+ÜBERSICHT (Anbieter, Konditionen, URL)
 Langhofer
 	small
 	Gentoo
