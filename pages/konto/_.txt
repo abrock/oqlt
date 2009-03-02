@@ -17,6 +17,12 @@ Postbank
   Business Giro für gemeinnützige Vereine offenbar kostenlos, möglicherweise 
   einige Transaktionen (Ein-/Auszahlungen, ab 11. Überweisung im Monat) kostenpflichtig
 
+GLS Bank
+  Keine Überweisungsgebühren
+  HBCI-Unterstützung
+  monatlich 2€
+  http://www.gls.de/unsere-angebote/girokonto/ggeschaeftskonto/unterlagen-gemeinnuetziger-verein.html
+  http://www.gls.de/fileadmin/media/aktuelle_Konditionen/konditionen.pdf
 
 NICHT IN FRAGE KOMMEN:
 
