@@ -1,0 +1,39 @@
+body {
+	text-align:center;
+	margin:20px 0px 20px 0px;
+	font-family:Verdana,sans-serif;
+	background-image:url(oqlt-logo-watermark.png);
+	background-repeat:no-repeat;
+	background-position:center;
+	background-attachment:fixed
+}
+.box_main {
+	position:relative;
+	text-align:left;
+	width:750px;
+	margin:0 auto;
+} 
+.box_side {
+	position:relative;
+	float:right;
+	width:333px;
+	margin: 0px 0px 15px 15px;
+}
+.box_info {
+	border:1px dashed black;
+	padding:0px 15px 0px 15px;
+	margin:15px 0px 0px 0px;
+}
+#box_popup a.popup { text-decoration:none; }
+#box_popup a:hover { text-decoration:none; color:black; }
+#box_popup a.popup span { display:none; }
+#box_popup a:hover span {
+	position:absolute; top:0px; left:0px; z-index:3;
+	display:block;
+	width:301px;
+	height:301px;
+	background:#ffffff;
+	border:1px solid black;
+	padding:15px;
+}
+.note { font-size:smaller; }
