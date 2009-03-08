@@ -7,6 +7,7 @@ net-im/mcabber
 net-irc/irssi
 
 DIENSTE
+dev-util/git
 net-ftp/vsftpd
 net-misc/openvpn
 net-p2p/transmission
