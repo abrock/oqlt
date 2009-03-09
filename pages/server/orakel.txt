@@ -1,17 +1,32 @@
+TODO
+mrtg einrichten (http://forums.gentoo.org/viewtopic-t-105862.html)
+ - cpu
+ - mem
+ - swap
+ - load
+ - traffic
+ - lm_sensors (fan, temp) http://takasato.net/pc/lm_sensors/index-en.html
+ - disk I/O
+
 PROGRAMME
-app-editors/vim
 app-misc/mc
 app-misc/screen
 mail-client/mutt
 net-im/mcabber
 net-irc/irssi
+net-news/newsbeuter
+www-client/links
 
 DIENSTE
 dev-util/git
+net-analyzer/mrtg
 net-ftp/vsftpd
 net-misc/openvpn
 net-p2p/transmission
 www-servers/lighttpd
+
+CRYPTO
+sys-fs/encfs
 
 HARDWARE
 
