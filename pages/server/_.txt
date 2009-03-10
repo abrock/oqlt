@@ -82,6 +82,17 @@ winprofi
 	Einrichtungsgebühr 9,99€
 	http://www.winprofi.de/index_de_41.html
 
+GreatNet
+	VServer Entry
+	10GB Speicherplatz
+	150GB Traffic
+	384 MB RAM
+	1 Domain
+	6€ monatlich
+	Debian, Gentoo, Fedora, Ubuntu, Suse, Slackware
+	VPN
+	http://www.greatnet.de/cms/front_content.php?client=1&lang=1&idcat=5&idart=12
+
 PRIVAT
 	zwei Freunde (von Dreamflasher) haben Hosting für 40€ Monat, da können wir uns mit denen reinteilen, sähe dann ungefähr so aus:
 	15€ pro Monat
