@@ -8,6 +8,7 @@ app-misc/screen
 dev-util/tig
 mail-client/mutt
 net-im/mcabber
+net-irc/bip
 net-irc/irssi
 net-news/newsbeuter
 www-client/links
