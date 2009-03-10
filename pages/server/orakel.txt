@@ -1,6 +1,7 @@
 TODO
 cacti einrichten
  - disk I/O
+ - cpu frequency (speedstep)
 
 PROGRAMME
 app-misc/mc
@@ -26,7 +27,7 @@ sys-fs/encfs
 
 HARDWARE
 RAM: 512MB
-Mainboard: Gigabyte
+Mainboard: AOpen i855GMEm-LFS
 Laufwerke:
  - 1x 500GB S-ATA
  - 3x 500GB S-ATA
