@@ -1,16 +1,11 @@
 TODO
-mrtg einrichten (http://forums.gentoo.org/viewtopic-t-105862.html)
- - cpu
- - mem
- - swap
- - load
- - traffic
- - lm_sensors (fan, temp) http://takasato.net/pc/lm_sensors/index-en.html
+cacti einrichten
  - disk I/O
 
 PROGRAMME
 app-misc/mc
 app-misc/screen
+dev-util/tig
 mail-client/mutt
 net-im/mcabber
 net-irc/irssi
@@ -19,7 +14,7 @@ www-client/links
 
 DIENSTE
 dev-util/git
-net-analyzer/mrtg
+net-analyzer/cacti
 net-ftp/vsftpd
 net-misc/openvpn
 net-p2p/transmission
@@ -29,6 +24,15 @@ CRYPTO
 sys-fs/encfs
 
 HARDWARE
+RAM: 512MB
+Mainboard: Gigabyte
+Laufwerke:
+ - 1x 500GB S-ATA
+ - 3x 500GB S-ATA
+ - DVD-Brenner S-ATA
+Steckkarten:
+ - 3Ware 9500S-12
+
 
 $ cat /proc/cpuinfo 
 processor       : 0
