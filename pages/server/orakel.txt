@@ -1,7 +1,15 @@
 BENUTZERKODEX
-Die Ports 49152 bis 65535 werden nicht gefiltert. Dauerhaft genutzte Ports sind hier einzutragen.
+Die Ports 49152 bis 65535 können beliebig belegt werden. Dauerhaft genutzte Ports sind hier einzutragen:
 port :: service :: user
 56667 bip Inte
+
+PORT-FORWARDING
+20 ftp
+21 ftp
+22 ssh
+80 http
+1024 2048 ftp (passive mode)
+49152 65534 private ports
 
 TODO
 cacti einrichten
