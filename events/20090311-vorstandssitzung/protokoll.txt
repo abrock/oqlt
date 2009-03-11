@@ -1,0 +1,37 @@
+Vorstandssitzung des oqlt e.V. i.Gr. am 11. März 2009
+
+Anwesend:
+- Ackermann, Marcel
+- Kral, Tobias
+- Weber, Tim
+
+Beginn: 19:30 Uhr
+
+Ende: 21:20 Uhr
+
+Tagesordnung:
+1. Vereinseintragung
+2. Girokonto
+3. Server
+4. Projekte
+5. Anschrift
+
+1. Vereinseintragung
+Antrag liegt dem Sachbearbeiter des Vereinsregisters vor. Mit dem Bescheid ist vorausichtlich bis Ende April zu rechnen. Tim Weber hat am 27. Februar dem Amtsgericht die Bescheinigung des Finanzamts zur voraussichtlichen Anerkennung der Gemeinnützigkeit zugefaxt. Das Notariat hatte die beigelegte Kopie zur eigenen Abrechnung einbehalten.
+
+2. Girokonto
+Vertragsabschluß erst nach Erhalt des Auszugs aus dem Vereinsregister.
+
+3. Server
+Hardware steht fertig konfiguriert bei Tobias Kral. Details sind unter /pages/server/orakel.txt zu finden. Die Erreichbarkeit soll zukünftig durch eine öffentliche IP eines OpenVPN-Providers gewährleistet werden.
+
+4. Projekte
+4.1. Privates git repository einrichten
+4.2. CFD :: Ablaufplan erstellen
+4.3. Ticketsystem :: Anforderungen definieren
+4.4. Flyer :: zwei Versionen (Selbstdruck- & Auftragsversion)
+
+5. Anschrift
+Nach Abwägen der Gründe für und gegen ein Postfach oder das Forum als c/o zu verwenden, wurde einstimmig beschlossen ein Postfach einzurichten. Tim Weber erkundigt sich über die Möglichkeit, vor der Bestätigung durch das Amtsgericht die Einrichtung vorzunehmen.
+
+Die Sitzung wurde um 21:20 Uhr beendet.
