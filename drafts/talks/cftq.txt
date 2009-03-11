@@ -1,0 +1,14 @@
+Completely Fair Talk Queuing
+
+IDEE
+
+Queue aller Mitglieder um den Moderator/Referenten des nächsten Talks anzukündigen.
+1. Keine Kalendereinträge notwendig
+2. Referent ist der nächste Eintrag der Queue
+3. Jeder wird motiviert ein Thema bereit zu halten
+4. Bei Abwesenheit oder Unlust wird der nächste Eintrag der Queue verarbeitet
+5. Übereifrige werden gebremst, Schüchterne werden angeschupst
+
+Ziel sind Talks von 15min bis 30min Dauer. Dabei sollen Konzepte, Ideen, getestete Hard- & Software oder Themen des Tagesgeschehens vorgestellt werden.
+
+REALISIERUNG
