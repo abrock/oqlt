@@ -18,6 +18,7 @@ net-irc/bip
 net-irc/irssi
 net-news/newsbeuter
 www-client/links
+x11-misc/remind
 
 DIENSTE
 dev-util/git
