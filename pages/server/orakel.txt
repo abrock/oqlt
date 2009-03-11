@@ -1,3 +1,8 @@
+BENUTZERKODEX
+Die Ports 49152 bis 65535 werden nicht gefiltert. Dauerhaft genutzte Ports sind hier einzutragen.
+port :: service :: user
+56667 bip Inte
+
 TODO
 cacti einrichten
  - disk I/O
