@@ -11,6 +11,7 @@ cacti einrichten
 PROGRAMME
 app-misc/mc
 app-misc/screen
+app-misc/wyrd
 dev-util/tig
 mail-client/mutt
 net-im/mcabber
