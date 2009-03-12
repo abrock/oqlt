@@ -24,6 +24,7 @@ irssi
 
 SETUP (IRSSI)
 # Intes Beispielkonfiguration findet Ihr unter /pages/bip/irssi.conf
+chmod 600 ~/.irssi/config
 
 SETUP (XCHAT)
 Netzwerk hinzufügen und z.B. "bip@orakel" nennen.
