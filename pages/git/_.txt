@@ -81,6 +81,9 @@ mehrere eingetragen hat, ist es offenbar die erste.
 Hier einige Links mit guter Dokumentation. Die ganze Liste kann man natürlich 
 noch aufhübschen, aber das hat erst mal geringe Priorität.
 
+- Git Community Book
+  http://book.git-scm.com/
+
 - Git Manual (die offizielle Anleitung)
   http://www.kernel.org/pub/software/scm/git/docs/user-manual.html
 
