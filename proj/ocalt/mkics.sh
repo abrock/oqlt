@@ -1,3 +1,3 @@
 #!/bin/sh
 # To be run in oqlt's git root.
-remind -s36 events 1 Jan 2008 | HOSTNAME=oqlt.de events/rem2ics -do -norecur > drafts/homepage/oqlt.ics
+remind -r -s36 proj/ocalt 1 Jan 2008 | HOSTNAME=oqlt.de proj/ocalt/rem2ics -do -norecur > drafts/homepage/oqlt.ics
