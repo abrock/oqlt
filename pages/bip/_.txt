@@ -32,5 +32,5 @@ Netzwerk editieren
 	Server: kral.dyndns.ws/${PORT}
 	SSL für alle Server dieses Netzes benutzen
 	Ungültiges SSL-Zertifikat akzeptieren
-	Verbindungskommando: /QUOTE PASS your_username:your_password:your_connection_name
+	Serverpasswort: your_username:your_password:your_connection_name
 	Zeichensatz: UTF-8
