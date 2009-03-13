@@ -1,0 +1,34 @@
+SERVER-SETUP
+
+1. GRUNDEINSTELLUNGEN
+
+$ cat /etc/conf.d/git-daemon
+GITDAEMON_OPTS="--syslog --export-all --base-path=/mnt/unit0/git /mnt/unit0/git"
+GIT_USER="git"
+GIT_GROUP="git"
+
+$ mkdir /mnt/unit0/git
+$ chown git:git /mnt/unit0/git
+$ useradd -d /mnt/unit0/git git
+$ /etc/init.d/git-daemon start
+$ rc-update add git-daemon default
+
+2. REPOS EINRICHTEN (1x intern & 1x public)
+
+$ su - git
+	$ mkdir /mnt/unit0/git/oqlt_intern
+	$ chmod 770 /mnt/unit0/git/oqlt_intern
+	$ cd /mnt/unit0/git/oqlt_intern
+	$ git init
+	$ mkdir /mnt/unit0/git/oqlt
+	$ chmod 775 /mnt/unit0/git/oqlt
+	$ cd /mnt/unit0/git/oqlt
+	$ git init
+
+CLIENT-SETUP
+
+1. GRUNDEINSTELLUNGEN
+
+2. REPO KLONEN
+
+3. WORKFLOW
