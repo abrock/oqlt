@@ -10,6 +10,7 @@ PORT-FORWARDING
 22 ssh
 80 http
 1024 2048 ftp (passive mode)
+9418 git
 49152 65534 private ports
 
 TODO
