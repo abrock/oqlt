@@ -14,6 +14,7 @@ PORT-FORWARDING
 49152 65534 private ports
 
 TODO
+Guide für EncFS-Verschlüsselung in /home/${USER}
 cacti einrichten
  - disk I/O
  - cpu frequency (speedstep)
