@@ -28,6 +28,7 @@ mail-client/mutt
 net-im/mcabber
 net-irc/bip
 net-irc/irssi
+  Support für http://twirssi.com/ (Perl Modul "Net::Twitter")
 net-news/newsbeuter
 www-client/links
 x11-misc/remind
@@ -42,6 +43,10 @@ www-servers/lighttpd
 
 CRYPTO
 sys-fs/encfs
+
+PERL
+Perl Module werden mit app-portage/g-cpan installiert (http://www.gentoo.org/proj/en/perl/g-cpan.xml). Installiert sind:
+Net::Twitter
 
 HARDWARE
 RAM: 512MB
