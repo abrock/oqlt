@@ -8,4 +8,10 @@ $ wget http://twirssi.com/twirssi.pl
 $ echo "script load twirssi.pl" >> .irssi/startup
 
 KOMMANDOS
+
+1. GRUNDLAGEN
+Anmelden :: /twitter_login <username> <password>
+Twittern :: /tweet <status>
+
+2. MEHR
 http://twirssi.com/?using
