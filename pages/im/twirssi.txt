@@ -1,0 +1,11 @@
+TWIRSSI
+a twitter script for irssi
+
+SETUP
+$ mkdir ~/.irssi/scripts
+$ cd ~/.irssi/scripts
+$ wget http://twirssi.com/twirssi.pl
+$ echo "script load twirssi.pl" >> .irssi/startup
+
+KOMMANDOS
+http://twirssi.com/?using
