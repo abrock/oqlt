@@ -6,6 +6,7 @@ $ mkdir ~/.irssi/scripts
 $ cd ~/.irssi/scripts
 $ wget http://twirssi.com/twirssi.pl
 $ echo "script load twirssi.pl" >> .irssi/startup
+$ chmod 600 ~/.irssi/config
 
 KOMMANDOS
 
@@ -14,4 +15,7 @@ Anmelden :: /twitter_login <username> <password>
 Twittern :: /tweet <status>
 
 2. MEHR
+Autologin - Benutzer :: /set twitter_usernames <benutzer1>,<benutzer2>
+Autologin - Passwörter :: /set twitter_passwords <passwort1>,<passwort2>
+
 http://twirssi.com/?using
