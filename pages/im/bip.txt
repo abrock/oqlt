@@ -1,4 +1,4 @@
-bip - Multiuser IRC proxy with SSL support
+bip :: Multiuser IRC proxy with SSL support
 URL: http://bip.t1r.net/
 
 SETUP (BIP)
