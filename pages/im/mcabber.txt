@@ -7,7 +7,7 @@ mkdir ~/.mcabber
 chmod 700 ~/.mcabber
 bzcat /usr/share/doc/mcabber-0.9.9/mcabberrc.example.bz2 > ~/.mcabber/mcabberrc
 chmod 600 ~/.mcabber/mcabberrc
-mkdir ~/.mcabber/logs
+mkdir ~/.mcabber/histo
 mkdir ~/.mcabber/otr
 
 ERSTE BEFEHLE
