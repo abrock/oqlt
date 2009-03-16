@@ -1,0 +1,55 @@
+Gentoo Installation
+
+2008-01-13
+
+Booten von LiveUSB
+ - http://www.gentoo.org/doc/en/liveusb.xml
+
+$ mount /dev/hdb1 /mnt/gentoo
+
+http://www.funtoo.org/linux/x86/funtoo-x86-2009.01.11/stage1-x86-2009.01.11.tar.bz2
+$ tar xvjpf stage1-*.tar.bz2
+
+portage-latest.tar.bz2
+portage-latest.tar.bz2.md5sum
+$ md5sum -c portage-latest.tar.bz2.md5sum
+$ tar xvjf portage-latest.tar.bz2 -C /mnt/gentoo/usr
+
+$ mount -t proc none /mnt/gentoo/proc
+$ mount -o bind /dev /mnt/gentoo/dev
+$ cp /etc/resolv.conf /mnt/gentoo/etc/
+
+$ chroot /mnt/gentoo /bin/bash
+$ env-update
+$ source /etc/profile
+$ export PS1="(chroot) $PS1"
+
+# /etc/make.conf
+CFLAGS="-Os -march=k6-2 -pipe -fomit-frame-pointer"
+CXXFLAGS="${CFLAGS}"
+CHOST="i586-pc-linux-gnu"
+
+$ emerge --sync
+
+$ /usr/portage/scripts/bootstrap.sh -f
+
+# /etc/locale.gen
+de_DE.UTF-8 UTF-8
+en_EN.UTF-8 UTF-8
+
+$ /usr/portage/scripts/bootstrap.sh
+
+# /etc/portage/package.keywords
+=sys-devel/gcc-4.3.1
+
+$ emerge -1u gcc
+$ gcc-config i586-pc-linux-gnu-4.3.1
+
+# /etc/make.conf
+CFLAGS="-Os -march=geode -pipe -fomit-frame-pointer"
+
+# /etc/portage/package.keywords
+=sys-apps/baselayout-2.0.0
+=sys-apps/openrc-0.4.1-r1
+
+$ emerge -e world
