@@ -1,5 +1,5 @@
-TWIRSSI
-a twitter script for irssi
+TWIRSSI :: a twitter script for irssi
+URL: http://twirssi.com/
 
 SETUP
 $ mkdir ~/.irssi/scripts
