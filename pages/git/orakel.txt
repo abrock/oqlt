@@ -13,36 +13,61 @@ $ useradd -d /mnt/unit0/git git
 $ /etc/init.d/git-daemon start
 $ rc-update add git-daemon default
 
-2. REPOS EINRICHTEN (1x intern & 1x public)
+2. REPO EINRICHTEN
 
 $ su - git
-	$ mkdir /mnt/unit0/git/oqlt_intern.git
-	$ chmod 770 /mnt/unit0/git/oqlt_intern.git
-	$ cd /mnt/unit0/git/oqlt_intern.git
-	$ git init
-	$ mkdir /mnt/unit0/git/oqlt.git
-	$ chmod 775 /mnt/unit0/git/oqlt.git
-	$ cd /mnt/unit0/git/oqlt.git
-	$ touch .git/git-daemon-export-ok
-	$ git init
+
+	a) PUBLIC
+
+	$ cd /mnt/unit0/git
+	$ GIT_DIR="test.git" git --bare init --shared=group
+	$ touch test.git/git-daemon-export-ok
+
+	b) PRIVATE
+
+	$ cd /mnt/unit0/git
+	$ GIT_DIR="test.git" git --bare init --shared=group
+
+3. REPO INITIAL BEFÜLLEN (VOM CLIENT AUS)
+
+$ mkdir test
+$ cd test
+$ git init
+$ touch README
+$ git add .
+$ git commit -m "README angelegt"
+$ git push user@kral.dyndns.ws:/mnt/unit0/git/test.git --all
 
 CLIENT-SETUP
 
 1. REPO KLONEN
 
-$ git clone git://kral.dyndns.ws/oqlt.git
-$ cd oqlt
+	a) PUBLIC
+
+	$ git clone git://kral.dyndns.ws/test.git
+
+	b) PRIVATE
+
+	$ git clone user@kral.dyndns.ws:/mnt/unit0/git/test.git
+
+$ cd test
 
 2. GRUNDEINSTELLUNGEN
 
-$ git config user.name "${BENUTZERNAME}"
+$ git config user.name "user"
 $ git config user.email "user@example.com"
 
 3. WORKFLOW
 
 3.1. Auffrischen
 
-$ git pull
+	a) PUBLIC
+
+	$ git pull
+
+	b) PRIVATE
+
+	$ git pull user@kral.dyndns.ws:/mnt/unit0/git/test.git
 
 3.2. Manipulieren
 
@@ -62,8 +87,8 @@ $ git pull
 
 3.3. Kommentieren
 
-$ git commit -a -m "${KOMMENTAR}"
+$ git commit -a -m "Kommentar"
 
 3.4. Aktualisieren
 
-$ git push
+$ git push user@kral.dyndns.ws:/mnt/unit0/git/test.git
