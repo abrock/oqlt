@@ -31,12 +31,39 @@ CLIENT-SETUP
 1. REPO KLONEN
 
 $ git clone git://kral.dyndns.ws/oqlt.git
+$ cd oqlt
 
 2. GRUNDEINSTELLUNGEN
 
+$ git config user.name "${BENUTZERNAME}"
+$ git config user.email "user@example.com"
 
 3. WORKFLOW
 
-Push
+3.1. Auffrischen
 
+$ git pull
 
+3.2. Manipulieren
+
+	a) Datei editieren
+
+	b) Datei hinzufügen
+
+	$ git add
+
+	c) Datei/Verzeichnis verschieben/umbenennen
+
+	$ git mv
+
+	d) Datei/Verzeichnis entfernen
+
+	$ git rm
+
+3.3. Kommentieren
+
+$ git commit -a -m "${KOMMENTAR}"
+
+3.4. Aktualisieren
+
+$ git push
