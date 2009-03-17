@@ -23,6 +23,7 @@ $ su - git
 	$ mkdir /mnt/unit0/git/oqlt
 	$ chmod 775 /mnt/unit0/git/oqlt
 	$ cd /mnt/unit0/git/oqlt
+	$ touch git-daemon-export-ok
 	$ git init
 
 CLIENT-SETUP
