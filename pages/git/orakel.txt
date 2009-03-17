@@ -3,7 +3,7 @@ SERVER-SETUP
 1. GRUNDEINSTELLUNGEN
 
 $ cat /etc/conf.d/git-daemon
-GITDAEMON_OPTS="--syslog --export-all --base-path=/mnt/unit0/git /mnt/unit0/git"
+GITDAEMON_OPTS="--syslog --base-path=/mnt/unit0/git /mnt/unit0/git"
 GIT_USER="git"
 GIT_GROUP="git"
 
