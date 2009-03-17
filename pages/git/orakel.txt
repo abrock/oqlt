@@ -27,8 +27,15 @@ $ su - git
 
 CLIENT-SETUP
 
-1. GRUNDEINSTELLUNGEN
+1. REPO KLONEN
 
-2. REPO KLONEN
+$ git clone git://kral.dyndns.ws/oqlt_intern
+
+2. GRUNDEINSTELLUNGEN
+
 
 3. WORKFLOW
+
+Push
+
+
