@@ -1,0 +1,13 @@
+GNU SCREEN - a full-screen terminal window manager
+URL: http://www.gnu.org/software/screen/
+
+$ screen -s ${SESSION}
+
+$ screen -r ${SESSION}
+
+C-a c	create new window
+C-a n	next window
+C-a p	previous window
+C-a S	split (horizontal)
+C-a |	split (vertical)
+C-a tab	focus next area
