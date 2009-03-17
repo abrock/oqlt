@@ -1,6 +1,7 @@
 BENUTZERKODEX
 Die Ports 49152 bis 65535 können beliebig belegt werden. Dauerhaft genutzte Ports sind hier einzutragen:
 port :: service :: user
+49423 bip abrock
 51413 transmission transmission
 56667 bip inte
 
