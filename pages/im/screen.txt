@@ -1,13 +1,26 @@
 GNU SCREEN - a full-screen terminal window manager
 URL: http://www.gnu.org/software/screen/
 
-$ screen -s ${SESSION}
+1. OPTIONEN
 
+$ screen -S ${SESSION}
 $ screen -r ${SESSION}
 
-C-a c	create new window
-C-a n	next window
-C-a p	previous window
-C-a S	split (horizontal)
-C-a |	split (vertical)
-C-a tab	focus next area
+2. HOTKEYS
+
+C-a c	Neues Fenster
+C-a n	Nächstes Fenster
+C-a p	Vorheriges Fenster
+C-a S	Horizontal teilen
+C-a |	Vertikal teilen
+C-a tab	Fokus auf nächsten Bereich
+C-a :	Kommando
+
+3. KOMMANDOS
+
+layout save ${NAME}	Layout sichern
+layout autosave on/off	Layout beim Verlassen automatisch sichern
+layout name "${NAME}"	Layout umbenennen
+layout next
+layout prev
+layout load "${NAME}"
