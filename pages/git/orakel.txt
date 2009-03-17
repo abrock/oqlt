@@ -16,21 +16,21 @@ $ rc-update add git-daemon default
 2. REPOS EINRICHTEN (1x intern & 1x public)
 
 $ su - git
-	$ mkdir /mnt/unit0/git/oqlt_intern
-	$ chmod 770 /mnt/unit0/git/oqlt_intern
-	$ cd /mnt/unit0/git/oqlt_intern
+	$ mkdir /mnt/unit0/git/oqlt_intern.git
+	$ chmod 770 /mnt/unit0/git/oqlt_intern.git
+	$ cd /mnt/unit0/git/oqlt_intern.git
 	$ git init
-	$ mkdir /mnt/unit0/git/oqlt
-	$ chmod 775 /mnt/unit0/git/oqlt
-	$ cd /mnt/unit0/git/oqlt
-	$ touch git-daemon-export-ok
+	$ mkdir /mnt/unit0/git/oqlt.git
+	$ chmod 775 /mnt/unit0/git/oqlt.git
+	$ cd /mnt/unit0/git/oqlt.git
+	$ touch .git/git-daemon-export-ok
 	$ git init
 
 CLIENT-SETUP
 
 1. REPO KLONEN
 
-$ git clone git://kral.dyndns.ws/oqlt_intern
+$ git clone git://kral.dyndns.ws/oqlt.git
 
 2. GRUNDEINSTELLUNGEN
 
