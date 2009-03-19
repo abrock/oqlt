@@ -1,13 +1,14 @@
-bip - Multiuser IRC proxy with SSL support
+bip :: Multiuser IRC proxy with SSL support
 URL: http://bip.t1r.net/
 
 SETUP (BIP)
-mkdir ~/.bip
-mkdir ~/.bip/logs
-bzcat /usr/share/doc/bip-0.8.0_rc1/bip.conf.sample.bz2 > ~/.bip/bip.conf
-chmod 600 ~/.bip/bip.conf
+$ mkdir ~/.bip
+$ mkdir ~/.bip/logs
+$ bzcat /usr/share/doc/bip-0.8.0_rc1/bip.conf.sample.bz2 > ~/.bip/bip.conf
+$ chmod 600 ~/.bip/bip.conf
+
 # Passwort generieren und in ~/bip/bip.conf unter "password = " eintragen
-bipmkpw
+$ bipmkpw
 
 # Intes Beispielkonfiguration findet Ihr unter /pages/bip/bip.conf
 
@@ -16,6 +17,14 @@ openssl req -new -x509 -days 365 -nodes -out bip.pem -keyout ~/.bip/bip.pem
 # Passwort entfernen
 openssl x509 -subject -dates -fingerprint -noout -in ~/.bip/bip.pem
 chmod 440 ~/.bip/bip.conf
+
+# Screen-Session starten
+$ screen -S bip
+
+# bip im debug-Modus starten
+$ bip -n
+
+# Screen-Session deattachen (C-d)
 
 TESTVERBINDUNG (IRSSI)
 irssi
