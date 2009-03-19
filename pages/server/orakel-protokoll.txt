@@ -1,4 +1,4 @@
-20090319-1257 Raid device error
+20090319-1257 Raid device error (fixed)
 $ tw_cli show c0
 Unit  UnitType  Status         %RCmpl  %V/I/M  Stripe  Size(GB)  Cache  AVrfy
 ------------------------------------------------------------------------------
