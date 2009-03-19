@@ -50,3 +50,313 @@ $ lspci
 02:03.0 FireWire (IEEE 1394): Agere Systems FW323 (rev 61)
 02:06.0 RAID bus controller: 3ware Inc 9xxx-series SATA-RAID
 
+$ dmesg
+6 (order: 6, 262144 bytes)
+Memory: 905108k/917504k available (2482k kernel code, 11756k reserved, 939k data, 176k init, 0k highmem)
+virtual kernel memory layout:
+    fixmap  : 0xfffb9000 - 0xfffff000   ( 280 kB)
+    vmalloc : 0xf8800000 - 0xfffb7000   ( 119 MB)
+    lowmem  : 0xc0000000 - 0xf8000000   ( 896 MB)
+      .init : 0xc045a000 - 0xc0486000   ( 176 kB)
+      .data : 0xc036c801 - 0xc04577b0   ( 939 kB)
+      .text : 0xc0100000 - 0xc036c801   (2482 kB)
+Checking if this processor honours the WP bit even in supervisor mode...Ok.
+CPA: page pool initialized 1 of 1 pages preallocated
+Calibrating delay loop (skipped), value calculated using timer frequency.. 2800.09 BogoMIPS (lpj=5600188)
+Mount-cache hash table entries: 512
+CPU: L1 I cache: 32K, L1 D cache: 32K
+CPU: L2 cache: 1024K
+Intel machine check architecture supported.
+Intel machine check reporting enabled on CPU#0.
+CPU: Intel(R) Pentium(R) M processor 1400MHz stepping 05
+Checking 'hlt' instruction... OK.
+Freeing SMP alternatives: 0k freed
+ACPI: Core revision 20080609
+ENABLING IO-APIC IRQs
+..TIMER: vector=0x31 apic1=0 pin1=2 apic2=-1 pin2=-1
+net_namespace: 288 bytes
+NET: Registered protocol family 16
+No dock devices found.
+ACPI: bus type pci registered
+PCI: PCI BIOS revision 2.10 entry at 0xfb3b0, last bus=2
+PCI: Using configuration type 1 for base access
+ACPI: EC: Look up EC in DSDT
+ACPI: Interpreter enabled
+ACPI: (supports S0 S5)
+ACPI: Using IOAPIC for interrupt routing
+ACPI: PCI Root Bridge [PCI0] (0000:00)
+PCI: 0000:00:00.0 reg 10 32bit mmio: [d8000000, dfffffff]
+PCI: 0000:00:02.0 reg 10 32bit mmio: [e0000000, e7ffffff]
+PCI: 0000:00:02.0 reg 14 32bit mmio: [e9000000, e907ffff]
+PCI: 0000:00:02.0 reg 18 io port: [e300, e307]
+pci 0000:00:02.0: supports D1
+PCI: 0000:00:02.1 reg 10 32bit mmio: [0, 7ffffff]
+PCI: 0000:00:02.1 reg 14 32bit mmio: [0, 7ffff]
+pci 0000:00:02.1: supports D1
+PCI: 0000:00:1d.0 reg 20 io port: [e000, e01f]
+PCI: 0000:00:1d.1 reg 20 io port: [e100, e11f]
+PCI: 0000:00:1d.2 reg 20 io port: [e200, e21f]
+PCI: 0000:00:1d.7 reg 10 32bit mmio: [e9080000, e90803ff]
+pci 0000:00:1d.7: PME# supported from D0 D3hot D3cold
+pci 0000:00:1d.7: PME# disabled
+pci 0000:00:1f.0: quirk: region 4000-407f claimed by ICH4 ACPI/GPIO/TCO
+pci 0000:00:1f.0: quirk: region 4080-40bf claimed by ICH4 GPIO
+PCI: 0000:00:1f.3 reg 20 io port: [5000, 501f]
+PCI: 0000:00:1f.5 reg 10 io port: [e500, e5ff]
+PCI: 0000:00:1f.5 reg 14 io port: [e600, e63f]
+PCI: 0000:00:1f.5 reg 18 32bit mmio: [e9081000, e90811ff]
+PCI: 0000:00:1f.5 reg 1c 32bit mmio: [e9082000, e90820ff]
+pci 0000:00:1f.5: PME# supported from D0 D3hot D3cold
+pci 0000:00:1f.5: PME# disabled
+PCI: 0000:02:00.0 reg 10 32bit mmio: [e8844000, e8847fff]
+PCI: 0000:02:00.0 reg 14 io port: [d000, d0ff]
+PCI: 0000:02:00.0 reg 30 32bit mmio: [0, 1ffff]
+pci 0000:02:00.0: supports D1
+pci 0000:02:00.0: supports D2
+pci 0000:02:00.0: PME# supported from D0 D1 D2 D3hot D3cold
+pci 0000:02:00.0: PME# disabled
+PCI: 0000:02:01.0 reg 10 32bit mmio: [e8840000, e8843fff]
+PCI: 0000:02:01.0 reg 14 io port: [d100, d1ff]
+PCI: 0000:02:01.0 reg 30 32bit mmio: [0, 1ffff]
+pci 0000:02:01.0: supports D1
+pci 0000:02:01.0: supports D2
+pci 0000:02:01.0: PME# supported from D0 D1 D2 D3hot D3cold
+pci 0000:02:01.0: PME# disabled
+PCI: 0000:02:02.0 reg 10 io port: [d200, d27f]
+PCI: 0000:02:02.0 reg 18 io port: [d300, d3ff]
+PCI: 0000:02:02.0 reg 1c 32bit mmio: [e8849000, e8849fff]
+PCI: 0000:02:02.0 reg 20 32bit mmio: [e8800000, e881ffff]
+pci 0000:02:02.0: supports D1
+PCI: 0000:02:03.0 reg 10 32bit mmio: [e884a000, e884afff]
+pci 0000:02:03.0: supports D1
+pci 0000:02:03.0: supports D2
+pci 0000:02:03.0: PME# supported from D0 D1 D2 D3hot
+pci 0000:02:03.0: PME# disabled
+PCI: 0000:02:06.0 reg 10 io port: [d400, d4ff]
+PCI: 0000:02:06.0 reg 14 64bit mmio: [e8848000, e88480ff]
+PCI: 0000:02:06.0 reg 1c 64bit mmio: [e8000000, e87fffff]
+PCI: 0000:02:06.0 reg 30 32bit mmio: [0, ffff]
+pci 0000:02:06.0: supports D1
+pci 0000:02:06.0: supports D2
+pci 0000:02:06.0: PME# supported from D0 D1 D2 D3hot
+pci 0000:02:06.0: PME# disabled
+pci 0000:00:1e.0: transparent bridge
+PCI: bridge 0000:00:1e.0 io port: [d000, dfff]
+PCI: bridge 0000:00:1e.0 32bit mmio: [e8000000, e8ffffff]
+bus 00 -> node 0
+ACPI: PCI Interrupt Routing Table [\_SB_.PCI0._PRT]
+ACPI: PCI Interrupt Routing Table [\_SB_.PCI0.HUB0._PRT]
+ACPI: PCI Interrupt Link [LNKA] (IRQs 3 4 5 7 9 10 11 12 *14 15)
+ACPI: PCI Interrupt Link [LNKB] (IRQs 3 4 *5 7 9 10 11 12 14 15)
+ACPI: PCI Interrupt Link [LNKC] (IRQs 3 4 5 7 9 10 *11 12 14 15)
+ACPI: PCI Interrupt Link [LNKD] (IRQs *3 4 5 7 9 10 11 12 14 15)
+ACPI: PCI Interrupt Link [LNKE] (IRQs 3 4 5 7 9 10 11 *12 14 15)
+ACPI: PCI Interrupt Link [LNKF] (IRQs 3 4 5 7 9 *10 11 12 14 15)
+ACPI: PCI Interrupt Link [LNK0] (IRQs 3 4 5 7 9 10 11 12 14 *15)
+ACPI: PCI Interrupt Link [LNK1] (IRQs 3 4 5 *7 9 10 11 12 14 15)
+Linux Plug and Play Support v0.97 (c) Adam Belay
+pnp: PnP ACPI init
+ACPI: bus type pnp registered
+pnp 00:09: mem resource (0xdc800-0xdffff) overlaps 0000:00:02.1 BAR 0 (0x0-0x7ffffff), disabling
+pnp 00:09: mem resource (0xf0000-0xf7fff) overlaps 0000:00:02.1 BAR 0 (0x0-0x7ffffff), disabling
+pnp 00:09: mem resource (0xf8000-0xfbfff) overlaps 0000:00:02.1 BAR 0 (0x0-0x7ffffff), disabling
+pnp 00:09: mem resource (0xfc000-0xfffff) overlaps 0000:00:02.1 BAR 0 (0x0-0x7ffffff), disabling
+pnp 00:09: mem resource (0x0-0x9ffff) overlaps 0000:00:02.1 BAR 0 (0x0-0x7ffffff), disabling
+pnp 00:09: mem resource (0x100000-0x3dedffff) overlaps 0000:00:02.1 BAR 0 (0x0-0x7ffffff), disabling
+pnp 00:09: mem resource (0xe0000-0xeffff) overlaps 0000:00:02.1 BAR 0 (0x0-0x7ffffff), disabling
+pnp: PnP ACPI: found 10 devices
+ACPI: ACPI bus type pnp unregistered
+SCSI subsystem initialized
+libata version 3.00 loaded.
+usbcore: registered new interface driver usbfs
+usbcore: registered new interface driver hub
+usbcore: registered new device driver usb
+PCI: Using ACPI for IRQ routing
+pci 0000:02:06.0: BAR 3: can't allocate resource
+system 00:01: ioport range 0xb78-0xb7b has been reserved
+system 00:01: ioport range 0xf78-0xf7b has been reserved
+system 00:01: ioport range 0xa78-0xa7b has been reserved
+system 00:01: ioport range 0xe78-0xe7b has been reserved
+system 00:01: ioport range 0xbbc-0xbbf has been reserved
+system 00:01: ioport range 0xfbc-0xfbf has been reserved
+system 00:01: ioport range 0x4d0-0x4d1 has been reserved
+system 00:07: ioport range 0x4000-0x40bf could not be reserved
+system 00:09: iomem range 0x3dee0000-0x3defffff could not be reserved
+system 00:09: iomem range 0xfec00000-0xfecfffff could not be reserved
+system 00:09: iomem range 0xfee00000-0xfeefffff could not be reserved
+system 00:09: iomem range 0xffb00000-0xffb7ffff could not be reserved
+system 00:09: iomem range 0xfff00000-0xffffffff could not be reserved
+pci 0000:00:01.0: PCI bridge, secondary bus 0000:01
+pci 0000:00:01.0:   IO window: disabled
+pci 0000:00:01.0:   MEM window: disabled
+pci 0000:00:01.0:   PREFETCH window: disabled
+pci 0000:00:1e.0: PCI bridge, secondary bus 0000:02
+pci 0000:00:1e.0:   IO window: 0xd000-0xdfff
+pci 0000:00:1e.0:   MEM window: 0xe8000000-0xe8ffffff
+pci 0000:00:1e.0:   PREFETCH window: 0x00000048000000-0x00000048bfffff
+pci 0000:00:1e.0: setting latency timer to 64
+bus: 00 index 0 io port: [0, ffff]
+bus: 00 index 1 mmio: [0, ffffffff]
+bus: 01 index 0 mmio: [0, 0]
+bus: 01 index 1 mmio: [0, 0]
+bus: 01 index 2 mmio: [0, 0]
+bus: 01 index 3 mmio: [0, 0]
+bus: 02 index 0 io port: [d000, dfff]
+bus: 02 index 1 mmio: [e8000000, e8ffffff]
+bus: 02 index 2 mmio: [48000000, 48bfffff]
+bus: 02 index 3 io port: [0, ffff]
+bus: 02 index 4 mmio: [0, ffffffff]
+NET: Registered protocol family 2
+IP route cache hash table entries: 32768 (order: 5, 131072 bytes)
+TCP established hash table entries: 131072 (order: 8, 1048576 bytes)
+TCP bind hash table entries: 65536 (order: 6, 262144 bytes)
+TCP: Hash tables configured (established 131072 bind 65536)
+TCP reno registered
+NET: Registered protocol family 1
+audit: initializing netlink socket (disabled)
+type=2000 audit(1237230017.167:1): initialized
+Installing knfsd (copyright (C) 1996 okir@monad.swb.de).
+NTFS driver 2.1.29 [Flags: R/W].
+fuse init (API version 7.9)
+SGI XFS with security attributes, no debug enabled
+msgmni has been set to 1768
+io scheduler noop registered
+io scheduler anticipatory registered (default)
+pci 0000:00:02.0: Boot video device
+Real Time Clock Driver v1.12ac
+fan PNP0C0B:00: registered as cooling_device0
+ACPI: Fan [FAN] (on)
+ACPI: CPU0 (power states: C1[C1] C2[C2] C3[C3] C4[C3])
+processor ACPI0007:00: registered as cooling_device1
+ACPI: Processor [CPU0] (supports 2 throttling states)
+thermal LNXTHERM:01: registered as thermal_zone0
+ACPI: Thermal Zone [THRM] (33 C)
+Serial: 8250/16550 driver4 ports, IRQ sharing disabled
+loop: module loaded
+skge 0000:02:00.0: PCI INT A -> GSI 20 (level, low) -> IRQ 20
+skge 1.13 addr 0xe8844000 irq 20 chip Yukon-Lite rev 7
+skge eth0: addr 00:01:80:5c:01:65
+skge 0000:02:01.0: PCI INT A -> GSI 21 (level, low) -> IRQ 21
+skge 1.13 addr 0xe8840000 irq 21 chip Yukon-Lite rev 7
+skge eth1: addr 00:01:80:5c:01:64
+3ware 9000 Storage Controller device driver for Linux v2.26.02.011.
+3w-9xxx 0000:02:06.0: PCI INT A -> GSI 18 (level, low) -> IRQ 18
+scsi0 : 3ware 9000 Storage Controller
+3w-9xxx: scsi0: Found a 3ware 9000 Storage Controller at 0xe8848000, IRQ: 18.
+3w-9xxx: scsi0: Firmware FE9X 2.08.00.009, BIOS BE9X 2.03.01.052, Ports: 12.
+scsi 0:0:0:0: Direct-Access     AMCC     9500S-12   DISK  2.08 PQ: 0 ANSI: 3
+Driver 'sd' needs updating - please use bus_type methods
+sd 0:0:0:0: [sda] 1953083392 512-byte hardware sectors (999979 MB)
+sd 0:0:0:0: [sda] Write Protect is off
+sd 0:0:0:0: [sda] Mode Sense: 23 00 00 00
+sd 0:0:0:0: [sda] Write cache: disabled, read cache: disabled, doesn't support DPO or FUA
+sd 0:0:0:0: [sda] 1953083392 512-byte hardware sectors (999979 MB)
+sd 0:0:0:0: [sda] Write Protect is off
+sd 0:0:0:0: [sda] Mode Sense: 23 00 00 00
+sd 0:0:0:0: [sda] Write cache: disabled, read cache: disabled, doesn't support DPO or FUA
+ sda: sda1
+sd 0:0:0:0: [sda] Attached SCSI disk
+Driver 'sr' needs updating - please use bus_type methods
+sd 0:0:0:0: Attached scsi generic sg0 type 0
+sata_promise 0000:02:02.0: version 2.12
+sata_promise 0000:02:02.0: PCI INT A -> GSI 22 (level, low) -> IRQ 22
+scsi1 : sata_promise
+scsi2 : sata_promise
+scsi3 : sata_promise
+ata1: SATA max UDMA/133 mmio m4096@0xe8849000 ata 0xe8849200 irq 22
+ata2: SATA max UDMA/133 mmio m4096@0xe8849000 ata 0xe8849280 irq 22
+ata3: PATA max UDMA/133 mmio m4096@0xe8849000 ata 0xe8849300 irq 22
+ata1: SATA link up 1.5 Gbps (SStatus 113 SControl 300)
+ata1.00: ATA-8: WDC WD5000AAKS-00YGA0, 12.01C02, max UDMA/133
+ata1.00: 976773168 sectors, multi 0: LBA48 NCQ (depth 0/32)
+ata1.00: configured for UDMA/133
+ata2: SATA link up 1.5 Gbps (SStatus 113 SControl 300)
+ata2.00: ATAPI: HL-DT-ST DVDRAM GSA-H62N, CL00, max UDMA/100
+ata2.00: configured for UDMA/100
+scsi 1:0:0:0: Direct-Access     ATA      WDC WD5000AAKS-0 12.0 PQ: 0 ANSI: 5
+sd 1:0:0:0: [sdb] 976773168 512-byte hardware sectors (500108 MB)
+sd 1:0:0:0: [sdb] Write Protect is off
+sd 1:0:0:0: [sdb] Mode Sense: 00 3a 00 00
+sd 1:0:0:0: [sdb] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+sd 1:0:0:0: [sdb] 976773168 512-byte hardware sectors (500108 MB)
+sd 1:0:0:0: [sdb] Write Protect is off
+sd 1:0:0:0: [sdb] Mode Sense: 00 3a 00 00
+sd 1:0:0:0: [sdb] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+ sdb: sdb1 sdb2 sdb3 sdb4
+sd 1:0:0:0: [sdb] Attached SCSI disk
+sd 1:0:0:0: Attached scsi generic sg1 type 0
+scsi 2:0:0:0: CD-ROM            HL-DT-ST DVDRAM GSA-H62N  CL00 PQ: 0 ANSI: 5
+sr0: scsi3-mmc drive: 48x/48x writer dvd-ram cd/rw xa/form2 cdda tray
+Uniform CD-ROM driver Revision: 3.20
+sr 2:0:0:0: Attached scsi CD-ROM sr0
+sr 2:0:0:0: Attached scsi generic sg2 type 5
+ehci_hcd 0000:00:1d.7: PCI INT D -> GSI 23 (level, low) -> IRQ 23
+ehci_hcd 0000:00:1d.7: setting latency timer to 64
+ehci_hcd 0000:00:1d.7: EHCI Host Controller
+ehci_hcd 0000:00:1d.7: new USB bus registered, assigned bus number 1
+ehci_hcd 0000:00:1d.7: cache line size of 32 is not supported
+ehci_hcd 0000:00:1d.7: irq 23, io mem 0xe9080000
+ehci_hcd 0000:00:1d.7: USB 2.0 started, EHCI 1.00, driver 10 Dec 2004
+usb usb1: configuration #1 chosen from 1 choice
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 6 ports detected
+USB Universal Host Controller Interface driver v3.0
+uhci_hcd 0000:00:1d.0: PCI INT A -> GSI 16 (level, low) -> IRQ 16
+uhci_hcd 0000:00:1d.0: setting latency timer to 64
+uhci_hcd 0000:00:1d.0: UHCI Host Controller
+uhci_hcd 0000:00:1d.0: new USB bus registered, assigned bus number 2
+uhci_hcd 0000:00:1d.0: irq 16, io base 0x0000e000
+usb usb2: configuration #1 chosen from 1 choice
+hub 2-0:1.0: USB hub found
+hub 2-0:1.0: 2 ports detected
+uhci_hcd 0000:00:1d.1: PCI INT B -> GSI 19 (level, low) -> IRQ 19
+uhci_hcd 0000:00:1d.1: setting latency timer to 64
+uhci_hcd 0000:00:1d.1: UHCI Host Controller
+uhci_hcd 0000:00:1d.1: new USB bus registered, assigned bus number 3
+uhci_hcd 0000:00:1d.1: irq 19, io base 0x0000e100
+usb usb3: configuration #1 chosen from 1 choice
+hub 3-0:1.0: USB hub found
+hub 3-0:1.0: 2 ports detected
+uhci_hcd 0000:00:1d.2: PCI INT C -> GSI 18 (level, low) -> IRQ 18
+uhci_hcd 0000:00:1d.2: setting latency timer to 64
+uhci_hcd 0000:00:1d.2: UHCI Host Controller
+uhci_hcd 0000:00:1d.2: new USB bus registered, assigned bus number 4
+uhci_hcd 0000:00:1d.2: irq 18, io base 0x0000e200
+usb usb4: configuration #1 chosen from 1 choice
+hub 4-0:1.0: USB hub found
+hub 4-0:1.0: 2 ports detected
+Initializing USB Mass Storage driver...
+usbcore: registered new interface driver usb-storage
+USB Mass Storage support registered.
+PNP: PS/2 Controller [PNP0303:PS2K] at 0x60,0x64 irq 1
+PNP: PS/2 appears to have AUX port disabled, if this is incorrect please boot with i8042.nopnp
+serio: i8042 KBD port at 0x60,0x64 irq 1
+mice: PS/2 mouse device common for all mice
+i2c /dev entries driver
+i801_smbus 0000:00:1f.3: PCI INT B -> GSI 17 (level, low) -> IRQ 17
+w83627hf: Found W83627THF chip at 0x290
+input: AT Translated Set 2 keyboard as /class/input/input0
+cpuidle: using governor ladder
+TCP cubic registered
+NET: Registered protocol family 17
+RPC: Registered udp transport module.
+RPC: Registered tcp transport module.
+Using IPI Shortcut mode
+Marking TSC unstable due to TSC halts in idle
+kjournald starting.  Commit interval 5 seconds
+EXT3-fs: mounted filesystem with ordered data mode.
+VFS: Mounted root (ext3 filesystem) readonly.
+Freeing unused kernel memory: 176k freed
+EXT3 FS on sdb3, internal journal
+kjournald starting.  Commit interval 5 seconds
+EXT3-fs warning: maximal mount count reached, running e2fsck is recommended
+EXT3 FS on sdb4, internal journal
+EXT3-fs: mounted filesystem with ordered data mode.
+kjournald starting.  Commit interval 5 seconds
+EXT3-fs warning: maximal mount count reached, running e2fsck is recommended
+EXT3 FS on sda1, internal journal
+EXT3-fs: mounted filesystem with ordered data mode.
+Adding 987988k swap on /dev/sdb2.  Priority:-1 extents:1 across:987988k
+skge eth0: enabling interface
+skge eth0: Link is up at 100 Mbps, full duplex, flow control both
+Clocksource tsc unstable (delta = -256061874 ns)
