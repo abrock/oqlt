@@ -37,3 +37,17 @@ body {
 	padding:15px;
 }
 .note { font-size:smaller; }
+.event_badge h3 {
+	display:none;
+}
+.event_badge .dtstart {
+	border:none;
+}
+.event_badge .title {
+	display:inline;
+	padding-left:1em;
+	font-style:italic;
+}
+.event_badge .more {
+	display:none;
+}
