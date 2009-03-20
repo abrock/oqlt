@@ -1,0 +1,33 @@
+Organisierte Querdenker für langfristige Technologiefolgenabschätzung (oqlt)
+&ndash; verstehen statt verteufeln
+
+Inte: Hallo oqlt, ich habe von Eurem Verein gelesen. Was macht ihr denn so?
+
+oqlt: Wir interessieren uns für moderne Technologien und setzen uns mit deren Risiken und Möglichkeiten auseinander. Kreativität und Spass steht dabei an erster Stelle.
+
+Inte: Moderne Technologien klingt sehr schwammig. Was genau <em>tut</em> ihr denn?
+
+oqlt: Jeder von uns hat verschiedene Schwerpunkte. Dazu gehören z.B:
+<ul>
+<li>Elektronik (Schaltungen entwerfen, Löten, Mikrokontroller)
+<li>Computer (Softwareentwicklung, Netzwerke, Betriebssysteme)
+<li>Medienkompetenz (informationelle Selbstbestimmung, Datensparsamkeit)
+<li>Politik (freie Lizenzen, Vorratsdatenspeicherung, Informationsfreiheit)
+</ul>
+Das Schöne und zugleich auch Schwierige daran ist, dass wir ein sehr breites Spektrum an Themen abdecken. Bei der Vielfalt finden Neugierige immer einen passenden Ansprechpartner. Leider kann man nicht alles Gleichzeitig machen. Deswegen koordinieren wir uns und arbeiten gemeinsam an Projekten.
+
+Inte: An was für Projekten arbeitet Ihr gemeinsam?
+
+oqlt: Da wir vor zwei Monaten den Verein gegründet haben, steht momentan der Aufbau unserer Infrastruktur im Vordergrund. Dazu gehört der Aufbau eines eigenen Servers auf dem unsere Homepage und Dienste für unsere Mitglieder laufen werden.
+
+Inte: Und wie geht es weiter?
+
+oqlt:
+
+Inte: Euer Logo mit dem <a href="http://de.wikipedia.org/wiki/Pentagramm">Pentagramm</a> ist ziemlich provokant und dann noch das Motto &bdquo;<em>verstehen statt verteufeln</em>&rdquo; &ndash; Was hat es damit auf sich?
+
+oqlt: Jede Seite des Pentagramms wird durch ein elektrisches Bauelement dargestellt (Schalter, Kondensator, Widerstand, Spule und Diode). Sie symbolisieren die Grundbausteine aus denen unsere technisierte Welt besteht. Es soll darauf aufmerksam machen, dass alle Funktionen auf wenigen Elementen beruhen. Wir wollen erklären wie jedes Element im Kleinen funktioniert, damit die Zusammenhänge im Großen verständlich werden. In dieser Vorgehensweise hat auch unser Motto seinen Ursprung. Verstehen warum etwas so ist wie es ist, anstatt es aus Unverständnis heraus zu verurteilen. Wir gehen den Dingen auf den Grund.
+
+Inte: Hat das auch etwas mit dem Vereinsnamen zu tun? Euer abgekürzter Name (oqlt) klingt sehr nach Okkultismus.
+
+oqlt: &bdquo;<em>oqlt</em>&rdquo; ist in der Tat eine Anspielung auf &bdquo;<em><a href="http://de.wikipedia.org/wiki/Okkultismus">okkult</a></em>&rdquo;. Dabei denken viele unwillkürlich an Worte wie geheimnisvoll, unergründlich, mysteriös oder unheimlich. Dieses Bild wollen wir aufgreifen und mit Kreativität und Sachverstand Vorurteile abbauen, Neugier wecken und Forscherdrang ausleben.
