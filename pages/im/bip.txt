@@ -10,13 +10,13 @@ $ chmod 600 ~/.bip/bip.conf
 # Passwort generieren und in ~/bip/bip.conf unter "password = " eintragen
 $ bipmkpw
 
-# Intes Beispielkonfiguration findet Ihr unter /pages/bip/bip.conf
+# Intes Beispielkonfiguration findet Ihr unter /pages/im/bip.conf
 
 # SSL Zertifikat erstellen
 openssl req -new -x509 -days 365 -nodes -out bip.pem -keyout ~/.bip/bip.pem
 # Passwort entfernen
 openssl x509 -subject -dates -fingerprint -noout -in ~/.bip/bip.pem
-chmod 440 ~/.bip/bip.conf
+chmod 440 ~/.bip/bip.pem
 
 # Screen-Session starten
 $ screen -S bip
