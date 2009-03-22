@@ -16,7 +16,7 @@ PORT-FORWARDING
 
 TODO
 Guide für EncFS-Verschlüsselung in /home/${USER}
-logrotate
+Mumble installieren/konfigurieren
 cacti einrichten
  - smartmontools http://forums.cacti.net/about4714.html
  - raid status
