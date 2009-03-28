@@ -36,6 +36,19 @@ body {
 	border:1px solid black;
 	padding:15px;
 }
+h3 {
+	margin:1em 0 0.5em 0;
+}
+p, ul {
+	margin:0.5em 0 0.5em 0;
+}
+dt {
+	margin-top:0.5em;
+	font-weight:bold;
+}
+dd {
+	margin-left:1.5em;
+}
 .note { font-size:smaller; }
 .event_badge h3 {
 	display:none;
