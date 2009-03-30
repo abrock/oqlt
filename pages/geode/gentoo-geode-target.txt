@@ -1,0 +1,94 @@
+INFOS
+http://en.gentoo-wiki.com/wiki/Tiny_Gentoo
+http://en.gentoo-wiki.com/wiki/TinyGentoo
+http://www.anticore.org/ratgentoo/
+
+PAKETE
+>=sys-apps/baselayout-2.0.0
+sys-libs/glibc
+sys-fs/udev
+sys-apps/util-linux
+sys-apps/module-init-tools
+app/shells/bash
+
+SKRIPT-ABHÄNGIGKEITEN
+sys-fs/e2fsprogs
+sys-apps/grep
+sys-apps/gawk
+sys-apps/sed
+sys-apps/findutils
+app-arch/gzip
+sys-process/procps
+sys-apps/net-tools
+
+OPTIONAL (misc)
+app-misc/screen
+app-editors/vim
+
+OPTIONAL (net)
+net-misc/dhcpcd
+net-misc/iputils
+net-misc/wget
+
+OPTIONAL (nls)
+sys-apps/kbd
+
+OPTIONAL (services)
+sys-process/dcron
+app-admin/syslog-ng
+app-admin/logrotate
+net-misc/ntp
+inet-misc/openssh
+
+OPTIONAL (wireless)
+net-misc/olsrd
+net-wireless/iw
+net-wireless/wireless-tools
+net-wireless/crda
+
+INSTALLATION (vorbereitung)
+$ quickpkg bash coreutils e2fsprogs expat findutils gettext glib glibc grep libxml2 ncurses openrc openssh openssl readline screen shadow sysvinit util-linux vim vim-core
+$ emerge -avB ntp
+
+INSTALLATION
+$ ROOT=/mnt/target emerge -avk baselayout bash dcron dhcpcd e2fsprogs findutils glibc grep gzip kbd logrotate udev module-init-tools net-tools ntp procps screen syslog-ng udev util-linux vim
+
+BASICS
+$ mkdir /mnt/target/boot
+$ mkdir /mnt/target/dev
+$ mkdir /mnt/target/dev/pts
+$ mkdir /mnt/target/dev/shm
+$ mknod /mnt/target/dev/console c 5 1
+$ mkdir /mnt/target/proc
+$ mkdir /mnt/target/root
+$ mkdir /mnt/target/sys
+
+CHROOT
+$ rc-update add udev sysinit
+$ passwd
+
+KONFIGURATION
+$ vi /mnt/target/etc/fstab
+$ cp /mnt/target/usr/share/zoneinfo/Europe/Berlin /mnt/target/etc/localtime
+
+KERNEL
+$ cd /usr/src/linux
+$ make
+$ make INSTALL_MOD_PATH=/mnt/target modules_install
+$ cp arch/x86/boot/bzImage /mnt/target/boot/vmlinuz
+
+GRUB
+$ cp -a /boot/grub /mnt/target/boot/
+$ cd /mnt/target/boot
+$ ln -sf . boot
+$ grub --no-floppy
+grub> root (hd1,0)
+grub> setup (hd1)
+grub> quit
+$ vi /mnt/target/boot/grub/grub.conf
+
+FINISH
+$ df -h | grep target
+Filesystem            Size  Used Avail Use% Mounted on
+/dev/sdb1             237M  140M   86M  62% /mnt/target
+

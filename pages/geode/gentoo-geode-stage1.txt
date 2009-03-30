@@ -1,6 +1,6 @@
 Gentoo Installation
 
-2008-01-13
+2009-01-13
 
 Booten von LiveUSB
  - http://www.gentoo.org/doc/en/liveusb.xml
@@ -50,6 +50,8 @@ CFLAGS="-Os -march=geode -pipe -fomit-frame-pointer"
 
 # /etc/portage/package.keywords
 =sys-apps/baselayout-2.0.0
-=sys-apps/openrc-0.4.1-r1
+	>=sys-apps/openrc-0.4.1-r1
+	>=sys-apps/sysvinit-2.86-r11
+	>=sys-fs/udev-133
 
 $ emerge -e world
