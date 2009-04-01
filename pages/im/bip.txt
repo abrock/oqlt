@@ -7,7 +7,7 @@ $ mkdir ~/.bip/logs
 $ bzcat /usr/share/doc/bip-0.8.0/bip.conf.sample.bz2 > ~/.bip/bip.conf
 $ chmod 600 ~/.bip/bip.conf
 
-# Passwort generieren und in ~/bip/bip.conf unter "password = " eintragen
+# Passwort generieren und in ~/.bip/bip.conf unter "password = " eintragen
 $ bipmkpw
 
 # Intes Beispielkonfiguration findet Ihr unter /pages/im/bip.conf
