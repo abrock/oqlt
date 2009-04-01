@@ -1,0 +1,50 @@
+EncFS - Encrypted Filesystem
+Es verschlüsselt dabei nicht ganze Dateisysteme, sondern lediglich einzelne Dateien, sodass es ohne separate Einrichtung einer eigenen verschlüsselten Partition nachgerüstet werden kann und weiterhin herkömmliche Werkzeuge beispielsweise zur Datensicherung verwendet werden können. Es ist ein Modul für FUSE.
+Das FUSE-Framework (Filesystem in USErspace) ermöglicht Dateisystem-Treiber aus dem Kernel-Mode in den User-Mode zu verlagern. Es erlaubt nicht-privilegierten Benutzern, eigene Dateisysteme zu mounten. 
+
+ERSTE SCHRITTE
+$ encfs ~/.foo_krypto ~/foo_klartext
+# Wahl zwischen Expertenmodus (x) oder Paranoiamodus (p). Letzter hat vorkonfigurierte Parameter (Verfahren, Schlüssellänge, etc.).
+# Parameter sind 1. AES/Bowfish (Schlüssellängen 128 bis 156 Bit) (Blöckgröße 64 bis 4096 Bytes); 2. Dateinamenverschlüsselung Block/Null/Stream; 3. Vector Chaining; 4. per-file IV; 5. filename IV-header chaining; 6. block auth code headers; 7. file-hole pass-through 
+# Dabei wird in ~/.foo_krypto eine XML-Datei mit den gewählten Parametern angelegt.
+
+INFOS
+$ mount
+encfs on /home/bar/foo_klartext type fuse.encfs (rw,nosuid,nodev,default_permissions,user=bar)
+
+# Paranoia Standardeinstellungen
+$ encfsctl info .foo_krypto/
+Version 6 configuration; created by EncFS 1.5 (revision 20080816)
+Dateisystem Chiffre: "ssl/aes", Version 2:2:0 (verwende 2:2:1)
+Dateinamenskodierung: "nameio/block", Version 3:0:0 (verwende 3:0:1)
+Schlüssellänge: 256 Bits
+Using PBKDF2, with 159188 iterations
+Salt Size: 160 bits
+Blockgröße: 1024 Byte, enthält 8 Byte MAC-Kopf
+Jede Datei enthält acht Byte Vorspann mit einmaligen IV Daten.
+Dateinamensverschlüsselung benutzt IV Verkettungsmodus.
+Dateidaten IV sind mit Dateiname IV verkettet.
+File holes passed through to ciphertext.
+
+AUSHÄNGEN
+$ fusermount -u ~/foo_klartext
+
+MOUNTEN
+$ encfs ~/.foo_krypto ~/foo_klartext
+
+PASSWORT ÄNDERN
+$ encfsctl passwd .foo_krypto/
+
+TOOLS
+encfs
+encfsctl
+encfssh
+fusermount
+
+TIPPS
+Im Paranoiamodus wrden keine Hardlinks unterstützt.
+
+LINKS
+http://www.arg0.net/encfs
+http://de.wikipedia.org/wiki/EncFS
+http://en.wikipedia.org/wiki/EncFS

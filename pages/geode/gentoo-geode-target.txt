@@ -51,6 +51,7 @@ $ quickpkg bash coreutils e2fsprogs expat findutils gettext glib glibc grep libx
 $ emerge -avB ntp
 
 INSTALLATION
+# "emerge -k" ist eine blöde Idee. Konfigurationsdateien und Initskripte werden nur getoucht, aber nicht befüllt.
 $ ROOT=/mnt/target emerge -avk baselayout bash dcron dhcpcd e2fsprogs findutils glibc grep gzip kbd logrotate udev module-init-tools net-tools ntp procps screen syslog-ng udev util-linux vim
 
 BASICS
@@ -70,6 +71,9 @@ $ passwd
 KONFIGURATION
 $ vi /mnt/target/etc/fstab
 $ cp /mnt/target/usr/share/zoneinfo/Europe/Berlin /mnt/target/etc/localtime
+$ vi /mnt/target/etc/conf.d/consolefonts
+$ vi /mnt/target/etc/conf.d/hwclock
+$ vi /mnt/target/etc/conf.d/keymaps
 
 KERNEL
 $ cd /usr/src/linux
