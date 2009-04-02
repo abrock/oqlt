@@ -15,7 +15,6 @@ PORT-FORWARDING
 49152 65534 private ports
 
 TODO
-Guide für EncFS-Verschlüsselung in /home/${USER}
 Mumble installieren/konfigurieren
 cacti einrichten
  - smartmontools http://forums.cacti.net/about4714.html
@@ -38,6 +37,7 @@ www-client/links
 x11-misc/remind
 
 DIENSTE
+app-admin/denyhosts
 dev-util/git
 net-analyzer/cacti
 net-ftp/vsftpd
@@ -51,3 +51,4 @@ sys-fs/encfs
 PERL
 Perl Module werden mit app-portage/g-cpan installiert (http://www.gentoo.org/proj/en/perl/g-cpan.xml). Installiert sind:
 Net::Twitter
+POE::Filter::IRCD
