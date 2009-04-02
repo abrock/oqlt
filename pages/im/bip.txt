@@ -14,8 +14,8 @@ $ bipmkpw
 
 # SSL Zertifikat erstellen
 openssl req -new -x509 -days 365 -nodes -out bip.pem -keyout ~/.bip/bip.pem
-# Passwort entfernen
-openssl x509 -subject -dates -fingerprint -noout -in ~/.bip/bip.pem
+# Zertifikat-Parameter überprüfen (Datum, Fingerprint, etc.)
+cd ~/.bip; openssl x509 -subject -dates -fingerprint -noout -in bip.pem
 chmod 440 ~/.bip/bip.pem
 
 # Screen-Session starten
