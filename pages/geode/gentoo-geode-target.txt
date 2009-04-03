@@ -2,6 +2,13 @@ INFOS
 http://en.gentoo-wiki.com/wiki/Tiny_Gentoo
 http://en.gentoo-wiki.com/wiki/TinyGentoo
 http://www.anticore.org/ratgentoo/
+http://blog.gangkast.nl/2008/06/gentoo-on-the-a.html
+
+TVOUT
+http://wiki.openchrome.org/tikiwiki/tiki-index.php?page=TVOut
+http://www.kingcot.eclipse.co.uk/unichrome/unichromeTvOut.html
+http://ftp.x.org/pub/X11R7.0/doc/html/via.4.html#toc4
+http://www.via.com.tw/en/products/video-display/tv/vt1622/
 
 PAKETE
 >=sys-apps/baselayout-2.0.0
