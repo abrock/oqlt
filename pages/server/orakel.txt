@@ -1,3 +1,6 @@
+SSH FINGERPRINT
+05:2e:ec:20:e5:60:84:9c:1e:41:85:6c:b6:e4:e2:c9
+
 BENUTZERKODEX
 Die Ports 49152 bis 65535 können beliebig belegt werden. Dauerhaft genutzte Ports sind hier einzutragen:
 port :: service :: user
