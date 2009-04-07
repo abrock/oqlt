@@ -29,8 +29,5 @@ aber macht das flexibel, wir werden die Grenzen ausloten.
 
 Beide Schrittmotoren haben 96 Halbschritte pro Umdrehung.
 
-
 Der Schrittmotor, der den Turm bewegt wird über die letzten vier Bits von PORTD gesteuert.
-Er darf aber höchstens 348 Umdrehungen machen,
-weil sonst der Stift gegen die Spannvorrichtung des Eis stößt.
-Vielleicht ist es auch mehr, das muss ich noch messen.
+Er darf aber höchstens 256 Halbschritte machen, weil sonst der Stift gegen die Spannvorrichtung des Eis stößt. Vielleicht ist es auch mehr, das muss ich noch messen.
