@@ -1,0 +1,12 @@
+ESSID
+mannheim.freifunk.net
+
+KANAL
+11
+
+IP-RANGE
+10.131.0.0/16
+
+SUBNETZE (512 Stück)
+10.131.6.0/28 Forum
+10.131.8.0/28 Inte

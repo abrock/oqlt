@@ -1,0 +1,9 @@
+Es gibt zwei Möglichkeiten sich zum Freifunknetz zu verbinden:
+a) als dummer Client
+b) als schlauer OLSR-Knoten
+
+LINUX
+$ ifconfig wlan0 down
+$ iwconfig wlan0 essid "mannheim.freifunk.net" mode ad-hoc channel 11
+$ ifconfig wlan0 up
+$ dhcpcd wlan0
