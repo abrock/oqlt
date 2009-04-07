@@ -1,0 +1,46 @@
+FREIFUNK
+http://start.freifunk.net/
+
+FAQ
+Freies Funknetz	http://de.wikipedia.org/wiki/Freies_Funknetz
+Rechtliches	http://wiki.freifunk.net/FAQ_Rechtliches
+
+PROTOKOLLE
+net-misc/olsrd	http://www.olsr.org/
+OLSR		http://de.wikipedia.org/wiki/OLSR
+B.A.T.M.A.N.	http://de.wikipedia.org/wiki/B.A.T.M.A.N.
+
+TOOLS
+net-wireless/iw		http://linuxwireless.org/en/users/Documentation/iw
+net-wireless/wireless-tools	http://www.hpl.hp.com/personal/Jean_Tourrilhes/Linux/Tools.html
+net-wireless/crda	http://wireless.kernel.org/en/developers/Regulatory
+
+HOWTOS
+OLSR mit Windows	http://wiki.freifunk.net/OLSR_mit_Windows
+OLSR unter Mac OS	http://wiki.freifunk.net/OLSR_mit_Mac
+			http://wiki.freifunk-hannover.de/Client_konfigurieren
+OLSR unter Linux http://www.freifunk-brb.de/wiki/Freifunk_unter_Linux
+http://www.informatik.uni-hamburg.de/Fachschaft/wiki/index.php/KunterBuntesSeminar-WS08/FreifunkWorkshop
+
+INFO
+Modes	http://linuxwireless.org/en/users/Documentation/modes
+	Mesh	http://de.wikipedia.org/wiki/IEEE_802.11s
+	Ad-Hoc	http://de.wikipedia.org/wiki/Ad-hoc-Netz
+Treiber	http://linuxwireless.org/en/users/Drivers
+Treiber	http://en.wikipedia.org/wiki/Comparison_of_open_source_wireless_drivers
+
+KONTAKTE
+Alle anschreiben für 'nen Kick-Off-Event im FORUM https://freifunk.net/community/member_search_results?bundesland=Baden_Wuerttemberg&sort=ff_zip
+
+ATHEROS
+http://wiki.freifunk.net/Regdomain
+
+ARTIKEL
+2006-02-22	Funknetze stricken	http://www.heise.de/mobil/Gemeinsamkeiten-und-Unterschiede-von-WLAN-und-Mesh-Netzen--/artikel/68923
+
+IP-SEGMENTIERUNG
+In Abstimmung mit freifunk.net, welches in Deutschland hautptsächlich das private Class-A Netz 10.0.0.0/8 (RFC 1918) nutzt, verwenden wir in Mannheim ein 10.131.0.0/16 Subnetz. Dieses wird maximal 512 weitere, auf bestimmte Benutzer registrierte, Subnetze mit jeweils 128 unterscheidbaren IP-Adressen unterteilt. Es bleibt dem jeweiligen Betreiber überlassen, ob er sein Netz per Subnetzmaske in weitere Teilnetze unterteilt.
+
+Die bereits vergeben Subnetze werden in der Hotspot Liste geführt. Dort kann man auch ein Subnetz zur eigenen Verwendung aussuchen und registrieren. 
+
+Die OLSR-Hotspots sollten per DHCP-Server IP-Adressen vergeben. Wir versprechen uns von der automatischen IP-Vergabe über DHCP eine einfachere Netzstruktur, da somit Neulinge relativ schnell und einfach am Netz teilnehmen können.
