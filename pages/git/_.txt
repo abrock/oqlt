@@ -101,3 +101,6 @@ noch aufhübschen, aber das hat erst mal geringe Priorität.
 
 - GitCasts (Screencasts für diverse Arbeitsschritte)
   http://gitcasts.com/
+
+- A Gaggle Of Git Tips
+  http://www.viget.com/extend/a-gaggle-of-git-tips/
