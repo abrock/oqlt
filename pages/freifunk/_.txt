@@ -9,6 +9,7 @@ PROTOKOLLE
 net-misc/olsrd	http://www.olsr.org/
 OLSR		http://de.wikipedia.org/wiki/OLSR
 B.A.T.M.A.N.	http://de.wikipedia.org/wiki/B.A.T.M.A.N.
+		http://www.open-mesh.net/
 
 TOOLS
 net-wireless/iw		http://linuxwireless.org/en/users/Documentation/iw
@@ -28,6 +29,9 @@ Modes	http://linuxwireless.org/en/users/Documentation/modes
 	Ad-Hoc	http://de.wikipedia.org/wiki/Ad-hoc-Netz
 Treiber	http://linuxwireless.org/en/users/Drivers
 Treiber	http://en.wikipedia.org/wiki/Comparison_of_open_source_wireless_drivers
+
+EINSATZ
+http://freifunk.schmudde.com/
 
 KONTAKTE
 Alle anschreiben für 'nen Kick-Off-Event im FORUM https://freifunk.net/community/member_search_results?bundesland=Baden_Wuerttemberg&sort=ff_zip
