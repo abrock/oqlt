@@ -43,7 +43,9 @@ end:
 
 ;.include "zickzack.txt"
 
-rcall moverr
+.include "pentagramm.txt"
+
+;rcall moverr
 
 
 rjmp end
@@ -67,29 +69,17 @@ rcall setport
 ret
 
 movetr:
-cpse tpos, posmax
-rjmp movetrdo
-rjmp movetrend
-movetrdo:
-inc tpos
 mov temp, stept
 rcall mover
 mov stept, temp
 rcall setport
-movetrend:
 ret
 
 movetl:
-cpse tpos, posmin
-rjmp movetldo
-rjmp movetlend
-movetldo:
-dec tpos
 mov temp, stept
 rcall movel
 mov stept, temp
 rcall setport
-movetlend:
 ret
 
 mover:
@@ -192,7 +182,7 @@ ret
 
 dowait:
 ldi loopa, 0x00
-ldi loopb, 0xfa
+ldi loopb, 0xf5
 loopmarka:
 add loopa, one
 brcs loopmarkb

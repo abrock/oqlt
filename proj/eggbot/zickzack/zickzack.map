@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.1.30  X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm Thu Apr 09 01:15:52 2009
+AVRASM ver. 2.1.30  X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm Sun Apr 19 18:23:11 2009
 
 
 EQU  SIGNATURE_000 0000001e
@@ -517,38 +517,34 @@ DEF  one          r22
 DEF  posmin       r23
 DEF  posmax       r24
 CSEG end          0000000d
-CSEG moverr       0000000f
-CSEG mover        0000002b
-CSEG setport      0000006f
-CSEG moverl       00000014
-CSEG movel        0000004d
-CSEG movetr       00000019
-CSEG movetrdo     0000001c
-CSEG movetrend    00000021
-CSEG movetl       00000022
-CSEG movetldo     00000025
-CSEG movetlend    0000002a
-CSEG movejumpsr   00000031
-CSEG move09r      0000003c
-CSEG move06r      0000003e
-CSEG move05r      00000040
-CSEG move01r      00000042
-CSEG move04r      00000044
-CSEG move0ar      00000046
-CSEG move08r      00000048
-CSEG move02r      0000004a
-CSEG moveendr     0000004c
-CSEG movejumpsl   00000053
-CSEG move05l      00000062
-CSEG move0al      00000068
-CSEG move06l      00000060
-CSEG move04l      00000066
-CSEG move02l      0000006c
-CSEG move09l      0000005e
-CSEG move01l      00000064
-CSEG move08l      0000006a
-CSEG moveendl     0000006e
-CSEG dowait       00000073
-CSEG loopmarka    00000075
-CSEG loopmarkb    00000078
-CSEG loopend      0000007c
+CSEG moverr       000009b4
+CSEG movetr       000009be
+CSEG movetl       000009c3
+CSEG moverl       000009b9
+CSEG mover        000009c8
+CSEG setport      00000a0c
+CSEG movel        000009ea
+CSEG movejumpsr   000009ce
+CSEG move09r      000009d9
+CSEG move06r      000009db
+CSEG move05r      000009dd
+CSEG move01r      000009df
+CSEG move04r      000009e1
+CSEG move0ar      000009e3
+CSEG move08r      000009e5
+CSEG move02r      000009e7
+CSEG moveendr     000009e9
+CSEG movejumpsl   000009f0
+CSEG move05l      000009ff
+CSEG move0al      00000a05
+CSEG move06l      000009fd
+CSEG move04l      00000a03
+CSEG move02l      00000a09
+CSEG move09l      000009fb
+CSEG move01l      00000a01
+CSEG move08l      00000a07
+CSEG moveendl     00000a0b
+CSEG dowait       00000a10
+CSEG loopmarka    00000a12
+CSEG loopmarkb    00000a15
+CSEG loopend      00000a19
