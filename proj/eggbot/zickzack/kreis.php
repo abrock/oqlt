@@ -1,57 +1,50 @@
 <?php
 
-$res = '';
+function kreis ($radius) {
 
-$radius = 100;
+ $res = '';
 
-# 12-3 Uhr
-$yversatz = $radius;
-for ($x = 0; $x <= $radius; $x++) {
- $res .= "rcall moverr\r\n";
- $y = round(sqrt($radius * $radius - $x * $x));
- echo $y."  ".($yversatz-$y)."\r\n";
- if ($y < $yversatz) {
-  $res .= str_repeat("rcall movetl\r\n", $yversatz-$y);
+ $radius = (int)(abs(round($radius)));
+
+ $viertel = array();
+
+ # 12-3 Uhr
+ $yversatz = $radius;
+ for ($x = 0; $x <= $radius; $x++) {
+  $res .= "rcall moverr\r\n";
+  $y = round(sqrt($radius * $radius - $x * $x));
+  echo $y."  ".($yversatz-$y)."\r\n";
+  if ($y < $yversatz) {
+   $res .= str_repeat("rcall movetl\r\n", $yversatz-$y);
+  }
+  $viertel[$x] = $yversatz-$y;
+  $yversatz = $y;
  }
- $yversatz = $y;
-}
 
-# 3-6 Uhr
-$yversatz = $radius;
-for ($x = $radius; $x >= 0; $x--) {
- $res .= "rcall moverl\r\n";
- $y = round(sqrt($radius * $radius - $x * $x));
- echo $y."  ".($y-$yversatz)."\r\n";
- if ($y > $yversatz) {
-  $res .= str_repeat("rcall movetl\r\n", $y-$yversatz);
+ for ($x = count($viertel); $x > 0; $x--) {
+  if ($viertel[$x-1] > 0) {
+   $res .= str_repeat("rcall movetl\r\n", $viertel[$x-1]);
+  }
+  $res .= "rcall moverl\r\n";
  }
- $yversatz = $y;
-}
 
-# 6-9 Uhr
-$yversatz = $radius;
-for ($x = 0; $x <= $radius; $x++) {
- $res .= "rcall moverl\r\n";
- $y = round(sqrt($radius * $radius - $x * $x));
- echo $y."  ".($yversatz-$y)."\r\n";
- if ($y < $yversatz) {
-  $res .= str_repeat("rcall movetr\r\n", $yversatz-$y);
+ for ($x = 0; $x < count($viertel); $x++) {
+  $res .= "rcall moverl\r\n";
+  if ($viertel[$x] > 0) {
+   $res .= str_repeat("rcall movetr\r\n", $viertel[$x]);
+  }
  }
- $yversatz = $y;
-}
 
-#9-12 Uhr
-$yversatz = $radius;
-for ($x = $radius; $x >= 0; $x--) {
- $res .= "rcall moverr\r\n";
- $y = round(sqrt($radius * $radius - $x * $x));
- echo $y."  ".($y-$yversatz)."\r\n";
- if ($y > $yversatz) {
-  $res .= str_repeat("rcall movetr\r\n", $y-$yversatz);
+
+ for ($x = count($viertel); $x > 0; $x--) {
+  if ($viertel[$x-1] > 0) {
+   $res .= str_repeat("rcall movetr\r\n", $viertel[$x-1]);
+  }
+  $res .= "rcall moverr\r\n";
  }
- $yversatz = $y;
-}
 
-file_put_contents('kreis.txt', $res);
+ return $res;
+
+}
 
 ?>

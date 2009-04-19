@@ -50,8 +50,8 @@ foreach ($res as $line) {
  $points[] = array($x, $y);
 }
 
-$width = $xmax-$xmin+1;
-$height = $ymax-$ymin+1;
+$width = $xmax-$xmin+10;
+$height = $ymax-$ymin+10;
 
 $im = imagecreatetruecolor($width, $height);
 
@@ -61,7 +61,7 @@ $schwarz = imagecolorallocate($im, 0,0,0);
 imagefill($im, 0, 0, $weis);
 
 foreach ($points as $point) {
- imagesetpixel($im, $point[0]-$xmin, $height-$point[1]+$ymin, $schwarz);
+ imagesetpixel($im, $point[0]-$xmin+5, $height-$point[1]+$ymin-5, $schwarz);
 }
 
 imagepng($im, $file.'.png');

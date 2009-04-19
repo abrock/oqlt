@@ -13,6 +13,8 @@ $res = '';
  
 */
 
+require_once('kreis.php');
+
 $a = 300;
 
 echo 'Höhe des Pentagrammes h = '.($a/2*sqrt(5+2*sqrt(5)))."\r\n";
@@ -38,6 +40,8 @@ $size = 200;
 $res .= str_repeat("rcall moverr\r\nrcall movetr\r\nrcall movetr\r\nrcall movetr\r\n",
  round($size/(sqrt(3*3+1*1))));
 echo '(1r,2u) '.round($size/(sqrt(3*3+1*1)))."\r\n";
+
+$res .= kreis($size/1.9);
 
 # Nach rechts unten fahren
 $res .= str_repeat("rcall moverr\r\nrcall movetl\r\nrcall movetl\r\nrcall movetl\r\n",

@@ -199,7 +199,6 @@ rcall movetl
 rcall movetl
 rcall movetl
 rcall movetl
-rcall moverl
 rcall movetl
 rcall movetl
 rcall movetl
@@ -411,6 +410,7 @@ rcall moverl
 rcall moverl
 rcall moverl
 rcall moverl
+rcall moverl
 rcall movetr
 rcall moverl
 rcall moverl
@@ -601,8 +601,6 @@ rcall movetr
 rcall movetr
 rcall movetr
 rcall movetr
-rcall moverr
-rcall moverr
 rcall movetr
 rcall movetr
 rcall movetr
@@ -793,6 +791,8 @@ rcall moverr
 rcall moverr
 rcall moverr
 rcall movetr
+rcall moverr
+rcall moverr
 rcall moverr
 rcall moverr
 rcall moverr
