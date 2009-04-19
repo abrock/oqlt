@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.1.30  X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm Sun Apr 19 23:26:25 2009
+AVRASM ver. 2.1.30  X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm Mon Apr 20 00:56:32 2009
 
 
 EQU  SIGNATURE_000 0000001e
@@ -517,34 +517,34 @@ DEF  one          r22
 DEF  posmin       r23
 DEF  posmax       r24
 CSEG end          0000000d
-CSEG moverr       00000844
-CSEG movetr       0000084e
-CSEG movetl       00000853
-CSEG moverl       00000849
-CSEG mover        00000858
-CSEG setport      0000089c
-CSEG movel        0000087a
-CSEG movejumpsr   0000085e
-CSEG move09r      00000869
-CSEG move06r      0000086b
-CSEG move05r      0000086d
-CSEG move01r      0000086f
-CSEG move04r      00000871
-CSEG move0ar      00000873
-CSEG move08r      00000875
-CSEG move02r      00000877
-CSEG moveendr     00000879
-CSEG movejumpsl   00000880
-CSEG move05l      0000088f
-CSEG move0al      00000895
-CSEG move06l      0000088d
-CSEG move04l      00000893
-CSEG move02l      00000899
-CSEG move09l      0000088b
-CSEG move01l      00000891
-CSEG move08l      00000897
-CSEG moveendl     0000089b
-CSEG dowait       000008a0
-CSEG loopmarka    000008a2
-CSEG loopmarkb    000008a5
-CSEG loopend      000008a9
+CSEG movetr       00000606
+CSEG moverr       000005fc
+CSEG movetl       0000060b
+CSEG moverl       00000601
+CSEG mover        00000610
+CSEG setport      00000654
+CSEG movel        00000632
+CSEG movejumpsr   00000616
+CSEG move09r      00000621
+CSEG move06r      00000623
+CSEG move05r      00000625
+CSEG move01r      00000627
+CSEG move04r      00000629
+CSEG move0ar      0000062b
+CSEG move08r      0000062d
+CSEG move02r      0000062f
+CSEG moveendr     00000631
+CSEG movejumpsl   00000638
+CSEG move05l      00000647
+CSEG move0al      0000064d
+CSEG move06l      00000645
+CSEG move04l      0000064b
+CSEG move02l      00000651
+CSEG move09l      00000643
+CSEG move01l      00000649
+CSEG move08l      0000064f
+CSEG moveendl     00000653
+CSEG dowait       00000658
+CSEG loopmarka    0000065a
+CSEG loopmarkb    0000065d
+CSEG loopend      00000661

@@ -21,8 +21,8 @@
  </OUTPUT_FILES>
  <LABELS>
   <end><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>42</LINE></end>
-  <moverr><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>57</LINE></moverr>
   <movetr><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>71</LINE></movetr>
+  <moverr><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>57</LINE></moverr>
   <movetl><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>78</LINE></movetl>
   <moverl><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>64</LINE></moverl>
   <mover><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>85</LINE></mover>

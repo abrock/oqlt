@@ -182,7 +182,7 @@ ret
 
 dowait:
 ldi loopa, 0x00
-ldi loopb, 0xfa
+ldi loopb, 0xfd
 loopmarka:
 add loopa, one
 brcs loopmarkb

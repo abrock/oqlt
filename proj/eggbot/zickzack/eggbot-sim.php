@@ -21,6 +21,8 @@ $res = file ($file);
 $res = array_map('trim', $res);
 $res = array_map('strtolower', $res);
 
+$res = array_merge($res, $res);
+
 $points = array();
 
 $x = $y = $xmin = $xmax = $ymin = $ymax = 0;
