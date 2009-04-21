@@ -2,6 +2,8 @@ beitrag.txt  Beitragsordnung
 go_mv.txt    Geschäftsordnung der Mitgliederversammlung
 go_vorst.txt Geschäftsordnung des Vorstands
 satzung.txt  Satzung von oqlt
+satzung.odt  Aktuelle Arbeitskopie der Satzung, Geschäfts- & Beitragsordnung
+             (dient als Korrespondenz zum Registergericht)
 
 LINKS
 Steuertipps für gemeinnützige Vereine
