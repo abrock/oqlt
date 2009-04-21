@@ -61,4 +61,11 @@ function kreis ($radius, $teilviertel = 0) {
 
 }
 
+$res = '';
+$res .= kreis(50, 4);
+$res .= kreis(50);
+$res .= kreis(50, 1);
+
+file_put_contents('kreis.txt', $res);
+
 ?>

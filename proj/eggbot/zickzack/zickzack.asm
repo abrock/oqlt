@@ -43,10 +43,9 @@ end:
 
 ;.include "zickzack.txt"
 
-.include "pentagramm.txt"
+.include "sechseck.txt"
 
 ;rcall moverr
-
 
 rjmp end
 
@@ -182,7 +181,7 @@ ret
 
 dowait:
 ldi loopa, 0x00
-ldi loopb, 0xfd
+ldi loopb, 0xfb
 loopmarka:
 add loopa, one
 brcs loopmarkb

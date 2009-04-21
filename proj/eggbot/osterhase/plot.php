@@ -1,8 +1,10 @@
 <?php
 
+phpinfo();
+
 $t = new plot();
-$t->readImage('kreis.png');
-$t->start(190,50);
+$t->readImage('osterhase-selbermalen33.png');
+$t->start(179,10);
 
 class plot {
  /**
