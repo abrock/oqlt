@@ -1,0 +1,29 @@
+silent bestellt am 24. April 2009 bei www.segor.de diversen 
+Mikrocontroller-Kram. Wer auch was haben will, trägt sich hier ein und
+aktualisiert die Summe unten.
+
+Arduino Duemilanove (26.20 EUR):
+  silent:  1 Stück
+
+
+ATmega 168-20PU (1 St.: 4.50 EUR;
+		 5 St.: 4.05 EUR;
+		 10St.: 3.03 EUR;):
+  silent:  3 Stück
+
+
+Steckbrett 165x110mm; 1660 Kontakte (17.40 EUR):
+  silent:  1 Stück
+
+
+LED 3mm rot (0.08 EUR):
+  silent: 15 Stück
+
+Summe:
+  58.30 EUR (silent)
+=========================
+  58.30 EUR
+
+
+Versandkosten: Unter 75 EUR Warenwert: 6 Euro; 
+	       ab 75 EUR Warenwert: kostenlos
