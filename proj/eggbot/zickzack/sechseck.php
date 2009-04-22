@@ -10,39 +10,56 @@ $size = 4;
 
 $sechseck = '';
 
-$right = $l->makecode("rcall moverr\r\n", 8 * $size);
-$left  = $l->makecode("rcall moverl\r\n", 8 * $size);
+$right = "rcall moverr\r\n";
+$left  = "rcall moverl\r\n";
 
-$rightup = $l->makecode(
+$rightup = 
 "rcall moverr\r\nrcall movetr\r\nrcall movetr\r\n".
 "rcall moverr\r\nrcall movetr\r\nrcall movetr\r\n".
 "rcall moverr\r\nrcall movetr\r\nrcall movetr\r\n".
-"rcall moverr\r\nrcall movetr\r\n", $size);
+"rcall moverr\r\nrcall movetr\r\n";
 
-$rightdown = $l->makecode(
+$rightdown = 
 "rcall moverr\r\nrcall movetl\r\nrcall movetl\r\n".
 "rcall moverr\r\nrcall movetl\r\nrcall movetl\r\n".
 "rcall moverr\r\nrcall movetl\r\nrcall movetl\r\n".
-"rcall moverr\r\nrcall movetl\r\n", $size);
+"rcall moverr\r\nrcall movetl\r\n";
 
 
-$leftup = $l->makecode(
+$leftup = 
 "rcall moverl\r\nrcall movetr\r\nrcall movetr\r\n".
 "rcall moverl\r\nrcall movetr\r\nrcall movetr\r\n".
 "rcall moverl\r\nrcall movetr\r\nrcall movetr\r\n".
-"rcall moverl\r\nrcall movetr\r\n", $size);
+"rcall moverl\r\nrcall movetr\r\n";
 
-$leftdown = $l->makecode(
+$leftdown = 
 "rcall moverl\r\nrcall movetl\r\nrcall movetl\r\n".
 "rcall moverl\r\nrcall movetl\r\nrcall movetl\r\n".
 "rcall moverl\r\nrcall movetl\r\nrcall movetl\r\n".
-"rcall moverl\r\nrcall movetl\r\n", $size);
+"rcall moverl\r\nrcall movetl\r\n";
 
-$sechseck = $left.$leftup.$rightup.$right.$rightdown.$leftdown.
-       $rightdown.$right.$rightup.$leftup.$left.$right.$rightdown.$right;
+$sechseck = 
+       $l->makecode($left, 8 * $size).
+       $l->makecode($leftup, $size).
+       $l->makecode($rightup, $size).
+       $l->makecode($right, 8 * $size).
+       $l->makecode($rightdown, $size).
+       $l->makecode($leftdown, $size).
+       $l->makecode($rightdown, $size).
+       $l->makecode($right, 8 * $size).
+       $l->makecode($rightup, $size).
+       $l->makecode($leftup, $size).
+       $l->makecode($left, 8 * $size).
+       $l->makecode($right, 8 * $size).
+       $l->makecode($rightdown, $size).
+       $l->makecode($right, 8 * $size)
+       ;
 
 $res = $l->makecode($sechseck, 16);
-$res .= $rightup.$right.$rightup;
+$res .= 
+       $l->makecode($rightup, $size).
+       $l->makecode($right, 8 * $size).
+       $l->makecode($rightup, $size);
 
 file_put_contents('sechseck.txt', $res);
 

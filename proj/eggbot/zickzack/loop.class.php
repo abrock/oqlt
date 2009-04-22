@@ -31,8 +31,8 @@ class loop {
          'inc r'.$register."\r\n".
          'brcs autogenloopmarkend'.$this->loopmark."\r\n".
          $code."\r\n".
-         'rjmp autogenloopmark'.$this->loopmark.":\r\n".
-         'autogenloopmarkend'.$this->loopmark."\r\n";
+         'rjmp autogenloopmark'.$this->loopmark."\r\n".
+         'autogenloopmarkend'.$this->loopmark.":\r\n";
          
   $this->loopmark++;
   
