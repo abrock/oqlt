@@ -2,6 +2,9 @@ silent bestellt am 24. April 2009 bei www.segor.de diversen
 Mikrocontroller-Kram. Wer auch was haben will, trägt sich hier ein und
 aktualisiert die Summe unten.
 
+Arduino Mega (58.31 EUR):
+  Scytale: 1 Stück
+
 Arduino Duemilanove (26.20 EUR):
   silent:  1 Stück
 
@@ -23,8 +26,9 @@ LED 3mm rot (0.08 EUR):
 
 Summe:
   95.19 EUR (silent)
+  58.31 EUR (Scytale)
 =========================
-  95.19 EUR
+ 153.50 EUR
 
 
 Versandkosten: Unter 75 EUR Warenwert: 6 Euro; 
