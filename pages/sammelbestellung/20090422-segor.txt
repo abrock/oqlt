@@ -5,6 +5,8 @@ aktualisiert die Summe unten.
 Arduino Duemilanove (26.20 EUR):
   silent:  1 Stück
 
+Arduino Ethernet Shield (36.89 EUR):
+  silent:  1 Stück
 
 ATmega 168-20PU (1 St.: 4.50 EUR;
 		 5 St.: 4.05 EUR;
@@ -20,9 +22,9 @@ LED 3mm rot (0.08 EUR):
   silent: 15 Stück
 
 Summe:
-  58.30 EUR (silent)
+  95.19 EUR (silent)
 =========================
-  58.30 EUR
+  95.19 EUR
 
 
 Versandkosten: Unter 75 EUR Warenwert: 6 Euro; 
