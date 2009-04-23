@@ -2,34 +2,38 @@ silent bestellt am 24. April 2009 bei www.segor.de diversen
 Mikrocontroller-Kram. Wer auch was haben will, trägt sich hier ein und
 aktualisiert die Summe unten.
 
-Arduino Mega (58.31 EUR):
+Arduino Mega (58,31€):
   Scytale: 1 Stück
 
-Arduino Duemilanove (26.20 EUR):
+Arduino Duemilanove (26,20€):
   silent:  1 Stück
 
-Arduino Ethernet Shield (36.89 EUR):
+Arduino Ethernet Shield (36,89€):
   silent:  1 Stück
 
-ATmega 168-20PU (1 St.: 4.50 EUR;
-		 5 St.: 4.05 EUR;
-		 10St.: 3.03 EUR;):
+ATmega 168-20PU (1 St.: 4,50€;
+		 5 St.: 4,05€;
+		 10St.: 3,03€;):
   silent:  3 Stück
 
 
-Steckbrett 165x110mm; 1660 Kontakte (17.40 EUR):
+Steckbrett 165x110mm; 1660 Kontakte (17,40€):
   silent:  1 Stück
 
 
-LED 3mm rot (0.08 EUR):
+LED 3mm rot (0,08€):
   silent: 15 Stück
 
+U.FL-SMAKU/RP 0,2m (9,50€)
+  Inte: 1 Stück
+
 Summe:
-  95.19 EUR (silent)
-  58.31 EUR (Scytale)
+  95,19€ (silent)
+  58,31€ (Scytale)
+   9,50€ (Inte)
 =========================
- 153.50 EUR
+ 163,00€
 
 
-Versandkosten: Unter 75 EUR Warenwert: 6 Euro; 
-	       ab 75 EUR Warenwert: kostenlos
+Versandkosten: Unter 75€ Warenwert: 6€; 
+	       ab 75€ Warenwert: kostenlos
