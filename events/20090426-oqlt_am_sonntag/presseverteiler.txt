@@ -1,19 +1,5 @@
 OFFEN
 =====
-
-Chaostreffs
-UUGRN
-NoName
-CCC Mannheim
-Chaos Darmstadt
-HS-Informatik (Dreamflasher)
-MAJUG (Dreamflasher)
-SUJ (Dreamflasher)
-Entropia
-CCCMZ
-C3F2M
-SAP-Students (Dreamflasher)
-Wochenblatt (Inte)
 Mannheimer Morgen (Inte)
 (more) ...
 
@@ -21,3 +7,20 @@ ERLEDIGT
 ========
 squareroots (Scytale)
 Uni (Scytale)
+SUJ (Dreamflasher)
+SAP-Students (Dreamflasher)
+HS-Informatik (Dreamflasher)
+MAJUG (Dreamflasher)
+Chaostreffs (Inte)
+UUGRN (Inte)
+NoName (Inte)
+CCC Mannheim (Inte)
+Chaos Darmstadt (Inte)
+Entropia (Inte)
+CCCMZ (Inte)
+C3F2M (Inte)
+MetaRheinMain (Inte)
+
+ÜBER DER DEADLINE
+=================
+Wochenblatt (Inte)
