@@ -38,6 +38,9 @@ ldi stepr, 8
 ldi stept, 8
 ldi tpos, 0
 
+add r25, one
+brcs end
+
 ; Main loop that simply rotates the egg. 21st century technology.
 end:
 
@@ -180,14 +183,14 @@ rcall dowait
 ret
 
 dowait:
-ldi loopa, 0x00
-ldi loopb, 0xfb
+ldi loopa, 0
+ldi loopb, 240
 loopmarka:
 add loopa, one
 brcs loopmarkb
 rjmp loopmarka
 loopmarkb:
-ldi loopa, 0x00
+ldi loopa, 220
 add loopb, one
 brcs loopend
 rjmp loopmarka

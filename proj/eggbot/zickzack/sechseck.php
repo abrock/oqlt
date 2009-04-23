@@ -55,11 +55,16 @@ $sechseck =
        $l->makecode($right, 8 * $size)
        ;
 
+$res = $sechseck;
+
+//*
 $res = $l->makecode($sechseck, 16);
 $res .= 
        $l->makecode($rightup, $size).
        $l->makecode($right, 8 * $size).
        $l->makecode($rightup, $size);
+//*/
+
 
 file_put_contents('sechseck.txt', $res);
 

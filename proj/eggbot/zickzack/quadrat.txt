@@ -46,10 +46,6 @@ rcall moverr
 rcall moverr
 rcall moverr
 rcall moverr
-rcall moverr
-rcall moverr
-rcall movetr
-rcall movetr
 rcall movetr
 rcall movetr
 rcall movetr
@@ -146,12 +142,6 @@ rcall moverl
 rcall moverl
 rcall moverl
 rcall moverl
-rcall moverl
-rcall moverl
-rcall moverr
-rcall moverr
-rcall moverr
-rcall moverr
 rcall moverr
 rcall moverr
 rcall moverr
@@ -296,8 +286,6 @@ rcall movetl
 rcall movetl
 rcall movetl
 rcall movetl
-rcall movetl
-rcall movetl
 rcall moverl
 rcall moverl
 rcall moverl
@@ -346,10 +334,6 @@ rcall moverl
 rcall moverl
 rcall moverl
 rcall moverl
-rcall moverl
-rcall moverl
-rcall moverr
-rcall moverr
 rcall moverr
 rcall moverr
 rcall moverr

@@ -1,5 +1,4 @@
 <?php
-$res = '';
 
 /*
  Höhe des Pentagrammes:
@@ -14,6 +13,8 @@ $res = '';
 */
 
 require_once('kreis.php');
+require_once('loop.class.php');
+$l = new loop();
 
 $a = 300;
 
@@ -43,40 +44,41 @@ for ($i = 1; $i <= 40; $i++) {
 #$res .= str_repeat("rcall moverr\r\n", $size*2);
 
 # Viertelkreis 9-12 Uhr
+$res = '';
 $res .= kreis($size/1.9, 4);
 
 # Nach rechts unten fahren
-$res .= str_repeat("rcall moverr\r\nrcall movetl\r\nrcall movetl\r\nrcall movetl\r\n",
+$res .= $l->makecode("rcall moverr\r\nrcall movetl\r\nrcall movetl\r\nrcall movetl\r\n",
  round($size/(sqrt(3*3+1*1))));
 echo '(1r,2d) '.round($size/(sqrt(3*3+1*1)))."\r\n";
 
 # Nach links auf halbe Höhe fahren
-$res .= str_repeat("rcall moverl\r\nrcall movetr\r\nrcall moverl\r\nrcall movetr\r\nrcall moverl\r\n",
+$res .= $l->makecode("rcall moverl\r\nrcall movetr\r\nrcall moverl\r\nrcall movetr\r\nrcall moverl\r\n",
  round($size/(sqrt(3*3+2*2))));
 echo '(3l,2u) '.round($size/(sqrt(3*3+2*2)))."\r\n";
 
 # Waagrecht nach rechts fahren
-$res .= str_repeat("rcall moverr\r\n",
+$res .= $l->makecode("rcall moverr\r\n",
  $size);
 echo '(1r) '.$size."\r\n";
 
 # Rundungsfehler Fehler ausgleichen
 $error = 2 * round($size/(sqrt(3*3+1*1))) - 3 * round($size/(sqrt(3*3+2*2))) + $size - 3 * round($size/(sqrt(3*3+2*2)));
 if ($error < 0) {
- $res .= str_repeat("rcall moverr\r\n", -$error);
+ $res .= $l->makecode("rcall moverr\r\n", -$error);
 }
 else {
- $res .= str_repeat("rcall moverl\r\n", $error);
+ $res .= $l->makecode("rcall moverl\r\n", $error);
 }
 
 # Nach links unten fahren
-$res .= str_repeat("rcall moverl\r\nrcall movetl\r\nrcall moverl\r\nrcall movetl\r\nrcall moverl\r\n",
+$res .= $l->makecode("rcall moverl\r\nrcall movetl\r\nrcall moverl\r\nrcall movetl\r\nrcall moverl\r\n",
  round($size/(sqrt(3*3+2*2))));
 echo '(3l, 2d)  '.round($size/(sqrt(3*3+2*2)))."\r\n";
 
 
 # Nach rechts oben fahren
-$res .= str_repeat("rcall moverr\r\nrcall movetr\r\nrcall movetr\r\nrcall movetr\r\n",
+$res .= $l->makecode("rcall moverr\r\nrcall movetr\r\nrcall movetr\r\nrcall movetr\r\n",
  round($size/(sqrt(3*3+1*1))));
 echo '(1r,2u) '.round($size/(sqrt(3*3+1*1)))."\r\n";
 
