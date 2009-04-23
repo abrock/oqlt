@@ -1,0 +1,8 @@
+Experimentell ermittelte Werte für den Speicherverbrauch von Assembler-Befehlen
+
+rjmp:   2B
+ldi:    2B
+add:    2B
+rcall:  2B
+sprungmarke: 0B
+brcs:   2B

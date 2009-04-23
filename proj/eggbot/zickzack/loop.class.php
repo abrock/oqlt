@@ -28,8 +28,14 @@ class loop {
   }
   $res = "\r\n".'ldi r'.$register.', '.(255 - $times)."\r\n".
          'autogenloopmark'.$this->loopmark.":\r\n".
-         'inc r'.$register."\r\n".
-         'brcs autogenloopmarkend'.$this->loopmark."\r\n".
+         
+         'rjmp autogenloopmarkskip'.$this->loopmark."\r\n".
+         'autogenloopmarkendstart'.$this->loopmark.":\r\n".
+         'rjmp autogenloopmarkend'.$this->loopmark."\r\n".
+         'autogenloopmarkskip'.$this->loopmark.":\r\n".
+         
+         'add r'.$register.", one\r\n".
+         'brcs autogenloopmarkendstart'.$this->loopmark."\r\n".
          $code."\r\n".
          'rjmp autogenloopmark'.$this->loopmark."\r\n".
          'autogenloopmarkend'.$this->loopmark.":\r\n";

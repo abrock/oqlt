@@ -1,13 +1,21 @@
 
 ldi r26, 239
 autogenloopmark14:
-inc r26
-brcs autogenloopmarkend14
+rjmp autogenloopmarkskip14
+autogenloopmarkendstart14:
+rjmp autogenloopmarkend14
+autogenloopmarkskip14:
+add r26, one
+brcs autogenloopmarkendstart14
 
 ldi r25, 223
 autogenloopmark0:
-inc r25
-brcs autogenloopmarkend0
+rjmp autogenloopmarkskip0
+autogenloopmarkendstart0:
+rjmp autogenloopmarkend0
+autogenloopmarkskip0:
+add r25, one
+brcs autogenloopmarkendstart0
 rcall moverl
 
 rjmp autogenloopmark0
@@ -15,8 +23,12 @@ autogenloopmarkend0:
 
 ldi r25, 251
 autogenloopmark1:
-inc r25
-brcs autogenloopmarkend1
+rjmp autogenloopmarkskip1
+autogenloopmarkendstart1:
+rjmp autogenloopmarkend1
+autogenloopmarkskip1:
+add r25, one
+brcs autogenloopmarkendstart1
 rcall moverl
 rcall movetr
 rcall movetr
@@ -34,8 +46,12 @@ autogenloopmarkend1:
 
 ldi r25, 251
 autogenloopmark2:
-inc r25
-brcs autogenloopmarkend2
+rjmp autogenloopmarkskip2
+autogenloopmarkendstart2:
+rjmp autogenloopmarkend2
+autogenloopmarkskip2:
+add r25, one
+brcs autogenloopmarkendstart2
 rcall moverr
 rcall movetr
 rcall movetr
@@ -53,8 +69,12 @@ autogenloopmarkend2:
 
 ldi r25, 223
 autogenloopmark3:
-inc r25
-brcs autogenloopmarkend3
+rjmp autogenloopmarkskip3
+autogenloopmarkendstart3:
+rjmp autogenloopmarkend3
+autogenloopmarkskip3:
+add r25, one
+brcs autogenloopmarkendstart3
 rcall moverr
 
 rjmp autogenloopmark3
@@ -62,8 +82,12 @@ autogenloopmarkend3:
 
 ldi r25, 251
 autogenloopmark4:
-inc r25
-brcs autogenloopmarkend4
+rjmp autogenloopmarkskip4
+autogenloopmarkendstart4:
+rjmp autogenloopmarkend4
+autogenloopmarkskip4:
+add r25, one
+brcs autogenloopmarkendstart4
 rcall moverr
 rcall movetl
 rcall movetl
@@ -81,8 +105,12 @@ autogenloopmarkend4:
 
 ldi r25, 251
 autogenloopmark5:
-inc r25
-brcs autogenloopmarkend5
+rjmp autogenloopmarkskip5
+autogenloopmarkendstart5:
+rjmp autogenloopmarkend5
+autogenloopmarkskip5:
+add r25, one
+brcs autogenloopmarkendstart5
 rcall moverl
 rcall movetl
 rcall movetl
@@ -100,8 +128,12 @@ autogenloopmarkend5:
 
 ldi r25, 251
 autogenloopmark6:
-inc r25
-brcs autogenloopmarkend6
+rjmp autogenloopmarkskip6
+autogenloopmarkendstart6:
+rjmp autogenloopmarkend6
+autogenloopmarkskip6:
+add r25, one
+brcs autogenloopmarkendstart6
 rcall moverr
 rcall movetl
 rcall movetl
@@ -119,8 +151,12 @@ autogenloopmarkend6:
 
 ldi r25, 223
 autogenloopmark7:
-inc r25
-brcs autogenloopmarkend7
+rjmp autogenloopmarkskip7
+autogenloopmarkendstart7:
+rjmp autogenloopmarkend7
+autogenloopmarkskip7:
+add r25, one
+brcs autogenloopmarkendstart7
 rcall moverr
 
 rjmp autogenloopmark7
@@ -128,8 +164,12 @@ autogenloopmarkend7:
 
 ldi r25, 251
 autogenloopmark8:
-inc r25
-brcs autogenloopmarkend8
+rjmp autogenloopmarkskip8
+autogenloopmarkendstart8:
+rjmp autogenloopmarkend8
+autogenloopmarkskip8:
+add r25, one
+brcs autogenloopmarkendstart8
 rcall moverr
 rcall movetr
 rcall movetr
@@ -147,8 +187,12 @@ autogenloopmarkend8:
 
 ldi r25, 251
 autogenloopmark9:
-inc r25
-brcs autogenloopmarkend9
+rjmp autogenloopmarkskip9
+autogenloopmarkendstart9:
+rjmp autogenloopmarkend9
+autogenloopmarkskip9:
+add r25, one
+brcs autogenloopmarkendstart9
 rcall moverl
 rcall movetr
 rcall movetr
@@ -166,8 +210,12 @@ autogenloopmarkend9:
 
 ldi r25, 223
 autogenloopmark10:
-inc r25
-brcs autogenloopmarkend10
+rjmp autogenloopmarkskip10
+autogenloopmarkendstart10:
+rjmp autogenloopmarkend10
+autogenloopmarkskip10:
+add r25, one
+brcs autogenloopmarkendstart10
 rcall moverl
 
 rjmp autogenloopmark10
@@ -175,8 +223,12 @@ autogenloopmarkend10:
 
 ldi r25, 223
 autogenloopmark11:
-inc r25
-brcs autogenloopmarkend11
+rjmp autogenloopmarkskip11
+autogenloopmarkendstart11:
+rjmp autogenloopmarkend11
+autogenloopmarkskip11:
+add r25, one
+brcs autogenloopmarkendstart11
 rcall moverr
 
 rjmp autogenloopmark11
@@ -184,8 +236,12 @@ autogenloopmarkend11:
 
 ldi r25, 251
 autogenloopmark12:
-inc r25
-brcs autogenloopmarkend12
+rjmp autogenloopmarkskip12
+autogenloopmarkendstart12:
+rjmp autogenloopmarkend12
+autogenloopmarkskip12:
+add r25, one
+brcs autogenloopmarkendstart12
 rcall moverr
 rcall movetl
 rcall movetl
@@ -203,8 +259,12 @@ autogenloopmarkend12:
 
 ldi r25, 223
 autogenloopmark13:
-inc r25
-brcs autogenloopmarkend13
+rjmp autogenloopmarkskip13
+autogenloopmarkendstart13:
+rjmp autogenloopmarkend13
+autogenloopmarkskip13:
+add r25, one
+brcs autogenloopmarkendstart13
 rcall moverr
 
 rjmp autogenloopmark13
@@ -215,8 +275,12 @@ autogenloopmarkend14:
 
 ldi r25, 251
 autogenloopmark15:
-inc r25
-brcs autogenloopmarkend15
+rjmp autogenloopmarkskip15
+autogenloopmarkendstart15:
+rjmp autogenloopmarkend15
+autogenloopmarkskip15:
+add r25, one
+brcs autogenloopmarkendstart15
 rcall moverr
 rcall movetr
 rcall movetr
@@ -234,8 +298,12 @@ autogenloopmarkend15:
 
 ldi r25, 223
 autogenloopmark16:
-inc r25
-brcs autogenloopmarkend16
+rjmp autogenloopmarkskip16
+autogenloopmarkendstart16:
+rjmp autogenloopmarkend16
+autogenloopmarkskip16:
+add r25, one
+brcs autogenloopmarkendstart16
 rcall moverr
 
 rjmp autogenloopmark16
@@ -243,8 +311,12 @@ autogenloopmarkend16:
 
 ldi r25, 251
 autogenloopmark17:
-inc r25
-brcs autogenloopmarkend17
+rjmp autogenloopmarkskip17
+autogenloopmarkendstart17:
+rjmp autogenloopmarkend17
+autogenloopmarkskip17:
+add r25, one
+brcs autogenloopmarkendstart17
 rcall moverr
 rcall movetr
 rcall movetr

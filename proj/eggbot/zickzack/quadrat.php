@@ -1,7 +1,7 @@
 <?php
 $res = '';
 
-$size = 30;
+$size = 48;
 
 $up = str_repeat("rcall movetr\r\n", $size);
 $down = str_repeat("rcall movetl\r\n", $size);
