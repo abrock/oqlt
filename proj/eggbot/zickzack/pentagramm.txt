@@ -126,10 +126,15 @@ rcall moverr
 rcall moverr
 rcall moverr
 
+
 ldi r25, 217
 autogenloopmark0:
+rjmp autogenloopmarkskip0
+autogenloopmarkendstart0:
+rjmp autogenloopmarkend0
+autogenloopmarkskip0:
 add r25, one
-brcs autogenloopmarkend0
+brcs autogenloopmarkendstart0
 rcall moverr
 rcall movetl
 rcall movetl
@@ -140,8 +145,12 @@ autogenloopmarkend0:
 
 ldi r25, 222
 autogenloopmark1:
+rjmp autogenloopmarkskip1
+autogenloopmarkendstart1:
+rjmp autogenloopmarkend1
+autogenloopmarkskip1:
 add r25, one
-brcs autogenloopmarkend1
+brcs autogenloopmarkendstart1
 rcall moverl
 rcall movetr
 rcall moverl
@@ -153,8 +162,12 @@ autogenloopmarkend1:
 
 ldi r25, 135
 autogenloopmark2:
+rjmp autogenloopmarkskip2
+autogenloopmarkendstart2:
+rjmp autogenloopmarkend2
+autogenloopmarkskip2:
 add r25, one
-brcs autogenloopmarkend2
+brcs autogenloopmarkendstart2
 rcall moverr
 
 rjmp autogenloopmark2
@@ -162,8 +175,12 @@ autogenloopmarkend2:
 
 ldi r25, 253
 autogenloopmark3:
+rjmp autogenloopmarkskip3
+autogenloopmarkendstart3:
+rjmp autogenloopmarkend3
+autogenloopmarkskip3:
 add r25, one
-brcs autogenloopmarkend3
+brcs autogenloopmarkendstart3
 rcall moverr
 
 rjmp autogenloopmark3
@@ -171,8 +188,12 @@ autogenloopmarkend3:
 
 ldi r25, 222
 autogenloopmark4:
+rjmp autogenloopmarkskip4
+autogenloopmarkendstart4:
+rjmp autogenloopmarkend4
+autogenloopmarkskip4:
 add r25, one
-brcs autogenloopmarkend4
+brcs autogenloopmarkendstart4
 rcall moverl
 rcall movetl
 rcall moverl
@@ -184,8 +205,12 @@ autogenloopmarkend4:
 
 ldi r25, 217
 autogenloopmark5:
+rjmp autogenloopmarkskip5
+autogenloopmarkendstart5:
+rjmp autogenloopmarkend5
+autogenloopmarkskip5:
 add r25, one
-brcs autogenloopmarkend5
+brcs autogenloopmarkendstart5
 rcall moverr
 rcall movetr
 rcall movetr
@@ -320,6 +345,7 @@ rcall movetl
 rcall movetl
 rcall movetl
 rcall movetl
+
 rcall movetl
 rcall movetl
 rcall movetl
@@ -447,6 +473,7 @@ rcall moverl
 rcall moverl
 rcall moverl
 rcall moverl
+
 rcall moverl
 rcall moverl
 rcall moverl
@@ -574,6 +601,7 @@ rcall movetr
 rcall movetr
 rcall movetr
 rcall movetr
+
 rcall movetr
 rcall movetr
 rcall movetr
@@ -701,6 +729,7 @@ rcall moverr
 rcall moverr
 rcall moverr
 rcall moverr
+
 rcall moverr
 rcall moverr
 rcall moverr
@@ -828,3 +857,4 @@ rcall movetl
 rcall movetl
 rcall movetl
 rcall movetl
+

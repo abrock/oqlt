@@ -38,9 +38,6 @@ ldi stepr, 8
 ldi stept, 8
 ldi tpos, 0
 
-add r25, one
-brcs end
-
 ; Main loop that simply rotates the egg. 21st century technology.
 end:
 

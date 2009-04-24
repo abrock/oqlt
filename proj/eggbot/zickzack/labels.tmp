@@ -20,7 +20,7 @@
   <FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.map</FILE>
  </OUTPUT_FILES>
  <LABELS>
-  <end><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>45</LINE></end>
+  <end><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>42</LINE></end>
   <autogenloopmark14><FILE>X:\home\oqlt\proj\eggbot\zickzack\sechseck.txt</FILE><LINE>3</LINE></autogenloopmark14>
   <autogenloopmarkskip14><FILE>X:\home\oqlt\proj\eggbot\zickzack\sechseck.txt</FILE><LINE>7</LINE></autogenloopmarkskip14>
   <autogenloopmarkendstart14><FILE>X:\home\oqlt\proj\eggbot\zickzack\sechseck.txt</FILE><LINE>5</LINE></autogenloopmarkendstart14>
@@ -29,17 +29,17 @@
   <autogenloopmarkskip0><FILE>X:\home\oqlt\proj\eggbot\zickzack\sechseck.txt</FILE><LINE>16</LINE></autogenloopmarkskip0>
   <autogenloopmarkendstart0><FILE>X:\home\oqlt\proj\eggbot\zickzack\sechseck.txt</FILE><LINE>14</LINE></autogenloopmarkendstart0>
   <autogenloopmarkend0><FILE>X:\home\oqlt\proj\eggbot\zickzack\sechseck.txt</FILE><LINE>22</LINE></autogenloopmarkend0>
-  <moverl><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>66</LINE></moverl>
+  <moverl><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>63</LINE></moverl>
   <autogenloopmark1><FILE>X:\home\oqlt\proj\eggbot\zickzack\sechseck.txt</FILE><LINE>25</LINE></autogenloopmark1>
   <autogenloopmarkskip1><FILE>X:\home\oqlt\proj\eggbot\zickzack\sechseck.txt</FILE><LINE>29</LINE></autogenloopmarkskip1>
   <autogenloopmarkendstart1><FILE>X:\home\oqlt\proj\eggbot\zickzack\sechseck.txt</FILE><LINE>27</LINE></autogenloopmarkendstart1>
   <autogenloopmarkend1><FILE>X:\home\oqlt\proj\eggbot\zickzack\sechseck.txt</FILE><LINE>45</LINE></autogenloopmarkend1>
-  <movetr><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>73</LINE></movetr>
+  <movetr><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>70</LINE></movetr>
   <autogenloopmark2><FILE>X:\home\oqlt\proj\eggbot\zickzack\sechseck.txt</FILE><LINE>48</LINE></autogenloopmark2>
   <autogenloopmarkskip2><FILE>X:\home\oqlt\proj\eggbot\zickzack\sechseck.txt</FILE><LINE>52</LINE></autogenloopmarkskip2>
   <autogenloopmarkendstart2><FILE>X:\home\oqlt\proj\eggbot\zickzack\sechseck.txt</FILE><LINE>50</LINE></autogenloopmarkendstart2>
   <autogenloopmarkend2><FILE>X:\home\oqlt\proj\eggbot\zickzack\sechseck.txt</FILE><LINE>68</LINE></autogenloopmarkend2>
-  <moverr><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>59</LINE></moverr>
+  <moverr><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>56</LINE></moverr>
   <autogenloopmark3><FILE>X:\home\oqlt\proj\eggbot\zickzack\sechseck.txt</FILE><LINE>71</LINE></autogenloopmark3>
   <autogenloopmarkskip3><FILE>X:\home\oqlt\proj\eggbot\zickzack\sechseck.txt</FILE><LINE>75</LINE></autogenloopmarkskip3>
   <autogenloopmarkendstart3><FILE>X:\home\oqlt\proj\eggbot\zickzack\sechseck.txt</FILE><LINE>73</LINE></autogenloopmarkendstart3>
@@ -48,7 +48,7 @@
   <autogenloopmarkskip4><FILE>X:\home\oqlt\proj\eggbot\zickzack\sechseck.txt</FILE><LINE>88</LINE></autogenloopmarkskip4>
   <autogenloopmarkendstart4><FILE>X:\home\oqlt\proj\eggbot\zickzack\sechseck.txt</FILE><LINE>86</LINE></autogenloopmarkendstart4>
   <autogenloopmarkend4><FILE>X:\home\oqlt\proj\eggbot\zickzack\sechseck.txt</FILE><LINE>104</LINE></autogenloopmarkend4>
-  <movetl><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>80</LINE></movetl>
+  <movetl><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>77</LINE></movetl>
   <autogenloopmark5><FILE>X:\home\oqlt\proj\eggbot\zickzack\sechseck.txt</FILE><LINE>107</LINE></autogenloopmark5>
   <autogenloopmarkskip5><FILE>X:\home\oqlt\proj\eggbot\zickzack\sechseck.txt</FILE><LINE>111</LINE></autogenloopmarkskip5>
   <autogenloopmarkendstart5><FILE>X:\home\oqlt\proj\eggbot\zickzack\sechseck.txt</FILE><LINE>109</LINE></autogenloopmarkendstart5>
@@ -97,32 +97,36 @@
   <autogenloopmarkskip17><FILE>X:\home\oqlt\proj\eggbot\zickzack\sechseck.txt</FILE><LINE>317</LINE></autogenloopmarkskip17>
   <autogenloopmarkendstart17><FILE>X:\home\oqlt\proj\eggbot\zickzack\sechseck.txt</FILE><LINE>315</LINE></autogenloopmarkendstart17>
   <autogenloopmarkend17><FILE>X:\home\oqlt\proj\eggbot\zickzack\sechseck.txt</FILE><LINE>333</LINE></autogenloopmarkend17>
-  <mover><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>87</LINE></mover>
-  <setport><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>179</LINE></setport>
-  <movel><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>133</LINE></movel>
-  <movejumpsr><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>94</LINE></movejumpsr>
-  <move09r><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>106</LINE></move09r>
-  <move06r><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>109</LINE></move06r>
-  <move05r><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>112</LINE></move05r>
-  <move01r><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>115</LINE></move01r>
-  <move04r><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>118</LINE></move04r>
-  <move0ar><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>121</LINE></move0ar>
-  <move08r><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>124</LINE></move08r>
-  <move02r><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>127</LINE></move02r>
-  <moveendr><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>130</LINE></moveendr>
-  <movejumpsl><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>140</LINE></movejumpsl>
-  <move05l><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>158</LINE></move05l>
-  <move0al><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>167</LINE></move0al>
-  <move06l><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>155</LINE></move06l>
-  <move04l><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>164</LINE></move04l>
-  <move02l><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>173</LINE></move02l>
-  <move09l><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>152</LINE></move09l>
-  <move01l><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>161</LINE></move01l>
-  <move08l><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>170</LINE></move08l>
-  <moveendl><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>176</LINE></moveendl>
-  <dowait><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>185</LINE></dowait>
-  <loopmarka><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>188</LINE></loopmarka>
-  <loopmarkb><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>192</LINE></loopmarkb>
-  <loopend><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>197</LINE></loopend>
+  <autogenloopmark18><FILE>X:\home\oqlt\proj\eggbot\zickzack\sechseck.txt</FILE><LINE>336</LINE></autogenloopmark18>
+  <autogenloopmarkskip18><FILE>X:\home\oqlt\proj\eggbot\zickzack\sechseck.txt</FILE><LINE>340</LINE></autogenloopmarkskip18>
+  <autogenloopmarkendstart18><FILE>X:\home\oqlt\proj\eggbot\zickzack\sechseck.txt</FILE><LINE>338</LINE></autogenloopmarkendstart18>
+  <autogenloopmarkend18><FILE>X:\home\oqlt\proj\eggbot\zickzack\sechseck.txt</FILE><LINE>356</LINE></autogenloopmarkend18>
+  <mover><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>84</LINE></mover>
+  <setport><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>176</LINE></setport>
+  <movel><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>130</LINE></movel>
+  <movejumpsr><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>91</LINE></movejumpsr>
+  <move09r><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>103</LINE></move09r>
+  <move06r><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>106</LINE></move06r>
+  <move05r><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>109</LINE></move05r>
+  <move01r><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>112</LINE></move01r>
+  <move04r><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>115</LINE></move04r>
+  <move0ar><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>118</LINE></move0ar>
+  <move08r><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>121</LINE></move08r>
+  <move02r><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>124</LINE></move02r>
+  <moveendr><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>127</LINE></moveendr>
+  <movejumpsl><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>137</LINE></movejumpsl>
+  <move05l><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>155</LINE></move05l>
+  <move0al><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>164</LINE></move0al>
+  <move06l><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>152</LINE></move06l>
+  <move04l><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>161</LINE></move04l>
+  <move02l><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>170</LINE></move02l>
+  <move09l><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>149</LINE></move09l>
+  <move01l><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>158</LINE></move01l>
+  <move08l><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>167</LINE></move08l>
+  <moveendl><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>173</LINE></moveendl>
+  <dowait><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>182</LINE></dowait>
+  <loopmarka><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>185</LINE></loopmarka>
+  <loopmarkb><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>189</LINE></loopmarkb>
+  <loopend><FILE>X:\home\oqlt\proj\eggbot\zickzack\zickzack.asm</FILE><LINE>194</LINE></loopend>
  </LABELS>
 </ASSEMBLER_INFO>

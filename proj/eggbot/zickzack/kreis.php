@@ -1,6 +1,6 @@
 <?php
 
-function kreis ($radius, $teilviertel = 0) {
+function kreis ($radius, $teilviertel = 0, $winkel1, $winkel2) {
 
  $res = '';
 
@@ -28,7 +28,9 @@ function kreis ($radius, $teilviertel = 0) {
     $res .= str_repeat("rcall movetl\r\n", $viertel[$x]);
    }
   }
+  $res .= "\r\n";
  }
+ 
 
  if ($teilviertel == 0 or $teilviertel == 2) {
   for ($x = count($viertel); $x > 0; $x--) {
@@ -37,6 +39,7 @@ function kreis ($radius, $teilviertel = 0) {
    }
    $res .= "rcall moverl\r\n";
   }
+  $res .= "\r\n";
  }
 
  if ($teilviertel == 0 or $teilviertel == 3) {
@@ -46,6 +49,7 @@ function kreis ($radius, $teilviertel = 0) {
     $res .= str_repeat("rcall movetr\r\n", $viertel[$x]);
    }
   }
+  $res .= "\r\n";
  }
 
  if ($teilviertel == 0 or $teilviertel == 4) {
@@ -55,6 +59,7 @@ function kreis ($radius, $teilviertel = 0) {
    }
    $res .= "rcall moverr\r\n";
   }
+  $res .= "\r\n";
  }
 
  return $res;

@@ -55,14 +55,13 @@ $sechseck =
        $l->makecode($right, 8 * $size)
        ;
 
-$res = $sechseck;
-
 //*
-$res = $l->makecode($sechseck, 16);
+$res = $l->makecode($sechseck, 20);
 $res .= 
        $l->makecode($rightup, $size).
        $l->makecode($right, 8 * $size).
-       $l->makecode($rightup, $size);
+       $l->makecode($rightup, $size).
+       $l->makecode($leftup, $size);
 //*/
 
 

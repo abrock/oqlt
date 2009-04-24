@@ -1,5 +1,5 @@
 
-ldi r26, 239
+ldi r26, 235
 autogenloopmark14:
 rjmp autogenloopmarkskip14
 autogenloopmarkendstart14:
@@ -331,3 +331,26 @@ rcall movetr
 
 rjmp autogenloopmark17
 autogenloopmarkend17:
+
+ldi r25, 251
+autogenloopmark18:
+rjmp autogenloopmarkskip18
+autogenloopmarkendstart18:
+rjmp autogenloopmarkend18
+autogenloopmarkskip18:
+add r25, one
+brcs autogenloopmarkendstart18
+rcall moverl
+rcall movetr
+rcall movetr
+rcall moverl
+rcall movetr
+rcall movetr
+rcall moverl
+rcall movetr
+rcall movetr
+rcall moverl
+rcall movetr
+
+rjmp autogenloopmark18
+autogenloopmarkend18:
