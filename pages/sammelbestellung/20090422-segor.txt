@@ -39,5 +39,9 @@ Summe:
  166,60€
 
 
-Versandkosten: Unter 75€ Warenwert: 6€; 
-	       ab 75€ Warenwert: kostenlos
+Versandkosten: kostenlos
+
+
+STATUS
+
+20090424 - 14:44 Uhr: Bestellung abgeschickt 
