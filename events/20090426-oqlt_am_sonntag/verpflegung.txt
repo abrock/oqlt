@@ -1,0 +1,33 @@
+Kuchen			 2,49
+Fruechtetee		 2,55
+Butterkranz		 2,89
+Konfitüre Waldfrucht	 0,99
+Konfitüre Erdbeer	 0,89
+Nuss-Nouat-Creme	 1,85
+Mortadella		 0,69
+Schinken		 1,29
+Salami			 0,95
+Brie			 1,15
+Maasdamer		 0,99
+Servietten		 1,10
+Gurke			 0,19
+Eier			 2,18
+=============================
+SUMME			20,20
+
+FRÜHSTÜCKSTEILNEHMER
+Christian
+Cosima
+DaFo
+dakra
+DreamFlasher
+Inte
+Nathalie
+Nessi
+s0rk
+Scytale
+Silent Shadow
+Toaster
+
+12 Personen
+je 2 Brötchen
