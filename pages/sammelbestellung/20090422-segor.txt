@@ -44,4 +44,7 @@ Versandkosten: kostenlos
 
 STATUS
 
-20090424 - 14:44 Uhr: Bestellung abgeschickt 
+20090424 - 14:44 Uhr: 	Bestellung abgeschickt
+			Versand: UPS
+
+20090424 - 18:58 Uhr:	Endbetrag überwiesen	
