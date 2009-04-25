@@ -1,6 +1,6 @@
 <?php
 
-function kreis ($radius, $teilviertel = 0, $winkel1, $winkel2) {
+function kreis ($radius, $teilviertel = 0) {
 
  $res = '';
 
@@ -62,15 +62,69 @@ function kreis ($radius, $teilviertel = 0, $winkel1, $winkel2) {
   $res .= "\r\n";
  }
 
- return $res;
+ return "\r\n".$res."\r\n";
 
 }
 
-$res = '';
-$res .= kreis(50, 4);
-$res .= kreis(50);
-$res .= kreis(50, 1);
+function reverseCode($res) {
+ $res = explode("\n", $res);
+ $res = array_reverse($res);
+ $res = implode("\n", $res);
+ return "\r\n".$res."\r\n";
+}
 
-file_put_contents('kreis.txt', $res);
 
+
+function teilkreis($radius, $start, $stop) {
+ if ($start > $stop) {
+  echo '$start > $stop'."\r\n";
+  return reverseCode(teilkreis($radius, $stop+180, $start+180));
+ }
+ 
+ $start = $start % 360;
+ $stop  = $stop  % 360;
+
+ while ($start < 0) {
+  $start += 360;
+ }
+
+ while($stop < 0) {
+  $stop += 360;
+ }
+
+ $start = $start * PI() / 180;
+ $stop  = $stop  * PI() / 180;
+
+ echo 'Start: '.$start.' Stop: '.$stop."\r\n";
+
+ $kreis = kreis($radius);
+ #return $kreis;
+ $kreis = explode("\n", $kreis);
+ $kreis = array_map('trim', $kreis);
+ #echo 'Kreis1: '.count($kreis)."\r\n";
+ foreach ($kreis as $key=>$value) {
+  if (empty($value) or strpos($value, 'rcall') === false) {
+   unset($kreis[$key]);
+  }
+ }
+ #echo 'Kreis2: '.count($kreis)."\r\n";
+ $kreis = array_values($kreis);
+ #echo 'Kreis3: '.count($kreis)."\r\n";
+
+ $length = count($kreis);
+
+ for ($i = 0; $i < round($length * $start / (2 * PI())); $i++) {
+  unset($kreis[$i]);
+ }
+ echo round($length * $start / (2 * PI()))."\r\n";
+
+ for ($i = round($length * $stop / (2 * PI())); $i < $length; $i++) {
+  unset($kreis[$i]);
+  #echo $i."\r\n";
+ }
+ echo round($length * $stop / (2 * PI()))."\r\n";
+ #print_r($kreis);
+ $kreis = implode("\r\n", $kreis);
+ return "\r\n".$kreis."\r\n";
+}
 ?>

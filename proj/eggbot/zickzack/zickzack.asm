@@ -43,7 +43,9 @@ end:
 
 ;.include "zickzack.txt"
 
-.include "sechseck.txt"
+;.include "sechseck.txt"
+
+.include "pentagramm.txt"
 
 ;rcall moverr
 

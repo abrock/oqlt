@@ -27,9 +27,9 @@ $res = array_map('strtolower', $res);
 
 class autoshrink {
  
- var mc;
- var overhead = 12;
- var bites_per_step = 2;
+ var $mc;
+ var $overhead = 12;
+ var $bites_per_step = 2;
  
  var $loopmark = 0;
  var $minreg = 25;
@@ -182,5 +182,5 @@ class autoshrink {
 } 
 
 $t = new autoshrink();
-echo $t->countRepeats('a', 'aaaaab');
+echo $t->countRepeats('aa', 'aaaaab');
 ?>

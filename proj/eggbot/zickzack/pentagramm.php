@@ -45,24 +45,26 @@ for ($i = 1; $i <= 40; $i++) {
 
 # Viertelkreis 9-12 Uhr
 $res = '';
+$res .= "; Viertelkreis 9-12 Uhr\r\n";
 $res .= kreis($size/1.9, 4);
 
 # Nach rechts unten fahren
+$res .= "; Nach rechts unten fahren\r\n";
 $res .= $l->makecode("rcall moverr\r\nrcall movetl\r\nrcall movetl\r\nrcall movetl\r\n",
  round($size/(sqrt(3*3+1*1))));
 echo '(1r,2d) '.round($size/(sqrt(3*3+1*1)))."\r\n";
 
-# Nach links auf halbe Höhe fahren
+$res .= ";# Nach links auf halbe Höhe fahren\r\n";
 $res .= $l->makecode("rcall moverl\r\nrcall movetr\r\nrcall moverl\r\nrcall movetr\r\nrcall moverl\r\n",
  round($size/(sqrt(3*3+2*2))));
 echo '(3l,2u) '.round($size/(sqrt(3*3+2*2)))."\r\n";
 
-# Waagrecht nach rechts fahren
+$res .= ";# Waagrecht nach rechts fahren\r\n";
 $res .= $l->makecode("rcall moverr\r\n",
  $size);
 echo '(1r) '.$size."\r\n";
 
-# Rundungsfehler Fehler ausgleichen
+$res .= ";# Rundungsfehler Fehler ausgleichen\r\n";
 $error = 2 * round($size/(sqrt(3*3+1*1))) - 3 * round($size/(sqrt(3*3+2*2))) + $size - 3 * round($size/(sqrt(3*3+2*2)));
 if ($error < 0) {
  $res .= $l->makecode("rcall moverr\r\n", -$error);
@@ -71,24 +73,37 @@ else {
  $res .= $l->makecode("rcall moverl\r\n", $error);
 }
 
-# Nach links unten fahren
+$res .= ";# Nach links unten fahren\r\n";
 $res .= $l->makecode("rcall moverl\r\nrcall movetl\r\nrcall moverl\r\nrcall movetl\r\nrcall moverl\r\n",
  round($size/(sqrt(3*3+2*2))));
 echo '(3l, 2d)  '.round($size/(sqrt(3*3+2*2)))."\r\n";
 
 
-# Nach rechts oben fahren
+$res .= ";# Nach rechts oben fahren\r\n";
 $res .= $l->makecode("rcall moverr\r\nrcall movetr\r\nrcall movetr\r\nrcall movetr\r\n",
  round($size/(sqrt(3*3+1*1))));
 echo '(1r,2u) '.round($size/(sqrt(3*3+1*1)))."\r\n";
 
-# Kreis fahren
+$res .= ";# Kreis fahren\r\n";
 $res .= kreis($size/1.9);
 
-# Viertelkreis 12-3 Uhr
+$res .= ";# Viertelkreis 12-3 Uhr\r\n";
 $res .= kreis($size/1.9, 1);
 
+$pentagramme = $l->makecode($res, 20);
+#$pentagramme .= "; Viertel 2\r\n";
+#$pentagramme .= kreis($size/1.9, 2);
+#$pentagramme .= "; Viertel 3\r\n";
+#$pentagramme .= kreis($size/1.9, 3);
+#$pentagramme .= "; Viertel 4\r\n";
+#$pentagramme .= kreis($size/1.9, 4);
+#$pentagramme .= "; 0-27 Grad\r\n";
+#$pentagramme .= teilkreis($size/1.9, 0, 27);
+#$pentagramme .= "; 210-272 Grad\r\n";
+#$pentagramme .= teilkreis($size/1.9, 210, 272);
+$pentagramme .= teilkreis($size/1.9, 90, 27);
+$pentagramme .= teilkreis($size/1.9, 210, 272);
 
 
-file_put_contents('pentagramm.txt', $res);
+file_put_contents('pentagramm.txt', $pentagramme);
 ?>

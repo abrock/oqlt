@@ -21,7 +21,10 @@ class loop {
  var $loopmark = 0;
  var $minreg = 25;
  
- function makecode($code, $times) {
+ function makecode($code, $times, $simulate = false) {
+  if ($simulate) {
+   return str_repeat($code, $times)."\r\n";
+  }
   $register = $this->minreg;
   while (strpos($code, 'r'.$register) !== false) {
    $register++;
@@ -42,7 +45,7 @@ class loop {
          
   $this->loopmark++;
   
-  return $res;
+  return "\r\n".$res."\r\n";
  }
 }
 

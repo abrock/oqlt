@@ -21,7 +21,8 @@ $res = file ($file);
 $res = array_map('trim', $res);
 $res = array_map('strtolower', $res);
 
-$res = array_merge($res, $res);
+# Um zu sehen, wo die Graphik endet einfach zweimal zeichnen
+#$res = array_merge($res, $res);
 
 $points = array();
 
