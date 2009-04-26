@@ -15,6 +15,10 @@ Eier			 2,18
 =============================
 SUMME			20,20
 
+30 Brötchen		 9,00
+=============================
+SUMME			29,20
+
 FRÜHSTÜCKSTEILNEHMER
 Christian
 Cosima
@@ -31,3 +35,7 @@ Toaster
 
 12 Personen
 Inte hat 30 Broetchen vorbestellt (Bäckerei Mantei, Lange Rötterstraße)
+
+SPENDENKASSE		25,88
+=============================
+TATSÄCHLICHE AUSGABEN	 3,32
