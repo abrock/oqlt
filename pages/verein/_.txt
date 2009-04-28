@@ -10,4 +10,5 @@ Steuertipps für gemeinnützige Vereine
 	Download: http://www.fm.baden-wuerttemberg.de/fm7/2347/Steuertipps_fuer_Vereine_August2008.pdf
 	Bestellformular: http://www.fm.baden-wuerttemberg.de/de/bestellformular/110375.html?orderid=109979
 
-
+TODO
+Mitgliedsantrag: Eindeutig formulieren, dass die Mitgliedschaft erst nach Beschluß laut Satzung & Geschäftsordnungen gültigkeit erlangt.
