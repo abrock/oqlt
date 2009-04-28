@@ -1,0 +1,36 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.30</VERSION>
+ <DEVICE>ATmega168</DEVICE>
+ <WORKING_DIR>X:\home\oqlt\proj\heiser-draht</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>E:\Programme\Atmel\AVR Tools\AvrAssembler2\Appnotes</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>X:\home\oqlt\proj\heiser-draht\heiser-draht.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>E:\Programme\Atmel\AVR Tools\AvrAssembler2\Appnotes\m168def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>X:\home\oqlt\proj\heiser-draht\heiser-draht.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>X:\home\oqlt\proj\heiser-draht\heiser-draht.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>X:\home\oqlt\proj\heiser-draht\heiser-draht.map</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <reset><FILE>X:\home\oqlt\proj\heiser-draht\heiser-draht.asm</FILE><LINE>257</LINE></reset>
+  <mainloop><FILE>X:\home\oqlt\proj\heiser-draht\heiser-draht.asm</FILE><LINE>57</LINE></mainloop>
+  <spieler1ende><FILE>X:\home\oqlt\proj\heiser-draht\heiser-draht.asm</FILE><LINE>105</LINE></spieler1ende>
+  <spieler1draht><FILE>X:\home\oqlt\proj\heiser-draht\heiser-draht.asm</FILE><LINE>177</LINE></spieler1draht>
+  <spieler1fertig><FILE>X:\home\oqlt\proj\heiser-draht\heiser-draht.asm</FILE><LINE>243</LINE></spieler1fertig>
+  <spieler2ende><FILE>X:\home\oqlt\proj\heiser-draht\heiser-draht.asm</FILE><LINE>129</LINE></spieler2ende>
+  <spieler2draht><FILE>X:\home\oqlt\proj\heiser-draht\heiser-draht.asm</FILE><LINE>205</LINE></spieler2draht>
+  <spieler2fertig><FILE>X:\home\oqlt\proj\heiser-draht\heiser-draht.asm</FILE><LINE>250</LINE></spieler2fertig>
+  <gewinn><FILE>X:\home\oqlt\proj\heiser-draht\heiser-draht.asm</FILE><LINE>143</LINE></gewinn>
+  <setports><FILE>X:\home\oqlt\proj\heiser-draht\heiser-draht.asm</FILE><LINE>232</LINE></setports>
+  <gewinnende1><FILE>X:\home\oqlt\proj\heiser-draht\heiser-draht.asm</FILE><LINE>159</LINE></gewinnende1>
+  <gewinnende2><FILE>X:\home\oqlt\proj\heiser-draht\heiser-draht.asm</FILE><LINE>172</LINE></gewinnende2>
+  <gewinnende><FILE>X:\home\oqlt\proj\heiser-draht\heiser-draht.asm</FILE><LINE>174</LINE></gewinnende>
+ </LABELS>
+</ASSEMBLER_INFO>
