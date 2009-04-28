@@ -19,14 +19,18 @@
   <FILE>X:\home\oqlt\proj\heiser-draht\heiser-draht.map</FILE>
  </OUTPUT_FILES>
  <LABELS>
-  <reset><FILE>X:\home\oqlt\proj\heiser-draht\heiser-draht.asm</FILE><LINE>28</LINE></reset>
-  <mainloop><FILE>X:\home\oqlt\proj\heiser-draht\heiser-draht.asm</FILE><LINE>66</LINE></mainloop>
-  <spieler1ende><FILE>X:\home\oqlt\proj\heiser-draht\heiser-draht.asm</FILE><LINE>114</LINE></spieler1ende>
-  <spieler1draht><FILE>X:\home\oqlt\proj\heiser-draht\heiser-draht.asm</FILE><LINE>147</LINE></spieler1draht>
-  <spieler1fertig><FILE>X:\home\oqlt\proj\heiser-draht\heiser-draht.asm</FILE><LINE>199</LINE></spieler1fertig>
-  <spieler2ende><FILE>X:\home\oqlt\proj\heiser-draht\heiser-draht.asm</FILE><LINE>138</LINE></spieler2ende>
-  <spieler2draht><FILE>X:\home\oqlt\proj\heiser-draht\heiser-draht.asm</FILE><LINE>171</LINE></spieler2draht>
-  <spieler2fertig><FILE>X:\home\oqlt\proj\heiser-draht\heiser-draht.asm</FILE><LINE>204</LINE></spieler2fertig>
-  <setports><FILE>X:\home\oqlt\proj\heiser-draht\heiser-draht.asm</FILE><LINE>194</LINE></setports>
+  <reset><FILE>X:\home\oqlt\proj\heiser-draht\heiser-draht.asm</FILE><LINE>257</LINE></reset>
+  <mainloop><FILE>X:\home\oqlt\proj\heiser-draht\heiser-draht.asm</FILE><LINE>57</LINE></mainloop>
+  <spieler1ende><FILE>X:\home\oqlt\proj\heiser-draht\heiser-draht.asm</FILE><LINE>105</LINE></spieler1ende>
+  <spieler1draht><FILE>X:\home\oqlt\proj\heiser-draht\heiser-draht.asm</FILE><LINE>177</LINE></spieler1draht>
+  <spieler1fertig><FILE>X:\home\oqlt\proj\heiser-draht\heiser-draht.asm</FILE><LINE>243</LINE></spieler1fertig>
+  <spieler2ende><FILE>X:\home\oqlt\proj\heiser-draht\heiser-draht.asm</FILE><LINE>129</LINE></spieler2ende>
+  <spieler2draht><FILE>X:\home\oqlt\proj\heiser-draht\heiser-draht.asm</FILE><LINE>205</LINE></spieler2draht>
+  <spieler2fertig><FILE>X:\home\oqlt\proj\heiser-draht\heiser-draht.asm</FILE><LINE>250</LINE></spieler2fertig>
+  <gewinn><FILE>X:\home\oqlt\proj\heiser-draht\heiser-draht.asm</FILE><LINE>143</LINE></gewinn>
+  <setports><FILE>X:\home\oqlt\proj\heiser-draht\heiser-draht.asm</FILE><LINE>232</LINE></setports>
+  <gewinnende1><FILE>X:\home\oqlt\proj\heiser-draht\heiser-draht.asm</FILE><LINE>159</LINE></gewinnende1>
+  <gewinnende2><FILE>X:\home\oqlt\proj\heiser-draht\heiser-draht.asm</FILE><LINE>172</LINE></gewinnende2>
+  <gewinnende><FILE>X:\home\oqlt\proj\heiser-draht\heiser-draht.asm</FILE><LINE>174</LINE></gewinnende>
  </LABELS>
 </ASSEMBLER_INFO>

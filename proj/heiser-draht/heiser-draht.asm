@@ -1,5 +1,11 @@
 .include "m168def.inc"
 
+; Initialize Stack.
+ldi     temp, LOW(RAMEND)
+out     SPL, temp
+ldi     temp, HIGH(RAMEND)
+out     SPH, temp
+
 .def temp = r16
 
 .def one = r17
@@ -11,8 +17,12 @@ ldi one, 1
 .def versuche1 = r19
 .def versuche2 = r20
 
+; Status, in dem ein Spieler sich befindet
+.def status1 = r21
+.def status2 = r22
+
 ; Zustände. in denen sich die Spieler befinden
-.def status = r21
+.def status = r23
 
 ; Ports konfiguerieren
 ldi temp, 0
@@ -24,25 +34,6 @@ out DDRD, temp
 out PORTC, temp
 
 rcall reset
-
-reset:
-ldi status, 0b00000000
-;                ||||+- 0: Programm gestartet
-;                |||+-- 1: Spieler 1 hat den heißen Draht berührt
-;   			 ||+--- 2: Spieler 1 ist fertig
-;                |+---- 3: Spieler 2 hat den heißen Draht berührt
-;                +----- 4: Spieler 2 ist fertig
-
-ldi versuche1, 0
-ldi versuche2, 0
-
-ret
-
-; Initialize Stack.
-ldi     temp, LOW(RAMEND)
-out     SPL, temp
-ldi     temp, HIGH(RAMEND)
-out     SPH, temp
 
 ; Eingang (= kontakte):
 ; PC0: Spieler1 am Anfang
@@ -71,7 +62,7 @@ com kontakte
 
 ; Setze die Zähler und Zustände zurück, wenn der
 ; Reset-Knopf gedrückt wird:
-SBRC kontakte, 0
+SBRC kontakte, 6
 rcall reset
 
 ; Springe an den Anfang dse Hauptprogramms, wenn weder
@@ -86,8 +77,8 @@ SBRS temp, 0
 rjmp mainloop
 
 ori status, 0b00000001
-ori versuche1, 0b10000000
-ori versuche2, 0b10000000
+ori status1, 0b10000000
+ori status2, 0b10000000
 
 ;####################################################
 ; Wenn Spieler 1 fertig ist, alles weitere ignorieren
@@ -97,7 +88,7 @@ rjmp spieler1ende
   ; Wenn Spieler 1 den Anfang berührt wird sein Status
   ; wieder auf spielen gesetzt.
   SBRC kontakte, 0
-  andi versuche1, 0b11101111
+  andi status1, 0b11101111
 
   ; Wenn Spieler 1 den heißen Draht berührt hat springe zum Ende.
   SBRC status, 3
@@ -121,7 +112,7 @@ rjmp spieler2ende
   ; Wenn Spieler 2 den Anfang berührt wird sein Status
   ; wieder auf spielen gesetzt.
   SBRC kontakte, 0
-  andi versuche2, 0b11101111
+  andi status2, 0b11101111
 
   ; Wenn Spieler 2 den heißen Draht berührt hat:
   SBRC status, 3
@@ -137,16 +128,59 @@ rjmp spieler2ende
 
 spieler2ende:
 
+rcall gewinn
+
 ; Setze die Ausgänge
 rcall setports
+
+
 
 rjmp mainloop
 
 ;###################################################
 
+; Ermittelt, ob jemand gewonnen hat
+gewinn:
+; Wenn jemand fertig ist und genau so viele oder weniger
+; Versuche als der Gegner gebraucht hat, hat er gewonnen.
+
+; Wenn Spieler 1 fertig ist
+SBRS status, 2
+rjmp gewinnende1
+  ; Überprüfe, ob er weniger oder genau so viele Versuche wie
+  ; sein Gegner gebraucht hat:
+  mov temp, versuche1
+  sub temp, versuche2
+  sbrs temp, 7
+  rjmp gewinnende1
+  ori status1, 0b01000000
+  ldi status, 0
+
+gewinnende1:
+
+SBRS status, 4
+rjmp gewinnende2
+  ; Überprüfe, ob er weniger oder genau so viele Versuche wie
+  ; sein Gegner gebraucht hat:
+  mov temp, versuche2
+  sub temp, versuche1
+  sbrs temp, 7
+  rjmp gewinnende2
+  ori status2, 0b01000000
+  ldi status, 0
+
+gewinnende2:
+
+gewinnende:
+ret
+
 spieler1draht:
 ; Setze den Status
 ori status, 0b00000010
+
+; Schalte die LED an
+ori status1, 0b00010000
+
 ; Erhöhe den Versuchszähler
 inc versuche1
 
@@ -162,7 +196,7 @@ ret
 
 ; Wenn der Zähler auf 10 steht hat der Gegenspieler gewonnen
 ; und das Programm geht wieder in den Start-Modus
-ori versuche2, 0b01000000
+ori status2, 0b01000000
 andi status,    0b00000000
 
 ret
@@ -171,6 +205,10 @@ ret
 spieler2draht:
 ; Setze den Status
 ori status, 0b00001000
+
+; Schalte die LED an
+ori status2, 0b00010000
+
 ; Erhöhe den Versuchszähler
 inc versuche2
 
@@ -186,22 +224,47 @@ ret
 
 ; Wenn der Zähler auf 10 steht hat der Gegenspieler gewonnen
 ; und das Programm geht wieder in den Start-Modus
-ori versuche1, 0b01000000
+ori status1, 0b01000000
 andi status,    0b00000000
 
 ret
 
 setports:
-out PORTB, versuche1
-out PORTD, versuche2
+mov temp, versuche1
+or temp, status1
+out PORTB, temp
+
+mov temp, versuche2
+or temp, status2
+out PORTD, temp
+
 ret
 
 spieler1fertig:
+; Setze den Status
 ori status, 0b00000100
-ori versuche1, 0b00100000
+; Schalte die zugehörige LED an
+ori status1, 0b00100000
 ret
 
 spieler2fertig:
+; Setze den Status
 ori status, 0b00010000
-ori versuche2, 0b00100000
+; Schalte die zugehörige LED an
+ori status2, 0b00100000
+ret
+
+reset:
+ldi status, 0b00000000
+;                ||||+- 0: Programm gestartet
+;                |||+-- 1: Spieler 1 hat den heißen Draht berührt
+;   			 ||+--- 2: Spieler 1 ist fertig
+;                |+---- 3: Spieler 2 hat den heißen Draht berührt
+;                +----- 4: Spieler 2 ist fertig
+
+ldi versuche1, 0
+ldi versuche2, 0
+ldi status1, 0
+ldi status2, 0
+
 ret
