@@ -1,0 +1,2 @@
+@ECHO OFF
+"E:\Programme\Atmel\AVR Tools\AvrAssembler2\avrasm2.exe" -S "X:\home\oqlt\proj\drehzahlmesser\labels.tmp" -fI -W+ie -o "X:\home\oqlt\proj\drehzahlmesser\drehzahlmesser.hex" -d "X:\home\oqlt\proj\drehzahlmesser\drehzahlmesser.obj" -e "X:\home\oqlt\proj\drehzahlmesser\drehzahlmesser.eep" -m "X:\home\oqlt\proj\drehzahlmesser\drehzahlmesser.map" "X:\home\oqlt\proj\drehzahlmesser\drehzahlmesser.asm"
