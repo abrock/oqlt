@@ -1,0 +1,28 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.30</VERSION>
+ <DEVICE>ATmega8</DEVICE>
+ <WORKING_DIR>X:\home\oqlt\proj\drehzahlmesser</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>E:\Programme\Atmel\AVR Tools\AvrAssembler2\Appnotes</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>X:\home\oqlt\proj\drehzahlmesser\drehzahlmesser.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>E:\Programme\Atmel\AVR Tools\AvrAssembler2\Appnotes\m8def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>X:\home\oqlt\proj\drehzahlmesser\drehzahlmesser.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>X:\home\oqlt\proj\drehzahlmesser\drehzahlmesser.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>X:\home\oqlt\proj\drehzahlmesser\drehzahlmesser.map</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <RESET><FILE>X:\home\oqlt\proj\drehzahlmesser\drehzahlmesser.asm</FILE><LINE>14</LINE></RESET>
+  <int0handler><FILE>X:\home\oqlt\proj\drehzahlmesser\drehzahlmesser.asm</FILE><LINE>55</LINE></int0handler>
+  <timer0_overflow><FILE>X:\home\oqlt\proj\drehzahlmesser\drehzahlmesser.asm</FILE><LINE>63</LINE></timer0_overflow>
+  <mainloop><FILE>X:\home\oqlt\proj\drehzahlmesser\drehzahlmesser.asm</FILE><LINE>52</LINE></mainloop>
+  <overflow><FILE>X:\home\oqlt\proj\drehzahlmesser\drehzahlmesser.asm</FILE><LINE>59</LINE></overflow>
+ </LABELS>
+</ASSEMBLER_INFO>
