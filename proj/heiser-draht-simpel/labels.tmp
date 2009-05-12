@@ -21,5 +21,15 @@
  <LABELS>
   <mainloop><FILE>X:\home\oqlt\proj\heiser-draht-simpel\heiser-draht-simpel.asm</FILE><LINE>36</LINE></mainloop>
   <anzeige><FILE>X:\home\oqlt\proj\heiser-draht-simpel\heiser-draht-simpel.asm</FILE><LINE>95</LINE></anzeige>
+  <ziffer1><FILE>X:\home\oqlt\proj\heiser-draht-simpel\heiser-draht-simpel.asm</FILE><LINE>102</LINE></ziffer1>
+  <ziffer2><FILE>X:\home\oqlt\proj\heiser-draht-simpel\heiser-draht-simpel.asm</FILE><LINE>108</LINE></ziffer2>
+  <ziffer3><FILE>X:\home\oqlt\proj\heiser-draht-simpel\heiser-draht-simpel.asm</FILE><LINE>114</LINE></ziffer3>
+  <ziffer4><FILE>X:\home\oqlt\proj\heiser-draht-simpel\heiser-draht-simpel.asm</FILE><LINE>120</LINE></ziffer4>
+  <ziffer5><FILE>X:\home\oqlt\proj\heiser-draht-simpel\heiser-draht-simpel.asm</FILE><LINE>126</LINE></ziffer5>
+  <ziffer6><FILE>X:\home\oqlt\proj\heiser-draht-simpel\heiser-draht-simpel.asm</FILE><LINE>132</LINE></ziffer6>
+  <ziffer7><FILE>X:\home\oqlt\proj\heiser-draht-simpel\heiser-draht-simpel.asm</FILE><LINE>138</LINE></ziffer7>
+  <ziffer8><FILE>X:\home\oqlt\proj\heiser-draht-simpel\heiser-draht-simpel.asm</FILE><LINE>144</LINE></ziffer8>
+  <ziffer9><FILE>X:\home\oqlt\proj\heiser-draht-simpel\heiser-draht-simpel.asm</FILE><LINE>150</LINE></ziffer9>
+  <endeziffer><FILE>X:\home\oqlt\proj\heiser-draht-simpel\heiser-draht-simpel.asm</FILE><LINE>156</LINE></endeziffer>
  </LABELS>
 </ASSEMBLER_INFO>

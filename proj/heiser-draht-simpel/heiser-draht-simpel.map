@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.1.30  X:\home\oqlt\proj\heiser-draht-simpel\heiser-draht-simpel.asm Tue May 12 12:28:53 2009
+AVRASM ver. 2.1.30  X:\home\oqlt\proj\heiser-draht-simpel\heiser-draht-simpel.asm Tue May 12 14:14:32 2009
 
 
 EQU  SIGNATURE_000 0000001e
@@ -513,3 +513,13 @@ DEF  kontakte     r18
 DEF  status       r19
 CSEG mainloop     00000009
 CSEG anzeige      00000028
+CSEG ziffer1      0000002b
+CSEG ziffer2      0000002e
+CSEG ziffer3      00000031
+CSEG ziffer4      00000034
+CSEG ziffer5      00000037
+CSEG ziffer6      0000003a
+CSEG ziffer7      0000003d
+CSEG ziffer8      00000040
+CSEG ziffer9      00000043
+CSEG endeziffer   00000046
