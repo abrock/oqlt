@@ -1,13 +1,13 @@
 <ASSEMBLER_INFO>
  <VERSION>2.1.30</VERSION>
- <DEVICE>ATmega168</DEVICE>
+ <DEVICE>ATmega8</DEVICE>
  <WORKING_DIR>X:\home\oqlt\proj\heiser-draht</WORKING_DIR>
  <INCLUDE_PATH>
   <DIR>E:\Programme\Atmel\AVR Tools\AvrAssembler2\Appnotes</DIR>
  </INCLUDE_PATH>
  <SOURCE_FILE>X:\home\oqlt\proj\heiser-draht\heiser-draht.asm</SOURCE_FILE>
  <INCLUDED_FILES>
-  <FILE>E:\Programme\Atmel\AVR Tools\AvrAssembler2\Appnotes\m168def.inc</FILE>
+  <FILE>E:\Programme\Atmel\AVR Tools\AvrAssembler2\Appnotes\m8def.inc</FILE>
  </INCLUDED_FILES>
  <OBJECT_FILES>
   <FILE>X:\home\oqlt\proj\heiser-draht\heiser-draht.obj</FILE>

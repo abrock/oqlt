@@ -1,4 +1,4 @@
-.include "m168def.inc"
+.include "m8def.inc"
 
 ; Initialize Stack.
 ldi     temp, LOW(RAMEND)

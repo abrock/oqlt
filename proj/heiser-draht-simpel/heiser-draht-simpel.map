@@ -1,5 +1,5 @@
 
-AVRASM ver. 2.1.30  X:\home\oqlt\proj\heiser-draht\heiser-draht.asm Tue May 12 11:13:32 2009
+AVRASM ver. 2.1.30  X:\home\oqlt\proj\heiser-draht-simpel\heiser-draht-simpel.asm Tue May 12 12:28:53 2009
 
 
 EQU  SIGNATURE_000 0000001e
@@ -508,23 +508,8 @@ EQU  TWIaddr      00000011
 EQU  SPMRaddr     00000012
 EQU  INT_VECTORS_SIZE 00000013
 DEF  temp         r16
-DEF  one          r17
+DEF  versuche     r17
 DEF  kontakte     r18
-DEF  versuche1    r19
-DEF  versuche2    r20
-DEF  status1      r21
-DEF  status2      r22
-DEF  status       r23
-CSEG reset        0000006a
-CSEG mainloop     0000000c
-CSEG spieler1ende 00000023
-CSEG spieler1draht 00000041
-CSEG spieler1fertig 00000064
-CSEG spieler2ende 0000002d
-CSEG spieler2draht 0000004f
-CSEG spieler2fertig 00000067
-CSEG gewinn       00000030
-CSEG setports     0000005d
-CSEG gewinnende1  00000038
-CSEG gewinnende2  00000040
-CSEG gewinnende   00000040
+DEF  status       r19
+CSEG mainloop     00000009
+CSEG anzeige      00000028

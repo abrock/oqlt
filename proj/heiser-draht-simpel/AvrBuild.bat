@@ -1,0 +1,2 @@
+@ECHO OFF
+"E:\Programme\Atmel\AVR Tools\AvrAssembler2\avrasm2.exe" -S "X:\home\oqlt\proj\heiser-draht-simpel\labels.tmp" -fI -W+ie -o "X:\home\oqlt\proj\heiser-draht-simpel\heiser-draht-simpel.hex" -d "X:\home\oqlt\proj\heiser-draht-simpel\heiser-draht-simpel.obj" -e "X:\home\oqlt\proj\heiser-draht-simpel\heiser-draht-simpel.eep" -m "X:\home\oqlt\proj\heiser-draht-simpel\heiser-draht-simpel.map" "X:\home\oqlt\proj\heiser-draht-simpel\heiser-draht-simpel.asm"
