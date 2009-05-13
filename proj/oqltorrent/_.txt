@@ -1,0 +1,18 @@
+oqltorrent ist eine Sammlung von Scripts, um auf einfache Art die verfügbaren 
+Torrents des oqlt-Pirate-Bay-Accounts[1] zu spiegeln, z.B. um automatisch neue 
+Torrents herunterzuladen oder um einen Seeding-Server bereit zu stellen.
+
+Mehr Dokumentation kommt noch. Wer schon mal mit der unfertigen Version 
+rumspielen möchte, dem helfen vielleicht die folgenden Hinweise:
+
+1. Die benötigte Bibliothek scysh[2] herunterladen.
+
+2. Torrent-Files mirrorn mit:
+   PATH="$PATH:$HOME/scysh:$HOME/oqlt/proj/oqltorrent" \
+   $HOME/oqlt/proj/oqltorrent/fetch-torrents
+
+Nächste Schritte im Projekt: Eine Konfigurationsdatei für rTorrent, mit dem 
+die Torrents automatisch heruntergeladen werden.
+
+[1] http://thepiratebay.org/user/oqlt/
+[2] http://github.com/scy/scysh

@@ -1,0 +1,9 @@
+#!/bin/sh
+
+. scy.sh || exit 127
+include http
+
+parse-rss | while read torrent; do
+	file="$(echo "$torrent" | grep -oE '[^/]+$')"
+	[ -e "$file" ] || http_get "$torrent" > "$file" || rm -f "$file" 2>/dev/null
+done

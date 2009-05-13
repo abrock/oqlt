@@ -1,0 +1,8 @@
+#!/bin/sh
+
+RSS='http://rss.thepiratebay.org/user/9c47d314f431b2bd8d5037f816539283'
+
+. scy.sh || exit 127
+include http
+
+http_get "$RSS" | sed -nr -e 's#^<link>([^<>]+\.torrent)</link>$#\1#p'
