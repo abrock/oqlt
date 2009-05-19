@@ -11,4 +11,8 @@ Steuertipps für gemeinnützige Vereine
 	Bestellformular: http://www.fm.baden-wuerttemberg.de/de/bestellformular/110375.html?orderid=109979
 
 TODO
-Mitgliedsantrag: Eindeutig formulieren, dass die Mitgliedschaft erst nach Beschluß laut Satzung & Geschäftsordnungen gültigkeit erlangt.
+Mitgliedsantrag: Eindeutig formulieren, dass die Mitgliedschaft erst nach Beschluß laut Satzung & Geschäftsordnungen Gültigkeit erlangt.
+
+DONE
+20090519 Kontakt Registergericht
+Inte hat gegen 10:15 Uhr mit Frau Bayer/Baier telefoniert. Die vor vier Wochen gefaxten Unterlagen sind angekommen (Sie erinnert sich noch daran), allerdings ist die Bearbeitungszeit keinesfalls ungewöhnlich. Eine Auskunft, wann wir Antwort erhalten, konnte sie auch nicht geben.
