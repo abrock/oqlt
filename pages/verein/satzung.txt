@@ -56,21 +56,23 @@ b) die Mitgliederversammlung.
 2. Die ordentliche Mitgliederversammlung wird einmal jährlich im ersten Halbjahr vom Vorstand einberufen.
 3. Es können außerordentliche Mitgliederversammlungen entweder auf Beschluss des Vorstands oder auf Verlangen eines Fünftels der Mitglieder einberufen werden.
 4. Die Einladung zur Mitgliederversammlung ist den Mitgliedern elektronisch oder schriftlich unter Angabe von Ort, Zeit und Tagesordnung mindestens vier Wochen im Voraus zuzustellen.
-5. Mitglieder können die Tagesordnung um weitere Punkte ergänzen, wenn sie diese Ergänzung der Mitgliederversammlung spätestens eine Woche vor dem anberaumten Termin elektronisch oder schriftlich mitteilen. Die so geänderte Tagesordnung ist den Mitgliedern bis spätestens drei Tage vor der Mitgliederversammlung elektronisch oder schriftlich mitzuteilen.
+5. Mitglieder können die Tagesordnung um weitere Punkte ergänzen, wenn sie diese Ergänzung der Mitgliederversammlung spätestens zwei Wochen vor dem anberaumten Termin elektronisch oder schriftlich mitteilen. Die so geänderte Tagesordnung ist den Mitgliedern bis spätestens eine Woche vor der Mitgliederversammlung elektronisch oder schriftlich mitzuteilen.
 6. Eine Vertretung eines Mitglieds durch ein anderes ist möglich, wenn die Vertretungsbefugnis schriftlich nachgewiesen wird.
 7. Jede ordnungsgemäß einberufene Mitgliederversammlung ist unabhängig von der Zahl der erschienenen Mitglieder beschlussfähig, sofern mindestens zwei Vorstandsmitglieder anwesend sind.
+8. Die Mitgliederversammlung wählt aus ihren Reihen einen Versammlungsleiter, der die Mitgliederversammlung moderiert und die Einhaltung der Formalitäten sichert.
+9. Die Mitgliederversammlung wählt aus ihren Reihen einen Protokollführer, der den Ablauf der Mitgliederversammlung schriftlich protokolliert. Das Protokoll ist vom Versammlungsleiter und vom Protokollführer zu unterzeichnen.
 
 § 9 Zuständigkeiten der Mitgliederversammlung
 Die Mitgliederversammlung
 1. wählt und kontrolliert den Vorstand und den Schatzmeister;
 2. prüft und genehmigt die Jahresabschlussrechnung des Schatzmeisters und erteilt die Entlastung von Schatzmeister und Vorstand;
 3. entscheidet in allen Fällen, in denen nicht die Zuständigkeit eines anderen Organs bestimmt ist;
-4. trifft Mehrheitsentscheidungen mit der einfachen Mehrheit der anwesenden bzw. vertretenen Mitglieder;
-5. kann den Vereinszweck mit der Zustimmung von mindestens drei Vierteln der anwesenden bzw. vertretenen Mitglieder ändern. Der Antrag muss der Mitgliederversammlung spätestens vier Wochen vor ihrer Tagung vorgelegt worden sein.
+4. trifft Mehrheitsentscheidungen und beschließt Satzungsänderungen mit der einfachen Mehrheit der anwesenden bzw. vertretenen Mitglieder;
+5. kann den Vereinszweck betreffende Satzungsänderungen mit der Zustimmung von mindestens drei Vierteln der anwesenden bzw. vertretenen Mitglieder beschließen. Der Antrag muss der Mitgliederversammlung spätestens drei Wochen vor ihrer Tagung vorgelegt worden sein.
 6. gibt sich eine Geschäftsordnung.
 
 § 10 Der Vorstand
-1. Der Vorstand besteht aus zwei Personen und dem Schatzmeister, die ordentliche Mitglieder und natürliche Personen sind, und wird auf ein Jahr durch die Mitgliederversammlung gewählt. Die Wiederwahl ist unbegrenzt möglich.
+1. Der Vorstand besteht aus dem 1. Vorsitzenden, dem 2. Vorsitzenden und dem Schatzmeister, die ordentliche Mitglieder und natürliche Personen sind, und wird auf ein Jahr durch die Mitgliederversammlung gewählt. Die Wiederwahl ist unbegrenzt möglich.
 2. Vertretungsberechtigt im Sinne des BGB sind jeweils zwei Vorstandsmitglieder.
 3. Der Vorstand trifft seine Beschlüsse auf Sitzungen, zu denen spätestens eine Woche vorher elektronisch oder schriftlich zu laden ist. Mit dem Einverständnis aller Vorstandsmitglieder kann diese Frist verkürzt werden oder ganz entfallen.
 4. Über eine Vorstandssitzung ist ein Protokoll anzufertigen, von allen teilnehmenden Vorstandsmitgliedern zu unterzeichnen und den Mitgliedern binnen einer Woche elektronisch oder schriftlich zur Verfügung zu stellen.
@@ -80,8 +82,8 @@ Die Mitgliederversammlung
 
 § 11 Zuständigkeiten des Vorstands
 1. Der Vorstand führt die Geschäfte des Vereins und fasst die erforderlichen Beschlüsse.
-2. Er ist zu rechtsgeschäftlichen Verpflichtungen zu Lasten des Vereins bis zu einer Höhe von 423,50 € ermächtigt.
-3. In dringenden, keinen Aufschub duldenden Dingen kann der Vorstand mit der Zustimmung aller Vorstandsmitglieder über diese Befugnisse hinaus handeln. Er ist verpflichtet die Mitglieder hierüber unverzüglich zu informieren.
+2. Er ist zu rechtsgeschäftlichen Verpflichtungen zu Lasten des Vereins bis zu einer Höhe von 423,50 € ermächtigt. Diese Bestimmung gilt im Innenverhältnis.
+3. In dringenden, keinen Aufschub duldenden Dingen kann der Vorstand mit der Zustimmung aller Vorstandsmitglieder über diese Befugnisse hinaus handeln. Er ist verpflichtet die Mitglieder hierüber unverzüglich zu informieren. Diese Bestimmung gilt im Innenverhältnis.
 4. Der Vorstand gibt sich eine Geschäftsordnung, die die Aufgabenverteilung innerhalb des Vorstands und die gegenseitige Vertretung der Vorstandsmitglieder sowie die Art des Zustandekommens seiner Beschlüsse regelt und die der Zustimmung der Mitgliederversammlung bedarf.
 
 § 12 Ausschluss von Mitgliedern
@@ -91,5 +93,5 @@ Die Mitgliederversammlung
 4. Bis zur Entscheidung der Mitgliederversammlung ruht die Mitgliedschaft.
 
 § 13 Auflösung des Vereins
-1. Zur Auflösung des Vereins bedarf es der Zustimmung von mindestens drei Vierteln der anwesenden bzw. vertretenen Mitglieder auf der Mitgliederversammlung. Der Antrag auf Auflösung muss der Mitgliederversammlung spätestens vier Wochen vor ihrer Tagung vorgelegt worden sein.
+1. Zur Auflösung des Vereins bedarf es der Zustimmung von mindestens drei Vierteln der anwesenden bzw. vertretenen Mitglieder auf der Mitgliederversammlung. Der Antrag auf Auflösung muss der Mitgliederversammlung bis spätestens drei Wochen vor ihrer Tagung vorgelegt worden sein.
 2. Bei Auflösung des Vereins oder Wegfall des gemeinnützigen Zwecks fällt sein Vermögen an eine von der Mitgliederversammlung zu bestimmende, als gemeinnützig anerkannte Körperschaft, die es zum Zweck der Volksbildung im Bereich Aufklärung über Auswirkungen moderner Technologien auf den Einzelnen und die Gesellschaft zu verwenden hat.
