@@ -5,6 +5,8 @@ satzung.txt  Satzung von oqlt
 satzung.odt  Aktuelle Arbeitskopie der Satzung, Geschäfts- & Beitragsordnung
              (dient als Korrespondenz zum Registergericht)
 
+Die Plain-Text-Dateien stellen die autoritative, diffbare Version dar.
+
 LINKS
 Steuertipps für gemeinnützige Vereine
 	Download: http://www.fm.baden-wuerttemberg.de/fm7/2347/Steuertipps_fuer_Vereine_August2008.pdf
