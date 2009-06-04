@@ -16,6 +16,7 @@ I2PVZ
 PORT-FORWARDING
 22 ssh (UserVZ)
 80 http
+??? I2P (I2PVZ)
 2020 ssh
 9418 git (UserVZ)
 49152 65534 private ports (UserVZ)
