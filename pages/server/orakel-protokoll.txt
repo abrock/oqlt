@@ -1,3 +1,6 @@
+20090604-1700 Raid device error
+# Platte (Port 4) ausgebaut. Wird zwecks Austausch eingeschickt.
+
 20090320-0830 Raid device error
 # Port gewechselt (p0->p4) und Rebuild gestartet
 

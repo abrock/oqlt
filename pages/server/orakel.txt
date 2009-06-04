@@ -1,5 +1,6 @@
 SSH FINGERPRINT
-1024 05:8c:85:87:d4:bb:d6:f0:56:fd:a9:da:db:89:75:f9 /etc/ssh/ssh_host_rsa_key.pub (RSA)
+$ ssh-keygen -l -f /etc/ssh/ssh_host_rsa_key.pub 
+2048 3f:11:9f:45:93:b4:ff:dc:6d:9d:f6:35:b5:f1:74:71 /etc/ssh/ssh_host_rsa_key.pub (RSA)
 
 BENUTZERKODEX
 Die Ports 49152 bis 65535 können beliebig belegt werden. Dauerhaft genutzte Ports sind hier einzutragen:
@@ -8,14 +9,16 @@ port :: service :: user
 51413 transmission transmission
 56667 bip inte
 
+OPENVZ
+UserVZ
+I2PVZ
+
 PORT-FORWARDING
-20 ftp
-21 ftp
-22 ssh
+22 ssh (UserVZ)
 80 http
-1024 2048 ftp (passive mode)
-9418 git
-49152 65534 private ports
+2020 ssh
+9418 git (UserVZ)
+49152 65534 private ports (UserVZ)
 
 TODO
 Mumble installieren/konfigurieren
@@ -54,4 +57,3 @@ sys-fs/encfs
 PERL
 Perl Module werden mit app-portage/g-cpan installiert (http://www.gentoo.org/proj/en/perl/g-cpan.xml). Installiert sind:
 Net::Twitter
-POE::Filter::IRCD
