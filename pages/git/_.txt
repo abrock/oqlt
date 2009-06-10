@@ -24,6 +24,7 @@ Key" unter http://github.com/guides/home.
 git config --global user.name "Vorname Nachname"
 git config --global user.email "deine.email@example.com"
 git config --global core.autocrlf false
+git config --global push.default matching
 
 
 -- Erstes Auschecken des Repositories --
