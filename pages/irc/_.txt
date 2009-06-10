@@ -1,0 +1,58 @@
+Unser IRC-Channel ist #oqlt auf freenode. Als Server könnt ihr 
+chat.freenode.net verwenden.
+
+
+oqlt-Mitgliedern werden darum gebeten, ihren Nickname bei freenode’s 
+„NickServ“ zu registrieren. Mit NickServ kommuniziert ihr über Queries. Eine 
+Anleitung erhaltet ihr mit
+  /MSG NickServ HELP
+
+So registriert ihr euren Nickname (Details mit /MSG NickServ HELP REGISTER):
+ 1. Prüft, ob ihr gerade wirklich den gewünschten Nickname führt. Wenn nicht, 
+    ändern via /NICK GewuenschterNick
+ 2. /MSG NickServ REGISTER Passwort email@adresse.de
+ 3. Folgt den Anweisungen, die NickServ euch gibt.
+ 4. Meldet euch bei Inte, damit er euch in die Liste der oqlt-Mitglieder 
+    einträgt. Ihr bekommt dann automatisch Op in #oqlt.
+
+Konfiguriert euren Client dann so, dass ihr bei jedem Verbinden mit freenode 
+folgendes Kommando automatisch ausführt:
+  /MSG NickServ IDENTIFY EuerNick EuerPasswort
+WICHTIG: Bitte legt fest, dass das _nur_ bei freenode gesendet wird. Auf 
+anderen Netzwerken, die keinen NickServ haben, geben sich gern normale Nutzer 
+den Namen NickServ und greifen eure Passwörter ab.
+
+Auch wer nicht Mitglied im Verein ist, aber sich uns zugehörig fühlt, kann 
+seinen Nick registrieren und Inte um Auto-Voice bitten.
+
+
+Da wir inzwischen das 21. Jahrhundert schreiben, ist das Verwenden eines 
+Unicode-Zeichensatzes sinnvoll. In unserem Channel wird UTF-8 gesprochen, 
+bitte konfiguriert euren Client entsprechend. Wenn ihr das nicht tut, können 
+andere womöglich eure Umlaute und Sonderzeichen nicht lesen.
+
+
+Konfiguration von irssi auf UTF-8:
+
+1. Zeigt „/SET term_charset“ den Wert „utf-8“? Dann funktioniert 
+   wahrscheinlich alles out-of-the-box.
+2. Falls nicht, gebt /RECODE ein. Liefert das die Fehlermeldung „No such 
+   command“, dann hat euer irssi keinen Recode-Support. Besorgt euch eins.
+3. Gebt die folgenden Befehle ein:
+   /SET recode_autodetect_utf8 ON
+   /SET recode_fallback UTF-8
+   /SET recode ON
+   /SET recode_out_default_charset UTF-8
+   /SET recode_transliterate ON
+   /SAVE
+4. Ab sofort sendet ihr standardmäßig mit UTF-8. Falls ein anderer Zeichen in 
+   ISO-8859-1 sendet, werden sie für euch automatisch in UTF-8 konvertiert. 
+   Praktisch, weil einen die fehlkonfigurierten Clients der anderen nicht mehr 
+   stören.
+5. Wenn in anderen Channels, in denen ihr seid, kein UTF-8 gewünscht ist, 
+   könnt ihr mit /RECODE ADD Ausnahmen definieren. Um z.B. in #anachron auf 
+   IRCNet ISO-8859-1 zu sprechen, benutzt:
+   /RECODE ADD ircnet/anachron ISO-8859-1
+
+Mehr Infos z.B. unter:
+http://www.iovene.com/the-ultimate-guide-for-utf-8-in-irssi-and-gnuscreen/
