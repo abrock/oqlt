@@ -6,6 +6,37 @@ mächtigen Werkzeug umgehen können.
 
 
 
+== Wichtige Konventionen ==
+
+-- Dateinamen --
+
+Um maximale Kompatibilität zu erreichen, dürfen Dateinamen keine Sonderzeichen 
+und keine Leerzeichen enthalten. Dateinamen sollten möglichst nur aus 
+Kleinbuchstaben bestehen, außer Großbuchstaben sind nötig (z.B. bei 
+Java-Klassen).
+
+
+-- Commit-Messages --
+
+Commit-Messages sollen in UTF-8 sein. Git führt absichtlich keine 
+Konvertierung von anderen Zeichensätzen nach UTF-8 durch, d.h. du musst selbst 
+dafür sorgen, UTF-8 einzugeben.
+
+Unter Windows ist der Standardzeichensatz cp1252; die einzige Weg für 
+UTF-8-Commit-Messages ist das Verwenden eines externen Editors für die 
+Messages, der als UTF-8 speichert (also kein „-m“ auf der Kommandozeile) oder 
+der vollständige Verzicht auf Sonderzeichen.
+
+Die erste Zeile von Commit-Messages ist als Zusammenfassung gedacht und sollte 
+nie länger als 50 Zeichen sein. Außerdem sollte die erste Zeile so klar wie 
+möglich angeben, was geändert wurde (z.B. „Website: Logo 3px nach rechts“), 
+damit man sich in einer Commit-Liste oder beim Commit-Bot im IRC sofort ein 
+Bild über die Änderungen machen kann. Daraus folgt auch, dass Grüße, freudige 
+Ausrufe oder sonstige Null-Informations-Mitteilungen in Commit-Messages 
+(zumindest in der ersten Zeile) nichts verloren haben.
+
+
+
 == Grundlegende Befehle ==
 
 -- GitHub einrichten --
