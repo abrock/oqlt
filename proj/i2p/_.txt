@@ -1,7 +1,11 @@
 http://www.i2p2.de/
 
-silent, Inte
+TEILNEHMER
+silent
 
 TODO
-Template für OpenVZ einrichten (Inte)
-ebuild für I2P schreiben (Inte, silent)
+I2P installieren (silent)
+
+DONE
+Template für OpenVZ einrichten (tymm)
+ebuild für I2P schreiben; ist im zugaina-Overlay enthalten (Inte)
