@@ -1,0 +1,56 @@
+Informationen für Neulinge
+==========================
+
+
+Was sollte ich wissen, wenn ich neu zu euch stoße?
+
+	Den Inhalt dieses Dokumentes.
+
+	Den Inhalt von pages/irc/_.txt im Git.
+
+	Wenn du schon mehr über das Git wissen willst, den Inhalt von 
+	pages/git/_.txt.
+
+	Wir sind nicht der CCC, nicht die Piratenpartei und keine 
+	Mac-/Linux-/Windows-Usergroup, auch wenn durchaus Schnittmengen 
+	existieren. Beispielsweise sind einige unserer Mitglieder auch Mitglieder 
+	im CCC oder der Piratenpartei, und viele benutzen unixartige 
+	Betriebssysteme.
+
+	Wenn du dich hauptsächlich dafür interessierst, wie man WLANs knackt, die 
+	Mails von anderen mitliest oder kostenlos an Windows kommst, bist du bei 
+	uns wohl verkehrt. Wenn du wissen willst, wie die Schwachstellen in WEP 
+	funktionieren, was SSL ist und ob Gimp Photoshop ersetzen kann, bist du 
+	hier richtig.
+
+
+Wie wird kommuniziert?
+
+	Es empfiehlt sich, auf der Mailingliste[1] eingetragen zu sein sowie im 
+	IRC[2] rumzuhängen. Für Mitglieder gibt es außerdem noch einen zweiten 
+	Mailverteiler, über den aber nur Dinge laufen, die die Öffentlichkeit 
+	nichts angehen, und das ist sehr wenig (z.B. Bankverbindungen).
+
+	Ein Wiki haben wir nicht, sondern ein öffentlich lesbares und für 
+	Mitglieder schreibbares Git-Repository[3], das als Dateiablage und 
+	kollektive Wissensbasis dient. Es soll in absehbarer Zeit um eine 
+	Weboberfläche ergänzt werden, die es wiki-ähnlicher zu bedienen macht, 
+	aber mit der momentanen lässt sich auch recht gut browsen.
+
+	Ein paar Announcements laufen auch über den Twitter-Account[4], den man 
+	übrigens auch per RSS[5] abonnieren kann, falls man Twitter nicht mag.
+
+	[1] http://groups.google.de/group/oqlt
+	[2] http://github.com/scy/oqlt/blob/master/pages/irc/_.txt
+	[3] http://github.com/scy/oqlt/
+	[4] http://twitter.com/oqlt/
+	[5] http://twitter.com/statuses/user_timeline/16741991.rss
+
+
+Was sollte ich wissen, wenn ich Mitglied bei euch werde?
+
+	Wende dich an Inte, damit er dir deinen Forwarder nickname@oqlt.de 
+	einrichtet.
+
+	Du kannst dir einen Account bei GitHub einrichten und bekommst 
+	Schreibrechte von Scytale. Bitte lies vorher _unbedingt_ pages/git/_.txt!
