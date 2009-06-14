@@ -3,8 +3,8 @@ sollte. Plan ist, wöchentliche(?) Filmabende zu veranstalten und je einen
 dieser Filme zu zeigen.
 
 FILME
-War Games - Kriegsspiele [WarGames] (1983) http://www.imdb.de/title/tt0086567/
-War Games 2 - The Dead Code [Wargames: The Dead Code] (2008) http://www.imdb.de/title/tt0865957/
+WarGames - Kriegsspiele [WarGames] (1983) http://www.imdb.de/title/tt0086567/
+WarGames 2 - The Dead Code [Wargames: The Dead Code] (2008) http://www.imdb.de/title/tt0865957/
 Tron [TRON] (1982) http://www.imdb.de/title/tt0084827/
 Matrix [The Matrix] (1999) http://www.imdb.de/title/tt0133093/
 Per Anhalter durch die Galaxis [The Hitchhiker's Guide to the Galaxy] (1981) http://www.imdb.de/title/tt0081874/
@@ -16,6 +16,9 @@ Startup [Antitrust] (2001) http://www.imdb.de/title/tt0218817/
 Antitrust: Cracking the Code [Antitrust: Cracking the Code] (2001) http://www.imdb.de/title/tt0372768/
 Das Netz [The Net] (1995) http://www.imdb.de/title/tt0113957/
 We feed the World - Essen global [We Feed the World] (2005) http://www.imdb.com/title/tt0478324/
+Hackers 2: Operation Takedown http://www.imdb.de/title/tt0159784/
+Passwort: Swordfish (2001) http://www.imdb.de/title/tt0244244/
+23 - Nichts ist so wie es scheint (1998) http://www.imdb.de/title/tt0126765/
 
 SERIEN
 The IT Crowd [The IT Crowd] (2006) http://www.imdb.de/title/tt0487831/
