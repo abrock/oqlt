@@ -1,0 +1,80 @@
+Datum 27.5.09 19:57-
+Anwesend: Tobias Kral, Tim Weber, Marcel Ackermann
+Protokollführer: Marcel Ackermann
+Beschlussfähigkeit: Daher ist die Versammlung beschlussfähig.
+Tagesordnung:
+	Fahrtkostenerstattung für Referenten
+	Zweiter wöchentlicher Termin
+	Quartalsplanung
+		Review
+		Externe Events
+		Interne Events
+	Neue Mitglieder
+	Logo
+	Fortschritt Vereinsgründung
+	Aufzeichnungsequipment
+
+Protokoll:
+
+Fahrtkostenerstattung für Referenten
+	keine generelle Regelung, sondern Einzelfallentscheidungen
+	Abstimmung für letzten oqlt am Sonntag: Übernahme der Hälfte der Versandkosten
+2. wöchentlicher Termin
+Zweiter wöchentlicher Termin
+	Vorschlag: Sonntag, vorher: freizeit.txt aktualisieren
+	für diesen Tag: Vortrgäge & Projekte, andere Treffen
+	Events 2 Wochen vorher ankündigen: Location, Themen
+	für die Dienstagstermine: Mehr Struktur, nicht nur rumreden, Arbeitsgruppen bilden, Idee: Jeder der arbeitswillig ist greift sich nen Punkt an dem er am Abend arbeitet
+	Termine: Weiterhin in git pflegen, in Zukunft exportieren
+	Ankündigungen werden nicht mehr über Venteria gemacht, nur noch git und Mailingliste
+
+Quartalsplanung
+Review
++oqlt am Sonntag (26.4.09)
+	früh nach Vereinsgründung gestartet
+	nächstes Mal auffälliger mit Klingelbeutel rumgehen
+	Verpflegungsmäßig weniger machen
++positive Entwicklung
+-Orakel läuft nicht (Hardwareprobleme)
+-Services fehlen (Termine, Webseite, Bugtracker)
++3 neue Mitglieder
+-fehlende Projekte
++SIGINT (22.6.09-24.6.09)
+	kurzfristig, aber super gelaufen
+	nächstes Jahr wieder
+	Das Labor in Bochum besucht
+
+Externe Events
+	GPN 26.6.09-28.6.09
+	HAR 13.6.09-16.6.09
+	mrmcd: Orga angefragt von Chaos Darmstadt, wollen wir gerne machen, Kontakt aufnehmen
+	Congress: Orga machen
+
+Interne Events
+	oqlt am Sonntag mit externen Vortragenden
+	Tag der Offenen Radiosternwarte, Internationales Astronomiejahr 2009, Besichtigung
+	Besichtigung: Karlsruhe (entropia), Heidelberg (noname), Stuttgart, Darmstadt, Mainz
+	Mitgliederversammlung
+
+Projekte
+	Orakel (Public, Private git) & Services (Remote Shell, Kalender, Webseite, Ticketsystem)
+	Logo & Flyer
+	Raum: Marktpreise gucken, Zukunft Forum, max. 100€/Monat, Schränke im Forum organisieren
+	Merchandisign: 2d Barcode Sticker, Buttons, T-Shirts, Pullis, Aufkleber
+	Fördermöglichkeiten: Quartiermanagement, Stadt Mannheim
+	Konto
+
+
+Neue Mitglieder
+	Mitgliedsanträge an 1. Vorsitzenden
+	Mitgliedsbeiträge an Schatzmeister
+
+Fortschritt Vereinsgründung
+	Antwort von Registergericht, mit Auflistung der Eintragungshindernisse
+	es besteht Klärungsbedarf und wir warten auf Antwort des Registergerichtes 
+	wir warten
+
+Aufzeichnungsequipment
+	für Referenten wollen wir drahtloses Mikro haben und wir suchen
+
+
