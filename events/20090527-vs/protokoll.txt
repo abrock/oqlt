@@ -1,77 +1,146 @@
-Datum 27.5.09 19:57-
-Anwesend: Tobias Kral, Tim Weber, Marcel Ackermann
-Protokollführer: Marcel Ackermann
-Beschlussfähigkeit: Daher ist die Versammlung beschlussfähig.
+Organisierte Querdenker für langfristige Technologiefolgenabschätzung i.Gr.
+Protokoll 2. Vorstandssitzung  —  27. Mai 2009
+===========================================================================
+
+Die Sitzung fand in der Privatwohnung von Tobias Kral statt.
+Anwesend waren Tobias Kral (1. Vorsitzender), Marcel Ackermann (2. Vorsitzender), Tim Weber (Schatzmeister).
+Der Vorstand war somit in seiner Gesamtheit anwesend und daher beschlussfähig.
+Zum Protokollführer wurde Marcel Ackermann bestimmt.
+Die Sitzung wurde um 19:57 Uhr eröffnet.
+
 Tagesordnung:
-	Fahrtkostenerstattung für Referenten
-	Zweiter wöchentlicher Termin
-	Quartalsplanung
-		Review
-		Externe Events
-		Interne Events
-	Neue Mitglieder
-	Logo
-	Fortschritt Vereinsgründung
-	Aufzeichnungsequipment
+	1. Fahrtkostenerstattung für Referenten
+	2. Zweiter wöchentlicher Termin
+	3. Quartalsplanung
+		a) Review
+		b) Externe Events
+		c) Interne Events
+	4. Neue Mitglieder
+	5. Logo
+	6. Fortschritt Vereinsgründung
+	7. Aufzeichnungsequipment
 
-Protokoll:
 
-Fahrtkostenerstattung für Referenten
-	keine generelle Regelung, sondern Einzelfallentscheidungen
-	Abstimmung für letzten oqlt am Sonntag (26.4., SEO): Übernahme der Hälfte der Fahrtkosten (=20€)
+1. Fahrtkostenerstattung für Referenten
+---------------------------------------
 
-Zweiter wöchentlicher Termin
-	Vorschlag: Sonntag, vorher: freizeit.txt aktualisieren
-	für diesen Tag: Vorträge & Projekte, andere Treffen
-	Events 2 Wochen vorher ankündigen: Location, Themen
-	für die Dienstagstermine: Mehr Struktur, nicht nur rumreden, Arbeitsgruppen bilden, Idee: Jeder der arbeitswillig ist greift sich nen Punkt an dem er am Abend arbeitet
-	Termine: Weiterhin in git pflegen, in Zukunft exportieren
-	Ankündigungen werden nicht mehr über Venteria gemacht, nur noch git und Mailingliste
+Es besteht der Wunsch, externen Referenten eine zumindest teilweise Rückerstattung ihrer Anreisekosten zur Verfügung stellen zu können.
 
-Quartalsplanung
-Review
-+oqlt am Sonntag (26.4.09)
-	früh nach Vereinsgründung gestartet
-	nächstes Mal auffälliger mit Klingelbeutel rumgehen
-	Verpflegungsmäßig weniger machen
-+positive Entwicklung
--Orakel läuft nicht (Hardwareprobleme)
--Services fehlen (Termine, Webseite, Bugtracker)
-+3 neue Mitglieder
--fehlende Projekte
-+SIGINT (22.6.09-24.6.09)
-	kurzfristig, aber super gelaufen
-	nächstes Jahr wieder
-	Das Labor in Bochum besucht
+Der Vorstand beschließt, sich auf keine allgemein gültige Regelung festzulegen, sondern im Einzelfall zu entscheiden.
 
-Externe Events
-	GPN 26.6.09-28.6.09
-	HAR 13.6.09-16.6.09
-	mrmcd: Orga angefragt von Chaos Darmstadt, wollen wir gerne machen, Kontakt aufnehmen
-	Congress: Orga machen
+Für die am 26.4. stattgefundene Veranstaltung „oqlt am Sonntag“ zum Thema Suchmaschinenoptimierung sollen dem Referenten die Hälfte der Fahrtkosten erstattet werden.
+Auszuzahlen ist daher laut dem 1. Vorsitzenden eine Kostenbeteiligung in Höhe von 20,00 Euro.
 
-Interne Events
-	oqlt am Sonntag mit externen Vortragenden
-	Tag der Offenen Radiosternwarte, Internationales Astronomiejahr 2009, Besichtigung
-	Besichtigung: Karlsruhe (entropia), Heidelberg (noname), Stuttgart, Darmstadt, Mainz
-	Mitgliederversammlung
 
-Projekte
-	Orakel (Public, Private git) & Services (Remote Shell, Kalender, Webseite, Ticketsystem)
-	Logo & Flyer
-	Raum: Marktpreise gucken, Zukunft Forum, max. 100€/Monat, Schränke im Forum organisieren
-	Merchandisign: 2d Barcode Sticker, Buttons, T-Shirts, Pullis, Aufkleber
-	Fördermöglichkeiten: Quartiermanagement, Stadt Mannheim
-	Konto
+2. Zweiter wöchentlicher Termin
+-------------------------------
 
-Neue Mitglieder
-	Mitgliedsanträge an 1. Vorsitzenden
-	Mitgliedsbeiträge an Schatzmeister
+Es besteht der Wunsch, zusätzlich zu den dienstags im FORUM statt findenden Treffen einen weiteren wöchentlichen Termin einzuführen.
+Hauptgrund dafür ist die wachsende Anzahl Mitglieder, die aus Zeitgründen an den dienstäglichen Treffen nicht teilnehmen können.
 
-Fortschritt Vereinsgründung
-	Antwort von Registergericht, mit Auflistung der Eintragungshindernisse
-	es besteht Klärungsbedarf und wir warten auf Antwort des Registergerichtes 
-	wir warten
+Vorgeschlagener Termin ist der Sonntagnachmittag, allerdings sollte zuvor eine Umfrage unter den Interessenten durchgeführt werden, um einen möglichst optimalen Zeitpunkt zu finden.
+Daher soll die Datei freizeit.txt im Git-Repository von den Mitgliedern aktualisiert werden.
 
-Aufzeichnungsequipment
-	für Referenten wollen wir drahtloses Mikro haben und wir suchen
+An jenem zweiten Termin sollen vor allem Vorträge und Projektarbeit statt finden, aber auch Ausflüge und Treffen an anderen Orten.
+Das FORUM steht zu diesen Terminen im Allgemeinen nicht zur Verfügung.
+
+Außerdem wurden weitere Beschlüsse zur allgemeinen Eventplanung gefällt:
+
+Nach Möglichkeit sollen alle Treffen 2 Wochen im Voraus unter Nennung von Ort und Themen angekündigt werden.
+
+Es soll versucht werden, die Produktivität an den Dienstagsterminen zu steigern.
+Dazu sollen Arbeitsgruppen gebildet werden, die sich während dem Treffen einer definierten Aufgabe widmen.
+
+Die Terminliste soll weiterhin im Git-Repository gepflegt werden und in Zukunft in remind- und iCal-Dateien exportiert werden.
+
+Die Plattform Venteria soll nicht weiter genutzt werden, Terminankündigungen sollen über Git und die Mailingliste stattfinden.
+
+
+3. Quartalsplanung
+------------------
+
+Review:
+
+Die Veranstaltung „oqlt am Sonntag“ am 26.4. war ein Erfolg, trotz der Tatsache, dass sie recht früh nach der Vereinsgründung angegangen wurde.
+Für die Zukunft sollte etwas deutlicher auf die Möglichkeit zu Spenden hingewiesen werden, außerdem muss die Verpflegung nicht ganz so umfangreich ausfallen wie an diesem Tag.
+
+Alles in allem ist eine positive Entwicklung des Vereins zu beobachten.
+
+Es mangelt insbesondere an einem Server („Orakel“ ist aufgrund von Hardwaredefekten nicht einsatzbereit), diversen organisatorischen Diensten (aus dem Git generierte Website, Terminliste, Bugtracker) und an vereinsweiten Projekten.
+
+Die Mitgliederentwicklung ist positiv, seit der Gründung haben sich drei neue Querdenker bei uns eingefunden, was einer Steigerung um über 40% entspricht.
+
+Die Teilnahme an der Konferenz „SIGINT“ war trotz kurzfristiger Planung sehr erfolgreich (u.a. ist der Besuch im „Labor“ in Bochum hervorzuheben) und soll nächstes Jahr wiederholt werden.
+
+
+Externe Events:
+
+Für den Rest des Jahres zeichnen sich weitere Events ab, an denen mehr oder weniger teilgenommen werden soll:
+Die achte „Gulasch-Programmier-Nacht“ in Karlsruhe vom 26.-28.6., das Open-Air-Camp „Hacking At Random“ in Holland vom 13.-16.8. und der 26. Chaos Communication Congress vom 27.-30.12.
+Für letzteren sollte bereits jetzt die Planung beginnen.
+
+Außerdem werden wir dieses Jahr an der Organisation der „mrmcd“ teilnehmen, deren Termin noch nicht feststeht.
+
+
+Interne Events:
+
+Es sollen weitere „oqlt am Sonntag“ mit externen Vortragenden stattfinden.
+
+Im Rahmen des internationalen Astronomiejahrs 2009 öffnet die Mannheimer Radiosternwarte ihre Tore für Besucher, eine Besichtigung soll stattfinden.
+
+Wir möchten uns mit verwandten Organisationen in der näheren Umgebung bekannt machen, z.B. der UUGRN, Entropia (Karlsruhe), NoName (Heidelberg), CCC Stuttgart, Chaos Darmstadt, CCC Mainz.
+
+Am 30. Juni findet die ordentliche Mitgliederversammlung statt.
+
+
+Projekte:
+
+Der Verein beschäftigt sich momentan mit folgenden Projekten bzw. plant sie:
+
+Der Server „Orakel“ für öffentliche und private Git-Repositories, Remote Shell, Kalender, Webseite, Ticketsystem etc. ist weiterhin in Arbeit.
+
+Das Logo soll neu gestaltet und ein neuer Flyer entworfen werden.
+
+Ein eigener Raum soll gefunden werden, der sich preislich im Bereich um ca. 100€/Monat bewegt; die Marktlage ist zu prüfen.
+Fördermöglichkeiten des Quartiermanagements und der Stadt sind zu evaluieren.
+Um Zuge dessen muss auch über unsere Zukunft im FORUM gesprochen werden, wo wir gerade versuchen, Schränke für die Einlagerung von Hardware etc. zu beschaffen.
+
+Weitere Merchandising-Materialien sollen kreiert werden: 2D-Barcode-Sticker, Buttons, T-Shirts, Pullover, Aufkleber.
+
+Ein Vereinskonto soll trotz der noch nicht abgeschlossenen Vereinseintragung eröffnet werden.
+
+
+4. Neue Mitglieder
+------------------
+
+Für neue Mitglieder wird folgendes Procedere beschlossen:
+
+Die Mitgliedsanträge werden vom 1. Vorsitzenden archiviert, die Mitgliedsbeiträge erhält der Schatzmeister.
+Andere Vorstandsmitglieder können beides ebenso entgegennehmen, sind aber zur Weitergabe verpflichtet.
+
+
+5. Logo
+-------
+
+Es besteht der Wunsch, das Vereinslogo optisch aufzuwerten und zu überarbeiten.
+Sobald eine neue Version zur Verfügung steht, ist darüber zu entscheiden, ob sie als neues Vereinslogo angenommen wird.
+Das neue Logo hat dem jetzigen in Punkto Datenqualität (programmierte Konstruktion statt Gestaltung im Grafikprogramm) ebenbürtig zu sein.
+
+Bis zum Beschluss eines neuen Logos ist ausschließlich das aktuelle zu verwenden.
+
+
+6. Fortschritt Vereinsgründung
+------------------------------
+
+Auf unseren Antrag auf Eintragung ist eine Antwort des Registergerichts mit einer Auflistung bestehender Eintragungshindernisse eingegangen.
+Einige konnten direkt behoben worden, bei anderen haben wir eine Rückfrage an das Gericht gestellt und warten auf Antwort.
+
+
+7. Aufzeichnungsequipment
+-------------------------
+
+„oqlt am Sonntag“ hat gezeigt, dass ein drahtloses Ansteckmikrofon für Referenten eine sinnvolle Anschaffung wäre.
+Der Vorstand beschließt, diese Anschaffung anzugehen.
+
+
+Die Sitzung wird gegen 22 Uhr geschlossen.
