@@ -18,11 +18,11 @@ Protokoll:
 
 Fahrtkostenerstattung für Referenten
 	keine generelle Regelung, sondern Einzelfallentscheidungen
-	Abstimmung für letzten oqlt am Sonntag: Übernahme der Hälfte der Versandkosten
-2. wöchentlicher Termin
+	Abstimmung für letzten oqlt am Sonntag (26.4., SEO): Übernahme der Hälfte der Fahrtkosten (=20€)
+
 Zweiter wöchentlicher Termin
 	Vorschlag: Sonntag, vorher: freizeit.txt aktualisieren
-	für diesen Tag: Vortrgäge & Projekte, andere Treffen
+	für diesen Tag: Vorträge & Projekte, andere Treffen
 	Events 2 Wochen vorher ankündigen: Location, Themen
 	für die Dienstagstermine: Mehr Struktur, nicht nur rumreden, Arbeitsgruppen bilden, Idee: Jeder der arbeitswillig ist greift sich nen Punkt an dem er am Abend arbeitet
 	Termine: Weiterhin in git pflegen, in Zukunft exportieren
@@ -64,7 +64,6 @@ Projekte
 	Fördermöglichkeiten: Quartiermanagement, Stadt Mannheim
 	Konto
 
-
 Neue Mitglieder
 	Mitgliedsanträge an 1. Vorsitzenden
 	Mitgliedsbeiträge an Schatzmeister
@@ -76,5 +75,3 @@ Fortschritt Vereinsgründung
 
 Aufzeichnungsequipment
 	für Referenten wollen wir drahtloses Mikro haben und wir suchen
-
-
