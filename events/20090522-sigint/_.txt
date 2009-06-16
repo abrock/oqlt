@@ -5,7 +5,7 @@ Extra: Am Samstag Abend machen wir ’nen Abstecher in „Das Labor“ nach Boch
 
 FAQ
 Alle-Tage-Ticket 60€
-Fahrtkosten: 0.15€/km
+Fahrtkosten: 0.16€/km
 Anreise http://sigint.ccc.de/sigint/2009/wiki/Anreise
 
 INTE
@@ -18,3 +18,12 @@ Rucksack (Notwendiges)
 	Schlafsack
 	Kulturbeutel
 	Klamotten
+
+ABRECHNUNG
+1. Mannheim - Köln - Bochum (480km x 0,16€ = 76,80€ -> 4x 19,20€)
+2. 22€ Parktickets (4x 5,50€)
+3. Köln - Mannheim (280km x 0,16€ = 44,80€ -> 3x 14,94€)
+
+Abrock: 40,00€
+DreamFlasher: 40,00€
+Niklas: 25,00€
