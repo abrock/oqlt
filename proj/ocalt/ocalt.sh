@@ -1,6 +1,12 @@
 #!/bin/sh
 
-for file in $(find -name '_.event' | sort); do
+# Muss im Repository-Root aufgerufen werden.
+
+
+PREFIX='proj/ocalt'
+
+# Konstruiere Remind-Datei aus Event-Files.
+for file in $(find events -name '_.event' | sort); do
 	title="$(head -n 1 "$file")"
 	reminds="$(
 	egrep -i '^((Rem|Datum):.*|[[:space:]]*)$' "$file" | sed -r -e 's/^([a-z]+):[ \t]*(.*)$/\1:\2/i' -e 's/[\t]/ /g' -e 's/ {2,}/ /g' | while read line; do
@@ -43,4 +49,16 @@ for file in $(find -name '_.event' | sort); do
 		reminds="$(echo "$reminds" | awk "{ print \$0 \" [\" NR \"/$lines]\" }")"
 	fi
 	echo "$reminds"
-done
+done > "$PREFIX/eventfiles.rem"
+
+# Konstruiere Remind-Datei für zukünftige Events.
+# Die Regel ist, dass an Tagen, an denen ein Event anliegt,
+# kein „automatisches Treffen“ anberaumt wird. Findet trotzdem
+# eins statt, muss eine Eventdatei dafür angelegt werden.
+(
+echo 'PUSH-OMIT-CONTEXT'
+echo 'CLEAR-OMIT-CONTEXT'
+remind -s36 proj/ocalt/eventfiles.rem 2008 Jan 1 | sed -r -e 's#^([^ ]+).*#OMIT \1#'
+echo 'REM 13 Jan 2009 *7 SKIP AT 18:00 DURATION 3:45 MSG voraussichtlich oqlt-Treffen (FORUM)'
+echo 'POP-OMIT-CONTEXT'
+) > "$PREFIX/zukunft.rem"
