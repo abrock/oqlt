@@ -2,6 +2,8 @@
 
 # Muss im Repository-Root aufgerufen werden.
 
+# Benötigt remind >= 03.01.07.
+
 
 PREFIX='proj/ocalt'
 WEB='drafts/homepage'
@@ -70,7 +72,7 @@ cat "$PREFIX/zukunft.rem" "$PREFIX/eventfiles.rem" > "$PREFIX/oqlt.rem"
 
 # Generiere iCal-Dateien.
 for opt in '' -norecur; do
-	remind -r "-s$MONTHS" "$PREFIX/oqlt.rem" 2008 Jan 1 | HOSTNAME=oqlt.de proj/ocalt/rem2ics -do "$opt" > "$PREFIX/oqlt$opt.ics"
+	remind -r "-s$MONTHS" "$PREFIX/oqlt.rem" 2008 Jan 1 | HOSTNAME=oqlt.de TZ=Europe/Berlin proj/ocalt/rem2ics -do "$opt" > "$PREFIX/oqlt$opt.ics"
 done
 
 # Veröffentliche die Dateien auf der Website.
