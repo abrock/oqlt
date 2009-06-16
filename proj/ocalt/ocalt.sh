@@ -12,8 +12,11 @@ MONTHS=36
 # Konstruiere Remind-Datei aus Event-Files.
 for file in $(find events -name '_.event' | sort); do
 	title="$(head -n 1 "$file" | sed -e 's/^Treffen$/oqlt-Treffen/')"
+	place=''
+	fplace=''
+	[ "$title" = 'oqlt-Treffen' ] && place='FORUM'
 	reminds="$(
-	egrep -i '^((Rem|Datum):.*|[[:space:]]*)$' "$file" | sed -r -e 's/^([a-z]+):[ \t]*(.*)$/\1:\2/i' -e 's/[\t]/ /g' -e 's/ {2,}/ /g' | while read line; do
+	egrep -i '^((Rem|Datum|Ort|Wo):.*|[[:space:]]*)$' "$file" | sed -r -e 's/^([a-z]+):[ \t]*(.*)$/\1:\2/i' -e 's/[\t]/ /g' -e 's/ {2,}/ /g' | while read line; do
 		if [ -z "$line" ]; then
 			break
 		fi
@@ -38,11 +41,17 @@ for file in $(find events -name '_.event' | sort); do
 				echo "Komisches Datum in $file: $text" >&2
 				text=''
 			fi
+		elif [ "$type" = 'ORT' -o "$type" = 'WO' ]; then
+			place="$text"
+			continue
 		fi
 		if [ -z "$text" ]; then
 			continue
 		fi
-		echo "REM $text MSG $title"
+		if [ -z "$fplace" ]; then
+			[ -n "$place" ] && fplace=" ($place)"
+		fi
+		echo "REM $text MSG $title$fplace"
 	done
 	)"
 	if [ -z "$reminds" ]; then
