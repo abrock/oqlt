@@ -8,6 +8,7 @@
 PREFIX='proj/ocalt'
 WEB='drafts/homepage'
 MONTHS=36
+TIMEZONE=Europe/Berlin
 
 # Konstruiere Remind-Datei aus Event-Files.
 for file in $(find events -name '_.event' | sort); do
@@ -83,7 +84,10 @@ cat "$PREFIX/zukunft.rem" "$PREFIX/eventfiles.rem" > "$PREFIX/oqlt.rem"
 
 # Generiere iCal-Dateien.
 for opt in '' -norecur; do
-	remind -r "-s$MONTHS" "$PREFIX/oqlt.rem" 2008 Jan 1 | HOSTNAME=oqlt.de TZ=Europe/Berlin proj/ocalt/rem2ics -do "$opt" > "$PREFIX/oqlt$opt.ics"
+	remind -r "-s$MONTHS" "$PREFIX/oqlt.rem" 2008 Jan 1 |
+		HOSTNAME=oqlt.de TZ="$TIMEZONE" proj/ocalt/rem2ics -do "$opt" |
+		sed -r -e "s#^PRODID:#X-WR-CALNAME;VALUE=TEXT:oqlt\\nX-WR-TIMEZONE;VALUE=TEXT:$TIMEZONE\\n\\0#" \
+		> "$PREFIX/oqlt$opt.ics"
 done
 
 # Veröffentliche die Dateien auf der Website.
