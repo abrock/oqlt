@@ -61,7 +61,7 @@ for file in $(find events -name '_.event' | sort); do
 	fi
 	lines="$(echo "$reminds" | wc -l)"
 	if [ "$lines" -gt 1 ]; then
-		reminds="$(echo "$reminds" | awk "{ print \$0 \" [\" NR \"/$lines]\" }")"
+		reminds="$(echo "$reminds" | awk "{ print \$0 \" \" NR \"/$lines\" }")"
 	fi
 	echo "$reminds"
 done > "$PREFIX/eventfiles.rem"
