@@ -11,7 +11,7 @@ MONTHS=36
 
 # Konstruiere Remind-Datei aus Event-Files.
 for file in $(find events -name '_.event' | sort); do
-	title="$(head -n 1 "$file")"
+	title="$(head -n 1 "$file" | sed -e 's/^Treffen$/oqlt-Treffen/')"
 	reminds="$(
 	egrep -i '^((Rem|Datum):.*|[[:space:]]*)$' "$file" | sed -r -e 's/^([a-z]+):[ \t]*(.*)$/\1:\2/i' -e 's/[\t]/ /g' -e 's/ {2,}/ /g' | while read line; do
 		if [ -z "$line" ]; then
