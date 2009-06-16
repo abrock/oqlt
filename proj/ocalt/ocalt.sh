@@ -4,6 +4,8 @@
 
 
 PREFIX='proj/ocalt'
+WEB='drafts/homepage'
+MONTHS=36
 
 # Konstruiere Remind-Datei aus Event-Files.
 for file in $(find events -name '_.event' | sort); do
@@ -58,7 +60,18 @@ done > "$PREFIX/eventfiles.rem"
 (
 echo 'PUSH-OMIT-CONTEXT'
 echo 'CLEAR-OMIT-CONTEXT'
-remind -s36 proj/ocalt/eventfiles.rem 2008 Jan 1 | sed -r -e 's#^([^ ]+).*#OMIT \1#'
-echo 'REM 13 Jan 2009 *7 SKIP AT 18:00 DURATION 3:45 MSG voraussichtlich oqlt-Treffen (FORUM)'
+remind -r "-s$MONTHS" "$PREFIX/eventfiles.rem" 2008 Jan 1 | sed -r -e 's#^([^ ]+).*#OMIT \1#'
+echo "REM $(LC_ALL=C date -d 'Tue' '+%Y %b %d') *7 SKIP AT 18:00 DURATION 3:45 MSG voraussichtlich oqlt-Treffen (FORUM)"
 echo 'POP-OMIT-CONTEXT'
 ) > "$PREFIX/zukunft.rem"
+
+# Füge die generierten Dateien zusammen.
+cat "$PREFIX/zukunft.rem" "$PREFIX/eventfiles.rem" > "$PREFIX/oqlt.rem"
+
+# Generiere iCal-Dateien.
+for opt in '' -norecur; do
+	remind -r "-s$MONTHS" "$PREFIX/oqlt.rem" 2008 Jan 1 | HOSTNAME=oqlt.de proj/ocalt/rem2ics -do "$opt" > "$PREFIX/oqlt$opt.ics"
+done
+
+# Veröffentliche die Dateien auf der Website.
+mv "$PREFIX/"oqlt{.rem,{,-norecur}.ics} "$WEB"
