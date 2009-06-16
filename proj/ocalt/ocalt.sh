@@ -13,7 +13,7 @@ MONTHS=36
 for file in $(find events -name '_.event' | sort); do
 	title="$(head -n 1 "$file" | sed -e 's/^Treffen$/oqlt-Treffen/')"
 	place=''
-	fplace=''
+	placef=''
 	[ "$title" = 'oqlt-Treffen' ] && place='FORUM'
 	reminds="$(
 	egrep -i '^((Rem|Datum|Ort|Wo):.*|[[:space:]]*)$' "$file" | sed -r -e 's/^([a-z]+):[ \t]*(.*)$/\1:\2/i' -e 's/[\t]/ /g' -e 's/ {2,}/ /g' | while read line; do
@@ -48,10 +48,12 @@ for file in $(find events -name '_.event' | sort); do
 		if [ -z "$text" ]; then
 			continue
 		fi
-		if [ -z "$fplace" ]; then
-			[ -n "$place" ] && fplace=" ($place)"
+		if [ -z "$placef" ]; then
+			[ -n "$place" ] && place=" ($place)"
+			[ -n "$SHOWFILE" ] && title="$file: $title"
+			placef=y
 		fi
-		echo "REM $text MSG $title$fplace"
+		echo "REM $text MSG $title$place"
 	done
 	)"
 	if [ -z "$reminds" ]; then
