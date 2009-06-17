@@ -91,7 +91,7 @@ for opt in '' -norecur; do
 done
 
 # Generiere ASCII-Art.
-remind -r -m -c3 -w120,2,1 "$PREFIX/oqlt.rem" | tr '\014' '\n' > "$PREFIX/oqlt-ascii.txt"
+recode utf-8..l1 < "$PREFIX/oqlt.rem" | remind -r -m -b1 -c3 -w120,2,1 - | tr \\014 \\n | recode l1..utf-8 > "$PREFIX/oqlt-ascii.txt"
 
 # Veröffentliche die Dateien auf der Website.
 mv "$PREFIX/"oqlt{.rem,{,-norecur}.ics,-ascii.txt} "$WEB"
