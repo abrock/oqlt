@@ -93,5 +93,8 @@ done
 # Generiere ASCII-Art.
 recode utf-8..l1 < "$PREFIX/oqlt.rem" | remind -r -m -b1 -c3 -w120,2,1 - | tr \\014 \\n | recode l1..utf-8 > "$PREFIX/oqlt-ascii.txt"
 
+# Generiere HTML.
+recode utf-8..l1 < "$PREFIX/oqlt.rem" | remind -r -m -b1 -p3 - | rem2html --stylesheet kalender.css --title 'Termine :: oqlt' | recode l1..utf-8 > "$PREFIX/oqlt.html"
+
 # Veröffentliche die Dateien auf der Website.
-mv "$PREFIX/"oqlt{.rem,{,-norecur}.ics,-ascii.txt} "$WEB"
+mv "$PREFIX/"oqlt{.rem,{,-norecur}.ics,-ascii.txt,.html} "$WEB"
