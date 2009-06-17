@@ -49,11 +49,11 @@ Außerdem wurden weitere Beschlüsse zur allgemeinen Eventplanung gefällt:
 Nach Möglichkeit sollen alle Treffen 2 Wochen im Voraus unter Nennung von Ort und Themen angekündigt werden.
 
 Es soll versucht werden, die Produktivität an den Dienstagsterminen zu steigern.
-Dazu sollen Arbeitsgruppen gebildet werden, die sich während dem Treffen einer definierten Aufgabe widmen.
+Dazu soll dazu angeregt werden, Arbeitsgruppen zu bilden, die sich während dem Treffen einer definierten Aufgabe widmen.
 
 Die Terminliste soll weiterhin im Git-Repository gepflegt werden und in Zukunft in remind- und iCal-Dateien exportiert werden.
 
-Die Plattform Venteria soll nicht weiter genutzt werden, Terminankündigungen sollen über Git und die Mailingliste stattfinden.
+Die Plattform Venteria soll nicht weiter genutzt werden, Terminankündigungen sollen ausschließlich über Git und die Mailingliste stattfinden.
 
 
 3. Quartalsplanung
