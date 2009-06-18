@@ -1,0 +1,37 @@
+*, table, th, td, body {
+	font-family:Verdana,sans-serif;
+}
+
+table {
+	background-color:#080;
+	clear:both;
+	width:100%;
+	margin-bottom:3em;
+}
+
+table table {
+	display:none;
+}
+
+td, th {
+	width:14.3%;
+	vertical-align:top;
+	background-color:#efe;
+	padding:0.3em;
+}
+
+caption {
+	font-size:200%;
+}
+
+p.rem-entry {
+	margin:0.1em;
+	font-size:80%;
+}
+
+div.rem-daynumber {
+	float:right;
+	font-size:110%;
+	font-weight:bold;
+	color:#aaa;
+}

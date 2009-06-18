@@ -90,5 +90,14 @@ for opt in '' -norecur; do
 		> "$PREFIX/oqlt$opt.ics"
 done
 
+# Generiere ASCII-Art.
+recode utf-8..l1 < "$PREFIX/oqlt.rem" | remind -r -m -b1 -c3 -w120,2,1 - | tr \\014 \\n | recode l1..utf-8 > "$PREFIX/oqlt-ascii.txt"
+
+# Generiere Agenda.
+remind -r -m -b1 -s12 "$PREFIX/oqlt.rem" | cut -d ' ' -f 1,6- | sed -r -e 's#^(....)/(..)/(..) #\1-\2-\3               #' -e 's#^([0-9-]{10}  )( {13})([0-9]{2}:[0-9]{2}-[0-9]{2}:[0-9]{2})#\1\3 #' > "$PREFIX/oqlt-agenda.txt"
+
+# Generiere HTML.
+remind -r -m -b1 -p3 "$PREFIX/oqlt.rem" | rem2html --stylesheet kalender.css --title 'Termine :: oqlt' > "$PREFIX/oqlt.html"
+
 # Veröffentliche die Dateien auf der Website.
-mv "$PREFIX/"oqlt{.rem,{,-norecur}.ics} "$WEB"
+mv "$PREFIX/"oqlt{.rem,{,-norecur}.ics,-a{scii,genda}.txt,.html} "$WEB"
