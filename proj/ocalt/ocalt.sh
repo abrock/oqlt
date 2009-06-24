@@ -82,7 +82,7 @@ echo 'POP-OMIT-CONTEXT'
 ) > "$PREFIX/zukunft.rem"
 
 # Füge die generierten Dateien zusammen.
-cat "$PREFIX/zukunft.rem" "$PREFIX/eventfiles.rem" > "$PREFIX/oqlt.rem"
+cat "$PREFIX/zukunft.rem" "$PREFIX/regelmaessig.rem" "$PREFIX/eventfiles.rem" > "$PREFIX/oqlt.rem"
 
 # Wenn sich an der oqlt.rem nichts geändert hat, stoppe hier.
 diff -q "$PREFIX/oqlt.rem" "$WEB/oqlt.rem" >/dev/null 2>&1 && exit
