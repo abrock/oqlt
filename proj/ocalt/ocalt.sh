@@ -89,8 +89,8 @@ diff -q "$PREFIX/oqlt.rem" "$WEB/oqlt.rem" >/dev/null 2>&1 && exit
 
 # Generiere iCal-Dateien.
 for opt in '' -norecur; do
-	remind -r "-s$MONTHS" "$PREFIX/oqlt.rem" 2008 Jan 1 |
-		HOSTNAME=oqlt.de TZ="$TIMEZONE" proj/ocalt/rem2ics -do "$opt" |
+	remind -r -y -q "-s$MONTHS" "$PREFIX/oqlt.rem" 2008 Jan 1 |
+		HOSTNAME=oqlt.de TZ="$TIMEZONE" proj/ocalt/rem2ics -do -usetag "$opt" |
 		sed -r -e "s#^PRODID:#X-WR-CALNAME;VALUE=TEXT:oqlt\\nX-WR-TIMEZONE;VALUE=TEXT:$TIMEZONE\\n\\0#" \
 		> "$PREFIX/oqlt$opt.ics"
 done
