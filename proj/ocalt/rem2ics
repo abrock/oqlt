@@ -32,7 +32,7 @@ rem2ics - convert the output of "remind -s" into RFC2445 iCalendar format.
 
 =head1 SYNOPSIS
 
-TZ=I<timezone> B<rem2ics> [B<-man>] [B<-do>] [B<-norecur>] E<lt>input E<gt>output
+TZ=I<timezone> B<rem2ics> [B<-man>] [B<-do>] [B<-norecur>] [B<-usetag>] E<lt>input E<gt>output
 
 =head1 OPTIONS AND ARGUMENTS
 
