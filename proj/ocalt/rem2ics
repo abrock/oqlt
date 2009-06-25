@@ -32,7 +32,7 @@ rem2ics - convert the output of "remind -s" into RFC2445 iCalendar format.
 
 =head1 SYNOPSIS
 
-TZ=I<timezone> B<rem2ics> [B<-man>] [B<-do>] [B<-norecur>] E<lt>input E<gt>output
+TZ=I<timezone> B<rem2ics> [B<-man>] [B<-do>] [B<-norecur>] [B<-usetag>] E<lt>input E<gt>output
 
 =head1 OPTIONS AND ARGUMENTS
 
@@ -53,7 +53,7 @@ Do not attempt to detect and fold together recurring events.
 
 =item B<-usetag>
 
-Use the TAG clause in reminders for UIDs instead of sythesizing by ourself.
+Use the TAG clause in reminders for UIDs instead of synthesizing by ourself.
 
 =back
 
@@ -146,15 +146,16 @@ would have to heuristically parse them out of the text, and everyone
 uses a idiosyncratic way of putting things in B<remind>.
 
 If the B<-usetag> option is not used or no C<TAG> is set for a
-reminder, B<rem2ics> will sythesize C<UID> properties for each VEVENT,
-but the UIDs will be different (and unique) for each run of
+reminder, B<rem2ics> will synthesize C<UID> properties for each
+VEVENT, but the UIDs will be different (and unique) for each run of
 B<rem2ics>.  If you run rem2ics twice and import the two resulting ICS
 streams into your new scheduling program, your appointments will
 appear twice.  If, however, you have set C<TAG> clauses in your
 reminders and activated B<-usetag>, these will be used.  The same
-applies for tags sythesized by B<remind>'s B<-y> option.  Hence, it is
-more useful to use the B<-y> option than to let B<rem2ics> sythesize
-UIDs, because the UIDs will stay the same across multiple runs.
+applies for tags synthesized by B<remind>'s B<-y> option.  Hence, it
+is more useful to use the B<-y> option than to let B<rem2ics>
+synthesize UIDs, because the UIDs will stay the same across multiple
+runs.
 
 =head2 Other iCalendar Perl objects
 
