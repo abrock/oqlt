@@ -14,6 +14,8 @@ beantworte mit ja, die Frage nach der ODBC-Quelle mit Nein.
 
 3. Schalte den Dienst namens "PowerDNS" ab.
 
+Die Dienste findest du in der Systemsteuerung unter Verwaltung.
+
 4. Konfiguriere den Recursor:
 
 Im Programmverzeichnis von PowerDNS liegt eine Datei "recursor.conf".
