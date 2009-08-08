@@ -37,6 +37,9 @@ Die Eingangstür befindet sich auf der der Straße abgewandten Seite, also am
 oberen Teil des Gebäudes, GPS-Koordinaten 49.494521,8.478827.
 Google-Maps-Link: http://maps.google.de/maps?q=49.494521,8.478827&t=h&z=20
 
+Ausweichlocations:
+- ulmenweg.txt
+
 [1] Neckarpromenade 46, 68167 Mannheim, 0621-2937761, http://www.forum-mannheim.de/
 [2] http://efa9.vrn.de/vrn/XSLT_TRIP_REQUEST2?language=de
 [3] http://data.giub.uni-bonn.de/openrouteservice/index.php?start=8.473872,49.4957499&end=8.4787643,49.4946907&pref=Pedestrian&lang=de
