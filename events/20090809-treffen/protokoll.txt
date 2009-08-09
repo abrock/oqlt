@@ -1,0 +1,26 @@
+oqlt Treffen vom 09.08.2009
+
+1. Kommunikation
+  - Mailinglist soll als primäre Kommunikationsplatform  erhalten bleiben
+  - Git sollte zur Verwaltung von Projekten verwendet werden
+  
+  - Fazit: Git ist kein Kommuniakationsmittel, sondern ein Dokumentationsmittel 
+
+2. Raumsuche
+  - Auf dem Grundstück von Alstom umgesehen, dabei 2 Gebäude gefunden:
+    - 1. Gebäude:
+      - 15x5m 
+      - 3 Räume, 1 Flur 
+      - in einem Raum: kaputter Boden
+      - Keller ohne Tageslicht
+      - "Householding" von ABB
+      - Niklas ruft an
+      - 49.509234,8.502757 (http://ur1.ca/8r1u)
+    
+    - 2. Gebäude:
+      - Lagerhalle
+      - Büroraum
+      - sehr groß
+      - "ab 1m^2"
+      - DreamFlasher ruft an
+      - 49.508959,8.501417 (http://ur1.ca/8r1w)
