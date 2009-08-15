@@ -33,7 +33,7 @@ GITHUB EINRICHTEN (github_setup-01.jpg)
 
 REPOSITORY KLONEN
 1. Einen den Zielordner rechts anklicken und "Git Bash Here" öffnen. (repo_klonen-00.jpg)
-2. Das Klonen
+2. Das Klonen (repo_klonen-01.jpg)
 	a) Mit Schreibrechten im Repo:
 	$ git.exe clone git@github.com:scy/oqlt.git
 	b) Ohne Schreibrechte im Repo:
