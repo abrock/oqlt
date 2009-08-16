@@ -26,7 +26,10 @@ for file in $(find events -name '_.event' | sort); do
 		if [ "$type" = 'DATUM' ]; then
 			if echo "$text" | egrep -q '^[0-9]{4}-[0-9]{2}-[0-9]{2} bis [0-9]{4}-[0-9]{2}-[0-9]{2}$'; then
 				text="$(echo "$text" | sed -r -e 's/ bis / *1 UNTIL /')"
-			elif echo "$text" | egrep -q '^[0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{1,2}:[0-9]{2} bis [0-9]{1,2}:[0-9]{2}$'; then
+			elif echo "$text" | egrep -q '^[0-9]{4}-[0-9]{2}-[0-9]{2}$'; then
+				:
+			elif echo "$text" | egrep -q '^[0-9]{4}-[0-9]{2}-[0-9]{2} [0-9]{1,2}:[0-9]{2}( bis | *- *)[0-9]{1,2}:[0-9]{2}$'; then
+				text="$(echo "$text" | sed -r -e 's/(:[0-9]{2}) *- */\1 bis /')"
 				day="$(echo "$text" | cut -d ' ' -f 1)"
 				time1="$(echo "$text" | cut -d ' ' -f 2)"
 				time2="$(echo "$text" | cut -d ' ' -f 4 | sed -e 's/^24:00$/23:59/')"
@@ -80,15 +83,15 @@ echo 'POP-OMIT-CONTEXT'
 ) > "$PREFIX/zukunft.rem"
 
 # Füge die generierten Dateien zusammen.
-cat "$PREFIX/zukunft.rem" "$PREFIX/eventfiles.rem" > "$PREFIX/oqlt.rem"
+cat "$PREFIX/zukunft.rem" "$PREFIX/regelmaessig.rem" "$PREFIX/eventfiles.rem" > "$PREFIX/oqlt.rem"
 
 # Wenn sich an der oqlt.rem nichts geändert hat, stoppe hier.
 diff -q "$PREFIX/oqlt.rem" "$WEB/oqlt.rem" >/dev/null 2>&1 && exit
 
 # Generiere iCal-Dateien.
 for opt in '' -norecur; do
-	remind -r "-s$MONTHS" "$PREFIX/oqlt.rem" 2008 Jan 1 |
-		HOSTNAME=oqlt.de TZ="$TIMEZONE" proj/ocalt/rem2ics -do "$opt" |
+	remind -r -y -q "-s$MONTHS" "$PREFIX/oqlt.rem" 2008 Jan 1 |
+		HOSTNAME=oqlt.de TZ="$TIMEZONE" proj/ocalt/rem2ics -do -usetag "$opt" |
 		sed -r -e "s#^PRODID:#X-WR-CALNAME;VALUE=TEXT:oqlt\\nX-WR-TIMEZONE;VALUE=TEXT:$TIMEZONE\\n\\0#" \
 		> "$PREFIX/oqlt$opt.ics"
 done

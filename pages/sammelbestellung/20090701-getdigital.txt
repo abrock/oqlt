@@ -1,0 +1,17 @@
+Artikel							Anzahl	Einzelpreis	Gesamtpreis
+Piratenpartei Flagge 2 Stück 				1	15,80 EUR	15,80 EUR
+shakespeare Schwarz Sweat-Shirt S			1	22,90 EUR	22,90 EUR
+select * from users where iq > 60 Blau T-Shirt S	1	14,90 EUR	14,90 EUR
+Widerstand ist zwecklos Blau T-Shirt S			1	14,90 EUR	14,90 EUR
+Piratenpartei Kugelschreiber 20 Stück, Orange		1	19,00 EUR	19,00 EUR
+
+Zahlungsart Lastschrift
+Versandkosten									04,90 EUR
+enth. MwSt wenn nicht anders angegeben: 19%					14,75 EUR
+Gesamtpreis:									92,40 EUR
+
+Bestellung um 18:20 Uhr aufgegeben.
+
+Rami	54,34€
+Scytale	20,64€
+Inte	17,44€

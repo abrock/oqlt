@@ -1,0 +1,59 @@
+Klitzekleines Howto:
+Wie ich meinen eigenen DNS-Resolver unter Windows installiere.
+
+1. Besorge dir den PowerDNS-Server:
+http://powerdns.com/en/downloads.aspx
+
+Unter Windows (OLD, Unsupported) gibt es Binaries, die jedenfalls
+bei mir (WXP) funktionieren.
+
+2. Installiere den Server.
+
+Die Frage, ob der Server als NT-Dienst installiert werden soll,
+beantworte mit ja, die Frage nach der ODBC-Quelle mit Nein.
+
+3. Schalte den Dienst namens "PowerDNS" ab.
+
+Die Dienste findest du in der Systemsteuerung unter Verwaltung.
+
+4. Konfiguriere den Recursor:
+
+Im Programmverzeichnis von PowerDNS liegt eine Datei "recursor.conf".
+Bearbeite sie mit einem Texteditor, ich habe folgende Konfiguration:
+
+# PowerDNS Recursor configuration file.
+
+# Port to run the recursor on:
+local-port=53
+local-address=127.0.0.1
+# In das Syslog soll der Recursor nichts schreiben.
+use-ntlog=no
+# Sondern in eine Log-Datei (im Programmverzeichnis) 
+# Wen die Logs nicht interessieren, kann sie mit "use-logfile=no" auch abschalten.
+use-logfile=yes
+logfile=mylog.txt
+
+daemon=yes
+
+# EOF
+
+5. Starte den Dienst "PowerDNS Recursor"
+
+Wenn das fehlschlägt, stelle sicher, dass Leerzeilen in der Konfiguration
+keine Leerzeichen oder Tabulatoren enthalten.
+
+6. Teste den Recursor.
+Gib dazu in die Windows-Kommandozeile "nslookup example.com 127.0.0.1" ein.
+
+Eine Windows-Kommandozeile bekommst du über "Start -> Ausführen -> cmd"
+
+Es sollte etwa folgendes angezeigt werden:
+
+Nicht autorisierte Antwort:
+Name:    example.com
+Address:  208.77.188.166
+
+7. Trage 127.0.0.1 als bevorzugten DNS-Server ein.
+
+Systemsteuerung -> Netzwerkverbindungen -> (W)LAN-Verbindung -> Eigenschaften
+-> Aus der Liste "Internetprotokoll (TCP/IP)" auswählen -> Bevorzugter DNS-Server

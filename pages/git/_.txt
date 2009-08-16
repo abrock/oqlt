@@ -132,7 +132,8 @@ noch aufhübschen, aber das hat erst mal geringe Priorität.
   http://www.kernel.org/pub/software/scm/git/docs/everyday.html
 
 - Git für Subversion-Benutzer
-  http://git.or.cz/course/svn.html
+  http://git.or.cz/course/svn.html oder
+  http://www.ibm.com/developerworks/opensource/library/l-git-subversion-1/index.html
 
 - Zusammenstellung von Daniel Robbins (Gentoo-Gründer)
   http://github.com/funtoo/portage/wikis/git-links

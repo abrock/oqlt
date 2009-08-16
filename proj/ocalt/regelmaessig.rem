@@ -1,0 +1,24 @@
+PUSH-OMIT-CONTEXT
+CLEAR-OMIT-CONTEXT
+
+# Chaosradio.
+# Entfallene Termine.
+OMIT 28 Oct 1998
+OMIT 29 Jan 2003
+OMIT 24 Sep 2003
+# In die Zukunft verschobene Termine.
+FSET crfutured(x) \
+	(x == date(1998,03,25)) || \
+	(1 == 0)
+# Ab November 1995 jeden letzten Mittwoch im Monat, außer im Dezember.
+SET firstcr date(1995,11,29)
+SET crtwohr date(2007,07,16)
+REM Wed 1 --7 SATISFY trigdate() >= firstcr && monnum(trigdate()) != 12 && !isomitted(trigdate())
+IF trigvalid()
+	# Berechne die Nummer unter Berücksichtigung ausgefallener Termine.
+	SET crnum ((year(trigdate()) - 1996) * 11) + monnum(trigdate()) + 1 - (trigdate() - firstcr - nonomitted(firstcr, trigdate()))
+	# Ab dem 16.07.2007 läuft Blue Moon nur noch 2 statt 3 Stunden.
+	REM [trigdate()] AFTER OMITFUNC crfutured AT 22:00 DURATION [(2 + (trigdate() < crtwohr))]:00 MSG Chaosradio #[crnum] (Fritz)
+ENDIF
+
+POP-OMIT-CONTEXT
