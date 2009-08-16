@@ -21,18 +21,18 @@ TEXTEDITOR INSTALLIEREN
 SCHLÜSSELPAAR ERZEUGEN (ssh-keygen.jpg)
 1. "Git Bash" aus dem Startmenü heraus aufrufen
 2. $ ssh-keygen.exe -C "your@email.com" -t rsa
+	a) Anmerkung: Passphrase kann leergelassen werden (verschlüsselt die key-Datei)
 
 GIT EINRICHTEN (git_setup-00.jpg)
 1. "Git Bash" aus dem Startmenü heraus aufrufen
-2. Benutzername :: git config --global user.name "Your Name Here"
-3. E-Mail-Adresse :: git config --global user.email your@email.com
+2. Weitere Details siehe ../_.txt im Abschnitt "Basiskonfiguration"
 
 GITHUB EINRICHTEN (github_setup-01.jpg)
 1. Account aufrufen :: https://github.com/account
 2. Public-Key hinzufügen :: "Add another public key" (z.B: C:\Documents and Settings\Inte\.ssh\id_rsa.pub)
 
 REPOSITORY KLONEN
-1. Einen den Zielordner rechts anklicken und "Git Bash Here" öffnen. (repo_klonen-00.jpg)
+1. Den Zielordner rechts anklicken und "Git Bash Here" öffnen. (repo_klonen-00.jpg)
 2. Das Klonen (repo_klonen-01.jpg)
 	a) Mit Schreibrechten im Repo:
 	$ git.exe clone git@github.com:scy/oqlt.git
