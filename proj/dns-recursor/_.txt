@@ -39,13 +39,13 @@ daemon=yes
 
 5. Starte den Dienst "PowerDNS Recursor"
 
-Wenn das fehlschlägt, stelle sicher, dass Leerzeilen in der Konfiguration
+Wenn das fehlschlÃ¤gt, stelle sicher, dass Leerzeilen in der Konfiguration
 keine Leerzeichen oder Tabulatoren enthalten.
 
 6. Teste den Recursor.
 Gib dazu in die Windows-Kommandozeile "nslookup example.com 127.0.0.1" ein.
 
-Eine Windows-Kommandozeile bekommst du über "Start -> Ausführen -> cmd"
+Eine Windows-Kommandozeile bekommst du Ã¼ber "Start -> AusfÃ¼hren -> cmd"
 
 Es sollte etwa folgendes angezeigt werden:
 
@@ -56,4 +56,4 @@ Address:  208.77.188.166
 7. Trage 127.0.0.1 als bevorzugten DNS-Server ein.
 
 Systemsteuerung -> Netzwerkverbindungen -> (W)LAN-Verbindung -> Eigenschaften
--> Aus der Liste "Internetprotokoll (TCP/IP)" auswählen -> Bevorzugter DNS-Server
+-> Aus der Liste "Internetprotokoll (TCP/IP)" auswÃ¤hlen -> Bevorzugter DNS-Server
