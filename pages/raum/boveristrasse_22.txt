@@ -24,13 +24,14 @@ Palette Mate: ~580€ incl. Pfand
 MONATLICHE KOSTEN
 Summe Kaltmiete: 236,52€
 Strom: ~100€ (Winterperiode ca. 3-4kW Heizlast)
+Nebenkosten: ?€
 
 RENOVIERUNG
 Fliesen 4m²
 Putzmaterial ~50€
 
 OFFENE FRAGEN AN CLAUS
-Eigener Stromzähler
+Strom über Umlage? -> Eigener Stromzähler!
 Strom Grundgebühr / Preis pro kWh
 Weitere Nebenkosten (Wasser, ???)
 Verlangt der Vermieter eigene Schlüssel (evtl. Zylinder tauschen)
@@ -41,6 +42,13 @@ SELBST ZU KLÄRENDE FRAGEN
 Müllkosten für eigene Tonnen (evtl. kostenpflichtige Säcke)
 Versicherungen (Haftpflicht, Rechtsschutz, etc.)
 Heizen mit Gas als Alternative zu Strom
+
+HAUSELEKTRIK
+Eigener Kasten mit 24/36 Plätzen für Leitungsschutzschalter
+FI gesichert
+min. 3x32A Zugangsleitungen von Stockwerksverteiler
+Anschluss für Dreiphasenwechselstrom (Herd)
+Evtl. eigener Anschluss für Heizgeräte (bis 5kw)
 
 FAQ
 F:
