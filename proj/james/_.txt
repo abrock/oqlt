@@ -1,0 +1,5 @@
+James ist ein Jabber-Bot von silsha, in PHP programmiert.
+Der Jabber-Bot sendet allen Nutzern, welche sich in der users.txt eingetragen haben, eine Nachricht per Jabber.
+Die Erinnerung findet jeden Tag um 12 Uhr statt.
+
+!! Bitte untereinander in die Liste eintragen, ohne weitere Zeichen nach der Jabber-Adresse !!
