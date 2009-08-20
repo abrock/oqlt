@@ -22,8 +22,9 @@ Fahrkarten:
 	a) Gruppenfahrt: Ticket 24 Plus (VRN, 19EUR)
 	b) Einzelfahrt: Ticket 24 (VRN, 9EUR)
 Haltestelle:
-	a) Neuenheim, Pädagogische Hochschule
-	b) Neuenheim, Bunsengymnasium
+	a) Neuenheim, Kopfklinik (Buslinie 32)
+	b) Neuenheim, Pädagogische Hochschule
+	c) Neuenheim, Bunsengymnasium
 Adresse: Im Neuenheimer Feld 368, 4. Stock, Raum 432
 OSM: http://www.openstreetmap.org/?lat=49.41769&lon=8.66843&zoom=15
 Google Maps: http://maps.google.de/maps?ll=49.41769,8.66843
