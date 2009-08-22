@@ -1,21 +1,29 @@
 -- Hardware zu besorgen --
-WLAN Router (Niklas)
+Beamer
+WLAN-Router (Niklas)
 Steckdosenleiste
-Spülmaschine
+SpÃ¼lmaschine
 Couch
-Stühle
-Schränke
+StÃ¼hle
+SchrÃ¤nke
 Putzzeug
 Tische
-Kühlschrank (Inte)
+KÃ¼hlschrank (Inte (Wiesbaden), Scytale (Mannheim))
 Gefrierschrank
 Mikrowelle
 Grill
-Wasserkocher
+Wasserkocher (Inte)
+Toaster (Inte)
 Kaffemaschine
-Spüle
+SpÃ¼le (Scytale)
+Rauchmelder
+Deckenventilatoren
 Fax
-19'' Schrank (Inte)
+19"-Schrank (Inte (Wiesbaden))
 
 -- Recherchen --
 DSL Angebot (nessi)
+
+-- Links (kA warum) --
+http://www.mannheim.abfallspiegel.de/list.asp
+http://www.quoka.de/
