@@ -23,6 +23,7 @@ Fax
 
 -- Recherchen --
 DSL Angebot (nessi)
+Kostet das Anlegen des Zugangscode (Zahlenschloss) was?
 
 -- Links (kA warum) --
 http://www.mannheim.abfallspiegel.de/list.asp
