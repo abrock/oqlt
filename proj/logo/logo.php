@@ -6,13 +6,13 @@ $t = new oqltLogo();
 
 class oqltLogo {
  private $outer_circle = 50,
-  $circle_thickness = 5,
+  $circle_thickness = 3,
   $outer_pentagramm = 50,
   $outer_pentagramm_rounding = 1,
   $inner_pentagramm_rounding = 5,
   $pentagramm_circle_distance = 2,
   $pentagramm_pentagramm_distance = 2,
-  $pentagramm_thickness = 5,
+  $pentagramm_thickness = 3,
   $round_holes_in_circle = false,
   $elements_width = array(5, 5, 5, 5, 5);
   
@@ -324,10 +324,10 @@ class oqltLogo {
    $right_length = $this->rd2l($outer_pentagramm, $pentagramm_pentagramm_distance);
    echo '$right_length = '.$right_length."\r\n";
    $right_out = new Point($outer_circle, $outer_circle - $outer_pentagramm + $right_length);
-   $svg .= $right_out->circle();
+   #$svg .= $right_out->circle();
    $right_out->rotate(-18, $top->getX(), $top->getY());
    $right_in = $right_out->klon();
-   $right_in->translateX( - $pentagramm_pentagramm_distance * cos(18 * PI() / 180));
+   $right_in->translateX( - $pentagramm_thickness * cos(18 * PI() / 180));
    
 
    
@@ -342,7 +342,7 @@ class oqltLogo {
    $path = 'M '.$top->out().' L '.$left_out->out().' L '.$left_in->out().
            ' L '.$second_peak->out().' L '.$right_in->out().' L '.$right_out->out();
    $svg .= '<path d="'.$path.'" class="pentacle" />'."\n";
-   break;
+   #break;
   }
 
   
@@ -391,8 +391,7 @@ class oqltLogo {
  function rd2l($r, $d) {
   $a = $r * cos(18 * PI() / 180);
   $b = $r * sin(18 * PI() / 180);
-  $c = $b * tan(36 * PI() / 180);
-  $l = ($r - $d - $c) / sin(18 * PI() / 180);
+  $l = ($r - $d - $b) / cos(18 * PI() / 180);
   return $l;
  }
  
