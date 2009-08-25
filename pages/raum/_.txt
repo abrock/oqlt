@@ -24,5 +24,8 @@ ANFORDERUNGEN
 Für min. ein Jahr vorfinanziert
 Einfach erreichbar mit öffentlichen Verkehrsmitteln (möglichst Innenstadtnah)
 
+TODO
+Dinge die zu besorgen/organisieren sind, siehe todo.txt
+
 FREIE URLS
 http://offenerraum.de/

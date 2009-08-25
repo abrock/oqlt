@@ -19,8 +19,8 @@ Adresse:
 HEIDELBERG
 Fahrtzeit: ca. 30 Minuten
 Fahrkarten:
-	a) Gruppenfahrt: Ticket 24 Plus (VRN, 19EUR)
-	b) Einzelfahrt: Ticket 24 (VRN, 9EUR)
+	a) Gruppenfahrt: Ticket 24 Plus (VRN, Preisstufe 4-5, 14,50EUR)
+	b) Einzelfahrt: Ticket 24 (VRN, Preisstufe 4-5, 9EUR)
 Haltestelle:
 	a) Neuenheim, Kopfklinik (Buslinie 32)
 	b) Neuenheim, Pädagogische Hochschule
