@@ -427,6 +427,8 @@ circle {fill:#ff0000;}
   // Import values from object for better handling
   $outer = $this->coil_outer_radius;
   $inner = $this->coil_inner_radius;
+  $outer_circle = $this->outer_circle;
+  
   $thickness = $outer - $inner;
   
   $distance_of_main_centers = $outer + $inner;
@@ -434,32 +436,53 @@ circle {fill:#ff0000;}
   
   echo '$intersectionY = '.$intersectionY."\r\n";
   
-  $path = 'M 30 50 ';
+  $path = 'M '.($outer_circle - 2.5 * $outer - 1.5 * $inner).' '.$outer_circle;
   
+  $points = array(
+   new Point( - $outer - $inner, - $intersectionY),
+   new Point( 0, -$intersectionY),
+   new Point( $outer + $inner, -$intersectionY),
+   new Point( + 1.0 * $outer + 1.0 * $inner, -$intersectionY),
+   new Point( + 2.5 * $outer + 1.5 * $inner, 0),
+   new Point( + 1.5 * $outer + 2.5 * $inner, 0),
+   new Point( + 1.5 * $outer + 0.5 * $inner, 0),
+   new Point( + 0.5 * $outer - 0.5 * $inner, 0),
+   new Point( - 0.5 * $outer + 0.5 * $inner, 0),
+   new Point( - 1.5 * $outer - 0.5 * $inner, 0),
+   new Point( - 1.5 * $outer - 2.5 * $inner, 0),
+   new Point( - 2.5 * $outer - 1.5 * $inner, 0),
+   new Point( - 2.5 * $outer - 1.5 * $inner, 0),
+   
+  );
   
+  foreach ($points as $point) {
+   $point->translate($outer_circle,$outer_circle);
+  }
   
-  $path .= ' a '.$outer.','.$outer.' 0 0,1 '.(2*$outer - $thickness / 2).','.-$intersectionY;
-  $path .= ' a '.$outer.','.$outer.' 0 0,1 '.($outer + $inner).',0';
-  $path .= ' a '.$outer.','.$outer.' 0 0,1 '.($outer + $inner).',0';
-  $path .= ' a '.$outer.','.$outer.' 0 0,1 '.(2*$outer - $thickness / 2).','.$intersectionY;
+  $i = 0;
   
-  $path .= ' a '.($thickness / 2).','.($thickness / 2).' 0 0,1 '.-$thickness.',0 ';
+  $path .= ' A '.$outer.','.$outer.' 0 0,1 '.$points[$i++]->out(',');
+  $path .= ' A '.$outer.','.$outer.' 0 0,1 '.$points[$i++]->out(',');
+  $path .= ' A '.$outer.','.$outer.' 0 0,1 '.$points[$i++]->out(',');
+  $path .= ' A '.$outer.','.$outer.' 0 0,1 '.$points[$i++]->out(',');
   
-  $path .= ' a '.$inner.','.$inner.' 0 0,0 '.(- 2 * $inner).',0';
+  $path .= ' A '.($thickness / 2).','.($thickness / 2).' 0 0,1 '.$points[$i++]->out(',');
+  
+  $path .= ' A '.$inner.','.$inner.' 0 0,0 '.$points[$i++]->out(',');
 
-  $path .= ' a '.($thickness / 2).','.($thickness / 2).' 0 0,1 '.-$thickness.',0 ';
+  $path .= ' A '.($thickness / 2).','.($thickness / 2).' 0 0,1 '.$points[$i++]->out(',');
   
-  $path .= ' a '.$inner.','.$inner.' 0 0,0 '.(- 2 * $inner).',0';
+  $path .= ' A '.$inner.','.$inner.' 0 0,0 '.$points[$i++]->out(',');
 
-  $path .= ' a '.($thickness / 2).','.($thickness / 2).' 0 0,1 '.-$thickness.',0 ';
+  $path .= ' A '.($thickness / 2).','.($thickness / 2).' 0 0,1 '.$points[$i++]->out(',');
   
-  $path .= ' a '.$inner.','.$inner.' 0 0,0 '.(- 2 * $inner).',0';
+  $path .= ' A '.$inner.','.$inner.' 0 0,0 '.$points[$i++]->out(',');
 
-  $path .= ' a '.($thickness / 2).','.($thickness / 2).' 0 0,1 '.-$thickness.',0 ';
+  $path .= ' A '.($thickness / 2).','.($thickness / 2).' 0 0,1 '.$points[$i++]->out(',');
   
-  $path .= ' a '.$inner.','.$inner.' 0 0,0 '.(- 2 * $inner).',0';
+  $path .= ' A '.$inner.','.$inner.' 0 0,0 '.$points[$i++]->out(',');
 
-  $path .= ' a '.($thickness / 2).','.($thickness / 2).' 0 0,1 '.-$thickness.',0 ';
+  $path .= ' A '.($thickness / 2).','.($thickness / 2).' 0 0,1 '.$points[$i++]->out(',');
   
   $svg = '<path d="'.$path.'" class="coil" />';
   return $svg;
