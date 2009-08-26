@@ -6,21 +6,24 @@ $t = new oqltLogo();
 
 class oqltLogo {
  private $outer_circle = 50,
-  $circle_thickness = 3,
+  $circle_thickness = 4.5,
   $outer_pentagramm = 50,
   $outer_pentagramm_rounding = 1,
   $inner_pentagramm_rounding = 5,
-  $pentagramm_circle_distance = 2,
-  $pentagramm_pentagramm_distance = 1,
-  $pentagramm_symbol_distance = 1,
+  $pentagramm_circle_distance = 1,
+  $pentagramm_pentagramm_distance = 0.75,
+  $pentagramm_symbol_distance = 0.75,
   $pentagramm_thickness = 3,
   $round_holes_in_circle = false,
   $elements_width = array(5, 5, 5, 5, 5),
-  $coil_outer_radius = 2.0,
+  $coil_outer_radius = 2.2,
   $coil_inner_radius = 0.8,
-  $resistor_thickness = 1,
-  $resistor_width = 8,
-  $resistor_inner_thickness = 1
+  $resistor_thickness = 1.4,
+  $resistor_width = 10,
+  $resistor_inner_thickness = 1.4,
+  $capacitor_thickness = 1.4,
+  $capacitor_distance = 1.4,
+  $capacitor_length = 8
   ;
   
 
@@ -319,6 +322,7 @@ class oqltLogo {
   
   $coil = $this->coil();
   $resistor  = $this->resistor();
+  $capacitor  = $this->capacitor();
   
   $elements_width = $this->elements_width;
   
@@ -394,7 +398,7 @@ class oqltLogo {
    
   }
   
-  $svg .= $coil.$resistor;
+  $svg .= $coil.$resistor.$capacitor;
   
 
   
@@ -579,7 +583,7 @@ circle {fill:#ff0000;}
   $i = 0;
   
   foreach ($points as $point) {
-   $point->translate($outer_circle, $outer_circle - $incircle + $height / 2);
+   $point->translate($outer_circle, $outer_circle - $incircle + $this->pentagramm_thickness / 2);
    $point->rotate(72 * 2, $outer_circle, $outer_circle);
   }
   
@@ -605,7 +609,7 @@ circle {fill:#ff0000;}
   $i = 0;
   
   foreach ($points as $point) {
-   $point->translate($outer_circle, $outer_circle - $incircle + $height / 2);
+   $point->translate($outer_circle, $outer_circle - $incircle + $this->pentagramm_thickness / 2);
    $point->rotate(72 * 2, $outer_circle, $outer_circle);
   }
   
@@ -617,6 +621,67 @@ circle {fill:#ff0000;}
   $svg .= '<path d="'.$path.' z" class="symbol resistor" />';
   
   return $svg;
+ }
+ 
+ function capacitor() {
+  $svg = '';
+  $thickness = $this->capacitor_thickness;
+  $distance = $this->capacitor_distance;
+  $length = $this->capacitor_length; 
+  $outer_circle = $this->outer_circle;
+  
+  $incircle = $this->outer_pentagramm * sin(18 * PI() / 180);
+  
+  $width = 2 * $thickness + $distance;
+  $this->elements_width[1] = $width;
+  
+  $points = array (
+   new Point($distance / 2, $length / 2),
+   new Point($distance / 2 + $thickness, $length / 2),
+   new Point($distance / 2 + $thickness, - $length / 2),
+   new Point($distance / 2, - $length / 2)
+  );
+  
+  foreach ($points as $point) {
+   $point->translate($outer_circle, $outer_circle - $incircle + $this->pentagramm_thickness / 2);
+   $point->rotate(72 * 1, $outer_circle, $outer_circle);
+  }
+  
+  $i = 0;
+  $path = ' M '.$points[$i]->out();
+  
+  while (isset($points[++$i])) {
+   $path .= ' L '.$points[$i]->out();
+  }
+  
+  $svg .= '<path d="'.$path.' z" class="symbol capacitor" />';
+
+  $points = array (
+   new Point(- $distance / 2, $length / 2),
+   new Point(- $distance / 2 - $thickness, $length / 2),
+   new Point(- $distance / 2 - $thickness, - $length / 2),
+   new Point(- $distance / 2, - $length / 2)
+  );
+  
+  foreach ($points as $point) {
+   $point->translate($outer_circle, $outer_circle - $incircle + $this->pentagramm_thickness / 2);
+   $point->rotate(72 * 1, $outer_circle, $outer_circle);
+  }
+  
+  $i = 0;
+  $path = ' M '.$points[$i]->out();
+  
+  while (isset($points[++$i])) {
+   $path .= ' L '.$points[$i]->out();
+  }
+  
+  $svg .= '<path d="'.$path.' z" class="symbol capacitor" />';
+
+
+  echo 'memem';
+  
+  return $svg;
+
  }
  
 }
