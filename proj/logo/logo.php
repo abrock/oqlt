@@ -18,6 +18,7 @@ class oqltLogo {
   $elements_width = array(5, 5, 5, 5, 5),
   $coil_outer_radius = 2.5,
   $coil_inner_radius = 0.8,
+  $coil_flat_end = true,
   $resistor_thickness = 1.4,
   $resistor_width = 10,
   $resistor_inner_thickness = 1.4,
@@ -27,7 +28,12 @@ class oqltLogo {
   $diode_angle = 60,
   $diode_thickness = 1.4,
   $diode_height = 8,
-  $diode_intersection = 1
+  $diode_intersection = 1,
+  $switch_width = 15,
+  $switch_radius = 2,
+  $switch_thickness = 2,
+  $switch_offset = 0,
+  $switch_angle = 30
   ;
   
 
@@ -327,6 +333,7 @@ class oqltLogo {
   $coil = $this->coil();
   $resistor  = $this->resistor();
   $capacitor  = $this->capacitor();
+  $switch  = $this->myswitch();
   $diode  = $this->diode();
   
   $elements_width = $this->elements_width;
@@ -403,7 +410,7 @@ class oqltLogo {
    
   }
   
-  $svg .= $coil.$resistor.$capacitor.$diode;
+  $svg .= $coil.$resistor.$capacitor.$diode.$switch;
   
 
   
@@ -470,16 +477,14 @@ class oqltLogo {
 >
 <style type="text/css">
 <![CDATA[
-* { fill:none; }
-.main { stroke:#000000; stroke-width:0; }
-.pentacle { stroke:#00f; stroke-width:0; fill:#0000ff;}
-.coil { stroke:#00f; stroke-width:0.0; fill:#000000}
-.symbol { stroke:#00f; stroke-width:0.0; fill:#000000}
-.resistor { stroke:#00f; stroke-width:0.0;}
-.outer {stroke:#00f; stroke-width:0; fill:#00bb00;}
-circle {fill:#ff0000;}
+* { fill:#000000; }
+.main { stroke:#000000; stroke-width:0; fill:#000000; }
+.pentacle {stroke-width:0; fill:#339900;}
+.symbol {stroke-width:0; fill:#000000}
+.outer {stroke-width:0; fill:#000000;}
 ]]>
-</style><g transform="translate(1,1)">'.$svg.'</g></svg>');
+</style><g><rect x="0" y="0" Width="'.(2*$this->outer_circle).'" height="'.(2*$this->outer_circle).'" class="main" />
+<g transform="translate(1,1)" class="main">'.$svg.'</g></g></svg>');
  }
  
  function coil () {
@@ -537,7 +542,12 @@ circle {fill:#ff0000;}
 
   $path .= ' A '.$outer.','.$outer.' 0 0,1 '.$points[$i++]->out(',');
   
-  $path .= ' A '.($thickness / 2).','.($thickness / 2).' 0 0,1 '.$points[$i++]->out(',');
+  if ($this->coil_flat_end) {
+   $path .= ' L '.$points[$i++]->out();
+  }
+  else {
+   $path .= ' A '.($thickness / 2).','.($thickness / 2).' 0 0,1 '.$points[$i++]->out(',');
+  }
   
   $path .= ' A '.$inner.','.$inner.' 0 1,0 '.$points[$i++]->out(',');
 
@@ -553,7 +563,12 @@ circle {fill:#ff0000;}
   
   $path .= ' A '.$inner.','.$inner.' 0 0,0 '.$points[$i++]->out(',');
 
-  $path .= ' A '.($thickness / 2).','.($thickness / 2).' 0 0,1 '.$points[$i++]->out(',');
+  if ($this->coil_flat_end) {
+   $path .= ' L '.$points[$i++]->out();
+  }
+  else {
+   $path .= ' A '.($thickness / 2).','.($thickness / 2).' 0 0,1 '.$points[$i++]->out(',');
+  }
   
   
   $svg .= '<path d="'.$path.'" class="symbol coil" />';
@@ -730,6 +745,62 @@ circle {fill:#ff0000;}
   }
   
   $svg .= '<path d="'.$path.' z" class="symbol diode" />';
+
+  
+  return $svg;
+
+ }
+ 
+ function myswitch() {
+  $svg = '';
+  
+  $width = $this->switch_width;
+  $radius = $this->switch_radius;
+  $thickness = $this->switch_thickness;
+  $offset = $this->switch_offset;
+  $angle = $this->switch_angle;
+  $outer_circle = $this->outer_circle;
+  
+  $incircle = $this->outer_pentagramm * sin(18 * PI() / 180);
+  
+  $this->elements_width[0] = $width;
+  
+  $points = array (
+   new Point(- $width / 2, 0),
+   new Point(- ($width / 2 - 2* $radius) , 0),
+  );
+  
+  foreach ($points as $point) {
+   $point->translate($outer_circle, $outer_circle - $incircle + $this->pentagramm_thickness / 2);
+   #$svg .= $point->circle();
+  }
+  
+  $path = ' M '.$points[0]->out();
+  $path .= ' A '.$radius.','.$radius.' 0 0,0 '.$points[1]->out(',');
+  $path .= ' A '.$radius.','.$radius.' 0 1,0 '.$points[0]->out(',');
+  
+  $svg .= '<path d="'.$path.' z" class="symbol switch" />';
+
+  $points = array (
+   new Point(- ($width / 2 - $radius + $offset) , $thickness / 2),
+   new Point($width / 2 - $radius - sqrt($radius * $radius - $thickness * $thickness / 4), + $thickness / 2),
+   new Point($width / 2 - $radius - sqrt($radius * $radius - $thickness * $thickness / 4), - $thickness / 2),
+   new Point(- ($width / 2 - $radius + $offset) , - $thickness / 2)
+  );
+  
+  foreach ($points as $point) {
+   $point->rotate($angle, $width / 2 - $radius, 0);
+   $point->translate($outer_circle, $outer_circle - $incircle + $this->pentagramm_thickness / 2);
+   #$svg .= $point->circle();
+  }
+  
+  $path = ' M '.$points[0]->out();
+  $path .= ' L '.$points[1]->out();
+    
+  $path .= ' A '.$radius.','.$radius.' 0 1,0 '.$points[2]->out(',');
+  $path .= ' L '.$points[3]->out();
+  
+  $svg .= '<path d="'.$path.' z" class="symbol switch" />';
 
   
   return $svg;
