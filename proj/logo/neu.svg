@@ -11,13 +11,12 @@
 >
 <style type="text/css">
 <![CDATA[
-* { fill:#000000; }
-.main { stroke:#000000; stroke-width:0; fill:#000000; }
-.pentacle {stroke-width:0; fill:#339900;}
-.symbol {stroke-width:0; fill:#000000}
-.outer {stroke-width:0; fill:#000000;}
+.pentacle {stroke-width:0; fill:#390;}
+.symbol {stroke-width:0; fill:#fff}
+.outer {stroke-width:0; fill:#fff;}
+.main {fill:#000}
 ]]>
-</style><g><rect x="0" y="0" Width="100" height="100" class="main" />
+</style><rect  x="0" y="0" width="102" height="102" class="main" />
 <g transform="translate(1,1)" class="main"><path d=" M  53.073090336472 4.6038975705636 
  L  51.585361831028 0.025140041569685 
  A 50,50 0 0,1  97.039012466382,33.049150281253 
@@ -142,8 +141,8 @@ L  57.788654045024 60.720162612375
  z" class="symbol diode" /><path d=" M  42.5 36.049150281253 
  A 2,2 0 0,0  46.5,36.049150281253 
  A 2,2 0 1,0  42.5,36.049150281253 
- z" class="symbol switch" /><path d=" M  45.473720558371 31.415175685037 
- L  53.5 36.049150281253 
- A 2,2 0 1,0  54.5,34.317099473684 
- L  46.473720558371 29.683124877468 
- z" class="symbol switch" /></g></g></svg>
+ z" class="symbol switch" /><path d=" M  45.623720558371 31.155368063902 
+ L  53.527501926041 35.718618364142 
+ A 2,2 0 1,0  54.227501926041,34.506182798844 
+ L  46.323720558371 29.942932498604 
+ z" class="symbol switch" /></g></svg>

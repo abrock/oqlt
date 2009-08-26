@@ -31,7 +31,7 @@ class oqltLogo {
   $diode_intersection = 1,
   $switch_width = 15,
   $switch_radius = 2,
-  $switch_thickness = 2,
+  $switch_thickness = 1.4,
   $switch_offset = 0,
   $switch_angle = 30
   ;
@@ -472,19 +472,18 @@ class oqltLogo {
 	xmlns:svg="http://www.w3.org/2000/svg"
 	xmlns:xlink="http://www.w3.org/1999/xlink"
 	xmlns="http://www.w3.org/2000/svg"
-	width="102"
-	height="102"
+	width="'.(2 * $this->outer_circle + 2).'"
+	height="'.(2 * $this->outer_circle + 2).'"
 >
 <style type="text/css">
 <![CDATA[
-* { fill:#000000; }
-.main { stroke:#000000; stroke-width:0; fill:#000000; }
-.pentacle {stroke-width:0; fill:#339900;}
-.symbol {stroke-width:0; fill:#000000}
-.outer {stroke-width:0; fill:#000000;}
+.pentacle {stroke-width:0; fill:#390;}
+.symbol {stroke-width:0; fill:#fff}
+.outer {stroke-width:0; fill:#fff;}
+.main {fill:#000}
 ]]>
-</style><g><rect x="0" y="0" Width="'.(2*$this->outer_circle).'" height="'.(2*$this->outer_circle).'" class="main" />
-<g transform="translate(1,1)" class="main">'.$svg.'</g></g></svg>');
+</style><rect  x="0" y="0" width="'.(2 * $this->outer_circle + 2).'" height="'.(2 * $this->outer_circle + 2).'" class="main" />
+<g transform="translate(1,1)" class="main">'.$svg.'</g></svg>');
  }
  
  function coil () {
