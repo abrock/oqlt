@@ -10,20 +10,24 @@ class oqltLogo {
   $outer_pentagramm = 50,
   $outer_pentagramm_rounding = 1,
   $inner_pentagramm_rounding = 5,
-  $pentagramm_circle_distance = 1,
+  $pentagramm_circle_distance = 1.5,
   $pentagramm_pentagramm_distance = 0.75,
   $pentagramm_symbol_distance = 0.75,
   $pentagramm_thickness = 3,
   $round_holes_in_circle = false,
   $elements_width = array(5, 5, 5, 5, 5),
-  $coil_outer_radius = 2.2,
+  $coil_outer_radius = 2.5,
   $coil_inner_radius = 0.8,
   $resistor_thickness = 1.4,
   $resistor_width = 10,
   $resistor_inner_thickness = 1.4,
   $capacitor_thickness = 1.4,
   $capacitor_distance = 1.4,
-  $capacitor_length = 8
+  $capacitor_length = 8,
+  $diode_angle = 60,
+  $diode_thickness = 1.4,
+  $diode_height = 8,
+  $diode_intersection = 1
   ;
   
 
@@ -323,6 +327,7 @@ class oqltLogo {
   $coil = $this->coil();
   $resistor  = $this->resistor();
   $capacitor  = $this->capacitor();
+  $diode  = $this->diode();
   
   $elements_width = $this->elements_width;
   
@@ -398,7 +403,7 @@ class oqltLogo {
    
   }
   
-  $svg .= $coil.$resistor.$capacitor;
+  $svg .= $coil.$resistor.$capacitor.$diode;
   
 
   
@@ -518,8 +523,8 @@ circle {fill:#ff0000;}
   );
   
   foreach ($points as $point) {
-   $point->translate($outer_circle, $outer_circle - $incircle + $pentagramm_thickness / 2 + 0.25 * $outer + 0.25 * $inner);
-   $point->rotate(72 * 3, $outer_circle, $outer_circle);   
+   $point->translate($outer_circle, $outer_circle + $incircle - $pentagramm_thickness / 2 + 0.25 * $outer + 0.25 * $inner);
+   $point->rotate(72 * 0.5, $outer_circle, $outer_circle);   
   }
   
   $i = 0;
@@ -679,6 +684,53 @@ circle {fill:#ff0000;}
 
 
   echo 'memem';
+  
+  return $svg;
+
+ }
+ 
+ function diode() {
+  $svg = '';
+  $thickness = $this->diode_thickness;
+  $height = $this->diode_height;
+  $angle = $this->diode_angle; 
+  $intersection = $this->diode_intersection;
+  $outer_circle = $this->outer_circle;
+  
+  $incircle = $this->outer_pentagramm * sin(18 * PI() / 180);
+  
+  
+  $leg = ($height / 2) / tan(($angle / 2) * PI() / 180);
+  $offset = $leg * ($intersection / 2) / ($height / 2);
+  
+  $width = $leg - $offset + $thickness;
+  $this->elements_width[4] = $width;
+  
+  $points = array (
+   new Point(0, $height / 2),
+   new Point($leg - $offset, $intersection / 2),
+   new Point($leg - $offset, $height / 2),
+   new Point($leg - $offset + $thickness, $height / 2),
+   new Point($leg - $offset + $thickness, - $height / 2),
+   new Point($leg - $offset, - $height / 2),
+   new Point($leg - $offset, - $intersection / 2),
+   new Point(0, - $height / 2)
+  );
+  
+  foreach ($points as $point) {
+   $point->translate($outer_circle - $width / 2, $outer_circle - $incircle + $this->pentagramm_thickness / 2);
+   $point->rotate(72 * 4, $outer_circle, $outer_circle);
+  }
+  
+  $i = 0;
+  $path = ' M '.$points[$i]->out();
+  
+  while (isset($points[++$i])) {
+   $path .= ' L '.$points[$i]->out();
+  }
+  
+  $svg .= '<path d="'.$path.' z" class="symbol diode" />';
+
   
   return $svg;
 
