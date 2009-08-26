@@ -12,11 +12,12 @@ class oqltLogo {
   $inner_pentagramm_rounding = 5,
   $pentagramm_circle_distance = 2,
   $pentagramm_pentagramm_distance = 2,
+  $pentagramm_symbol_distance = 2,
   $pentagramm_thickness = 3,
   $round_holes_in_circle = false,
   $elements_width = array(5, 5, 5, 5, 5),
-  $coil_outer_radius = 5,
-  $coil_inner_radius = 2.5;
+  $coil_outer_radius = 2.0,
+  $coil_inner_radius = 0.8;
   
 
  function oqltLogo() {
@@ -294,12 +295,12 @@ class oqltLogo {
   $inner_pentagramm_rounding = $this->inner_pentagramm_rounding;
   $pentagramm_circle_distance = $this->pentagramm_circle_distance;
   $pentagramm_pentagramm_distance = $this->pentagramm_pentagramm_distance;
+  $pentagramm_symbol_distance = $this->pentagramm_pentagramm_distance;
   $pentagramm_thickness = $this->pentagramm_thickness;
   $round_holes_in_circle = $this->round_holes_in_circle;
   $inner_circle = $this->inner_circle;
   $distance_pentagramm_rounding = $this->distance_pentagramm_rounding;
   $outer_pentagramm_rounding_r = $this->outer_pentagramm_rounding_r;
-  $elements_width = $this->elements_width;
   
   $half_side = $outer_pentagramm * cos(18 * PI() / 180);
   echo '$half_side = '.$half_side."\r\n";
@@ -308,9 +309,14 @@ class oqltLogo {
 
   $svg = '';
   
+  $svg .= $this->coil();
+  $elements_width = $this->elements_width;
+  
   foreach ($elements_width as $key=>$width) {
-   $width = $width / 2;
+   $width = $width / 2 + $pentagramm_symbol_distance;
+   echo 'Width of element '.$key.' = '.$width."\r\n";
    $current_side = $half_side - $width;
+   
    
    $top = new Point($outer_circle, $outer_circle - $outer_pentagramm);
    
@@ -347,7 +353,6 @@ class oqltLogo {
    #break;
   }
   
-  $svg .= $this->coil();
 
   
   return $svg;  
@@ -416,7 +421,7 @@ class oqltLogo {
 * { fill:none; }
 .main { stroke:#000000; stroke-width:0; }
 .pentacle { stroke:#00f; stroke-width:0; fill:#0000ff;}
-.coil { stroke:#00f; stroke-width:0.3;}
+.coil { stroke:#00f; stroke-width:0.0; fill:#000000}
 .outer {stroke:#00f; stroke-width:0; fill:#00bb00;}
 circle {fill:#ff0000;}
 ]]>
@@ -424,10 +429,14 @@ circle {fill:#ff0000;}
  }
  
  function coil () {
+  $svg = '';
   // Import values from object for better handling
   $outer = $this->coil_outer_radius;
   $inner = $this->coil_inner_radius;
   $outer_circle = $this->outer_circle;
+  $pentagramm_thickness = $this->pentagramm_thickness;
+
+  $incircle = $this->outer_pentagramm * sin(18 * PI() / 180);
   
   $thickness = $outer - $inner;
   
@@ -436,39 +445,47 @@ circle {fill:#ff0000;}
   
   echo '$intersectionY = '.$intersectionY."\r\n";
   
-  $path = 'M '.($outer_circle - 2.5 * $outer - 1.5 * $inner).' '.$outer_circle;
+  $width = 5 * $outer + 3 * $inner;
+  
+  $this->elements_width[4] = $width;
+  
   
   $points = array(
+   new Point( - 2.5 * $outer - 1.5 * $inner, 0),
    new Point( - $outer - $inner, - $intersectionY),
    new Point( 0, -$intersectionY),
    new Point( $outer + $inner, -$intersectionY),
-   new Point( + 1.0 * $outer + 1.0 * $inner, -$intersectionY),
    new Point( + 2.5 * $outer + 1.5 * $inner, 0),
    new Point( + 1.5 * $outer + 2.5 * $inner, 0),
    new Point( + 1.5 * $outer + 0.5 * $inner, 0),
+   new Point( + 0.5 * $outer + 1.5 * $inner, 0),
    new Point( + 0.5 * $outer - 0.5 * $inner, 0),
    new Point( - 0.5 * $outer + 0.5 * $inner, 0),
+   new Point( - 0.5 * $outer - 1.5 * $inner, 0),
    new Point( - 1.5 * $outer - 0.5 * $inner, 0),
    new Point( - 1.5 * $outer - 2.5 * $inner, 0),
-   new Point( - 2.5 * $outer - 1.5 * $inner, 0),
    new Point( - 2.5 * $outer - 1.5 * $inner, 0),
    
   );
   
   foreach ($points as $point) {
-   $point->translate($outer_circle,$outer_circle);
+   $point->translate($outer_circle, $outer_circle - $incircle + $pentagramm_thickness / 2 + 0.25 * $outer + 0.25 * $inner);
+   $point->rotate(72 * 3, $outer_circle, $outer_circle);   
   }
   
   $i = 0;
   
+  
+  $path = 'M '.$points[$i++]->out();
   $path .= ' A '.$outer.','.$outer.' 0 0,1 '.$points[$i++]->out(',');
   $path .= ' A '.$outer.','.$outer.' 0 0,1 '.$points[$i++]->out(',');
   $path .= ' A '.$outer.','.$outer.' 0 0,1 '.$points[$i++]->out(',');
+
   $path .= ' A '.$outer.','.$outer.' 0 0,1 '.$points[$i++]->out(',');
   
   $path .= ' A '.($thickness / 2).','.($thickness / 2).' 0 0,1 '.$points[$i++]->out(',');
   
-  $path .= ' A '.$inner.','.$inner.' 0 0,0 '.$points[$i++]->out(',');
+  $path .= ' A '.$inner.','.$inner.' 0 1,0 '.$points[$i++]->out(',');
 
   $path .= ' A '.($thickness / 2).','.($thickness / 2).' 0 0,1 '.$points[$i++]->out(',');
   
@@ -484,7 +501,8 @@ circle {fill:#ff0000;}
 
   $path .= ' A '.($thickness / 2).','.($thickness / 2).' 0 0,1 '.$points[$i++]->out(',');
   
-  $svg = '<path d="'.$path.'" class="coil" />';
+  
+  $svg .= '<path d="'.$path.'" class="coil" />';
   return $svg;
  }
 }
@@ -493,8 +511,8 @@ class Point {
  private $x, $y;
  
  function Point($x, $y) {
-  $this->x = abs($x);
-  $this->y = abs($y);
+  $this->x = $x;
+  $this->y = $y;
  }
  
  function translate($x, $y) {
