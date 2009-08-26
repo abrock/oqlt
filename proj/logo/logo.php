@@ -317,8 +317,9 @@ class oqltLogo {
 
   $svg = '';
   
-  $svg .= $this->coil();
-  $svg .= $this->resistor();
+  $coil = $this->coil();
+  $resistor  = $this->resistor();
+  
   $elements_width = $this->elements_width;
   
   foreach ($elements_width as $key=>$width) {
@@ -348,12 +349,12 @@ class oqltLogo {
    
 
    
-   $top->rotate($key * 72, $outer_circle, $outer_circle);
-   $left_out->rotate($key * 72, $outer_circle, $outer_circle);
-   $left_in->rotate($key * 72, $outer_circle, $outer_circle);
-   $second_peak->rotate($key * 72, $outer_circle, $outer_circle);
-   $right_in->rotate($key * 72, $outer_circle, $outer_circle);
-   $right_out->rotate($key * 72, $outer_circle, $outer_circle);
+   $top->rotate(($key + 1) * 72, $outer_circle, $outer_circle);
+   $left_out->rotate(($key + 1) * 72, $outer_circle, $outer_circle);
+   $left_in->rotate(($key + 1) * 72, $outer_circle, $outer_circle);
+   $second_peak->rotate(($key + 1) * 72, $outer_circle, $outer_circle);
+   $right_in->rotate(($key + 1) * 72, $outer_circle, $outer_circle);
+   $right_out->rotate(($key + 1) * 72, $outer_circle, $outer_circle);
    
    
    $path = 'M '.$top->out().' L '.$left_out->out().' L '.$left_in->out().
@@ -392,6 +393,8 @@ class oqltLogo {
    $svg .= '<path d="M '.$top_right->out().' L '.$top_left->out().' L '.$bottom_left->out().' L '.$bottom_right->out().' z" class="pentacle" />'."\r\n";
    
   }
+  
+  $svg .= $coil.$resistor;
   
 
   
@@ -489,7 +492,7 @@ circle {fill:#ff0000;}
   
   $width = 5 * $outer + 3 * $inner;
   
-  $this->elements_width[4] = $width;
+  $this->elements_width[3] = $width;
   
   
   $points = array(
@@ -559,7 +562,7 @@ circle {fill:#ff0000;}
   
   $incircle = $this->outer_pentagramm * sin(18 * PI() / 180);
   
-  $this->elements_width[3] = $width;
+  $this->elements_width[2] = $width;
   
   $points = array (
    new Point(0, + $inner / 2 + $thickness),
