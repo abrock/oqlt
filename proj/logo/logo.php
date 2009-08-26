@@ -4,8 +4,13 @@ error_reporting(E_ALL);
 
 $t = new oqltLogo();
 
+$t->make('neu.svg');
+
+$t->oqltesse = true;
+$t->make('oqltesse.svg');
+
 class oqltLogo {
- private $outer_circle = 50,
+ public $outer_circle = 50,
   $circle_thickness = 4.5,
   $outer_pentagramm = 50,
   $outer_pentagramm_rounding = 1,
@@ -17,7 +22,7 @@ class oqltLogo {
   $round_holes_in_circle = false,
   $elements_width = array(5, 5, 5, 5, 5),
   $coil_outer_radius = 2.5,
-  $coil_inner_radius = 0.8,
+  $coil_inner_radius = 0.6,
   $coil_flat_end = true,
   $resistor_thickness = 1.4,
   $resistor_width = 10,
@@ -37,9 +42,8 @@ class oqltLogo {
   $oqltesse = false,
   $essefactor = 2
   ;
-  
 
- function oqltLogo() {
+ function make($filename) {
   $svg = '';
   
   // Import values from object for better handling
@@ -68,7 +72,7 @@ class oqltLogo {
   
   $svg .= $this->pentagramm();
 
-  $this->out($svg);
+  $this->out($svg, $filename);
  }
  
  function both_circles_complete() {
@@ -376,10 +380,21 @@ class oqltLogo {
    $right_out->rotate(($key + 1) * 72, $outer_circle, $outer_circle);
    
    
-   $path = 'M '.$top->out().' L '.$left_out->out().' L '.$left_in->out().
-           ' L '.$second_peak->out().' L '.$right_in->out().' L '.$right_out->out();
-   $svg .= '<path d="'.$path.'" class="pentacle" />'."\n";
-   #break;
+   if ($key == 0) {
+    # Calculate circle for switch
+    $temp = $this->pentagramm_symbol_distance + $this->switch_radius;
+    $offset = $temp - sqrt($temp * $temp - $pentagramm_thickness * $pentagramm_thickness / 4);
+    $left_out->translateX(-$offset);
+    $left_in->translateX(-$offset);
+    $path = 'M '.$top->out().' L '.$left_out->out().' A '.$temp.','.$temp.' 0 0,1 '.$left_in->out().
+            ' L '.$second_peak->out().' L '.$right_in->out().' L '.$right_out->out();
+    $svg .= '<path d="'.$path.'" class="pentacle" />'."\n";
+   }
+   else {
+    $path = 'M '.$top->out().' L '.$left_out->out().' L '.$left_in->out().
+            ' L '.$second_peak->out().' L '.$right_in->out().' L '.$right_out->out();
+    $svg .= '<path d="'.$path.'" class="pentacle" />'."\n";
+   }
 
 
    $horizontal_distance = ($pentagramm_thickness + $pentagramm_pentagramm_distance) / cos(18 * PI() / 180);
@@ -466,8 +481,8 @@ class oqltLogo {
   return $l;
  }
  
- function out($svg) {
-  file_put_contents('neu.svg', '<?xml version="1.0" standalone="yes"?>
+ function out($svg, $filename) {
+  file_put_contents($filename, '<?xml version="1.0" standalone="yes"?>
 <svg
 	xmlns:dc="http://purl.org/dc/elements/1.1/"
 	xmlns:cc="http://creativecommons.org/ns#"
@@ -532,10 +547,10 @@ class oqltLogo {
   );
   
   $flatpoints = array(
-   new Point( + 2.5 * $outer + 1.5 * $inner, $thickness / 2),
-   new Point( + 1.5 * $outer + 2.5 * $inner, $thickness / 2),
-   new Point( - 1.5 * $outer - 2.5 * $inner, $thickness / 2),
-   new Point( - 2.5 * $outer - 1.5 * $inner, $thickness / 2),
+   new Point( + 2.5 * $outer + 1.5 * $inner, $thickness / 1.5),
+   new Point( + 1.5 * $outer + 2.5 * $inner, $thickness / 1.5),
+   new Point( - 1.5 * $outer - 2.5 * $inner, $thickness / 1.5),
+   new Point( - 2.5 * $outer - 1.5 * $inner, $thickness / 1.5),
   );
   
   foreach ($points as $point) {
