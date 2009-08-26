@@ -1,5 +1,5 @@
 <?php
-
+ob_start();
 // oqlt logo construction thingie.
 
 /* TODO:
@@ -100,7 +100,7 @@ function bp($d) {
 }
 
 // drawing mode.
-define('MODE','transparent');
+define('MODE','onblack');
 
 // width.
 define('W', 666);
@@ -299,5 +299,7 @@ echol('</g>');
 echol('</g>');
 
 echol('</svg>');
+
+file_put_contents('logo.svg', ob_get_contents());
 
 ?>
