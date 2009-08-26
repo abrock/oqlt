@@ -12,9 +12,10 @@
 <style type="text/css">
 <![CDATA[
 * { fill:none; }
-.main { stroke:#000000; stroke-width:1; }
+.main { stroke:#000000; stroke-width:0; }
 .pentacle { stroke:#00f; stroke-width:0; fill:#0000ff;}
-.outer {stroke:#00f; stroke-width:0.1; fill:#00bb00;}
+.coil { stroke:#00f; stroke-width:0.3;}
+.outer {stroke:#00f; stroke-width:0; fill:#00bb00;}
 circle {fill:#ff0000;}
 ]]>
 </style><g transform="translate(1,1)"><path d=" M  53.11117811187 3.1030857011229 
@@ -77,4 +78,4 @@ circle {fill:#ff0000;}
  L  35.789698258595 37.262675772815 
  L  36.671376137034 34.549150281253 
 " class="pentacle" />
-</g></svg>
+<path d="M 30 50  a 5,5 0 0,1 8.75,-3.3071891388307 a 5,5 0 0,1 7.5,0 a 5,5 0 0,1 7.5,0 a 5,5 0 0,1 8.75,3.3071891388307 a 1.25,1.25 0 0,1 -2.5,0  a 2.5,2.5 0 0,0 -5,0 a 1.25,1.25 0 0,1 -2.5,0  a 2.5,2.5 0 0,0 -5,0 a 1.25,1.25 0 0,1 -2.5,0  a 2.5,2.5 0 0,0 -5,0 a 1.25,1.25 0 0,1 -2.5,0  a 2.5,2.5 0 0,0 -5,0 a 1.25,1.25 0 0,1 -2.5,0 " class="coil" /></g></svg>

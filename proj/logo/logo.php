@@ -14,7 +14,9 @@ class oqltLogo {
   $pentagramm_pentagramm_distance = 2,
   $pentagramm_thickness = 3,
   $round_holes_in_circle = false,
-  $elements_width = array(5, 5, 5, 5, 5);
+  $elements_width = array(5, 5, 5, 5, 5),
+  $coil_outer_radius = 5,
+  $coil_inner_radius = 2.5;
   
 
  function oqltLogo() {
@@ -344,6 +346,8 @@ class oqltLogo {
    $svg .= '<path d="'.$path.'" class="pentacle" />'."\n";
    #break;
   }
+  
+  $svg .= $this->coil();
 
   
   return $svg;  
@@ -410,12 +414,55 @@ class oqltLogo {
 <style type="text/css">
 <![CDATA[
 * { fill:none; }
-.main { stroke:#000000; stroke-width:1; }
+.main { stroke:#000000; stroke-width:0; }
 .pentacle { stroke:#00f; stroke-width:0; fill:#0000ff;}
-.outer {stroke:#00f; stroke-width:0.1; fill:#00bb00;}
+.coil { stroke:#00f; stroke-width:0.3;}
+.outer {stroke:#00f; stroke-width:0; fill:#00bb00;}
 circle {fill:#ff0000;}
 ]]>
 </style><g transform="translate(1,1)">'.$svg.'</g></svg>');
+ }
+ 
+ function coil () {
+  // Import values from object for better handling
+  $outer = $this->coil_outer_radius;
+  $inner = $this->coil_inner_radius;
+  $thickness = $outer - $inner;
+  
+  $distance_of_main_centers = $outer + $inner;
+  $intersectionY = sqrt($outer * $outer - $distance_of_main_centers * $distance_of_main_centers / 4);
+  
+  echo '$intersectionY = '.$intersectionY."\r\n";
+  
+  $path = 'M 30 50 ';
+  
+  
+  
+  $path .= ' a '.$outer.','.$outer.' 0 0,1 '.(2*$outer - $thickness / 2).','.-$intersectionY;
+  $path .= ' a '.$outer.','.$outer.' 0 0,1 '.($outer + $inner).',0';
+  $path .= ' a '.$outer.','.$outer.' 0 0,1 '.($outer + $inner).',0';
+  $path .= ' a '.$outer.','.$outer.' 0 0,1 '.(2*$outer - $thickness / 2).','.$intersectionY;
+  
+  $path .= ' a '.($thickness / 2).','.($thickness / 2).' 0 0,1 '.-$thickness.',0 ';
+  
+  $path .= ' a '.$inner.','.$inner.' 0 0,0 '.(- 2 * $inner).',0';
+
+  $path .= ' a '.($thickness / 2).','.($thickness / 2).' 0 0,1 '.-$thickness.',0 ';
+  
+  $path .= ' a '.$inner.','.$inner.' 0 0,0 '.(- 2 * $inner).',0';
+
+  $path .= ' a '.($thickness / 2).','.($thickness / 2).' 0 0,1 '.-$thickness.',0 ';
+  
+  $path .= ' a '.$inner.','.$inner.' 0 0,0 '.(- 2 * $inner).',0';
+
+  $path .= ' a '.($thickness / 2).','.($thickness / 2).' 0 0,1 '.-$thickness.',0 ';
+  
+  $path .= ' a '.$inner.','.$inner.' 0 0,0 '.(- 2 * $inner).',0';
+
+  $path .= ' a '.($thickness / 2).','.($thickness / 2).' 0 0,1 '.-$thickness.',0 ';
+  
+  $svg = '<path d="'.$path.'" class="coil" />';
+  return $svg;
  }
 }
 
