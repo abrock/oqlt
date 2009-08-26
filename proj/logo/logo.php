@@ -11,8 +11,8 @@ class oqltLogo {
   $outer_pentagramm_rounding = 1,
   $inner_pentagramm_rounding = 5,
   $pentagramm_circle_distance = 1.5,
-  $pentagramm_pentagramm_distance = 0.75,
-  $pentagramm_symbol_distance = 0.75,
+  $pentagramm_pentagramm_distance = 1.00,
+  $pentagramm_symbol_distance = 1.00,
   $pentagramm_thickness = 3,
   $round_holes_in_circle = false,
   $elements_width = array(5, 5, 5, 5, 5),
@@ -526,7 +526,19 @@ class oqltLogo {
    
   );
   
+  $flatpoints = array(
+   new Point( + 2.5 * $outer + 1.5 * $inner, $thickness / 2),
+   new Point( + 1.5 * $outer + 2.5 * $inner, $thickness / 2),
+   new Point( - 1.5 * $outer - 2.5 * $inner, $thickness / 2),
+   new Point( - 2.5 * $outer - 1.5 * $inner, $thickness / 2),
+  );
+  
   foreach ($points as $point) {
+   $point->translate($outer_circle, $outer_circle + $incircle - $pentagramm_thickness / 2 + 0.25 * $outer + 0.25 * $inner);
+   $point->rotate(72 * 0.5, $outer_circle, $outer_circle);   
+  }
+
+  foreach ($flatpoints as $point) {
    $point->translate($outer_circle, $outer_circle + $incircle - $pentagramm_thickness / 2 + 0.25 * $outer + 0.25 * $inner);
    $point->rotate(72 * 0.5, $outer_circle, $outer_circle);   
   }
@@ -542,6 +554,8 @@ class oqltLogo {
   $path .= ' A '.$outer.','.$outer.' 0 0,1 '.$points[$i++]->out(',');
   
   if ($this->coil_flat_end) {
+   $path .= ' L '.$flatpoints[0]->out();
+   $path .= ' L '.$flatpoints[1]->out();
    $path .= ' L '.$points[$i++]->out();
   }
   else {
@@ -563,6 +577,8 @@ class oqltLogo {
   $path .= ' A '.$inner.','.$inner.' 0 0,0 '.$points[$i++]->out(',');
 
   if ($this->coil_flat_end) {
+   $path .= ' L '.$flatpoints[2]->out();
+   $path .= ' L '.$flatpoints[3]->out();
    $path .= ' L '.$points[$i++]->out();
   }
   else {
