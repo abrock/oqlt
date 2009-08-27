@@ -51,7 +51,8 @@ class oqltLogo {
   $switch_offset = 0,
   $switch_angle = 40,
   $oqltesse = false,
-  $essefactor = 2
+  $essefactor = 2,
+  $min_width = 1
   ;
 
  function make($filename) {
@@ -416,10 +417,10 @@ class oqltLogo {
    $bottom_right = new Point($outer_circle - $width, $outer_circle - $incircle + $pentagramm_thickness);
    $bottom_left = new Point($outer_circle - $pentagramm_edge_length / 2 + $horizontal_distance - $horizontal_distance2, $outer_circle - $incircle + $pentagramm_thickness);
    
-   if ($bottom_right->getX() <= $bottom_left->getX()) {
+   if ($bottom_right->getX() <= $bottom_left->getX() + $this->min_width) {
     continue;
    }
-   if ($top_right->getX() <= $top_left->getX()) {
+   if ($top_right->getX() <= $top_left->getX() + $this->min_width) {
     continue;
    }
    
