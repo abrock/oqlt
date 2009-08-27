@@ -9,6 +9,17 @@ $t->make('neu.svg');
 $t->oqltesse = true;
 $t->make('oqltesse.svg');
 
+
+$t->circle_thickness = 1.5;
+$t->pentagramm_thickness = 1.5;
+$t->coil_inner_radius = 1;
+$t->coil_outer_radius = 2.3;
+
+$t->oqltesse = false;
+$t->make('schlank.svg');
+$t->oqltesse = true;
+$t->make('schlank-esse.svg');
+
 class oqltLogo {
  public $outer_circle = 50,
   $circle_thickness = 4.5,
@@ -36,9 +47,9 @@ class oqltLogo {
   $diode_intersection = 1,
   $switch_width = 15,
   $switch_radius = 2,
-  $switch_thickness = 1.4,
+  $switch_thickness = 1.6,
   $switch_offset = 0,
-  $switch_angle = 30,
+  $switch_angle = 40,
   $oqltesse = false,
   $essefactor = 2
   ;
@@ -424,7 +435,20 @@ class oqltLogo {
    $svg .= $bottom_left->circle();
    //*/
    
-   $svg .= '<path d="M '.$top_right->out().' L '.$top_left->out().' L '.$bottom_left->out().' L '.$bottom_right->out().' z" class="pentacle" />'."\r\n";
+   if ($key == 0) {
+    # Calculate circle for switch
+    $temp = $this->pentagramm_symbol_distance + $this->switch_radius;
+    $offset = $temp - sqrt($temp * $temp - $pentagramm_thickness * $pentagramm_thickness / 4);
+    $top_right->translateX($offset);
+    $bottom_right->translateX($offset);
+    $svg .= '<path d="M '.$top_right->out().' A '.$temp.','.$temp.' 0 0,0 '.$bottom_right->out(',').' L '.$bottom_left->out().' L '.$top_left->out().' z" class="pentacle" />'."\r\n";
+    #echo "\r\n\r\n".'ddddd'."\r\n\r\n";
+    
+   }
+   else {
+   
+    $svg .= '<path d="M '.$top_right->out().' L '.$top_left->out().' L '.$bottom_left->out().' L '.$bottom_right->out().' z" class="pentacle" />'."\r\n";
+   }
    
   }
   
@@ -554,12 +578,14 @@ class oqltLogo {
   );
   
   foreach ($points as $point) {
-   $point->translate($outer_circle, $outer_circle + $incircle - $pentagramm_thickness / 2 + 0.25 * $outer + 0.25 * $inner);
+   #$point->translate($outer_circle, $outer_circle + $incircle - $pentagramm_thickness / 2 + 0.25 * $outer + 0.25 * $inner);
+   $point->translate($outer_circle, $outer_circle + $incircle - $thickness / 1.5);
    $point->rotate(72 * 0.5, $outer_circle, $outer_circle);   
   }
 
   foreach ($flatpoints as $point) {
-   $point->translate($outer_circle, $outer_circle + $incircle - $pentagramm_thickness / 2 + 0.25 * $outer + 0.25 * $inner);
+   #$point->translate($outer_circle, $outer_circle + $incircle - $pentagramm_thickness / 2 + 0.25 * $outer + 0.25 * $inner);
+   $point->translate($outer_circle, $outer_circle + $incircle - $thickness / 1.5);
    $point->rotate(72 * 0.5, $outer_circle, $outer_circle);   
   }
   
