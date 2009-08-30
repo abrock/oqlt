@@ -4,21 +4,39 @@ error_reporting(E_ALL);
 
 $t = new oqltLogo();
 
+# make standard logo
 $t->make('neu.svg');
 
+# make girlfriend logo
 $t->oqltesse = true;
 $t->make('oqltesse.svg');
 
-
+# make slim
 $t->circle_thickness = 1.5;
 $t->pentagramm_thickness = 1.5;
 $t->coil_inner_radius = 1;
 $t->coil_outer_radius = 2.3;
 
+# make slim girlfriend logo
 $t->oqltesse = false;
 $t->make('schlank.svg');
 $t->oqltesse = true;
 $t->make('schlank-esse.svg');
+
+
+# Reset settings
+$t = new oqltLogo();
+
+# make bigger distances for printing small logos
+
+$t->pentagramm_pentagramm_distance = 2;
+$t->pentagramm_symbol_distance = 2;
+$t->pentagramm_circle_distance = 2;
+$t->make('kleines.svg');
+
+# make bigger distances for printing small girlfriend logos
+$t->oqltesse = true;
+$t->make('kleines-esse.svg');
 
 class oqltLogo {
  public $outer_circle = 50,
@@ -330,7 +348,7 @@ class oqltLogo {
   $inner_pentagramm_rounding = $this->inner_pentagramm_rounding;
   $pentagramm_circle_distance = $this->pentagramm_circle_distance;
   $pentagramm_pentagramm_distance = $this->pentagramm_pentagramm_distance;
-  $pentagramm_symbol_distance = $this->pentagramm_pentagramm_distance;
+  $pentagramm_symbol_distance = $this->pentagramm_symbol_distance;
   $pentagramm_thickness = $this->pentagramm_thickness;
   $round_holes_in_circle = $this->round_holes_in_circle;
   $inner_circle = $this->inner_circle;
