@@ -29,6 +29,7 @@ $t = new oqltLogo();
 
 # make bigger distances for printing small logos
 
+$t->min_width = 1;
 $t->pentagramm_pentagramm_distance = 2;
 $t->pentagramm_symbol_distance = 2;
 $t->pentagramm_circle_distance = 2;
