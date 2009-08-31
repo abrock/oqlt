@@ -44,12 +44,13 @@ $svgs = array(
 # x-center of back:
 $backcenter = 402;
 $backscale = 1.1;
+$frontscale = 0.40;
 
 foreach ($svgs as $svg) {
  $front = file_get_contents($svg['front'].'.svg');
  $back = file_get_contents($svg['back'].'.svg');
  $neu = str_replace('<!--oqlt-->',
-  process($front, 0.5, 150, 70).' '.
+  process($front, $frontscale, 162 - 25*$frontscale, 82 - 25*$frontscale).' '.
   process($back,  $backscale, $backcenter - 25*$backscale, 90 - 25*$backscale),
  $vorlage);
  file_put_contents('shirt-'.$svg['front'].'-'.$svg['back'].'.svg', $neu);
