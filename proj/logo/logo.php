@@ -51,15 +51,15 @@ class oqltLogo {
   $pentagramm_thickness = 3,
   $round_holes_in_circle = false,
   $elements_width = array(5, 5, 5, 5, 5),
-  $coil_outer_radius = 2.5,
-  $coil_inner_radius = 0.7,
+  $coil_outer_radius = 2.6,
+  $coil_inner_radius = 0.5,
   $coil_flat_end = true,
   $resistor_thickness = 1.6,
-  $resistor_width = 10,
-  $resistor_inner_thickness = 1.6,
-  $capacitor_thickness = 1.6,
-  $capacitor_distance = 1.6,
-  $capacitor_length = 8,
+  $resistor_width = 12,
+  $resistor_inner_thickness = 3,
+  $capacitor_thickness = 1.9,
+  $capacitor_distance = 1.9,
+  $capacitor_length = 9.6,
   $diode_angle = 60,
   $diode_thickness = 1.6,
   $diode_height = 8,
@@ -539,13 +539,12 @@ class oqltLogo {
 >
 <style type="text/css">
 <![CDATA[
-.pentacle {stroke-width:0; fill:#390;}
 .symbol {stroke-width:0; fill:#fff}
 .outer {stroke-width:0; fill:#fff;}
 .main {fill:#000}
 .char {fill:#fff}
-.q {fill:#390}
-]]>
+.pentacle, .q {stroke-width:0; fill:#'.($this->oqltesse ? 'fc0fc0' : '390').';}
+]]><!--#fc0fc0-->
 </style><rect  x="0" y="0" width="'.(2 * $this->outer_circle + 2).'" height="'.(2 * $this->outer_circle + 2).'" class="main" />
 <g transform="translate(1,1)" class="main">'.$svg.'</g></svg>');
  }

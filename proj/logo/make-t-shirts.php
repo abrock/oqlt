@@ -34,6 +34,10 @@ $svgs = array(
  array(
   'front' => 'kleines',
   'back' => 'neu'
+ ),
+ array(
+  'front' => 'kleines-esse',
+  'back' => 'oqltesse'
  )
 );
 
