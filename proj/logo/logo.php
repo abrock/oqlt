@@ -12,15 +12,15 @@ $t->oqltesse = true;
 $t->make('oqltesse.svg');
 
 # make slim
-$t->circle_thickness = 1.5;
-$t->pentagramm_thickness = 1.5;
+$t->circle_thickness = 1.8;
+$t->pentagramm_thickness = 1.8;
 $t->coil_inner_radius = 1;
-$t->coil_outer_radius = 2.3;
-$t->resistor_thickness = 1.3;
-$t->capacitor_thickness = 1.3;
-$t->resistor_inner_thickness = 2.3;
-$t->diode_thickness = 1.3;
-$t->switch_thickness = 1.3;
+$t->coil_outer_radius = 2.5;
+$t->resistor_thickness = 1.5;
+$t->capacitor_thickness = 1.6;
+$t->resistor_inner_thickness = 2.6;
+$t->diode_thickness = 1.6;
+$t->switch_thickness = 1.6;
 $t->min_width = 1;
 
 # make slim girlfriend logo
