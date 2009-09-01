@@ -70,7 +70,6 @@ class oqltLogo {
   $switch_offset = 0,
   $switch_angle = 40,
   $oqltesse = false,
-  $essefactor = 2,
   $min_width = 1
   ;
 
@@ -902,10 +901,10 @@ class oqltLogo {
   $svg = '';
   
   if ($this->oqltesse) {
-   $chars = $this->scale($chars, $outer_circle / 720);
+   $chars = $this->scale($chars, $outer_circle / 570);
   }
   else {
-   $chars = $this->scale($chars, $outer_circle * $this->essefactor / 720);
+   $chars = $this->scale($chars, $outer_circle / 360);
   }
   $classes = array('o', 'q', 'l', 't', 'esse');
   
@@ -916,7 +915,12 @@ class oqltLogo {
   $height = $oqltbb[1][1];
   
   foreach ($chars as $key=>$char) {
-   $svg .= '<path class="char '.$classes[$key].'" d="'.$this->untranslate($outer_circle - $width / 2 - 1, 1.72 * $outer_circle - $height / 2, $char).'" />';
+   if ($this->oqltesse) {
+    $svg .= '<path class="char '.$classes[$key].'" d="'.$this->untranslate($outer_circle - $width / 2 + 0.3, 1.725 * $outer_circle - $height / 2, $char).'" />';
+   }
+   else {
+    $svg .= '<path class="char '.$classes[$key].'" d="'.$this->untranslate($outer_circle - $width / 2 - 1, 1.72 * $outer_circle - $height / 2, $char).'" />';
+   }
   }
   return $svg;
  }
