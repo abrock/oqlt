@@ -16,6 +16,12 @@ $t->circle_thickness = 1.5;
 $t->pentagramm_thickness = 1.5;
 $t->coil_inner_radius = 1;
 $t->coil_outer_radius = 2.3;
+$t->resistor_thickness = 1.3;
+$t->capacitor_thickness = 1.3;
+$t->resistor_inner_thickness = 2.3;
+$t->diode_thickness = 1.3;
+$t->switch_thickness = 1.3;
+$t->min_width = 1;
 
 # make slim girlfriend logo
 $t->oqltesse = false;
@@ -70,6 +76,7 @@ class oqltLogo {
   $switch_offset = 0,
   $switch_angle = 40,
   $oqltesse = false,
+  $shine = false,
   $min_width = 1
   ;
 
@@ -542,7 +549,7 @@ class oqltLogo {
 .outer {stroke-width:0; fill:#fff;}
 .main {fill:#000}
 .char {fill:#fff}
-.pentacle, .q {stroke-width:0; fill:#'.($this->oqltesse ? 'fc0fc0' : '390').';}
+.pentacle, .q {stroke-width:0; fill:#'.($this->shine ? 'cbfe00' : ($this->oqltesse ? 'fc0fc0' : '390')).';}
 ]]><!--#fc0fc0-->
 </style><rect  x="0" y="0" width="'.(2 * $this->outer_circle + 2).'" height="'.(2 * $this->outer_circle + 2).'" class="main" />
 <g transform="translate(1,1)" class="main">'.$svg.'</g></svg>');
@@ -916,10 +923,10 @@ class oqltLogo {
   
   foreach ($chars as $key=>$char) {
    if ($this->oqltesse) {
-    $svg .= '<path class="char '.$classes[$key].'" d="'.$this->untranslate($outer_circle - $width / 2 + 0.3, 1.725 * $outer_circle - $height / 2, $char).'" />';
+    $svg .= '<path class="char '.$classes[$key].'" d="'.$this->untranslate($outer_circle - $width / 2 + 0.3, 1.77 * $outer_circle - $height / 2 - $this->circle_thickness / 2, $char).'" />';
    }
    else {
-    $svg .= '<path class="char '.$classes[$key].'" d="'.$this->untranslate($outer_circle - $width / 2 - 1, 1.72 * $outer_circle - $height / 2, $char).'" />';
+    $svg .= '<path class="char '.$classes[$key].'" d="'.$this->untranslate($outer_circle - $width / 2 - 1, 1.76 * $outer_circle - $height / 2 - $this->circle_thickness / 2, $char).'" />';
    }
   }
   return $svg;
