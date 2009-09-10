@@ -1,18 +1,14 @@
 #!/bin/sh
 
-plot="plot $(while read line; do
-	name="$(echo "$line" | cut -f 1)"
-	echo "$line" | cut -f 2- | tr '\t' '\n' > "$name.dat"
-	echo "'$name.dat' title '$name' with lines linewidth 3, \\"
-done < score.txt | head -c -4)"
+plotcmd="plot 'score.txt' using 1 linewidth 3, \\
+$(for n in $(seq 2 $(head -n 1 score.txt | wc -w)); do echo "'' using $n linewidth 3, \\"; done | head -c -4)"
 
 gnuplot <<EOF
 set terminal svg
 set output 'score.svg'
 set key top left
+set key autotitle columnheader
 set style data lines
 set xtics 1 format ''
-$plot
+$plotcmd
 EOF
-
-rm *.dat
