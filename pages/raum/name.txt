@@ -33,7 +33,7 @@ Room_404
 Deck23
 TecLab
 TecSpace
-SeeSpace *g*
+SeeSpace
 HelpLab
 EI-Lab (Elektronik und Internet Labor)
 EIS (Elektronik und Internet Space)
@@ -47,10 +47,20 @@ SupraLab
 TecBase/TechBase
 Base64
 PiLab
+hackshack
+hackbox
+fluxbox (vom Fluxkompensator aus Zurück in die Zukunft)
+thinkthing
+Level_11 (einfach weil es sich so lustig anhört, wenn die Zunge drüber stolpert ;) )
+Bastelkasten (mal was ohne Anglizismen)
+CreativeBase
+FluxLab/-Base/-Space
+ThinkLab/-Base/-Space
+ThinkTank
 
 
 - Stimmen dafür:
-DreamFlasher: madLab, lab², SupraLab, TechBase, Murphy's Lab
+DreamFlasher: madLab, lab², SupraLab, TechBase, Murphy's Lab, ThinkLab
 
 - Begründungen dagegen:
 oqlt im Namen: Nicht vereinsneutral
