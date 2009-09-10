@@ -1,8 +1,4 @@
-Abrock	89	111	113
-DreamFlasher	98	99	105
-naddie	88	75	93
-Niklas	78	71	54
-Peter	80	120	76
-Scytale	76	97	141
-silsha	103	85	96
-zwetschgo	41	48	77
+Abrock	DreamFlasher	naddie	Niklas	Peter	Scytale	silsha	zwetschgo
+89	98	88	78	80	76	103	41
+111	99	75	71	120	97	85	48
+113	105	93	54	76	141	96	77
