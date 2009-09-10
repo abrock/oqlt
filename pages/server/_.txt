@@ -1,4 +1,10 @@
-ANFORDERUNGEN
+Momentan laufen alle Dienste auf eigener Hardware (orakel) bei Toaster.
+
+Es ist OpenVZ eingerichtet und beabsichtigt fuer jeden Admin eine VZ zur Verfuegung zu stellen, damit niemand dem anderen reinpfuschen kann und die Verantwortlichkeiten klar sind.
+
+Eine neue VZ kann bei tymm angemeldet werden. Damit jemand den Job uebernehmen kann, muss noch eine entsprechende Dokumentation angefertigt werden.
+
+ANFORDERUNGEN FUER EXTERNES HOSTING
 oqlt: website, mail forwarding, >=python-2.5
 Abrock: PHP and (MySQL or PostgreSQL)
 Dreamflasher: Java
