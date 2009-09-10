@@ -40,13 +40,13 @@ EIS (Elektronik und Internet Space)
 X-Tec (X für alles mögliche)
 X-Lab (X für alles mögliche)
 n-Lab (n für soviel lab wie man braucht oder will oder ertreagen kann)
-*fg*
 OmniSpace
 InterSpace
 IntraSpace
 SupraLab
 TecBase/TechBase
 Base64
+PiLab
 
 
 - Stimmen dafür:
