@@ -1,7 +1,6 @@
 RAM: 1024MB
 Mainboard: AOpen i855GMEm-LFS
 Laufwerke:
- - 1x 500GB S-ATA
  - 3x 500GB S-ATA
  - DVD-Brenner S-ATA
 Steckkarten:
@@ -9,25 +8,26 @@ Steckkarten:
 
 
 $ cat /proc/cpuinfo 
-processor       : 0
-vendor_id       : GenuineIntel
-cpu family      : 6
-model           : 9
-model name      : Intel(R) Pentium(R) M processor 1400MHz
-stepping        : 5
-cpu MHz         : 1400.000
-cache size      : 1024 KB
-fdiv_bug        : no
-hlt_bug         : no
-f00f_bug        : no
-coma_bug        : no
-fpu             : yes
-fpu_exception   : yes
-cpuid level     : 2
-wp              : yes
-flags           : fpu vme de pse tsc msr mce cx8 apic sep mtrr pge mca cmov pat clflush dts acpi mmx fxsr sse sse2 tm pbe bts est tm2
-bogomips        : 2801.86
-clflush size    : 64
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 13
+model name	: Intel(R) Pentium(R) M processor 1.73GHz
+stepping	: 8
+cpu MHz		: 1733.433
+cache size	: 2048 KB
+fdiv_bug	: no
+hlt_bug		: no
+f00f_bug	: no
+coma_bug	: no
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 2
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat clflush dts acpi mmx fxsr sse sse2 ss tm pbe nx bts est tm2
+bogomips	: 3468.05
+clflush size	: 64
+
 
 $ lspci
 00:00.0 Host bridge: Intel Corporation 82852/82855 GM/GME/PM/GMV Processor to I/O Controller (rev 02)
