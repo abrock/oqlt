@@ -50,6 +50,12 @@ Ausrufe oder sonstige Null-Informations-Mitteilungen in Commit-Messages
 
 == Grundlegende Befehle ==
 
+
+***** ACHTUNG: Diese Anleitung ist veraltet, da unser Repository inzwischen
+***** nicht mehr bei GitHub gehostet wird (nur ein Mirror verbleibt dort). Sie
+***** wird demnächst aktualisiert.
+
+
 -- GitHub einrichten --
 
 Mach dir einen Account auf github.com und teile Scy deinen Benutzernamen mit, 
