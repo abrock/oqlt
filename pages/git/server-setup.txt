@@ -1,0 +1,22 @@
+# Grundlegende Einrichtung.
+mkdir /var/git
+echo /usr/bin/git-shell >> /etc/shells
+ln -s /var/git /etc/skel/git
+groupadd -g 9418 git
+mkdir /var/git
+chown root:git /var/git
+chmod 0750 /var/git
+
+
+# User anlegen.
+useradd -c 'Hans Meiser' -g users -G oqlt,git -s /usr/bin/git-shell -m hamei
+echo 'ssh-rsa AAAAB3NzaC... hamei@notruf' > ~hamei/.ssh/authorized_keys
+
+
+# Repository anlegen.
+cd /var/git
+mkdir foo.git
+cd foo.git
+chmod 0770 .
+git init --bare --shared=group
+chown -R root:git .
