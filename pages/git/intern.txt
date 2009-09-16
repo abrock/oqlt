@@ -28,6 +28,9 @@ oqlt-Interna auch eine Liste aller verfügbaren Repositories bietet.
 
   git clone ssh://BENUTZER@orakel.oqlt.de:2023/~/git/qaf.git
 
+Dabei ist BENUTZER dein gewünschter Benutzername. Wenn er identisch mit deinem 
+lokalen Benutzernamen ist, kannst du das BENUTZER@ auch weglassen.
+
 Bei der ersten Verbindung fragt SSH, ob du den Host-Key, mit dem sich das 
 Orakel dir gegenüber ausweist, akzeptieren möchtest. Der aktuelle Host-Key 
 ist: fc:ab:d1:04:22:50:de:1c:9f:0a:25:47:3d:d7:28:c0, dieser Wert sollte dir 
