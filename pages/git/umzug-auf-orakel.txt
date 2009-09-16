@@ -1,0 +1,44 @@
+Unser Git-Repository ist von GitHub auf unseren eigenen Server „Orakel“ 
+umgezogen. Damit ist es erstens schneller und zweitens haben wir die 
+Möglichkeit, interne Repos für vertrauliche Projekte anzulegen.
+
+Wer das oqlt-Repository bei sich lokal ausgecheckt hat, muss daher eine 
+entsprechende Umkonfiguration vornehmen. Was genau man tun muss, hängt davon 
+ab, ob man es nur lesend oder mit Schreibrechten ausgecheckt hat.
+
+
+-- Habe ich Schreibrechte? --
+
+Du kannst in deiner Arbeitskopie „git config remote.origin.url“ ausführen. 
+Fängt der URL mit „git://“ an, hast du keine Schreibrechte. Fängt er mit 
+„git@“ an, hast du welche.
+
+
+-- Wenn ich keine Schreibrechte habe --
+
+Die Umstellung ist recht einfach: Gib einfach „git config remote.origin.url 
+git://orakel.oqlt.de/oqlt.git“ ein. Fertig.
+
+(Theoretisch musst du sogar gar nichts umstellen: Wir wollen das Repository 
+weiterhin bei GitHub mirrorn.)
+
+
+-- Wenn ich Schreibrechte habe --
+
+Hier kann es etwas problematisch werden, wenn du lokale Änderungen vorgenommen 
+hast, aber diese noch nicht an unser Repository geschickt. Aber eigentlich 
+sollte auch das recht locker zu beheben sein.
+
+Im Grunde musst auch du nur den URL ändern, und zwar so: „git config 
+remote.origin.url ssh://BENUTZER@orakel.oqlt.de:2023/~/git/oqlt.git“
+
+Dabei ist BENUTZER dein Benutzername, den du dir bei Scytale für den 
+Git-Zugang auf Orakel gewünscht hast. Wenn du dir noch keinen gewünscht hast, 
+lies die Datei „intern.txt“ im selben Verzeichnis wie diese hier (oder auf 
+http://github.com/scy/oqlt/blob/master/pages/git/intern.txt). Wenn dein 
+lokaler Benutzername mit BENUTZER identisch ist, kannst du das BENUTZER@ auch 
+weglassen.
+
+
+So, jetzt solltest du ganz normal mit dem Repository weiter arbeiten können. 
+Wenn’s nicht geht, wende dich an Scytale.
