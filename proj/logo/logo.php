@@ -47,18 +47,18 @@ $t->make('kleines-esse.svg');
 
 class oqltLogo {
  public $outer_circle = 50,
-  $circle_thickness = 4.5,
+  $circle_thickness = 3.5,
   $outer_pentagramm = 50,
   $outer_pentagramm_rounding = 1,
   $inner_pentagramm_rounding = 5,
   $pentagramm_circle_distance = 1.5,
   $pentagramm_pentagramm_distance = 1.00,
-  $pentagramm_symbol_distance = 1.00,
+  $pentagramm_symbol_distance = 0.60,
   $pentagramm_thickness = 3,
   $round_holes_in_circle = false,
   $elements_width = array(5, 5, 5, 5, 5),
-  $coil_outer_radius = 2.5,
-  $coil_inner_radius = 0.6,
+  $coil_outer_radius = 2.4,
+  $coil_inner_radius = 0.8,
   $coil_flat_end = true,
   $resistor_thickness = 1.6,
   $resistor_width = 12,
@@ -122,9 +122,8 @@ class oqltLogo {
   $outer_circle_path = 'M 0 '.$outer_circle.' ';
   $outer_circle_path .= ' a '.$outer_circle.','.$outer_circle.' 1 1,1 '.(2*$outer_circle).',0 '."\n";
   $outer_circle_path .= 'l '.-$circle_thickness.' 0 ';
-  $outer_circle_path .= ' a '.$inner_circle.','.$inner_circle.' 0 0,0 '.(-2*$inner_circle).',0 '."\n";
-  $svg .= '<path d="'.$outer_circle_path.' z" class="outer" />'."\n";
-  $outer_circle_path = 'M 0 '.$outer_circle.' ';
+  $outer_circle_path .= ' a '.$inner_circle.','.$inner_circle.' 0 0,0 '.(-2*$inner_circle).',0 z '."\n";
+  $outer_circle_path .= 'M 0 '.$outer_circle.' ';
   $outer_circle_path .= ' a '.$outer_circle.','.$outer_circle.' 0 0,0 '.(2*$outer_circle).',0 '."\n";
   $outer_circle_path .= ' l '.-$circle_thickness.' 0 ';
   $outer_circle_path .= ' a '.$inner_circle.','.$inner_circle.' 0 0,1 '.(-2*$inner_circle).',0 '."\n";
@@ -170,8 +169,9 @@ class oqltLogo {
     
     $top_of_rounding = new Point($outer_circle, $outer_circle - $outer_pentagramm_rounding_r - $pentagramm_circle_distance);
     
+    $outer_circle_path = '';
     for ($i = 0; $i < 5; $i++) {
-     $outer_circle_path = 'M '.$inner->out();
+     $outer_circle_path .= ' M '.$inner->out();
      $outer_circle_path .= ' A '.$tempcircle.','.$tempcircle.' 0 0,0 '.$top_of_rounding->out(',');
      $outer_circle_path .= ' L '.$outer->out();
 
@@ -180,7 +180,6 @@ class oqltLogo {
      $outer_circle_path .= ' A '.$outer_circle.','.$outer_circle.' 0 0,1 '.$outer->out(',');
 
      $outer_circle_path .= ' L '.$top_of_rounding->out();
-     
      $inner->rotate(72-2*$inner_hole_arc, $outer_circle, $outer_circle);
      $outer_circle_path .= ' A '.$tempcircle.','.$tempcircle.' 0 0,0 '.$inner->out(',');
 
@@ -188,9 +187,10 @@ class oqltLogo {
      $outer_circle_path .= ' A '.$inner_circle.','.$inner_circle.' 0 0,0 '.$inner->out(',');
      $inner->rotate(72, $outer_circle, $outer_circle);
 
-     $svg .= '<path d="'.$outer_circle_path.'" class="outer" />'."\r\n";
+     $outer_circle_path .= ' z ';
      
     }
+    $svg .= '<path d="'.$outer_circle_path.'" class="outer" />'."\r\n";
     
    }
   }
@@ -209,13 +209,14 @@ class oqltLogo {
    $inner->rotate(-$inner_hole_arc, $outer_circle, $outer_circle);
    echo $inner->out();
 
+   $outer_circle_path = '';
    for ($i = 0; $i < 5; $i++) {
     $rounding_center->rotate(72, $outer_circle, $outer_circle);
     $svg .= $rounding_center->circle();
     echo 'Rounding Center: '.$rounding_center->out();
     $start->rotate(2*$outer_hole_arc, $outer_circle, $outer_circle);
     $save = $start->klon();
-    $outer_circle_path = 'M '.$start->out().' ';
+    $outer_circle_path .= ' M '.$start->out().' ';
     $start->rotate(72-2*$outer_hole_arc, $outer_circle, $outer_circle);
     $outer_circle_path .= ' A '.$outer_circle.','.$outer_circle.' 0 0,1 '.$start->out(',');
     
@@ -230,9 +231,9 @@ class oqltLogo {
     $outer_circle_path .= ' A '.$inner_circle.','.$inner_circle.' 0 0,0 '.$save->out(',');
     
     $inner->rotate(72-2*$inner_hole_arc, $outer_circle, $outer_circle);
-    
-    $svg .= '<path d="'.$outer_circle_path.'" class="outer" />'."\r\n";
+    $outer_circle_path .= ' z ';
    }
+    $svg .= '<path d="'.$outer_circle_path.'" class="outer" />'."\r\n";
   }
   return $svg;
  }
@@ -276,8 +277,9 @@ class oqltLogo {
    
    echo '$outer_arc = '.$outer_arc."\r\n".'$inner_arc = '.$inner_arc."\r\n";
 
+   $path = '';
    for ($i = 0; $i < 5; $i++) {
-    $path = ' M '.$inner->out();
+    $path .= ' M '.$inner->out();
     $path .= ' L '.$outer->out();
 
     $outer->rotate(72-2*$outer_arc, $outer_circle, $outer_circle);
@@ -293,8 +295,9 @@ class oqltLogo {
     
     $outer->rotate(2*$outer_arc, $outer_circle, $outer_circle);
     
-    $svg .= '<path d="'.$path.'" class="outer" />';
+    $path .= ' z ';
    }
+   $svg .= '<path d="'.$path.'" class="outer" />';
 
    return $svg;
   }
@@ -319,8 +322,9 @@ class oqltLogo {
    
   echo '$outer_arc = '.$outer_arc."\r\n".'$inner_arc = '.$inner_arc."\r\n";
 
+  $path = '';
   for ($i = 0; $i < 5; $i++) {
-   $path = ' M '.$inner->out();
+   $path .= ' M '.$inner->out();
    $path .= ' L '.$top_of_peak->out();
    $path .= ' L '.$outer->out();
 
@@ -339,9 +343,10 @@ class oqltLogo {
    $inner->rotate(72, $outer_circle, $outer_circle);
     
    $outer->rotate(2*$outer_arc, $outer_circle, $outer_circle);
-    
-   $svg .= '<path d="'.$path.'" class="outer" />';
+   
+   $path .= ' z ';
   }
+  $svg .= '<path d="'.$path.'" class="outer" />';
   
   
   return $svg;
@@ -382,6 +387,7 @@ class oqltLogo {
   
   $elements_width = $this->elements_width;
   
+  $path = '';
   foreach ($elements_width as $key=>$width) {
    $width = $width / 2 + $pentagramm_symbol_distance;
    echo 'Width of element '.$key.' = '.$width."\r\n";
@@ -423,14 +429,14 @@ class oqltLogo {
     $offset = $temp - sqrt($temp * $temp - $pentagramm_thickness * $pentagramm_thickness / 4);
     $left_out->translateX(-$offset);
     $left_in->translateX(-$offset);
-    $path = 'M '.$top->out().' L '.$left_out->out().' A '.$temp.','.$temp.' 0 0,1 '.$left_in->out().
+    $path .= ' M '.$top->out().' L '.$left_out->out().' A '.$temp.','.$temp.' 0 0,1 '.$left_in->out().
             ' L '.$second_peak->out().' L '.$right_in->out().' L '.$right_out->out();
-    $svg .= '<path d="'.$path.'" class="pentacle" />'."\n";
+    $path .= ' z ';
    }
    else {
-    $path = 'M '.$top->out().' L '.$left_out->out().' L '.$left_in->out().
+    $path .= 'M '.$top->out().' L '.$left_out->out().' L '.$left_in->out().
             ' L '.$second_peak->out().' L '.$right_in->out().' L '.$right_out->out();
-    $svg .= '<path d="'.$path.'" class="pentacle" />'."\n";
+    $path .= ' z ';
    }
 
 
@@ -467,16 +473,17 @@ class oqltLogo {
     $offset = $temp - sqrt($temp * $temp - $pentagramm_thickness * $pentagramm_thickness / 4);
     $top_right->translateX($offset);
     $bottom_right->translateX($offset);
-    $svg .= '<path d="M '.$top_right->out().' A '.$temp.','.$temp.' 0 0,0 '.$bottom_right->out(',').' L '.$bottom_left->out().' L '.$top_left->out().' z" class="pentacle" />'."\r\n";
+    $path .= ' M '.$top_right->out().' A '.$temp.','.$temp.' 0 0,0 '.$bottom_right->out(',').' L '.$bottom_left->out().' L '.$top_left->out().' z ';
     #echo "\r\n\r\n".'ddddd'."\r\n\r\n";
     
    }
    else {
    
-    $svg .= '<path d="M '.$top_right->out().' L '.$top_left->out().' L '.$bottom_left->out().' L '.$bottom_right->out().' z" class="pentacle" />'."\r\n";
+    $path .= ' M '.$top_right->out().' L '.$top_left->out().' L '.$bottom_left->out().' L '.$bottom_right->out().' z ';
    }
    
   }
+  $svg .= '<path d="'.$path.'" class="pentacle" />'."\n";
   
   $svg .= $coil.$resistor.$capacitor.$diode.$switch.$text;
   
@@ -604,7 +611,7 @@ class oqltLogo {
   
   foreach ($points as $point) {
    #$point->translate($outer_circle, $outer_circle + $incircle - $pentagramm_thickness / 2 + 0.25 * $outer + 0.25 * $inner);
-   $point->translate($outer_circle, $outer_circle + $incircle - $thickness / 1.5);
+   $point->translate($outer_circle, $outer_circle + $incircle - $thickness / 0.70);
    $point->rotate(72 * 0.5, $outer_circle, $outer_circle);   
   }
 
@@ -693,12 +700,12 @@ class oqltLogo {
    $point->rotate(72 * 2, $outer_circle, $outer_circle);
   }
   
-  $path .= 'M '.$points[$i]->out();
+  
+  $path .= ' M '.$points[$i]->out();
   while (isset($points[++$i])) {
    $path .= 'L '.$points[$i]->out();
   }
-  
-  $svg .= '<path d="'.$path.' z" class="symbol resistor" />';
+  $path .= ' z ';
   
   $points = array (
    new Point(0, + $inner / 2 + $thickness),
@@ -711,7 +718,6 @@ class oqltLogo {
    new Point(0, + $inner / 2),
   );
   
-  $path = '';
   $i = 0;
   
   foreach ($points as $point) {
@@ -719,7 +725,7 @@ class oqltLogo {
    $point->rotate(72 * 2, $outer_circle, $outer_circle);
   }
   
-  $path .= 'M '.$points[$i]->out();
+  $path .= ' M '.$points[$i]->out();
   while (isset($points[++$i])) {
    $path .= 'L '.$points[$i]->out();
   }
@@ -760,7 +766,7 @@ class oqltLogo {
    $path .= ' L '.$points[$i]->out();
   }
   
-  $svg .= '<path d="'.$path.' z" class="symbol capacitor" />';
+  $path .= ' z ';
 
   $points = array (
    new Point(- $distance / 2, $length / 2),
@@ -775,7 +781,7 @@ class oqltLogo {
   }
   
   $i = 0;
-  $path = ' M '.$points[$i]->out();
+  $path .= ' M '.$points[$i]->out();
   
   while (isset($points[++$i])) {
    $path .= ' L '.$points[$i]->out();
@@ -865,7 +871,7 @@ class oqltLogo {
   $path .= ' A '.$radius.','.$radius.' 0 0,0 '.$points[1]->out(',');
   $path .= ' A '.$radius.','.$radius.' 0 1,0 '.$points[0]->out(',');
   
-  $svg .= '<path d="'.$path.' z" class="symbol switch" />';
+  $path .= ' z ';
 
   $points = array (
    new Point(- ($width / 2 - $radius + $offset) , $thickness / 2),
@@ -880,7 +886,7 @@ class oqltLogo {
    #$svg .= $point->circle();
   }
   
-  $path = ' M '.$points[0]->out();
+  $path .= ' M '.$points[0]->out();
   $path .= ' L '.$points[1]->out();
     
   $path .= ' A '.$radius.','.$radius.' 0 1,0 '.$points[2]->out(',');
