@@ -560,6 +560,27 @@ class oqltLogo {
 ]]><!--#fc0fc0-->
 </style><rect  x="0" y="0" width="'.(2 * $this->outer_circle + 2).'" height="'.(2 * $this->outer_circle + 2).'" class="main" />
 <g transform="translate(1,1)" class="main">'.$svg.'</g></svg>');
+  file_put_contents('print-'.$filename, '<?xml version="1.0" standalone="yes"?>
+<svg
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:cc="http://creativecommons.org/ns#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:svg="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	xmlns="http://www.w3.org/2000/svg"
+	width="'.(2 * $this->outer_circle + 2).'"
+	height="'.(2 * $this->outer_circle + 2).'"
+>
+<style type="text/css">
+<![CDATA[
+.symbol {stroke-width:0; fill:#000}
+.outer {stroke-width:0; fill:#000;}
+.main {fill:#000}
+.char {fill:#000}
+.pentacle, .q {stroke-width:0; fill:#'.($this->shine ? 'cbfe00' : ($this->oqltesse ? 'fc0fc0' : '390')).';}
+]]><!--#fc0fc0-->
+</style>
+<g transform="translate(1,1)" class="main">'.$svg.'</g></svg>');
  }
  
  function coil () {
