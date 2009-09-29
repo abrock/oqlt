@@ -32,20 +32,12 @@ $vorlage = file_get_contents('male t-shirt.svg');
 
 $svgs = array(
  array(
-  'front' => 'kleines',
-  'back' => 'neu'
+  'front' => 'beschlossen',
+  'back' => 'beschlossen'
  ),
  array(
-  'front' => 'kleines-esse',
+  'front' => 'oqltesse',
   'back' => 'oqltesse'
- ),
- array(
-  'front' => 'kleines',
-  'back' => 'schlank'
- ),
- array(
-  'front' => 'kleines-esse',
-  'back' => 'schlank-esse'
  )
 );
 
@@ -61,7 +53,7 @@ foreach ($svgs as $svg) {
   process($front, $frontscale, 162 - 25*$frontscale, 82 - 25*$frontscale).' '.
   process($back,  $backscale, $backcenter - 25*$backscale, 90 - 25*$backscale),
  $vorlage);
- file_put_contents('shirt-'.$svg['front'].'-'.$svg['back'].'.svg', $neu);
+ file_put_contents('shirt-'.$svg['back'].'.svg', $neu);
  echo 'made shirt-'.$svg['front'].'-'.$svg['back'].'.svg'."\r\n";
 }
 

@@ -5,15 +5,16 @@ error_reporting(E_ALL);
 $t = new oqltLogo();
 
 # make standard logo
-$t->make('neu.svg');
+$t->make('beschlossen.svg');
 
 # make girlfriend logo
 $t->oqltesse = true;
 $t->make('oqltesse.svg');
 
+/*
 # make slim
-$t->circle_thickness = 1.8;
-$t->pentagramm_thickness = 1.8;
+$t->circle_thickness = 2.4;
+$t->pentagramm_thickness = 2.0;
 $t->coil_inner_radius = 1;
 $t->coil_outer_radius = 2.5;
 $t->resistor_thickness = 1.5;
@@ -35,49 +36,50 @@ $t = new oqltLogo();
 
 # make bigger distances for printing small logos
 
-$t->min_width = 1;
-$t->pentagramm_pentagramm_distance = 2;
-$t->pentagramm_symbol_distance = 2;
-$t->pentagramm_circle_distance = 2;
+$t->min_width = 0;
+$t->pentagramm_pentagramm_distance += 0.3;
+#$t->pentagramm_symbol_distance = 2;
+$t->pentagramm_circle_distance += 0.3;
 $t->make('kleines.svg');
 
 # make bigger distances for printing small girlfriend logos
 $t->oqltesse = true;
 $t->make('kleines-esse.svg');
-
+//*/
 class oqltLogo {
+ # gruss dem software
  public $outer_circle = 50,
-  $circle_thickness = 3.5,
+  $circle_thickness = 3.2,
   $outer_pentagramm = 50,
   $outer_pentagramm_rounding = 1,
   $inner_pentagramm_rounding = 5,
-  $pentagramm_circle_distance = 1.5,
-  $pentagramm_pentagramm_distance = 1.00,
-  $pentagramm_symbol_distance = 0.60,
-  $pentagramm_thickness = 3,
+  $pentagramm_circle_distance = 1.0,
+  $pentagramm_pentagramm_distance = 0.75,
+  $pentagramm_symbol_distance = 0.40,
+  $pentagramm_thickness = 2.8,
   $round_holes_in_circle = false,
   $elements_width = array(5, 5, 5, 5, 5),
-  $coil_outer_radius = 2.4,
-  $coil_inner_radius = 0.8,
+  $coil_outer_radius = 2.2,
+  $coil_inner_radius = 0.7,
   $coil_flat_end = true,
   $resistor_thickness = 1.6,
-  $resistor_width = 12,
+  $resistor_width = 11.5,
   $resistor_inner_thickness = 3,
-  $capacitor_thickness = 1.9,
+  $capacitor_thickness = 1.6,
   $capacitor_distance = 1.9,
   $capacitor_length = 9.6,
   $diode_angle = 60,
   $diode_thickness = 1.6,
   $diode_height = 8,
   $diode_intersection = 1,
-  $switch_width = 15,
+  $switch_width = 13,
   $switch_radius = 2,
   $switch_thickness = 1.6,
   $switch_offset = 0,
   $switch_angle = 40,
   $oqltesse = false,
   $shine = false,
-  $min_width = 1
+  $min_width = 0
   ;
 
  function make($filename) {
@@ -493,13 +495,13 @@ class oqltLogo {
  }
  
  /**
-  * Berechnet aus den drei Seitenlängen eines Dreiecks den Winkel
-  * der der dritten Seite gegenüberliegenden Seite.
+  * Berechnet aus den drei Seitenlâ€°ngen eines Dreiecks den Winkel
+  * der der dritten Seite gegenÂ¸berliegenden Seite.
   *
   * @param double Seite a
   * @param double Seite b
   * @param double Seite c
-  * @return double Gamma, der Winkel gegenüber von c. c² = a² + b² + 2ab*cos(gamma)
+  * @return double Gamma, der Winkel gegenÂ¸ber von c. câ‰¤ = aâ‰¤ + bâ‰¤ + 2ab*cos(gamma)
   */
  function abc2gamma($a, $b, $c) {
   echo 'a: '.$a."\r\n".'b: '.$b."\r\n".'c: '.$c."\r\n";
@@ -508,12 +510,12 @@ class oqltLogo {
  }
  
  /**
-  * Berechnet die Halbwinkel der Lücken im äußeren Kreis bei geradlinigen Lücken.
+  * Berechnet die Halbwinkel der LÂ¸cken im â€°uï¬‚eren Kreis bei geradlinigen LÂ¸cken.
   *
-  * @param double Strecke, die die Spitze des Pentagrammes über den Kreis hinaussteht
+  * @param double Strecke, die die Spitze des Pentagrammes Â¸ber den Kreis hinaussteht
   * @param double Radius des Kreises
-  * @param double Öffnungswinkel des Pentagrammes in Grad
-  * @return double Haldwinkel der Lücke in Grad
+  * @param double Ã·ffnungswinkel des Pentagrammes in Grad
+  * @return double Haldwinkel der LÂ¸cke in Grad
   */
  function bra2gamma($b, $r, $alpha) {
   $a = $b + $r;
@@ -525,11 +527,11 @@ class oqltLogo {
  }
  
  /**
-  * Berechnet die Länge der rechten Seite des Pentagrammes
+  * Berechnet die Lâ€°nge der rechten Seite des Pentagrammes
   *
   * @param double Umkreis-Radius des Pentagrammes
   * @param double Abstand zwischen den Teilen des Pentagrammes
-  * @return double Länge der rechten Seite
+  * @return double Lâ€°nge der rechten Seite
   */
  function rd2l($r, $d) {
   $a = $r * cos(18 * PI() / 180);
