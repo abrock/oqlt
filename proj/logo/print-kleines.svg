@@ -13,11 +13,12 @@
 <![CDATA[
 .symbol {stroke-width:0; fill:#000}
 .outer {stroke-width:0; fill:#000;}
-.main {fill:#000}
+.main {fill:#fff}
 .char {fill:#000}
 .pentacle, .q {stroke-width:0; fill:#390;}
 ]]><!--#fc0fc0-->
 </style>
+<rect  x="0" y="0" width="102" height="102" class="main" />
 <g transform="translate(1,1)" class="main"><path d=" M  53.277725279395 3.6156651767775 
  L  52.11749975294 0.044858174595277 
  A 50,50 0 0,1  96.855819746257,32.549150281253 

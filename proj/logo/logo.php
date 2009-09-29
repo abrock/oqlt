@@ -575,11 +575,12 @@ class oqltLogo {
 <![CDATA[
 .symbol {stroke-width:0; fill:#000}
 .outer {stroke-width:0; fill:#000;}
-.main {fill:#000}
+.main {fill:#fff}
 .char {fill:#000}
 .pentacle, .q {stroke-width:0; fill:#'.($this->shine ? 'cbfe00' : ($this->oqltesse ? 'fc0fc0' : '390')).';}
 ]]><!--#fc0fc0-->
 </style>
+<rect  x="0" y="0" width="'.(2 * $this->outer_circle + 2).'" height="'.(2 * $this->outer_circle + 2).'" class="main" />
 <g transform="translate(1,1)" class="main">'.$svg.'</g></svg>');
  }
  
