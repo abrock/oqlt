@@ -1,6 +1,6 @@
-Welchen geekigen Namen soll unser zukünftiger Hackerspace bekommen?
+Welchen geekigen Namen soll unser zukÃ¼nftiger Hackerspace bekommen?
 
-- Vorschläge:
+- VorschlÃ¤ge:
 
 madLab (Mannheim Digital Labor)
 BetaLab
@@ -9,7 +9,7 @@ TimeLab
 SpaceTime
 TimeSpace
 FrontierLab
-lab²
+labÂ²
 Murphy's Lab
 AlphaLab
 NoLab
@@ -37,9 +37,9 @@ SeeSpace
 HelpLab
 EI-Lab (Elektronik und Internet Labor)
 EIS (Elektronik und Internet Space)
-X-Tec (X für alles mögliche)
-X-Lab (X für alles mögliche)
-n-Lab (n für soviel lab wie man braucht oder will oder ertreagen kann)
+X-Tec (X fÃ¼r alles mÃ¶gliche)
+X-Lab (X fÃ¼r alles mÃ¶gliche)
+n-Lab (n fÃ¼r soviel lab wie man braucht oder will oder ertreagen kann)
 OmniSpace
 InterSpace
 IntraSpace
@@ -49,9 +49,9 @@ Base64
 PiLab
 hackshack
 hackbox
-fluxbox (vom Fluxkompensator aus Zurück in die Zukunft)
+fluxbox (vom Fluxkompensator aus ZurÃ¼ck in die Zukunft)
 thinkthing
-Level_11 (einfach weil es sich so lustig anhört, wenn die Zunge drüber stolpert ;) )
+Level_11 (einfach weil es sich so lustig anhÃ¶rt, wenn die Zunge drÃ¼ber stolpert ;) )
 Bastelkasten (mal was ohne Anglizismen)
 CreativeBase
 FluxLab/-Base/-Space
@@ -64,15 +64,15 @@ Techvault
 Warp Lab
 TraumRaum
 BoomRoom (im Sinne von Boom, positives Wachstum)
-T³ Top Tech Topics
+TÂ³ Top Tech Topics
 das elektrotop (raum)
 die elektrophilia (freundschaft)
 das technognom  (erkenntnis)
 die elektropolis (stadt)
 
 
-- Stimmen dafür:
-DreamFlasher: madLab, lab², SupraLab, TechBase, Murphy's Lab, ThinkLab
+- Stimmen dafÃ¼r:
+DreamFlasher: madLab, labÂ², SupraLab, TechBase, Murphy's Lab, ThinkLab
 
-- Begründungen dagegen:
+- BegrÃ¼ndungen dagegen:
 oqlt im Namen: Nicht vereinsneutral
