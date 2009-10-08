@@ -20,3 +20,4 @@ cd foo.git
 chmod 0770 .
 git init --bare --shared=group
 chown -R root:git .
+ln -s ../../hook.sh hooks/post-receive
