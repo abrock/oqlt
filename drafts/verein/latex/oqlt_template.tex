@@ -1,0 +1,72 @@
+%%%%%%%%%%%%%  TODO %%%%%%%%%%%%%%%%%%%%%%%
+%
+% 1) Fontfarbe "`green"' and Logofarbe anpassen
+% 2) in \Name{} evtl. schriftzug aus logo als grafik/vektor statt text
+% 4) Wasserzeichen aus vektor statt PNG?
+% 5) Bank Daten, Adresse, etc. einsetzen
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Präambel
+\documentclass[11pt, ngerman]{g-brief2}
+\usepackage[utf8]{inputenc}
+\usepackage{color}
+\usepackage{graphicx, eso-pic, graphics}
+\definecolor{green}{rgb}{0.1,0.9,0.1}
+\makeatletter
+\newcommand\BackgroundPicture{
+\setlength{\unitlength}{1pt}
+\put(0,\strip@pt\paperheight){
+\parbox[t][\paperheight]{\paperwidth}{
+\vfill\centering\includegraphics[width=20cm]{oqlt-logo-watermark.png}\vfill}}}
+\makeatother
+\AddToShipoutPicture{\BackgroundPicture}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% INFO Teil (immer gleich)
+\Name{\Huge\normalfont\sffamily\slshape o\color{green}q\normalcolor lt \upshape\small - Organisierte Querdenker für langfristige Technologiefolgenabschätzung e.V. \hspace{1cm}\tiny}
+\AdressZeileA{ oqlt e.V. }
+\AdressZeileB{ c/o Tobias Kral }
+\AdressZeileC{ Kleiststraße 5 }
+\AdressZeileD{ 68167 Mannheim }
+\TelefonZeileA{+49 (0)621 48345866}
+\InternetZeileA{ info@oqlt.de}
+\InternetZeileB{ www.oqlt.de}
+\InternetZeileC{ twitter.com/oqlt}
+\BankZeileA{ kto 00000000 }
+\BankZeileB{ blz 00000000 }
+\BankZeileC{ Nerdbank }
+\RetourAdresse{ oqlt e.V. $\cdot$ c/o Tobias Kral $\cdot$ Kleiststraße 5 $\cdot$ 68167 Mannheim}
+\unserzeichen
+\trennlinien
+\lochermarke
+\faltmarken
+\fenstermarken
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% VARIABLER TEIL (begin edit here...)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%Mehrzeilige Adresse des Empfängers. Zeilen trennen mit \\
+\Adresse{Name\\Adresse 1\\\\PLZ Ort\\Land}
+\Datum{\today}
+\IhrZeichen{}
+\MeinZeichen{}
+\Betreff{Betreff}
+\Anrede{Sehr geehrte Damen und Herren,}
+\Gruss{Mit freundlichen Grüßen}{1.5cm}
+\Unterschrift{Tobias Kral für oqlt e.V.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TEXT TEIL (begin edit here...)
+\begin{document}
+\begin{g-brief}
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+ At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+ At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+ At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+ At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+ At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
+
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+
+\end{g-brief}
+\end{document}
