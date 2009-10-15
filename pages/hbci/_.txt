@@ -1,0 +1,120 @@
+= HBCI mit PIN/TAN auf der Kommandozeile
+
+Nötige Software: aqbanking-4 mit HBCI-Unterstützung.
+
+Für das Vereinskonto von oqlt hätten wir gern halbautomatisches Holen der 
+neuen Umsätze. Unsere Bank, die Sparkasse, bietet HBCI an. Das müssen wir 
+natürlich gleich mal dem Nerd-Test unterziehen und auf ner Linux-Kommandozeile 
+drauf zugreifen.
+
+
+== Finden des HBCI-Servers eurer Bank
+
+Dafür gibt es praktischerweise eine zentrale Stelle, die euch verrät, welche 
+HBCI-Version eure Bank anbietet (wenn überhaupt) und unter welcher Adresse:
+http://www.hbci-zka.de/institute/institut_auswahl.htm
+
+Wichtig sind die Infos unter „HBCI-Version“ (bei uns 2.2) und „PIN/TAN-URL“ 
+(bei uns https://hbci-pintan-bw.s-hbci.de/PinTanServlet).
+
+
+== Installieren von aqbanking
+
+Das überlasse ich eurem Paketmanager und/oder Google-Fu.
+
+
+== Einrichten von aqbanking
+
+Das Handbuch hat mir hier gute Dienste erwiesen:
+http://www.aquamaniac.de/sites/download/packages.php?package=09&showall=1
+
+ aqhbci-tool4 adduser -t pintan --context=1 -b 67050505 -u $USER -s \
+ https://hbci-pintan-bw.s-hbci.de/PinTanServlet -N 'oqlt e.V.' \
+ --hbciversion=220
+
+Hierbei (und auch in folgenden Aufrufen) ist $USER der „Benutzername“, mit dem 
+ihr euch auch im Webinterface der Bank einloggen würdet.
+
+Wenn ihr bei der Kommunikation mit der Bank SSL-Fehlermeldungen um die Ohren 
+geworfen bekommt (z.B. „The specified session has been invalidated for some 
+reason“), besteht eure Bank möglicherweise auf SSL Version 3. Das lässt sich 
+aktivieren mittels
+
+ aqhbci-tool4 adduserflags -u $USER -f forceSsl3
+
+Jetzt braucht euer Rechner noch ne System-ID:
+
+ aqhbci-tool4 getsysid -u $USER
+
+Falls ihr nicht das „alte“ PIN/TAN-Verfahren verwendet, sondern z.B. iTAN 
+(indizierte TANs, also Eingabeaufforderungen wie „geben Sie TAN Nr. 123 ein“ 
+im Onlinebanking habt) oder SMS-TANs, müsst ihr das entsprechend 
+konfigurieren. Dafür braucht ihr eine Liste von TAN-Modus-IDs:
+
+ aqhbci-tool4 listitanmodes -u $USER
+
+Das ergibt bei uns z.B.:
+
+ TAN Methods
+ - 900 (2): iTAN (iTAN) [available]
+ - 920 (2): smsTAN (smsTAN) [not available]
+
+Die Modi, die mit „available“ gekennzeichnet sind, lassen sich wie folgt 
+aktivieren:
+
+ aqhbci-tool4 setitanmode -u $USER -m 900
+
+Jetzt müssen wir noch eine Liste aller verfügbaren (Giro-)Konten abrufen:
+
+ aqhbci-tool4 getaccounts -u $USER
+
+Wenn alles geklappt hat, bekommt ihr jetzt mit
+
+ aqhbci-tool4 listaccounts
+
+euer Girokonto aufgelistet.
+
+
+== Abrufen des Kontostands
+
+Nachdem jetzt HBCI als Datenaustauschschnittstelle konfiguriert ist, sollte 
+auch folgender Befehl euer Konto anzeigen:
+
+ aqbanking-cli listaccs
+
+Mit
+
+ aqbanking-cli request -c verein.ctx --balance
+
+ruft ihr den aktuellen Kontostand für alle definierten Konten ab. Ihr müsst 
+dafür für jedes Konto die PIN eingeben. Die Daten werden in der Datei 
+verein.ctx gespeichert, der ihr natürlich auch einen beliebigen anderen Namen 
+geben könnt.
+
+Jetzt könnt ihr mit
+
+ aqbanking-cli listbal -c verein.ctx
+
+den abgerufenen Kontostand anzeigen lassen.
+
+
+== Abrufen der Umsätze
+
+Geht ähnlich:
+
+ aqbanking-cli request -c verein.ctx --transactions
+
+aufrufen und dann mit
+
+ aqbanking-cli listtrans -c verein.ctx
+
+ansehen. Standard-Ausgabeformat ist dabei CSV, damit lässt sich schon einiges 
+anfangen.
+
+
+== Support
+
+Wir bei oqlt haben leider anderes zu tun, als Wildfremde, die über diese 
+Anleitung stolpern, bei ihrer HBCI-Konfiguration zu beraten. Ihr könnt gern 
+bei uns im IRC vorbeischauen und lieb fragen, aber macht euch keine zu großen 
+Hoffnungen. Kontaktmöglichkeiten findet ihr auf http://oqlt.de/.
