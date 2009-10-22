@@ -30,7 +30,7 @@ for root, dirs, files in os.walk('.', topdown=True, followlinks=True):
 		os.mkdir(tdir)
 	list = "<ul class='listing'>\n"
 	if root == '.':
-		index = expand(template, 'path', 'Organisierte Querdenker für langfristige Technologiefolgenabschätzung')
+		index = expand(template, 'path', 'index')
 	else:
 		list += "\t<li class='up'><a href='../_.html'>../</a></li>\n"
 		index = expand(template, 'path', root[2:])
