@@ -1,60 +1,57 @@
-SSH FINGERPRINT
-$ ssh-keygen -l -f /etc/ssh/ssh_host_rsa_key.pub 
+h1.ORAKEL (Inte, Scytale, Tymm)
+
+h2.ssh-Fingerprint
+
+# ssh-keygen -l -f /etc/ssh/ssh_host_rsa_key.pub 
 2048 3f:11:9f:45:93:b4:ff:dc:6d:9d:f6:35:b5:f1:74:71 /etc/ssh/ssh_host_rsa_key.pub (RSA)
 
-BENUTZERKODEX
-Die Ports 49152 bis 65535 können beliebig belegt werden. Dauerhaft genutzte Ports sind hier einzutragen:
-port :: service :: user
-49423 bip abrock
-51413 transmission transmission
-56667 bip inte
+h2.Port-Forwarding
 
-OPENVZ
-UserVZ
-I2PVZ
+2020	tcp	ssh
 
-PORT-FORWARDING
-22 ssh (UserVZ)
-80 http
-??? I2P (I2PVZ)
-2020 ssh
-9418 git (UserVZ)
-49152 65534 private ports (UserVZ)
+h1.VZ 101 (Silsha)
 
-TODO
-Mumble installieren/konfigurieren
-cacti einrichten
- - smartmontools http://forums.cacti.net/about4714.html
- - raid status
- - disk I/O
- - cpu frequency (speedstep)
+h2.ssh-Fingerprint
 
-PROGRAMME
-app-misc/mc
-app-misc/screen
-app-misc/wyrd
-dev-util/tig
-mail-client/mutt
-net-im/mcabber
-net-irc/bip
-net-irc/irssi
-  Support für http://twirssi.com/ (Perl Modul "Net::Twitter")
-net-news/newsbeuter
-www-client/links
-x11-misc/remind
+# ssh-keygen -l -f /etc/ssh/ssh_host_rsa_key.pub
+2048 6d:ef:5e:1a:02:ac:df:fe:2d:c0:8b:29:89:d8:15:b6 /etc/ssh/ssh_host_rsa_key.pub (RSA)
 
-DIENSTE
-app-admin/denyhosts
-dev-util/git
-net-analyzer/cacti
-net-ftp/vsftpd
-net-misc/openvpn
-net-p2p/transmission
-www-servers/lighttpd
+h2.Port-Forwarding
 
-CRYPTO
-sys-fs/encfs
+8887	tcp	i2p
 
-PERL
-Perl Module werden mit app-portage/g-cpan installiert (http://www.gentoo.org/proj/en/perl/g-cpan.xml). Installiert sind:
-Net::Twitter
+h1.VZ 102 (Inte)
+
+h2.ssh-Fingerprint
+
+# ssh-keygen -l -f /etc/ssh/ssh_host_rsa_key.pub
+2048 8d:34:b3:fe:9c:c1:33:13:94:48:40:4b:0c:92:30:04 /etc/ssh/ssh_host_rsa_key.pub (RSA)
+
+h2.Port-Forwarding
+
+2022	tcp	ssh
+6522	tcp	sobby
+56667	tcp	bip	Inte
+
+h1.VZ 103 (Scytale)
+
+h2.ssh-Fingerprint
+
+# ssh-keygen -l -f /etc/ssh/ssh_host_rsa_key.pub
+2048 fc:ab:d1:04:22:50:de:1c:9f:0a:25:47:3d:d7:28:c0 /etc/ssh/ssh_host_rsa_key.pub (RSA)
+
+h2.Port-Forwarding
+
+2023	tcp	ssh
+9418	tcp	git
+
+h1.VZ 104 (Abrock)
+
+h2.ssh-Fingerprint
+
+# ssh-keygen -l -f /etc/ssh/ssh_host_rsa_key.pub
+2048 1e:03:d5:7f:a0:8c:f5:8f:be:f0:77:da:d9:a6:fe:08 /etc/ssh/ssh_host_rsa_key.pub (RSA)
+
+h2. Port-Forwarding
+
+2024	tcp	ssh
