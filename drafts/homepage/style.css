@@ -1,6 +1,7 @@
 body {
 	text-align:center;
-	margin:20px 0px 20px 0px;
+	margin:0;
+	padding:0;
 	font-family:Verdana,sans-serif;
 	background-image:url(oqlt-logo-watermark.png);
 	background-repeat:no-repeat;
@@ -10,8 +11,9 @@ body {
 .box_main {
 	position:relative;
 	text-align:left;
-	width:750px;
+	width:720px;
 	margin:0 auto;
+	padding: 0 15px 0 15px;
 } 
 .box_side {
 	position:relative;
@@ -37,19 +39,18 @@ body {
 	padding:15px;
 }
 h3, h4 {
-	margin:1em 0.5em 0.5em 0.5em;
+	margin:1em 0 0.5em ;
 }
 p, ul, dl {
-	margin: 0.5em;
-	max-width: 35em;
+	line-height:1.4em;
+	margin: 0.5em 0 0.5em 0;
 }
 dt {
-	margin-top:  0.5em;
-	margin-left: 0.5em;
+	margin-top:  1em;
 	font-weight: bold;
 }
 dd {
-	margin-left: 2em;
+	margin: 0.3em 0 0 1.5em;
 }
 pre {
 	white-space: pre-wrap;       /* css-3 */
