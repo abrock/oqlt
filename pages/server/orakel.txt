@@ -18,7 +18,8 @@ h2.ssh-Fingerprint
 
 h2.Port-Forwarding
 
-8887	tcp	i2p
+2021	tcp	ssh
+8887	udp	i2p
 
 h1.VZ 102 (Inte)
 
