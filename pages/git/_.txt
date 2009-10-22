@@ -77,10 +77,10 @@ git config --global push.default matching
 
 -- Erstes Auschecken des Repositories --
 
-git clone git@github.com:scy/oqlt.git
+git clone ssh://BENUTZER@orakel.oqlt.de:2023/~/git/oqlt.git
   (falls du Schreibrechte hast)
 
-git clone git://github.com/scy/oqlt.git
+git clone git://orakel.oqlt.de/oqlt.git
   (für einen Nur-Lese-Zugang)
 
 

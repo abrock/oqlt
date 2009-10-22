@@ -49,8 +49,8 @@ Wie wird kommuniziert?
 
 Was sollte ich wissen, wenn ich Mitglied bei euch werde?
 
-	Wende dich an Inte, damit er dir deinen Forwarder nickname@oqlt.de 
+	Wende dich an Scytale, damit er dir eine Weiterleitung nickname@oqlt.de 
 	einrichtet.
 
-	Du kannst dir einen Account bei GitHub einrichten und bekommst 
-	Schreibrechte von Scytale. Bitte lies vorher _unbedingt_ pages/git/_.txt!
+	Du solltest Dit git installieren und bekommst Schreibrechte von Scytale.
+	Bitte lies vorher _unbedingt_ pages/git/_.txt!

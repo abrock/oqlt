@@ -22,14 +22,11 @@ SCHLÜSSELPAAR ERZEUGEN (ssh-keygen.jpg)
 1. "Git Bash" aus dem Startmenü heraus aufrufen
 2. $ ssh-keygen.exe -C "your@email.com" -t rsa
 	a) Anmerkung: Passphrase kann leergelassen werden (verschlüsselt die key-Datei)
+3. Public-Key unserem git-Admin übermitteln (z.B: C:\Documents and Settings\Inte\.ssh\id_rsa.pub)
 
 GIT EINRICHTEN (git_setup-00.jpg)
 1. "Git Bash" aus dem Startmenü heraus aufrufen
 2. Weitere Details siehe ../_.txt im Abschnitt "Basiskonfiguration"
-
-GITHUB EINRICHTEN (github_setup-01.jpg)
-1. Account aufrufen :: https://github.com/account
-2. Public-Key hinzufügen :: "Add another public key" (z.B: C:\Documents and Settings\Inte\.ssh\id_rsa.pub)
 
 REPOSITORY KLONEN
 1. Den Zielordner rechts anklicken und "Git Bash Here" öffnen. (repo_klonen-00.jpg)
