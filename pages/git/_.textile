@@ -1,0 +1,92 @@
+h1. Einführung in Git
+
+oqlt benutzt "Git":http://git.or.cz/ für Datenaustausch, interne Kommunikation und als Wissensdatenbank. Daher sollte jedes Mitglied ausreichend gut mit diesem mächtigen Werkzeug umgehen können.
+
+h2. Wichtige Konventionen
+
+h3. Dateinamen
+
+Um maximale Kompatibilität zu erreichen, dürfen Dateinamen keine Sonderzeichen und keine Leerzeichen enthalten. Dateinamen sollten möglichst nur aus Kleinbuchstaben bestehen, außer Großbuchstaben sind nötig (z.B. bei Java-Klassen).
+
+
+h3. Dateiinhalt
+
+Der Inhalt von Textdateien sollte in UTF-8 codiert sein, also deinen Editor bitte entsprechend einstellen. (Selbst Notepad unter Windows kann als UTF-8 speichern.) Zeilenenden sollten im Unix-Stil (mit einem „Line Feed“-Byte) gehalten sein, nicht im Windows-Stil (mit „Carriage Return“ gefolgt von „Line Feed“). Auch das kann man in einem brauchbaren Editor einstellen. Unter Windows hilft es, Gits Konfigurationsoption „core.autolf“ auf „true“ zu stellen.
+
+Nach Möglichkeit soll der Dateiinhalt entweder Klartext oder in Textile formatiert sein.
+
+Formatierungsoptionen sind der "Textile-Referenz":http://redcloth.org/textile/ zu entnehmen und können im "Online-Konverter":http://textile.thresholdstate.com/ ausprobiert werden.
+
+h3. Commit-Messages
+
+Commit-Messages sollen in UTF-8 sein. Git führt absichtlich keine Konvertierung von anderen Zeichensätzen nach UTF-8 durch, d.h. du musst selbst dafür sorgen, UTF-8 einzugeben.
+
+Unter Windows ist der Standardzeichensatz cp1252; die einzige Weg für UTF-8-Commit-Messages ist das Verwenden eines externen Editors für die Messages, der als UTF-8 speichert (also kein „-m“ auf der Kommandozeile) oder der vollständige Verzicht auf Sonderzeichen.
+
+Die erste Zeile von Commit-Messages ist als Zusammenfassung gedacht und sollte nie länger als 50 Zeichen sein. Außerdem sollte die erste Zeile so klar wie möglich angeben, was geändert wurde (z.B. „Website: Logo 3px nach rechts“), damit man sich in einer Commit-Liste oder beim Commit-Bot im IRC sofort ein Bild über die Änderungen machen kann. Daraus folgt auch, dass Grüße, freudige Ausrufe oder sonstige Null-Informations-Mitteilungen in Commit-Messages (zumindest in der ersten Zeile) nichts verloren haben.
+
+h2. Grundlegende Befehle
+
+*ACHTUNG:* Diese Anleitung ist muss überarbeitet werden, da unser Repository inzwischen nicht mehr bei GitHub gehostet wird (nur ein Mirror verbleibt dort).
+
+h3. Basiskonfiguration
+
+pre. git config --global user.name "Vorname Nachname"
+git config --global user.email "deine.email@example.com"
+git config --global core.autocrlf true
+git config --global push.default matching
+
+h3. Erstes Auschecken des Repositories
+
+Falls du Schreibrechte hast:
+
+pre. git clone ssh://BENUTZER@orakel.oqlt.de:2023/~/git/oqlt.git
+
+Für einen Nur-Lese-Zugang:
+
+pre. git clone git://orakel.oqlt.de/oqlt.git
+
+h3. SSH richtig einstellen
+
+Wenn Git etwas sagt wie "Permission denied (publickey). fatal: The remote end hung up unexpectedly" obwohl man den Public Key mitgeteilt hat, kann folgendes 
+helfen:
+
+pre. cd ~/.ssh
+ssh-add deinkey
+
+Sollte sich ssh-add beschweren, vorher noch @exec ssh-agent bash@ eingeben.
+
+Der Grund für das Problem liegt dann womöglich darin, dass man nicht den Standard-Dateinamen für den SSH-Key benutzt hat (id_rsa), sondern beim Generieren mit ssh-keygen einen eigenen angegeben. Diesen findet ssh beim Verbindungsaufbau nicht (außer man verrät mit "-i dateiname", wo er liegt) und authentifiziert sich deshalb nicht.
+
+Daher mein Tipp: Den SSH-Key mit @ssh-keygen -t rsa -b 4096@ generieren, keine Passphrase, und den Standard-Keynamen beibehalten.
+
+h3. Repository auf den neuesten Stand bringen
+
+Hier sollte _nicht_ @git pull@ verwendet werden, sondern folgendes:
+
+pre. git fetch
+git rebase origin
+
+Damit werden lokale Änderungen auf den aktuellen Stand des zentralen Repositories angewendet. Unschöne "merged branch ..."-Commits entfallen dadurch.
+
+h3. Was hat sich geändert?
+
+Nach einem @git fetch@ (vor dem Rebase) lassen sich folgendermaßen die Änderungen entweder als Log-Einträge oder als Diff anzeigen:
+
+pre. git log ..origin
+git diff ..origin
+
+h2. Links
+
+Hier einige Links mit guter Dokumentation. Die ganze Liste kann man natürlich 
+noch aufhübschen, aber das hat erst mal geringe Priorität.
+
+# "Git Community Book":http://book.git-scm.com/
+# "Git Manual (die offizielle Anleitung)":http://www.kernel.org/pub/software/scm/git/docs/user-manual.html
+# "Everyday Git With 20 Commands Or So (Beispiele aus dem echten Leben)":http://www.kernel.org/pub/software/scm/git/docs/everyday.html
+# "Git für Subversion-Benutzer / Git":http://git.or.cz/course/svn.html
+# "Git für Subversion-Benutzer / IBM":http://www.ibm.com/developerworks/opensource/library/l-git-subversion-1/index.html
+# "Zusammenstellung von Daniel Robbins (Gentoo-Gründer)":http://github.com/funtoo/portage/wikis/git-links
+# "Git Magic (einige interessante Tricks und Kniffe)":http://www-cs-students.stanford.edu/~blynn/gitmagic/index.html
+# "GitCasts (Screencasts für diverse Arbeitsschritte)":http://gitcasts.com/
+# "A Gaggle Of Git Tips":http://www.viget.com/extend/a-gaggle-of-git-tips/
