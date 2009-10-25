@@ -38,7 +38,13 @@ body {
 	border:1px solid black;
 	padding:15px;
 }
-h3, h4 {
+h3 {
+	border-top: solid 4px #ccc;
+	padding-top:0.5em;
+	margin:1em 0 0.5em 0;
+	overflow:hidden;
+}
+h4 {
 	margin:1em 0 0.5em ;
 }
 p, ul, dl {
