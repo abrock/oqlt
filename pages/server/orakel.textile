@@ -8,8 +8,8 @@ h2. physischer Server (Inte, Scytale, Tymm)
 
 h3. ssh-Fingerprint
 
-pre. # ssh-keygen -l -f /etc/ssh/ssh_host_rsa_key.pub 
-2048 3f:11:9f:45:93:b4:ff:dc:6d:9d:f6:35:b5:f1:74:71 /etc/ssh/ssh_host_rsa_key.pub (RSA)
+pre. # ssh-keygen -l -f /etc/ssh/ssh_host_rsa_key.pub
+2048 9d:e0:a8:9c:17:04:1c:60:e3:62:a4:77:8a:54:2e:69 /etc/ssh/ssh_host_rsa_key.pub (RSA)
 
 h3. Port-Forwarding
 
