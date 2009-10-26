@@ -1,0 +1,63 @@
+h1. Wartungsprotokoll für Orakel
+
+h2. 20090812-1400 (Inte)
+
+Austauschplatte eingebaut. RAID rebuild erfolgreich durchgefuehrt.
+
+h2. 20090604-1700 (Inte)
+
+Raid device error
+Platte (Port 4) ausgebaut. Wird zwecks Austausch eingeschickt.
+
+h2. 20090320-0830 (Inte)
+
+Raid device error
+Port gewechselt (p0->p4) und Rebuild gestartet
+
+pre. $ tw_cli show c0
+Unit  UnitType  Status         %RCmpl  %V/I/M  Stripe  Size(GB)  Cache  AVrfy
+------------------------------------------------------------------------------
+u0    RAID-5    DEGRADED       -       -       64K     931.303   OFF    OFF
+
+pre. Port   Status           Unit   Size        Blocks        Serial
+---------------------------------------------------------------
+p0     DEVICE-ERROR     u0     465.76 GB   976773168     WD-WCANU2396683
+
+pre. $ tw_cli remove c0 p0
+$ tw_cli maint rescan c0
+$ tw_cli maint rebuild c0 u0 p4
+$ smartctl --all /dev/twa0 -d 3ware,4
+
+h2. 20090319-1257 (Inte)
+
+Raid device error (fixed)
+Rebuild gestartet
+
+pre. $ tw_cli show c0
+Unit  UnitType  Status         %RCmpl  %V/I/M  Stripe  Size(GB)  Cache  AVrfy
+------------------------------------------------------------------------------
+u0    RAID-5    DEGRADED       -       -       64K     931.303   OFF    OFF
+
+pre. Port   Status           Unit   Size        Blocks        Serial
+---------------------------------------------------------------
+p0     DEVICE-ERROR     u0     465.76 GB   976773168     WD-WCANU2396683
+
+pre. $ tw_cli remove c0 p0
+$ tw_cli maint rescan c0
+$ tw_cli maint rebuild c0 u0 p0
+$ smartctl --all /dev/twa0 -d 3ware,0
+
+h2. 20091024-1700 (Inte)
+
+In VE 102 konnte auf @/dev/tty12@ nicht zugegriffen werden (@syslog-ng@). Ich habe das Device neu angelegt:
+
+pre. vzctl set 102 --devnodes tty12:rw --save
+
+@logrotate@ konfiguriert und @vixie-cron@ gestartet:
+
+pre. vi /etc/logrotate.conf
+/etc/cron.daily/logrotate.cron
+/etc/init.d/vixie-cron start
+rc-update add vixie-cron default
+
+@ntpd@ ist am 15. Oktober abgeraucht und wurde heute neu gestartet.
