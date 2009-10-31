@@ -1,0 +1,75 @@
+h1. Orakel
+
+Hier wird dokumentiert, wer welche VZ betreut und welche Ports weitergeleitet werden.
+
+Das Orakel ist erreichbar unter *nethop.de*.
+
+h2. physischer Server (Inte, Scytale, Tymm)
+
+h3. ssh-Fingerprint
+
+pre. # ssh-keygen -l -f /etc/ssh/ssh_host_rsa_key.pub 
+2048 3f:11:9f:45:93:b4:ff:dc:6d:9d:f6:35:b5:f1:74:71 /etc/ssh/ssh_host_rsa_key.pub (RSA)
+
+h3. Port-Forwarding
+
+|2020|ssh|tcp|
+
+h2. VE 101 (Silsha)
+
+h3. ssh-Fingerprint
+
+pre. # ssh-keygen -l -f /etc/ssh/ssh_host_rsa_key.pub
+2048 6d:ef:5e:1a:02:ac:df:fe:2d:c0:8b:29:89:d8:15:b6 /etc/ssh/ssh_host_rsa_key.pub (RSA)
+
+h3. Port-Forwarding
+
+|2021|ssh|tcp|
+|8887|i2p|udp|
+
+h2. VE 102 (Inte)
+
+h3. ssh-Fingerprint
+
+pre. # ssh-keygen -l -f /etc/ssh/ssh_host_rsa_key.pub
+2048 8d:34:b3:fe:9c:c1:33:13:94:48:40:4b:0c:92:30:04 /etc/ssh/ssh_host_rsa_key.pub (RSA)
+
+h3. Port-Forwarding
+
+|2022|ssh|tcp|
+|6522|obby|tcp|
+|56667|bip|tcp|Inte|
+
+h2. VE 103 (Scytale)
+
+h3. ssh-Fingerprint
+
+pre. # ssh-keygen -l -f /etc/ssh/ssh_host_rsa_key.pub
+2048 fc:ab:d1:04:22:50:de:1c:9f:0a:25:47:3d:d7:28:c0 /etc/ssh/ssh_host_rsa_key.pub (RSA)
+
+h3. Port-Forwarding
+
+|2023|ssh|tcp|
+|9418|git|tcp|
+
+h2. VE 104 (Abrock)
+
+h3. ssh-Fingerprint
+
+pre. # ssh-keygen -l -f /etc/ssh/ssh_host_rsa_key.pub
+2048 1e:03:d5:7f:a0:8c:f5:8f:be:f0:77:da:d9:a6:fe:08 /etc/ssh/ssh_host_rsa_key.pub (RSA)
+
+h3. Port-Forwarding
+
+|2024|ssh|tcp|
+
+h2. VE 105 (Dakunier)
+
+h3. ssh-Fingerprint
+
+pre. # ssh-keygen -l -f /etc/ssh/ssh_host_rsa_key.pub
+2048 69:85:8c:78:3b:89:3f:86:25:86:1f:0d:55:7d:85:fa /etc/ssh/ssh_host_rsa_key.pub (RSA)
+
+h3. Port-Forwarding
+
+ |2025|ssh|tcp|
