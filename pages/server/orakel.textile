@@ -62,3 +62,14 @@ pre. # ssh-keygen -l -f /etc/ssh/ssh_host_rsa_key.pub
 h3. Port-Forwarding
 
 |2024|ssh|tcp|
+
+h2. VE 105 (Dakunier)
+
+h3. ssh-Fingerprint
+
+pre. # ssh-keygen -l -f /etc/ssh/ssh_host_rsa_key.pub
+2048 69:85:8c:78:3b:89:3f:86:25:86:1f:0d:55:7d:85:fa /etc/ssh/ssh_host_rsa_key.pub (RSA)
+
+h3. Port-Forwarding
+
+ |2025|ssh|tcp|
