@@ -63,7 +63,7 @@ NEUE LISTE
 	Für: 2x Abrock
 
 *	1x / Top-T / schwarz / Größe L
-	Aufdruck vorn: oqlt-Schriftzug + "Marcel" / Farbe: weiß-orange
+	Aufdruck vorn: oqlt-Schriftzug / Farbe: weiß-orange
 	Aufdruck hinten: oqlt-Logo / Farbe: weiß-orange
 	Für: 1x Marcel
 
@@ -73,9 +73,14 @@ NEUE LISTE
 	Für: 1x Marcel
 
 *	1x / Top-T / schwarz / Größe XXL
-	Aufdruck vorn: oqlt-Schriftzug + "Web" / Farbe: weiß-neongrün
+	Aufdruck vorn: oqlt-Schriftzug / Farbe: weiß-neongrün
 	Aufdruck hinten: oqlt-Logo / Farbe: weiß-neongrün
-	Für: 1x Nico
+	Für: 1x Nico (Web?)
+
+*	1x / Sweatshirt / schwarz / Größe XXL
+	Aufdruck vorn: oqlt-Schriftzug / Farbe: weiß-neongrün
+	Aufdruck hinten: oqlt-Logo / Farbe: weiß-neongrün
+	Für: 1x Nico/Web
 
 *	2x / Top-T / schwarz / Größe XL
 	Aufdruck vorn: oqlt-Schriftzug / Farbe: weiß-neongrün
