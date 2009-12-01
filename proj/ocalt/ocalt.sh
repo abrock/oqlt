@@ -15,7 +15,7 @@ for file in $(find events -name '_.event' | sort); do
 	title="$(head -n 1 "$file" | sed -e 's/^Treffen$/oqlt-Treffen/')"
 	place=''
 	placef=''
-	[ "$title" = 'oqlt-Treffen' ] && place='FORUM'
+	[ "$title" = 'oqlt-Treffen' ] && place='Boveristraße'
 	reminds="$(
 	egrep -i '^((Rem|Datum|Ort|Wo):.*|[[:space:]]*)$' "$file" | sed -r -e 's/^([a-z]+):[ \t]*(.*)$/\1:\2/i' -e 's/[\t]/ /g' -e 's/ {2,}/ /g' | while read line; do
 		if [ -z "$line" ]; then
@@ -78,7 +78,7 @@ done > "$PREFIX/eventfiles.rem"
 echo 'PUSH-OMIT-CONTEXT'
 echo 'CLEAR-OMIT-CONTEXT'
 remind -r "-s$MONTHS" "$PREFIX/eventfiles.rem" 2008 Jan 1 | sed -r -e 's#^([^ ]+).*#OMIT \1#'
-echo "REM $(LC_ALL=C date -d 'Tue' '+%Y %b %d') *7 SKIP AT 18:00 DURATION 3:45 MSG voraussichtlich oqlt-Treffen (FORUM)"
+echo "REM $(LC_ALL=C date -d 'Tue' '+%Y %b %d') *7 SKIP AT 18:00 DURATION 3:45 MSG voraussichtlich oqlt-Treffen (Boveristraße)"
 echo 'POP-OMIT-CONTEXT'
 ) > "$PREFIX/zukunft.rem"
 
